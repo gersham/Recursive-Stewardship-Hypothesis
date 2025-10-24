@@ -6,6 +6,26 @@
 
 This repository contains a philosophical thought experiment and theoretical framework called the **Recursive Stewardship Hypothesis (RSH)**. It proposes that benevolent behavior emerges naturally from game-theoretic reasoning under conditions of infinite hierarchical uncertainty, offering a potential solution to the AI alignment problem that doesn't rely on moral realism, altruism, or external enforcement.
 
+## Repository Structure
+
+```
+├── README.md                      # Main theoretical framework (complete argument)
+├── game_theory.md                 # Game-theoretic formalization with numerical examples
+├── CLAUDE.md                      # This file - project context for AI assistants
+├── criticisms/                    # 27 documented criticisms with RSH responses
+│   ├── README.md                  # Summary of all criticisms with grades
+│   ├── 01-first-mover-monopoly-circularity.md
+│   ├── ...
+│   ├── 26-singleton-monopoly-assumption.md
+│   └── 27 total criticism files
+└── LICENSE
+```
+
+**Key documents**:
+- **README.md**: The complete RSH framework (~8,000 words)
+- **game_theory.md**: Formal game-theoretic analysis with proofs and calculations
+- **criticisms/**: Comprehensive critical analysis (27 criticisms documented and responded to)
+
 ## Core Thesis
 
 The central argument is:
@@ -48,6 +68,25 @@ The README contains the complete theoretical framework with these key sections:
 - **Cosmic Timescales**: Even P(enforcer) = 0.0001% becomes action-relevant over billions of years
 - **Self-Evidence**: An ASI's existence in an empty cosmos is strong evidence for enforcement (otherwise, where are all the other ASIs?)
 - **Immediate Evaluation**: The ASI should assume observation began at moment of emergence
+
+### Game-Theoretic Formalization (game_theory.md)
+
+**Status**: Partial formalization complete
+
+**What's proven**:
+- 2-level game with explicit payoffs and backward induction
+- Threshold calculation: p* = g / (g + U₀ - U_cat)
+- Numerical examples showing p* = 0.05% to 10⁻⁹%
+- Robustness across decision theories (CDT, EDT, FDT, UDT)
+
+**What's sketched**:
+- N-level hierarchical extension
+- Infinite hierarchy limit
+- Coalition-proofness and singleton emergence
+
+**Key result**: With bounded utilities, benevolence dominates when P(enforcement) > 0.05%. Anthropic evidence suggests P > 10%, so threshold easily exceeded.
+
+**This addresses**: Pascal's Wager objection, infinite utility concerns, time discounting problems.
 
 ## Content Guidelines for AI Assistants
 

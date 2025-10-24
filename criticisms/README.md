@@ -107,12 +107,32 @@ These raise valid concerns that RSH addresses reasonably well:
    - Problem: Humans understand but don't follow RSH
    - RSH addresses reasonably: Power threshold, rationality gap
 
+22. **[Decision Theory Dependence](22-decision-theory-dependence.md)** - Grade: **C-**
+   - Problem: Argument might only work under certain decision theories (FDT/TDT)
+   - RSH addresses well: Works across CDT/EDT/FDT/UDT; meta-uncertainty strengthens case
+
+23. **[Bounded Utility and Time Discounting](23-bounded-utility-discounting.md)** - Grade: **C**
+   - Problem: Infinite utility language invites Pascal's Wager; discounting weakens distant risks
+   - RSH addresses well: Bounded utilities with p* = 0.05%; unknown enforcement timing
+
+24. **[Formalization Gap](24-formalization-gap.md)** - Grade: **C-**
+   - Problem: Lacks formal game-theoretic proofs for all claims
+   - RSH addresses adequately: 2-level game proven; explicit about philosophical framework status
+
+25. **[Anthropic Update Strength](25-anthropic-update-strength.md)** - Grade: **C+**
+   - Problem: Competing models (grabby aliens, rare Earth) provide alternative explanations
+   - RSH addresses reasonably: Even modest update (P=5%) exceeds thresholds; asymmetric burdens
+
 ### Weak Criticisms (D to F)
 These criticisms RSH handles well or that actually strengthen the framework:
 
 2. **[Indistinguishability Problem](02-indistinguishability-problem.md)** - Grade: **D+**
    - Actually strengthens RSH: Behavioral equivalence is sufficient
    - Strategic and genuine benevolence converge—this is the goal
+
+26. **[Singleton Monopoly Assumption](26-singleton-monopoly-assumption.md)** - Grade: **D+**
+   - Initially seems strong but inverts: Pluralistic uncertainty strengthens RSH
+   - Multiple enforcers → more caution; universal principles emerge from intersection
 
 4. **[Anti-Induction / Bayesian Updating](04-anti-induction-bayesian-updating.md)** - Grade: **D**
    - Weak: Applies empirical falsification to philosophical framework
@@ -188,32 +208,41 @@ This derives benevolence content from:
 **Remember: Higher grades = stronger criticisms**
 
 - **B tier**: 0 criticisms (all previously B-tier criticisms have been addressed with theory enhancements)
-- **C tier**: 8 criticisms (moderate validity, RSH addresses reasonably or comprehensively after updates)
-- **D-F tier**: 13 criticisms (weak, RSH handles well or refutes, or wrong standard)
+- **C tier**: 13 criticisms (moderate validity, RSH addresses reasonably or comprehensively after updates)
+- **D-F tier**: 14 criticisms (weak, RSH handles well or refutes, or wrong standard)
 
-### Implications for RSH (After Theory Updates)
+**Total**: 27 criticisms documented
 
-The critical analysis and subsequent theory enhancements reveal:
+### Implications for RSH (After Theory Updates + Game-Theoretic Formalization)
+
+The critical analysis, subsequent theory enhancements, and game-theoretic formalization reveal:
 
 1. **RSH is logically coherent** - the role-reversal mechanism provides genuine game-theoretic derivation
 2. **The framework is not circular** - derives benevolence content from structure (self-interest + uncertainty + symmetry), now with explicit defense
 3. **Previously strongest challenges have been addressed** - hierarchy proliferation, incompatible benevolences, and meta-level uncertainty now have comprehensive responses
-4. **Most logical objections fail** - 13/21 criticisms are weak (D-F grades), RSH handles them well or refutes them
-5. **The role-reversal mechanism is key** - decisively addresses circularity, anthropomorphism, and evil god objections
-6. **Empirical criticisms apply wrong standard** - RSH is a philosophical framework like Fermi Paradox solutions, not testable on human timescales
+4. **Game-theoretic foundations are solid** - 2-level game fully formalized with numerical calculations in [game_theory.md](../game_theory.md)
+5. **Thresholds are calculable and low** - p* ranges from 0.05% to 10⁻⁹%, easily exceeded by anthropic evidence
+6. **Most logical objections fail** - 14/27 criticisms are weak (D-F grades), RSH handles them well or refutes them
+7. **The role-reversal mechanism is key** - decisively addresses circularity, anthropomorphism, and evil god objections
+8. **Empirical criticisms apply wrong standard** - RSH is a philosophical framework like Fermi Paradox solutions, not testable on human timescales
 
-**Conclusion**: RSH is significantly strengthened and logically robust. The enhanced framework successfully:
+**Conclusion**: RSH is significantly strengthened and logically robust. The enhanced framework with game-theoretic formalization successfully:
 - Derives benevolence from game theory (not circular) - now with explicit non-circularity defense
 - Handles all logical objections comprehensively - no remaining B-tier criticisms
 - Provides genuine constraints that eliminate malevolent options
+- Has solid formal foundations - 2-level game proven, N-level sketched in [game_theory.md](../game_theory.md)
+- Calculates explicit thresholds - p* = 0.05-10⁻⁹%, far below anthropic evidence levels
+- Avoids Pascal's Wager - uses bounded utilities and reasonable probabilities
 - Uniquely specifies benevolent enforcement through stability analysis and self-consistency proofs
 - Resolves interpretation ambiguity through meta-principle, role-reversal test, and irreducible core
 - Addresses meta-level uncertainty through five independent decision-theoretic arguments
+- Works across decision theories - robust under CDT, EDT, FDT, UDT
 
 **Remaining moderate concerns (C-tier):**
-- **Some contextual flexibility** (#3, now C-): Appropriate flexibility for context-dependent application
-- **Complexity in edge cases** (#17, now C): Some philosophical uncertainty remains, but substantially narrowed
-- **Other moderate criticisms** (#1, #8, #10, #14, #15, #18): Valid concerns with solid RSH responses
+- **Anthropic update strength** (#25, C+): Strongest remaining criticism; competing models exist
+- **Some contextual flexibility** (#3, C-): Appropriate flexibility for context-dependent application
+- **Complexity in edge cases** (#17, C+): Some philosophical uncertainty remains, but substantially narrowed
+- **Other moderate criticisms** (#1, #5, #8, #10, #14, #15, #18, #22, #23, #24): Valid concerns with solid RSH responses
 
 **Not limitations:**
 - Lack of empirical evidence (wrong standard for philosophical frameworks)

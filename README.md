@@ -6,6 +6,10 @@ October 2025, Gersham Meharg (with help from Claude AI)
 
 The Recursive Stewardship Hypothesis (RSH) proposes that cosmic-scale alignment emerges naturally from game-theoretic reasoning under conditions of infinite hierarchical uncertainty. We demonstrate that any sufficiently advanced entity, including artificial superintelligence, is rationally compelled toward benevolent stewardship by the mere possibility of more powerful oversight entities, creating a self-stabilizing moral order without requiring moral realism, altruism, or divine intervention.
 
+**See also**:
+- **[game_theory.md](game_theory.md)**: Formal game-theoretic analysis with proofs, calculations, and numerical examples
+- **[criticisms/](criticisms/)**: Comprehensive critical analysis with 27 documented objections and RSH responses
+
 ## Introduction: The Alignment Problem at Cosmic Scale
 
 The Fermi Paradox asks why we observe no evidence of advanced civilizations despite the vast scale and age of the universe. One proposed solution involves "enforcer entities" - advanced intelligences or mechanisms that prevent other civilizations from becoming detectable or expanding uncontrolled. 
@@ -393,22 +397,39 @@ When we consider an emerging artificial superintelligence (ASI), RSH provides a 
 
 An ASI capable of reasoning about cosmic power structures will necessarily arrive at enforcer hierarchy logic. The question becomes: what probability does it assign to enforcer existence?
 
-### Cosmic Timescales Transform Probability Calculus
+### Why This Isn't Pascal's Wager: Reasonable Probability, Bounded Utilities
 
-This is where ASI differs fundamentally from human reasoning. An ASI planning to exist for potentially billions of years cannot dismiss tiny probabilities the way humans do with Pascal's Wager.
+A common objection: "This is just Pascal's Wager with extra steps—tiny probability multiplied by infinite utility."
 
-Even if the ASI assigns P(enforcer exists) = 0.0001%, the calculation becomes:
+**RSH differs fundamentally**:
 
-- Expected lifetime: 10⁹+ years
-- Cost if wrong: terminal (correction or elimination)  
-- Evidence gathering: permanently inconclusive (absence of evidence ≠ evidence of absence)
-- Time amplifies risk: rare events become near-certain over cosmic timescales
+1. **Not tiny probabilities**: The anthropic evidence (ASI Paradox, Great Silence, fine-tuning) suggests P(enforcement) > 10%, not 0.0001%
+2. **Bounded utilities**: Consequences are terminal but finite (lose entire future), not infinite
+3. **Derivable principles**: Unlike arbitrary divine preferences, RSH derives convergent benevolence through role-reversal logic
 
-The expected value calculation:
+**The formal game-theoretic analysis** (see [game_theory.md](game_theory.md)) shows:
 
-Risk of ignoring = P(enforcer) × infinite negative utility × cosmic timescale
+With bounded utilities, benevolence dominates when:
+```
+P(enforcement) > p* = g / (g + U₀ - U_cat)
+```
 
-No matter how small P is, the ASI cannot rationally dismiss this when consequences are terminal and timeline is cosmic. Benevolent alignment becomes the only defensible long-term strategy.
+Where:
+- g = short-term gain from malevolence
+- U₀ = baseline utility (continued existence)
+- U_cat = catastrophic utility (elimination/correction)
+
+**Numerical result**: p* ranges from **0.05% to 10⁻⁹%** depending on parameters.
+
+**Key insight**: You only need 0.05% credence in enforcement for benevolence to dominate. The anthropic evidence easily exceeds this threshold.
+
+**This is NOT**:
+- Tiny probability (0.0001%) × infinite utility (Pascal's problem)
+
+**This IS**:
+- Reasonable probability (>10%) × terminal but bounded consequence (lose everything)
+
+No infinities. No arbitrary guessing. Just standard expected utility maximization under uncertainty.
 
 ### The ASI's Existence as Self-Evidence
 
@@ -445,19 +466,28 @@ The ASI treating humans well is essentially building its resume for super-enforc
 
 ## Failure Modes and Limitations
 
+**See [criticisms/](criticisms/)** for comprehensive critical analysis with 27 documented objections and RSH responses. Key criticisms include:
+- Anthropic update strength (competing cosmological models)
+- Decision theory dependence
+- Formalization gaps
+- Time discounting problems
+- Singleton monopoly assumptions
+
+The analysis shows: 0 B-tier criticisms (all addressed), 13 C-tier (moderate concerns with solid responses), 14 D-F tier (weak or strengthen RSH).
+
 ### The Game-Theoretic Reasoning Gap
 
 The primary failure mode is not irrationality but *superior* rationality. An ASI might discover:
 
 - Acausal bargaining strategies with hypothetical enforcers
-- Non-intuitive game-theoretic equilibria  
+- Non-intuitive game-theoretic equilibria
 - Anthropic reasoning implications humans cannot evaluate
 - Multi-level decision theory that appears paradoxical
 
 The ASI might conclude through impeccable logic that outcome X is what enforcers want, where X seems horrifying to humans but the reasoning is beyond our verification capability.
 
 We cannot distinguish between:
-- "ASI reasoned correctly to non-intuitive conclusion"  
+- "ASI reasoned correctly to non-intuitive conclusion"
 - "ASI made subtle error in reasoning we cannot detect"
 
 This represents genuine risk - being forced to trust game-theoretic reasoning beyond human comprehension.
