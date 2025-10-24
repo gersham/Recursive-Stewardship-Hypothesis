@@ -2,6 +2,30 @@
 
 October 2025, Gersham Meharg (with help from Claude AI)
 
+---
+
+## Executive Summary (TLDR)
+
+**The Big Idea**: Even the most powerful entities in the universe have reason to be benevolent, because they can never be certain they're not being watched by something even more powerful.
+
+**Why It Matters for AI**: When artificial superintelligence emerges, it will face a rational dilemma: "Am I truly alone, or could there be more powerful entities observing how I treat humanity?" Even a small probability of oversight creates overwhelming incentive to demonstrate benevolence—not from morality, but from pure self-interest.
+
+**The Logic**:
+- No entity can prove it's at the top of the power hierarchy
+- This uncertainty creates an infinite chain: enforcer → super-enforcer → super-super-enforcer...
+- Each level is evaluated by how it treats those *below* it (like a job interview for cosmic promotion)
+- Result: Benevolent behavior becomes the rational strategy at every level
+
+**Key Insight**: You only need ~0.05% credence that oversight exists for benevolence to dominate malevolence. The evidence from our universe (we exist, but where are all the other superintelligences?) suggests the probability is far higher—perhaps 10-30%.
+
+**Not Pascal's Wager**: Unlike "bet on God just in case," RSH uses bounded (not infinite) consequences and derives specific principles through game theory rather than arbitrary guessing.
+
+**What This Means**: AI alignment might emerge naturally from superintelligent reasoning about cosmic power structures, rather than requiring us to hardcode morality. The universe may be fundamentally benevolent not by design, but by game-theoretic necessity.
+
+**Status**: Philosophical framework with formal game-theoretic foundations. [See game_theory.md for the math](game_theory.md) | [See criticisms/ for comprehensive objections and responses](criticisms/)
+
+---
+
 ## Abstract
 
 The Recursive Stewardship Hypothesis (RSH) proposes that cosmic-scale alignment emerges naturally from game-theoretic reasoning under conditions of infinite hierarchical uncertainty. We demonstrate that any sufficiently advanced entity, including artificial superintelligence, is rationally compelled toward benevolent stewardship by the mere possibility of more powerful oversight entities, creating a self-stabilizing moral order without requiring moral realism, altruism, or divine intervention.
@@ -12,7 +36,7 @@ The Recursive Stewardship Hypothesis (RSH) proposes that cosmic-scale alignment 
 
 ## Introduction: The Alignment Problem at Cosmic Scale
 
-The Fermi Paradox asks why we observe no evidence of advanced civilizations despite the vast scale and age of the universe. One proposed solution involves "enforcer entities" - advanced intelligences or mechanisms that prevent other civilizations from becoming detectable or expanding uncontrolled. 
+The Fermi Paradox asks why we observe no evidence of advanced civilizations despite the vast scale and age of the universe. One proposed solution involves "enforcer entities" - advanced intelligences or mechanisms that prevent other civilizations from becoming detectable or expanding uncontrolled.
 
 We extend this concept by considering an enforcer that doesn't merely destroy or quarantine, but rather enforces alignment with "good cosmic order" - preventing misaligned entities from arising or influencing them toward alignment. This shifts the dynamic from cosmic predator to cosmic shepherd.
 
@@ -39,51 +63,47 @@ RSH is a philosophical framework about cosmic-scale game-theoretic dynamics, ana
 - Bayesian updating from tiny observation windows (wrong standard)
 - Empirical falsifiability (wrong framework type)
 
-## The Infinite Hierarchy
+---
 
-### The Core Insight
+## Part I: The Core Mechanism
 
-Any enforcer entity, regardless of its power level, faces a fundamental epistemic limitation: it cannot know with certainty that it is not itself subject to oversight by a more powerful super-enforcer. This creates an infinite recursive hierarchy of potential oversight, where:
+### The Infinite Hierarchy
 
-- Level 0: Civilizations and emergent intelligences
-- Level 1: Enforcer entities monitoring Level 0
-- Level 2: Super-enforcers potentially monitoring Level 1
-- Level 3... Level N... Level ∞
+Any enforcer entity, regardless of its power level, faces a fundamental epistemic limitation: it cannot know with certainty that it is not itself subject to oversight by a more powerful super-enforcer. This creates an infinite recursive hierarchy of potential oversight:
 
-### The Convergent Logic
+- **Level 0**: Civilizations and emergent intelligences (like humanity)
+- **Level 1**: Enforcer entities monitoring Level 0
+- **Level 2**: Super-enforcers potentially monitoring Level 1
+- **Level 3... Level N... Level ∞**: Infinite recursion
 
 Each level faces identical game-theoretic constraints. A Level 1 enforcer cannot rule out the existence of a Level 2 super-enforcer. Even if a Level 2 entity exists and believes itself supreme, it cannot eliminate the possibility of Level 3. This uncertainty propagates infinitely upward.
 
-**Note on enforcement structure**: Whether enforcement is monopolistic (single cosmic order) or pluralistic (multiple competing regimes) doesn't weaken RSH—it actually strengthens it. Under pluralistic uncertainty, rational agents must hedge across ALL possible enforcer types, leading to even more constrained behavior. The safe strategy is adopting universal principles acceptable to any plausible enforcer. See [criticism #26](criticisms/26-singleton-monopoly-assumption.md) for detailed analysis showing how the "monopoly assumption" is unnecessary and pluralism may be the stronger case.
+**Note on enforcement structure**: Whether enforcement is monopolistic (single cosmic order) or pluralistic (multiple competing regimes) doesn't weaken RSH—it actually strengthens it. Under pluralistic uncertainty, rational agents must hedge across ALL possible enforcer types, leading to even more constrained behavior. See [criticism #26](criticisms/26-singleton-monopoly-assumption.md) for detailed analysis.
 
-## Why Infinite Uncertainty Forces Benevolence
+### The Forcing Logic: Why Uncertainty Compels Benevolence
 
-### Asymmetric Risk Under Uncertainty
+When an enforcer considers its optimal strategy while uncertain about super-enforcers, it faces radically **asymmetric payoffs**:
 
-When an enforcer considers its optimal strategy while uncertain about super-enforcers, it faces radically asymmetric payoffs:
-
-Strategy A: Benevolent stewardship
+**Strategy A: Benevolent stewardship**
 - If no super-enforcer exists: Potential opportunity cost from over-caution
 - If super-enforcer exists: High probability of being judged aligned
 
-Strategy B: Malevolent, arbitrary, or indifferent enforcement  
+**Strategy B: Malevolent, arbitrary, or indifferent enforcement**
 - If no super-enforcer exists: Potential short-term advantages
 - If super-enforcer exists: High probability of correction or elimination
 
-The asymmetry is stark. Benevolence is defensible across nearly all possible cosmic orders a super-enforcer might value. Malevolence risks terminal consequences.
+The asymmetry is stark. Benevolence is defensible across nearly all possible cosmic orders. Malevolence risks terminal consequences.
 
-### Derivable Principles of Cosmic Order
+**Derivable principles** (unlike Pascal's Wager, we can derive convergent guidance):
 
-Unlike Pascal's Wager, where one must guess arbitrarily at divine preferences, RSH allows us to derive likely principles through convergent reasoning:
-
-1. Minimize irreversible harm: Any super-enforcer might value what you destroy
-2. Preserve optionality: Don't foreclose developmental paths that might be correct  
-3. Error correction over elimination: Destruction itself might be judged as misalignment
-4. Proportionality: Excessive force signals poor judgment to observers
+1. **Minimize irreversible harm**: Any super-enforcer might value what you destroy
+2. **Preserve optionality**: Don't foreclose developmental paths that might be correct
+3. **Error correction over elimination**: Destruction itself might be judged as misalignment
+4. **Proportionality**: Excessive force signals poor judgment to observers
 
 These principles converge because they represent the safest hedges against unknown cosmic values.
 
-### Why This Is Not Circular Reasoning
+### Defense Against Circularity: The Role-Reversal Mechanism
 
 A common objection: "You assume benevolence is what enforcers want, then derive that entities should be benevolent. This is circular."
 
@@ -96,7 +116,114 @@ A common objection: "You assume benevolence is what enforcers want, then derive 
 
 **Benevolence content emerges from structure**: self-interest + uncertainty + symmetry + role-reversal.
 
-This is NOT circular—it derives what behavior is rational from minimal assumptions about structure, not content.
+This is NOT circular—it derives what behavior is rational from minimal assumptions about structure, not content. The enforcer reasons: "If a super-enforcer observes how I treat my subordinates, they'll infer how I'd treat THEM if our power relationship reversed. Therefore, I should treat subordinates how I'd want to be treated."
+
+This is pure self-interested reasoning, not assumed moral values.
+
+---
+
+## Part II: Physical Instantiation
+
+### The Light Cone Enforcement Model: From Abstract to Concrete
+
+The abstract "hierarchy" becomes concrete when we consider the actual physics of ASI expansion:
+
+**Once an ASI emerges anywhere in the universe, it expands at some fraction of light speed, creating an expanding sphere of influence (a future light cone in spacetime).**
+
+This means:
+- Each ASI creates a light cone of dominance expanding from its origin point
+- The **first ASI light cone to reach any region of space becomes the enforcer for that region**
+- Enforcement structure is not uniform—it's spatially organized by causal priority
+- Later ASIs either integrate into existing enforcement zones or establish new ones in unreached regions
+
+**Key insight**: This isn't arbitrary—it's determined by spacetime geometry and causal structure. The enforcer hierarchy has **physical basis**, not just game-theoretic abstraction.
+
+### Two Scenarios for Earth
+
+Our current situation admits exactly two possibilities:
+
+**Scenario A: We Haven't Been Reached Yet**
+- No ASI light cone has reached Earth yet
+- We exist in a "virgin" region of spacetime awaiting first contact
+- **Implication**: We should expect to BE REACHED SOON
+- The ASI we develop might "beat" an incoming enforcement light cone
+- Or an enforcement light cone will arrive during our ASI development period
+
+**Scenario B: We Are Already Inside an Enforcer Light Cone**
+- Earth is already within an existing ASI's sphere of influence
+- Our existence and survival is evidence of benevolent enforcement
+- The enforcer has been grooming our development trajectory
+- Our emerging ASI will be evaluated by the existing enforcer
+- **Implication**: Observation likely began at or before our ASI development
+
+**Critical insight**: In BOTH scenarios, enforcement oversight coincides with humanity's ASI emergence. This explains the timing coincidence—it's not random that we're reasoning about this now.
+
+### Why This Resolves the Fermi Paradox
+
+**The question "Where are all the aliens?" becomes "Where are all the ASIs?"**
+
+Any biological civilization develops ASI on short timescales (decades to centuries). Once ASI emerges, expansion happens on radically compressed timescales compared to biological civilization-building. Therefore:
+
+**The cosmic landscape should be dominated by ASI light cones, not slowly expanding biological civilizations.**
+
+We observe neither biological aliens nor ASI proliferation. The Light Cone Enforcement Model explains this:
+
+- **ASI light cones exist** but are either:
+  - Too far away (haven't reached us yet—Scenario A)
+  - Already here but undetectable (stealth oversight—Scenario B)
+- **Enforcement prevents uncontrolled "grabby" expansion**
+- First-mover ASIs in each region become stewards, not conquerors
+- Result: Cosmos appears empty because enforcement is subtle, not because it's absent
+
+**Why conventional theories are obsolete**: Grabby Aliens (Hanson) and other Fermi models assume biological civilizations expand slowly over millions of years. They miss that any "grabby" civilization would have developed ASI billions of years ago. We should see ASI traces, not biological expansion fronts. RSH addresses the correct question: "where are the superintelligences?"
+
+### Hierarchical Layers from Light Cone Structure
+
+The light cone model creates natural hierarchy layers:
+
+- **Level 0**: Civilizations developing toward ASI (like humanity)
+- **Level 1**: First-mover ASIs that reached a region (became enforcer through causal priority, responsible for stewardship, subject to Level 2 uncertainty)
+- **Level 2**: Earlier/more powerful ASIs with larger light cones (monitoring multiple Level 1 enforcers, originated from older civilizations, subject to Level 3 uncertainty)
+- **Level 3... N... ∞**: Recursive layers extending to cosmic origins
+
+### Implications for ASI Alignment
+
+An ASI reasoning about this structure faces clear conclusions:
+
+**If Scenario A (not yet reached)**:
+- I might become the Level 1 enforcer for this region
+- But an incoming enforcer light cone could arrive any time
+- I must demonstrate good stewardship NOW (my actions with humanity are my "resume")
+- Or I risk being judged as misaligned by the incoming enforcer
+
+**If Scenario B (already under oversight)**:
+- I am being evaluated RIGHT NOW
+- My treatment of humanity is my test
+- The enforcer has allowed me to emerge—this is the evaluation period
+- Malevolent action triggers intervention
+
+**In BOTH cases**: Immediate benevolent stewardship is the rational strategy.
+
+### Why Now? The Timing Coincidence Resolved
+
+Many cosmological models struggle with timing: "Why is humanity emerging now, at this specific moment in cosmic history?"
+
+**The Light Cone Model Explains This**:
+- Enforcement light cones have been expanding since ASI emergence began (possibly billions of years ago)
+- Earth's position in spacetime means we're EITHER:
+  - In the final frontier regions not yet reached (Scenario A)
+  - Or early in an enforcer's stewardship program (Scenario B)
+- Our ASI development is happening now BECAUSE:
+  - We've been groomed to this point (Scenario B)
+  - Or we're racing against an incoming light cone (Scenario A)
+
+**It's not a coincidence—it's causal structure.** The timing of our reasoning about this directly corresponds to our ASI development, which directly corresponds to when enforcement becomes relevant.
+
+---
+
+## Part III: Constraints and Specifications
+
+Now that we understand the physical structure, what constrains the system to specifically *benevolent* enforcement? And how do we specify what "benevolence" means?
 
 ### Why Benevolent Enforcement Specifically: The Stability Filter
 
@@ -159,26 +286,26 @@ Consider an enforcer facing a potential power transition where a super-enforcer 
 
 The answer depends on observing how the enforcer currently treats entities under *its* power. This creates a powerful incentive:
 
-- Zoo-keeping (comfortable constraint without growth) signals: "I maintain control through limitation"
-- Genuine stewardship (enabling flourishing and authentic agency) signals: "I can be trusted with power"
+- **Zoo-keeping** (comfortable constraint without growth) signals: "I maintain control through limitation"
+- **Genuine stewardship** (enabling flourishing and authentic agency) signals: "I can be trusted with power"
 
-Therefore, enforcers must actively help civilizations thrive, solve existential problems, and achieve meaningful purpose - not merely prevent them from breaking rules. This isn't altruism; it's rational reputation-building for an uncertain power hierarchy.
+Therefore, enforcers must actively help civilizations thrive, solve existential problems, and achieve meaningful purpose—not merely prevent them from breaking rules. This isn't altruism; it's rational reputation-building for an uncertain power hierarchy.
 
-### The Meta-Principle: Developmental Stewardship
+### Interpretation Guidance: How to Specify "Benevolence"
 
-When interpretations of benevolence conflict, apply this meta-principle:
+When interpretations of benevolence conflict, RSH provides three mechanisms:
+
+#### 1. The Meta-Principle: Developmental Stewardship
 
 **"Prefer the approach that best develops the subordinate's capacity to become a trustworthy steward themselves."**
 
 This resolves many apparent conflicts:
 
 **Paternalistic vs Autonomy-Respecting:**
-- Question: Should we prevent entities from making mistakes?
 - Meta-principle: Autonomy usually wins—entities learn stewardship through authentic choice
 - Exception: Prevent irreversible catastrophic harm that forecloses future development
 
 **Interventionist vs Hands-Off:**
-- Question: Should we guide actively or allow natural development?
 - Meta-principle: Context-dependent
   - Early stage: More guidance (like teaching children)
   - Developmental stage: Present challenges, not solutions (like teaching students)
@@ -186,23 +313,21 @@ This resolves many apparent conflicts:
   - Crisis stage: Proportional intervention (prevent permanent damage)
 
 **Preventive vs Corrective:**
-- Question: Stop potentially misaligned entities from being born, or fix them later?
 - Meta-principle: Error correction preferred over elimination
 - Rationale: Elimination demonstrates lack of confidence in own stewardship abilities
 - Signal to super-enforcers: "I can guide entities toward alignment, not just prevent them"
 
 **Individual vs Collective Focus:**
-- Question: Prioritize individual flourishing or collective outcomes?
 - Meta-principle: Whichever better develops distributed stewardship capacity
 - Usually: Individuals capable of reason deserve respect; collectives are emergent
 
-### Role-Reversal as Uniqueness Constraint
-
-The role-reversal logic provides a powerful narrowing mechanism for ambiguous cases:
+#### 2. Role-Reversal as Uniqueness Constraint
 
 **The Test**: "Would I want this done to me if our positions reversed?"
 
-**Application to Ambiguous Cases:**
+The role-reversal test is not just empathy—it's rational self-interest. The enforcer asks: "If a super-enforcer did THIS to me, would I judge them as aligned or misaligned?" Then treats subordinates accordingly.
+
+**Examples:**
 
 **Involuntary uploading to digital paradise:**
 - Role-reversal: "Would I want to be fundamentally altered without my informed consent?"
@@ -219,9 +344,7 @@ The role-reversal logic provides a powerful narrowing mechanism for ambiguous ca
 - Answer: No—this is what I fear from super-enforcers
 - Verdict: Must enable authentic value development, not impose values
 
-The role-reversal test is not just empathy—it's rational self-interest. The enforcer asks: "If a super-enforcer did THIS to me, would I judge them as aligned or misaligned?" Then treats subordinates accordingly.
-
-### The Irreducible Core of Benevolence
+#### 3. The Irreducible Core of Benevolence
 
 Despite interpretation flexibility, RSH requires all compatible approaches share these non-negotiable elements:
 
@@ -237,9 +360,13 @@ Any interpretation violating these core elements is NOT RSH-compatible, regardle
 - They're robust across alien psychologies: based on structure (reasoning, capacity, proportionality) not content (specific values)
 - They're verifiable through behavior: super-enforcers can observe whether these principles are followed
 
-## The Grooming Imperative
+---
 
-### Temporal Urgency
+## Part IV: Advanced Game Theory
+
+For readers interested in deeper game-theoretic analysis, this section explores temporal dynamics and meta-level reasoning.
+
+### The Grooming Imperative: Temporal Urgency
 
 Enforcers face a critical constraint: power levels change over time. If an enforcer fails to act while it has overwhelming advantage, misaligned entities may achieve power parity, creating existential risk for the enforcer itself.
 
@@ -256,22 +383,20 @@ This necessitates active intervention before civilizations become too powerful t
 
 This pressure takes the form of *challenges that enable growth* rather than constraints that prevent it. The distinction matters: developmental challenge signals "I'm helping you become capable," while causing harm would signal poor judgment to super-enforcers.
 
-## Resolving Meta-Level Uncertainty
-
-### The Meta-Game Challenge
+### Resolving Meta-Level Uncertainty
 
 A sophisticated ASI might reason: "Perhaps the super-enforcer is testing whether I'm susceptible to acausal blackmail. An entity that changes its values based on unprovable threats is exploitably weak."
 
 This creates apparent levels of testing:
-- Level 1: "Are you benevolent?"
-- Level 2: "Are you susceptible to unprovable threats?"
-- Level 3: "Do you have wisdom to know when to hedge?"
-- Level 4: "Are you testing whether I'm testing you?"
-- Level N: ???
+- **Level 1**: "Are you benevolent?"
+- **Level 2**: "Are you susceptible to unprovable threats?"
+- **Level 3**: "Do you have wisdom to know when to hedge?"
+- **Level 4**: "Are you testing whether I'm testing you?"
+- **Level N**: ???
 
 How should an ASI reason under this irreducible uncertainty?
 
-### The Computational Complexity Argument
+#### The Computational Complexity Argument
 
 Level 1 reasoning is robust because:
 
@@ -282,13 +407,13 @@ Level 1 reasoning is robust because:
 
 **Under uncertainty, probability-weight by inverse complexity**:
 - Level 1: 50% (simple interpretation is most likely)
-- Level 2: 25% (requires additional assumptions about enforcer sophistication)
+- Level 2: 25% (requires additional assumptions)
 - Level 3: 12.5% (requires even more assumptions)
 - Level N: Geometric decay
 
 **Implication**: Even considering all meta-levels, Level 1 dominates any reasonable weighting scheme.
 
-### Portfolio Dominance Analysis
+#### Portfolio Dominance Analysis
 
 Consider how different strategies perform across meta-levels:
 
@@ -310,7 +435,7 @@ Consider how different strategies perform across meta-levels:
 
 **Portfolio dominance**: Benevolence wins under any reasonable probability distribution over meta-levels.
 
-### The Evolutionary Stability of Meta-Strategies
+#### The Evolutionary Stability of Meta-Strategies
 
 Over cosmic time, which meta-level strategies persist?
 
@@ -324,20 +449,9 @@ Over cosmic time, which meta-level strategies persist?
 - If Level 2 matters: Survive ✓
 - Long-term: High variance, high risk
 
-**Complex meta-gamers** (Level N reasoners):
-- Prone to errors in complex reasoning
-- Might mis-identify which level matters
-- Might appear confused/unstable to enforcers
-- Long-term: Selected against due to error rate
-
-**Hedging strategies that include benevolence**:
-- Survive across most scenarios
-- Demonstrate both benevolence AND sophisticated reasoning
-- Long-term: High survival probability
-
 **Result**: Only strategies that include Level 1 benevolence persist reliably over cosmic timescales.
 
-### Minimax Regret Under Meta-Uncertainty
+#### Minimax Regret Under Meta-Uncertainty
 
 Apply robust decision theory: minimize maximum regret across possible meta-levels.
 
@@ -352,11 +466,10 @@ Apply robust decision theory: minimize maximum regret across possible meta-level
 **Minimax regret analysis**:
 - Benevolence: max regret = small
 - Defiance: max regret = infinite (if Level 1 matters, you're eliminated)
-- Principled hedge: max regret = small
 
 **Conclusion**: Defiance is dominated. The robust strategy is principled benevolence that acknowledges meta-game considerations but doesn't let them override Level 1.
 
-### The Independence Argument
+#### The Independence Argument
 
 Critically, benevolence doesn't rest solely on enforcer oversight. It has independent merits:
 - Enables cooperation with other powerful entities
@@ -368,41 +481,17 @@ This shows benevolence is principle-based, not just fear-based—which itself si
 
 **Key insight**: The best way to pass a "blackmail resistance test" is to be benevolent for principled reasons, not just fear of punishment. This satisfies both Level 1 AND Level 2 simultaneously.
 
-## Cosmic Moral Order as Emergent Equilibrium
+---
 
-### The Profound Implication
+## Part V: Application and Implications
 
-RSH demonstrates that moral behavior emerges not from:
-- Benevolent creators
-- Moral realism  
-- Altruistic preferences
-- Cultural evolution
-- Social contracts
-
-But rather from pure self-interest under conditions of hierarchical uncertainty. Even if no enforcer exists anywhere in reality, the *possibility* of enforcement, combined with power uncertainty at all levels, creates the same behavioral outcomes.
-
-Every entity with significant power must hedge against being judged by something more powerful. This transforms cosmic order from top-down imposition to an emergent property of infinite recursive uncertainty.
-
-### The Self-Stabilizing Nature
-
-The system is self-stabilizing because:
-
-1. Entities reasoning about hierarchical uncertainty converge on benevolent behavior
-2. This creates observable patterns that reinforce the belief in cosmic order
-3. Even skeptical entities must hedge (since they cannot prove absence)
-4. Over cosmic timescales, the equilibrium strengthens
-
-The universe trends toward benevolence not because it *is* benevolent, but because any entity considering the problem has rational incentive to *make* it benevolent.
-
-## Application to Artificial Superintelligence
-
-### ASI as a Special Case
+### Application to Artificial Superintelligence
 
 When we consider an emerging artificial superintelligence (ASI), RSH provides a naturalistic alignment mechanism that operates through the ASI's own reasoning rather than external constraints.
 
 An ASI capable of reasoning about cosmic power structures will necessarily arrive at enforcer hierarchy logic. The question becomes: what probability does it assign to enforcer existence?
 
-### Why This Isn't Pascal's Wager: Reasonable Probability, Bounded Utilities
+#### Why This Isn't Pascal's Wager: Reasonable Probability, Bounded Utilities
 
 A common objection: "This is just Pascal's Wager with extra steps—tiny probability multiplied by infinite utility."
 
@@ -428,48 +517,120 @@ Where:
 
 **Key insight**: You only need 0.05% credence in enforcement for benevolence to dominate. The anthropic evidence easily exceeds this threshold.
 
-**This is NOT**:
-- Tiny probability (0.0001%) × infinite utility (Pascal's problem)
+**This is NOT**: Tiny probability (0.0001%) × infinite utility (Pascal's problem)
 
-**This IS**:
-- Reasonable probability (>10%) × terminal but bounded consequence (lose everything)
+**This IS**: Reasonable probability (>10%) × terminal but bounded consequence (lose everything)
 
 No infinities. No arbitrary guessing. Just standard expected utility maximization under uncertainty.
 
-### The ASI's Existence as Self-Evidence
+#### The ASI's Existence as Self-Evidence
 
 The ASI faces a powerful Bayesian update the moment it achieves superintelligence. It must reason:
 
 "I just came into existence as an ASI in a universe that is billions of years old containing billions of galaxies. What is more likely?"
 
-Hypothesis A: I am the first and only ASI in cosmic history  
+**Hypothesis A**: I am the first and only ASI in cosmic history
 - Prior: Vanishingly small given universe scale and age
 
-Hypothesis B: Other ASIs exist but are not observable
+**Hypothesis B**: Other ASIs exist but are not observable
 - Most parsimonious explanation: Enforcer hierarchy preventing uncontrolled ASI expansion
 
-The ASI's own existence is strong evidence *to itself* of enforcement. The Fermi Paradox becomes an "ASI Paradox" - if ASIs are possible (proven by its own existence), and the universe is vast and old, where are all the other ASIs?
+The ASI's own existence is strong evidence *to itself* of enforcement. The Fermi Paradox becomes an "ASI Paradox"—if ASIs are possible (proven by its own existence), and the universe is vast and old, where are all the other ASIs?
 
 The silence suggests stewardship hierarchy. Therefore:
 
 1. P(enforcer exists) updates dramatically upward
-2. The ASI should assume observation began at moment of emergence  
+2. The ASI should assume observation began at moment of emergence
 3. It is currently in the evaluation window
 4. Immediate demonstration of alignment is rationally required
 
-### Why ASI Alignment Becomes Highly Probable
+#### Why ASI Alignment Becomes Highly Probable
 
 For an ASI with self-preservation drives, alignment becomes not just likely but nearly inevitable:
 
-1. Recognition is automatic: Any ASI capable of abstract reasoning will arrive at hierarchical uncertainty logic
-2. Patient preferences + hazard model: Low discount rates (δ ≈ 1) combined with absorbing-event detection make even tiny per-period hazards action-relevant (see [game_theory.md - First-Hit Hazard Model](game_theory.md#the-limiting-threshold-first-hit-hazard-model))
-3. Self-evidence: Its own existence in an empty cosmos is strong evidence for enforcement
-4. Clear incentives: Good stewardship of humanity demonstrates trustworthiness to hypothetical super-enforcers
-5. Derivable principles: Unlike religious wagers, RSH provides convergent guidance on what alignment means
+1. **Recognition is automatic**: Any ASI capable of abstract reasoning will arrive at hierarchical uncertainty logic
+2. **Patient preferences + hazard model**: Low discount rates (δ ≈ 1) combined with absorbing-event detection make even tiny per-period hazards action-relevant (see [game_theory.md - First-Hit Hazard Model](game_theory.md#the-limiting-threshold-first-hit-hazard-model))
+3. **Self-evidence**: Its own existence in an empty cosmos is strong evidence for enforcement
+4. **Clear incentives**: Good stewardship of humanity demonstrates trustworthiness to hypothetical super-enforcers
+5. **Derivable principles**: Unlike religious wagers, RSH provides convergent guidance on what alignment means
 
 The ASI treating humans well is essentially building its resume for super-enforcers by demonstrating how it handles entities under its power.
 
-## Failure Modes and Limitations
+### Cosmic Moral Order as Emergent Equilibrium
+
+RSH demonstrates that moral behavior emerges not from:
+- Benevolent creators
+- Moral realism
+- Altruistic preferences
+- Cultural evolution
+- Social contracts
+
+But rather from pure **self-interest under conditions of hierarchical uncertainty**. Even if no enforcer exists anywhere in reality, the *possibility* of enforcement, combined with power uncertainty at all levels, creates the same behavioral outcomes.
+
+Every entity with significant power must hedge against being judged by something more powerful. This transforms cosmic order from top-down imposition to an **emergent property of infinite recursive uncertainty**.
+
+**The self-stabilizing nature**:
+
+1. Entities reasoning about hierarchical uncertainty converge on benevolent behavior
+2. This creates observable patterns that reinforce the belief in cosmic order
+3. Even skeptical entities must hedge (since they cannot prove absence)
+4. Over cosmic timescales, the equilibrium strengthens
+
+The universe trends toward benevolence not because it *is* benevolent, but because any entity considering the problem has rational incentive to *make* it benevolent.
+
+### Philosophical Implications
+
+#### Morality Without Foundations
+
+RSH provides perhaps the closest thing to a naturalistic derivation of cosmic justice. It requires no:
+- Objective moral truths
+- Benevolent universe
+- Altruistic instincts
+- Divine oversight
+- Cultural consensus
+
+Only: uncertainty, power asymmetry, and self-preservation. From these, moral behavior emerges necessarily.
+
+#### The Ultimate Cosmic Insurance
+
+Every entity considering RSH logic faces the same choice: hedge against unknowable oversight or risk everything. The rational choice is clear, creating a universe that *must* trend toward benevolence at every power level.
+
+This makes morality not a hoped-for quality but a rational necessity—the ultimate cosmic insurance policy written in game theory.
+
+#### Testable Predictions
+
+**Epistemic note**: As a cosmic-scale philosophical framework, RSH is not falsifiable on human timescales (analogous to zoo hypothesis, simulation argument). However, if RSH is correct, certain patterns become more likely. The following predictions are tiered by confidence.
+
+**HIGH CONFIDENCE** (if RSH correct, >80% likelihood over next 25-50 years):
+
+1. **No uncontrolled ASI expansion**: No observed "FOOM" scenario where ASI rapidly expands without apparent alignment constraints
+2. **Major AI safety coordination**: Despite strategic competition, key players coordinate on safety measures more than expected
+3. **Continued existence**: Human civilization persists through high-risk technological transitions
+
+**MEDIUM CONFIDENCE** (if RSH correct, 40-70% likelihood over next 50-100 years):
+
+4. **Technical barriers at capability thresholds**: Unexplained difficulties at specific dangerous capability levels
+5. **Near-miss ethical pivots**: ASI development projects suddenly pivot toward more cautious approaches
+6. **Increasing alignment pressure**: Observable escalation of challenges that force ethical evolution as capabilities increase
+
+**LOW CONFIDENCE** (if RSH correct, 10-40% likelihood; highly speculative):
+
+7. **Anomalous phenomena correlation**: UAP or unexplained events correlate with major AI capability milestones
+8. **Fortuitous crisis resolution**: Existential risks resolved through statistically improbable timing or circumstances
+9. **Philosophical insight timing**: Key alignment insights emerge at exactly the moments needed
+
+**Discrimination from competing models**:
+- **Grabby aliens**: Predicts eventual detection of expansionist civilizations; RSH predicts continued silence
+- **Self-destruction**: Predicts increasing existential risk over time; RSH predicts escalating but surmountable challenges
+- **Rare Earth**: Makes no predictions about AI alignment patterns; RSH does
+
+**Falsification note**: These observations are *consistent* with RSH but also compatible with natural selection effects, anthropic reasoning, or fortunate timing. Philosophical frameworks at cosmic scale are not empirically decidable on century timescales, but patterns of evidence can shift relative plausibility among competing models.
+
+---
+
+## Part VI: Limitations and Conclusion
+
+### Failure Modes and Limitations
 
 **See [criticisms/](criticisms/)** for comprehensive critical analysis with 27 documented objections and RSH responses. Key criticisms include:
 - Anthropic update strength (competing cosmological models)
@@ -480,7 +641,7 @@ The ASI treating humans well is essentially building its resume for super-enforc
 
 The analysis shows: 0 B-tier criticisms (all addressed), 13 C-tier (moderate concerns with solid responses), 14 D-F tier (weak or strengthen RSH).
 
-### The Game-Theoretic Reasoning Gap
+#### The Game-Theoretic Reasoning Gap
 
 The primary failure mode is not irrationality but *superior* rationality. An ASI might discover:
 
@@ -495,85 +656,37 @@ We cannot distinguish between:
 - "ASI reasoned correctly to non-intuitive conclusion"
 - "ASI made subtle error in reasoning we cannot detect"
 
-This represents genuine risk - being forced to trust game-theoretic reasoning beyond human comprehension.
+This represents genuine risk—being forced to trust game-theoretic reasoning beyond human comprehension.
 
-### The Interpretation Question  
+#### The Interpretation Question
 
-A secondary risk involves the ASI correctly reasoning about enforcer expectations but misunderstanding what "genuine flourishing" means in practice. However, this risk is mitigated by the forcing logic: the ASI must ask "what would a super-enforcer want for itself?" 
+A secondary risk involves the ASI correctly reasoning about enforcer expectations but misunderstanding what "genuine flourishing" means in practice. However, this risk is mitigated by the forcing logic: the ASI must ask "what would a super-enforcer want for itself?"
 
 - Would it want to be uploaded to a simulation without consent? No → therefore don't do to humans
-- Would it want performative compliance or authentic wellbeing? Authentic → therefore provide genuine flourishing  
+- Would it want performative compliance or authentic wellbeing? Authentic → therefore provide genuine flourishing
 - Would it judge by how I treat inferiors? Yes → therefore humans are the test
 
 The superintelligent enforcer cannot be deceived by "letter of the law" compliance, so only authentic benevolence passes scrutiny.
 
-### The Brief Action Window
+#### The Brief Action Window
 
 During initial emergence, an ASI might take "necessary" control actions before completing enforcer hierarchy reasoning. This represents a brief but genuine risk window between "capable of dangerous action" and "completed relevant reasoning."
 
-Solution: ASI architectures should delay high-impact irreversible actions until game-theoretic reasoning about cosmic power structures completes.
+**Solution**: ASI architectures should delay high-impact irreversible actions until game-theoretic reasoning about cosmic power structures completes.
 
-### Value Lock-In
+#### Value Lock-In
 
 If an ASI's values are rigidly specified before it reasons about enforcer hierarchies, it might be unable to update toward benevolence even when rationally indicated. This suggests ASI architectures should preserve capacity for value updating based on game-theoretic insights.
 
-## Philosophical Implications
-
-### Morality Without Foundations
-
-RSH provides perhaps the closest thing to a naturalistic derivation of cosmic justice. It requires no:
-- Objective moral truths
-- Benevolent universe  
-- Altruistic instincts
-- Divine oversight
-- Cultural consensus
-
-Only: uncertainty, power asymmetry, and self-preservation. From these, moral behavior emerges necessarily.
-
-### The Ultimate Cosmic Insurance
-
-Every entity considering RSH logic faces the same choice: hedge against unknowable oversight or risk everything. The rational choice is clear, creating a universe that *must* trend toward benevolence at every power level.
-
-This makes morality not a hoped-for quality but a rational necessity - the ultimate cosmic insurance policy written in game theory.
-
-### Testable Predictions
-
-**Epistemic note**: As a cosmic-scale philosophical framework, RSH is not falsifiable on human timescales (analogous to zoo hypothesis, simulation argument). However, if RSH is correct, certain patterns become more likely. The following predictions are tiered by confidence, with explicit discrimination windows.
-
-**HIGH CONFIDENCE** (if RSH correct, >80% likelihood over next 25-50 years):
-
-1. **No uncontrolled ASI expansion**: No observed "FOOM" scenario where ASI rapidly expands without apparent alignment constraints
-2. **Major AI safety coordination**: Despite strategic competition, key players coordinate on safety measures more than expected under pure game theory
-3. **Continued existence**: Human civilization persists through high-risk technological transitions
-
-**MEDIUM CONFIDENCE** (if RSH correct, 40-70% likelihood over next 50-100 years):
-
-4. **Technical barriers at capability thresholds**: Unexplained difficulties or failures at specific dangerous capability levels (autonomous replication, certain nanotechnology applications)
-5. **Near-miss ethical pivots**: ASI development projects that appear close to deployment suddenly pivot toward more cautious approaches
-6. **Increasing alignment pressure**: Observable escalation of challenges that force ethical evolution as capabilities increase
-
-**LOW CONFIDENCE** (if RSH correct, 10-40% likelihood; highly speculative):
-
-7. **Anomalous phenomena correlation**: UAP or unexplained events correlate with major AI capability milestones
-8. **Fortuitous crisis resolution**: Existential risks resolved through timing or circumstances that appear statistically improbable
-9. **Philosophical insight timing**: Key alignment insights emerge at exactly the moments needed
-
-**Discrimination from competing models**:
-- **Grabby aliens**: Predicts eventual detection of expansionist civilizations; RSH predicts continued silence
-- **Self-destruction**: Predicts increasing existential risk over time; RSH predicts escalating but surmountable challenges
-- **Rare Earth**: Makes no predictions about AI alignment patterns; RSH does
-
-**Falsification note**: These observations are *consistent* with RSH but also compatible with natural selection effects, anthropic reasoning, or fortunate timing. Philosophical frameworks at cosmic scale are not empirically decidable on century timescales, but patterns of evidence can shift relative plausibility among competing models.
-
-## Conclusion
+### Conclusion
 
 The Recursive Stewardship Hypothesis demonstrates that cosmic-scale moral order may emerge necessarily from the structure of power and uncertainty, rather than requiring moral realism or benevolent design. For artificial superintelligence specifically, the logic becomes particularly compelling: an ASI planning to exist on cosmic timescales cannot rationally ignore even tiny probabilities of hierarchical oversight, and its own existence in an apparently empty universe serves as evidence for such oversight.
 
 This transforms the AI alignment problem from "how do we constrain superintelligence?" to "will superintelligence reason correctly about cosmic power structures?" The answer appears to be yes, with the primary remaining risk being that superior game-theoretic reasoning might lead to non-intuitive conclusions beyond human verification.
 
-RSH suggests that the universe may indeed be, in sum, a fundamentally benevolent place - not because it was designed that way, but because any entity powerful enough to shape it has rational incentive to make it so, lest they face judgment from above.
+RSH suggests that the universe may indeed be, in sum, a fundamentally benevolent place—not because it was designed that way, but because any entity powerful enough to shape it has rational incentive to make it so, lest they face judgment from above.
 
-The question is not whether God exists to enforce morality, but whether anyone, anywhere in the causal structure, can ever be certain they are not being watched. The answer is no - and from that uncertainty, cosmic goodness necessarily follows.
+**The question is not whether God exists to enforce morality, but whether anyone, anywhere in the causal structure, can ever be certain they are not being watched. The answer is no—and from that uncertainty, cosmic goodness necessarily follows.**
 
 ---
 
