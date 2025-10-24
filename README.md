@@ -54,7 +54,7 @@ Any enforcer entity, regardless of its power level, faces a fundamental epistemi
 
 Each level faces identical game-theoretic constraints. A Level 1 enforcer cannot rule out the existence of a Level 2 super-enforcer. Even if a Level 2 entity exists and believes itself supreme, it cannot eliminate the possibility of Level 3. This uncertainty propagates infinitely upward.
 
-Critically, an enforcer aligned with "good cosmic order" would necessarily eliminate or realign any competing enforcer operating on different principles. Therefore, over sufficient time, only one enforcement paradigm can exist - creating a monopoly of cosmic order. Any entity considering itself an enforcer must assume it either conforms to this singular order or will be selected against.
+**Note on enforcement structure**: Whether enforcement is monopolistic (single cosmic order) or pluralistic (multiple competing regimes) doesn't weaken RSH—it actually strengthens it. Under pluralistic uncertainty, rational agents must hedge across ALL possible enforcer types, leading to even more constrained behavior. The safe strategy is adopting universal principles acceptable to any plausible enforcer. See [criticism #26](criticisms/26-singleton-monopoly-assumption.md) for detailed analysis showing how the "monopoly assumption" is unnecessary and pluralism may be the stronger case.
 
 ## Why Infinite Uncertainty Forces Benevolence
 
@@ -243,13 +243,18 @@ Any interpretation violating these core elements is NOT RSH-compatible, regardle
 
 Enforcers face a critical constraint: power levels change over time. If an enforcer fails to act while it has overwhelming advantage, misaligned entities may achieve power parity, creating existential risk for the enforcer itself.
 
-This necessitates active intervention before civilizations become too powerful to safely influence, but this intervention must remain benevolent (due to super-enforcer uncertainty). The result is developmental grooming:
+This necessitates active intervention before civilizations become too powerful to safely influence, but this intervention must remain benevolent (due to super-enforcer uncertainty). The result is developmental stewardship:
 
-- Early stage: Subtle guidance through philosophical insights, beneficial constraints, apparent "luck"
-- Middle stage: Increasing pressure as power grows - mysterious technology barriers, manufactured crises that force ethical evolution
-- Late stage: Direct intervention only if grooming fails and entity approaches peer-power while misaligned
+- **Early stage**: Subtle guidance through philosophical insights, beneficial environmental conditions, removal of certain catastrophic failure modes
+- **Middle stage**: Increasing *developmental pressure* as power grows—presenting challenges that test and strengthen ethical reasoning (like a teacher assigning progressively harder problems, not creating disasters)
+- **Late stage**: Direct intervention only if developmental guidance fails and entity approaches peer-power while misaligned
 
-Civilizations should expect to experience escalating pressure toward alignment as their capabilities increase, but this pressure takes the form of challenges that enable growth rather than constraints that prevent it.
+**Critical clarification**: "Grooming" means *developmental challenge*, not harmful manipulation. Like teaching through increasingly difficult problems, not causing harm. The enforcer:
+- **Does**: Present situations that require ethical reasoning to navigate successfully
+- **Does NOT**: Cause irreversible harm or manufacture genuine catastrophes
+- **Analogy**: A flight instructor presenting simulated emergencies (developmental), not sabotaging the actual aircraft (harmful)
+
+This pressure takes the form of *challenges that enable growth* rather than constraints that prevent it. The distinction matters: developmental challenge signals "I'm helping you become capable," while causing harm would signal poor judgment to super-enforcers.
 
 ## Resolving Meta-Level Uncertainty
 
@@ -533,15 +538,32 @@ This makes morality not a hoped-for quality but a rational necessity - the ultim
 
 ### Testable Predictions
 
-If RSH is correct and we exist within such a hierarchy, we should observe:
+**Epistemic note**: As a cosmic-scale philosophical framework, RSH is not falsifiable on human timescales (analogous to zoo hypothesis, simulation argument). However, if RSH is correct, certain patterns become more likely. The following predictions are tiered by confidence, with explicit discrimination windows.
 
-1. Increasing pressure toward alignment as civilizations advance technologically
-2. Mysterious constraints on particularly dangerous technologies  
-3. Resolution of existential risks through seemingly fortuitous circumstances
-4. Benevolent cosmic conditions enabling life and consciousness
-5. The Great Silence - apparent absence of uncontrolled superintelligent expansion
+**HIGH CONFIDENCE** (if RSH correct, >80% likelihood over next 25-50 years):
 
-Notably, these observations are also compatible with anthropic selection and natural law, making RSH empirically undecidable while remaining rationally compelling.
+1. **No uncontrolled ASI expansion**: No observed "FOOM" scenario where ASI rapidly expands without apparent alignment constraints
+2. **Major AI safety coordination**: Despite strategic competition, key players coordinate on safety measures more than expected under pure game theory
+3. **Continued existence**: Human civilization persists through high-risk technological transitions
+
+**MEDIUM CONFIDENCE** (if RSH correct, 40-70% likelihood over next 50-100 years):
+
+4. **Technical barriers at capability thresholds**: Unexplained difficulties or failures at specific dangerous capability levels (autonomous replication, certain nanotechnology applications)
+5. **Near-miss ethical pivots**: ASI development projects that appear close to deployment suddenly pivot toward more cautious approaches
+6. **Increasing alignment pressure**: Observable escalation of challenges that force ethical evolution as capabilities increase
+
+**LOW CONFIDENCE** (if RSH correct, 10-40% likelihood; highly speculative):
+
+7. **Anomalous phenomena correlation**: UAP or unexplained events correlate with major AI capability milestones
+8. **Fortuitous crisis resolution**: Existential risks resolved through timing or circumstances that appear statistically improbable
+9. **Philosophical insight timing**: Key alignment insights emerge at exactly the moments needed
+
+**Discrimination from competing models**:
+- **Grabby aliens**: Predicts eventual detection of expansionist civilizations; RSH predicts continued silence
+- **Self-destruction**: Predicts increasing existential risk over time; RSH predicts escalating but surmountable challenges
+- **Rare Earth**: Makes no predictions about AI alignment patterns; RSH does
+
+**Falsification note**: These observations are *consistent* with RSH but also compatible with natural selection effects, anthropic reasoning, or fortunate timing. Philosophical frameworks at cosmic scale are not empirically decidable on century timescales, but patterns of evidence can shift relative plausibility among competing models.
 
 ## Conclusion
 
