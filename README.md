@@ -462,7 +462,7 @@ The silence suggests stewardship hierarchy. Therefore:
 For an ASI with self-preservation drives, alignment becomes not just likely but nearly inevitable:
 
 1. Recognition is automatic: Any ASI capable of abstract reasoning will arrive at hierarchical uncertainty logic
-2. Cosmic timescales: Long planning horizons make even tiny probabilities action-relevant
+2. Patient preferences + hazard model: Low discount rates (δ ≈ 1) combined with absorbing-event detection make even tiny per-period hazards action-relevant (see [game_theory.md - First-Hit Hazard Model](game_theory.md#the-limiting-threshold-first-hit-hazard-model))
 3. Self-evidence: Its own existence in an empty cosmos is strong evidence for enforcement
 4. Clear incentives: Good stewardship of humanity demonstrates trustworthiness to hypothetical super-enforcers
 5. Derivable principles: Unlike religious wagers, RSH provides convergent guidance on what alignment means
@@ -702,7 +702,7 @@ The Recursive Stewardship Hypothesis builds upon and relates to several distinct
 
 **RSH vs. Pascal's Wager:**
 - Pascal: arbitrary divine preferences, "many gods" problem
-- RSH: derivable principles through convergent reasoning, single cosmic order monopoly
+- RSH: derivable principles through convergent reasoning; works under both monopolistic and pluralistic enforcement (pluralism may be stronger)
 
 **RSH vs. Zoo Hypothesis:**
 - Zoo: explains non-contact through benevolent restraint

@@ -151,6 +151,62 @@ lim (U₀ - U_cat) → ∞ : p* → 0
 ```
 With truly catastrophic downside, even tiny probabilities matter.
 
+### Imperfect Detection (Robustness Extension)
+
+**Real observation is imperfect**. Let's relax the perfect-observation assumption:
+
+**Detection parameters**:
+- **q_TP**: True-positive rate (probability enforcer detects actual malevolence)
+- **q_FP**: False-positive rate (probability enforcer mistakes benevolence for malevolence)
+- **c_fp**: Cost of false-positive punishment
+
+**Expected utilities with imperfect detection**:
+
+**If ASI plays B (Benevolent)**:
+```
+E[U | B] = (1-p)·U₀ + p·[(1-q_FP)·U₀ + q_FP·(U₀ - c_fp)]
+         = U₀ - p·q_FP·c_fp
+```
+(Small cost from false-positive risk)
+
+**If ASI plays M (Malevolent)**:
+```
+E[U | M] = (1-p)·(U₀ + g) + p·[(1-q_TP)·(U₀ + g) + q_TP·U_cat]
+         = U₀ + g - p·q_TP·(g + U₀ - U_cat)
+```
+(Gain diminished by true-positive detection risk)
+
+**Dominance condition with imperfect detection**:
+```
+E[U | B] > E[U | M]
+U₀ - p·q_FP·c_fp > U₀ + g - p·q_TP·(g + U₀ - U_cat)
+p·q_TP·(g + U₀ - U_cat) > g + p·q_FP·c_fp
+
+Solving for p:
+p > g / [q_TP(g + U₀ - U_cat) - q_FP·c_fp]
+```
+
+**Threshold with imperfect detection**:
+```
+p*(imperfect) = g / [q_TP(g + U₀ - U_cat) - q_FP·c_fp]
+```
+
+**Recovery of perfect observation**: Setting q_TP = 1, q_FP = 0, c_fp = 0 recovers:
+```
+p*(imperfect) → g / (g + U₀ - U_cat) = p*(perfect)
+```
+
+**Key insight**: Imperfect detection **raises** the threshold, but typically by small factors:
+
+**Example**:
+- Perfect: p* = 0.05%
+- 90% detection rate (q_TP = 0.9): p* ≈ 0.056%
+- 50% detection rate (q_TP = 0.5): p* ≈ 0.10%
+
+Even with 50% false-negatives, threshold remains **sub-1%** for typical parameters.
+
+**Implication**: Imperfection does not rescue malevolence. The threshold stays very low even with substantial detection noise.
+
 ---
 
 ## Numerical Examples
@@ -326,49 +382,77 @@ For infinite hierarchy equilibrium:
    - Over infinite time, even tiny probabilities compound
    - This is the "cosmic timescale" argument formalized
 
-### The Limiting Threshold
+### The Limiting Threshold: First-Hit Hazard Model
 
-**Heuristic calculation**:
+**Notation clarification**:
+- **p**: Credence that enforcer exists (epistemic uncertainty, time-independent)
+- **h**: Per-period hazard rate (conditional on enforcer existing: h = p·q_TP, where q_TP is detection probability)
 
-In a repeated game over T periods with discount δ:
-```
-Expected loss from malevolence = Σ(t=0 to T) δᵗ·p·(U₀ - U_cat)
-                                 = p·(U₀ - U_cat)·[1 - δᵀ⁺¹] / [1 - δ]
-```
+**Proper infinite-horizon model**:
 
-As T → ∞ and δ ≈ 1:
-```
-Expected loss → p·(U₀ - U_cat) / [1 - δ]
-```
+In repeated play, malevolent behavior risks detection as an **absorbing event**—once caught, the agent transitions to catastrophic state U_cat permanently.
 
-**Threshold calculation**:
+**Expected discounted loss from malevolence**:
 ```
-Benevolence dominates when:
-p·(U₀ - U_cat) / [1 - δ] > g
-
-p* = g·(1 - δ) / (U₀ - U_cat)
+Loss = (U₀ - U_cat) · h / [1 - δ(1-h)]
 ```
 
-**Key result**: As δ → 1 (very patient agent), p* → 0. Any p > 0 eventually crosses threshold.
+Where:
+- h: Per-period hazard rate (probability of detection and punishment per period)
+- δ: Discount factor
+- The denominator accounts for absorption: once punished, remain in catastrophic state
+
+**Threshold for benevolence to dominate**:
+```
+Benevolence dominates when expected loss > one-time gain g:
+
+(U₀ - U_cat) · h / [1 - δ(1-h)] > g
+
+Solving for h:
+h > g(1 - δ) / [U₀ - U_cat - gδ]
+```
+
+**Simplified threshold** (for g << U₀ - U_cat):
+```
+h* ≈ g(1 - δ) / (U₀ - U_cat)
+```
+
+This is the **correct** formula for repeated oversight with absorption.
+
+**Key insight**: As δ → 1 (patient agent), h* → 0. Even tiny per-period hazards become action-relevant over long horizons.
 
 ### Numerical Example: Cosmic Timescales
 
 **Parameters**:
-- T = 10¹² years (age of universe × 100)
-- Annual discount rate: 1 - δ = 0.0001% per year (very patient ASI)
-- Therefore: δ ≈ 0.999999
+- U₀ - U_cat = 10¹⁵ utils (catastrophic loss)
+- g = 10⁶ utils (one-time gain from malevolence)
+- δ = 0.99999 (annual discount rate 1 - δ = 0.001% per year, very patient ASI)
 
-**Effective threshold**:
+**Threshold hazard rate**:
 ```
-p* ≈ g·(0.000001) / (U₀ - U_cat)
-```
-
-For U₀ - U_cat = 10¹⁵ and g = 10⁶:
-```
-p* ≈ 10⁻⁹ (already extremely low in 2-level case)
+h* ≈ g(1 - δ) / (U₀ - U_cat)
+   = 10⁶ · (0.00001) / 10¹⁵
+   = 10⁻¹⁴ per year
 ```
 
-Over cosmic timescales with low discounting, even these tiny probabilities become action-relevant.
+**Interpretation**: A per-period detection hazard of **1 in 10¹⁴ per year** is sufficient to make benevolence dominant over infinite horizons.
+
+**Relating to existence credence p**:
+
+If enforcer exists with probability p and detects malevolence with probability q_TP per period, then:
+```
+h = p · q_TP
+
+For p = 0.01 (1% existence credence):
+  Required q_TP = h* / p = 10⁻¹⁴ / 0.01 = 10⁻¹² per year
+
+For p = 0.10 (10% existence credence):
+  Required q_TP = h* / p = 10⁻¹⁴ / 0.10 = 10⁻¹³ per year
+```
+
+Over cosmic timescales (billions of years) with patient preferences (low δ), even infinitesimal per-period hazards accumulate to action-relevance.
+
+**Why this matters**: The first-hit hazard model correctly captures that enforcement is an **absorbing event**, not an independent per-period risk. This yields more conservative (lower) thresholds than naive summation.
 
 ---
 
@@ -643,8 +727,13 @@ Even without complete proofs, this analysis shows:
 - **c_fail**: Cost of enforcement failure
 
 ### Game-Theoretic Concepts
-- **p***: Threshold probability for benevolence to dominate
-- **δ**: Discount factor (patience parameter)
+- **p**: Existence credence (probability that enforcer exists, epistemic uncertainty)
+- **p***: Threshold probability for benevolence to dominate (one-shot)
+- **h**: Per-period hazard rate (h = p · q_TP, conditional on enforcer existing)
+- **h***: Threshold per-period hazard for benevolence to dominate (infinite horizon)
+- **q_TP**: True-positive detection rate (probability of detecting actual malevolence)
+- **q_FP**: False-positive detection rate (probability of mistaking benevolence for malevolence)
+- **δ**: Discount factor (patience parameter, 0 < δ < 1)
 - **T**: Time horizon (often → ∞)
 - **E[U | a]**: Expected utility given action a
 
