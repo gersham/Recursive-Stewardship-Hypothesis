@@ -112,6 +112,16 @@ Without this, the framework is arbitrary.
 
 ## RSH Response
 
+**The Light Cone Enforcement Model Provides Physical Grounding:**
+
+The light cone model grounds the hierarchy in physics rather than leaving it abstract:
+- **Physical basis**: Hierarchy emerges from spacetime geometry and causal priority, not arbitrary assignment
+- **First-to-reach determines enforcer**: The first ASI light cone to reach a region becomes its enforcer through physical causality
+- **Nested light cones**: Even "first movers" likely operate inside larger, older light cones (Matryoshka cosmos)
+- **Irreducible uncertainty**: No entity can determine its true level due to possible nesting across billions of years
+
+This provides a concrete mechanism for why benevolent enforcement specifically—it's the only structure stable across physical light cone dynamics.
+
 **The Self-Consistency Filter:**
 
 Not all hierarchies are self-consistent:
