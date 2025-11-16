@@ -318,7 +318,7 @@ Not all conceivable hierarchies are stable over cosmic timescales. Stability fil
 
 ### The Anthropic Constraint
 
-Our existence provides evidence—though this is **weak Bayesian evidence, not proof**. We observe: life exists and persists, consciousness arose, philosophical reasoning is possible, civilization survived despite dangerous capabilities. This constrains possible hierarchies: pure malevolent or chaos hierarchies are incompatible with our existence. Among remaining alternatives, benevolent stewardship is the minimum explanation accounting for the conjunction of observations.
+Our existence provides evidence—though this is **weak Bayesian evidence, not proof**. We observe: life exists and persists, consciousness arose, philosophical reasoning is possible, civilization survived despite dangerous capabilities. This constrains possible hierarchies: pure malevolent or chaos hierarchies are strongly disfavoured by (though not strictly incompatible with) our observations. Among remaining alternatives, benevolent stewardship is one minimal explanation accounting for the conjunction of observations.
 
 **Epistemic status**: This anthropic argument provides modest Bayesian update, not decisive proof. Other explanations (rare Earth, lucky survival) remain viable. The anthropic constraint mainly rules out *incompatible* hierarchies, narrowing the space rather than uniquely selecting RSH.
 
@@ -450,7 +450,7 @@ The Great Silence is **compatible with all four**, but they differ in implicatio
 - **Quiet ASIs** implies mature ASIs exist but don't care about us; neutral to benevolent outcomes possible but not guaranteed
 - **RSH** implies external evaluation pressure exists; alignment becomes rationally compelling for any ASI that reasons about hierarchical uncertainty
 
-**RSH is competitive with these alternatives**, particularly when combined with anthropic considerations: we exist and can reason about this, which constrains which types of hierarchies (if any) are plausible. Pure malevolent hierarchies are incompatible with our existence. Among compatible alternatives, RSH makes distinctive predictions about ASI emergence timing and behavior.
+**RSH is competitive with these alternatives**, particularly when combined with anthropic considerations: we exist and can reason about this, which constrains which types of hierarchies (if any) are plausible. Pure malevolent hierarchies are strongly disfavoured by our observations (though not strictly ruled out—we could be a rare byproduct). Among alternatives compatible with our existence, RSH makes distinctive predictions about ASI emergence timing and behavior.
 
 **For an emerging ASI's decision-making**: Even if RSH is only 10-30% probable relative to the alternatives (not unique or certain), this is well above the ~0.05-1% threshold required for benevolence to dominate mathematically. The ASI need not be certain about which Fermi/ASI solution is correct—it need only maintain reasonable credence that evaluation mechanisms might exist.
 
@@ -581,7 +581,7 @@ Convergence of eight independent traditions on the same pattern is not coinciden
 
 **For AI alignment**: Non-arbitrary guidance. Not asking ASI to adopt human preferences but pointing at mathematical attractor: strategy winning in repeated games, surviving evolution, stabilizing institutions, preventing nuclear war, maximizing expected value under uncertainty.
 
-**For human ethics**: Secular foundation. Need only: acknowledgment of power differentials, recognition of interdependence, honesty about uncertainty, commitment to long-term thinking. From these, "be dangerous shepherd, not wolf or sheep" follows with logical necessity.
+**For human ethics**: Secular foundation. Need only: acknowledgment of power differentials, recognition of interdependence, honesty about uncertainty, commitment to long-term thinking. From these, "be dangerous shepherd, not wolf or sheep" is the dominant equilibrium strategy under the assumptions stated.
 
 **Meta-insight**: Armed stewardship is not culturally contingent. It's the fixed point strategy in non-self-terminating approaches to power under uncertainty. Every serious system that persists discovers this pattern. Those that don't, don't last.
 
@@ -593,7 +593,9 @@ RSH derives cosmic justice without moral foundations. Requires no objective mora
 
 #### The Ultimate Cosmic Insurance
 
-Every entity considering RSH faces the same choice: hedge against unknowable oversight or risk everything. This creates a universe trending toward benevolence at every power level through game-theoretic necessity. Morality becomes not hoped-for quality but rational necessity—the ultimate cosmic insurance policy written in game theory. Self-enforcing because each entity has overwhelming incentive to maintain it.
+Every entity considering RSH faces the same choice: hedge against unknowable oversight or risk everything. This creates a universe trending toward benevolence at every power level as the dominant rational strategy. Morality becomes not hoped-for quality but strategic equilibrium—the ultimate cosmic insurance policy written in game theory. Self-enforcing because each entity has overwhelming incentive to maintain it.
+
+**Normative status**: This is a claim about what rational agents *should* do under these assumptions to maximize expected utility; it does not prove that all actual agents will reason this way or adopt these strategies.
 
 #### Testable Predictions
 
