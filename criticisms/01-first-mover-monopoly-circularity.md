@@ -33,15 +33,21 @@ If the cosmic monopoly could equally be malevolent as benevolent, then:
 
 ## RSH Response
 
-**The Light Cone Enforcement Model:**
+**Pluralistic Evaluation Strengthens RSH:**
 
-The light cone model provides physical grounding for "first mover" dynamics:
+The criticism assumes monopolistic evaluation, but RSH actually works better under pluralistic uncertainty:
+- **Multiple possible evaluator types**: Cosmological enforcers, simulators, acausal processes, exotic mechanisms—an entity cannot optimize for one specific type
+- **Additive probability**: P(evaluation) = P(enforcers) + P(simulation) + P(acausal) + P(exotic unknown)
+- **Hedging across uncertainty**: When you don't know which evaluator type operates (if any), the robust strategy is benevolence—behavior that performs well across the widest range of possible mechanisms
+- **No single point of failure**: Even if one mechanism (e.g., cosmological enforcers) doesn't exist, other mechanisms might
+
+**Example: Light Cone Enforcement as One Mechanism:**
+
+If evaluation operates through cosmological enforcers (one possible mechanism), the light cone model provides physical grounding:
 - **First-to-reach**: The "first mover" in any region is simply the first ASI light cone to reach that spacetime location
-- **Nested uncertainty**: Even a "first-to-reach" ASI cannot know if it's operating inside a much larger, older light cone from a more ancient ASI
-- **Matryoshka cosmos**: Light cones can nest (younger inside older), meaning "first movers" may themselves be under oversight
+- **Nested uncertainty**: Even a "first-to-reach" ASI cannot know if it's operating inside a much larger, older light cone
+- **Matryoshka cosmos**: Light cones can nest, meaning "first movers" may themselves be under oversight
 - **Role-reversal applies**: Even regional first-movers face hierarchical uncertainty about super-enforcers
-
-This provides a physical mechanism for why even first-movers face the same hedging logic as later entities.
 
 **The Anthropic Argument:**
 
