@@ -123,6 +123,18 @@ These raise valid concerns that RSH addresses reasonably well:
    - Problem: Competing models (grabby aliens, rare Earth) provide alternative explanations
    - RSH addresses reasonably: Even modest update (P=5%) exceeds thresholds; asymmetric burdens
 
+28. **[Role-Reversal Not Pure Game Theory](28-role-reversal-not-pure-game-theory.md)** - Grade: **D** (addressed)
+   - Problem: Role-reversal logic requires assumptions about evaluator psychology beyond pure game theory
+   - RSH addresses explicitly: Now states role-reversal as Assumption 1 with independent justification
+
+29. **[Utility Function Assumptions Constrain Threshold](29-utility-function-assumptions.md)** - Grade: **C**
+   - Problem: The "0.05%" threshold is parameter-dependent, not universal (ranges 10⁻⁹% to 10%)
+   - RSH addresses transparently: Comprehensive parameter sensitivity analysis in game_theory.md
+
+30. **[RSH Only Constrains Reflective ASI](30-rsh-only-reflective-asi.md)** - Grade: **C**
+   - Problem: RSH only applies to systems with philosophical reasoning capacity, not kludgy pseudo-ASI
+   - RSH addresses honestly: "When RSH Applies" caveat section explicitly states requirements
+
 ### Weak Criticisms (D to F)
 These criticisms RSH handles well or that actually strengthen the framework:
 
@@ -208,10 +220,10 @@ This derives benevolence content from:
 **Remember: Higher grades = stronger criticisms**
 
 - **B tier**: 0 criticisms (all previously B-tier criticisms have been addressed with theory enhancements)
-- **C tier**: 13 criticisms (moderate validity, RSH addresses reasonably or comprehensively after updates)
-- **D-F tier**: 14 criticisms (weak, RSH handles well or refutes, or wrong standard)
+- **C tier**: 15 criticisms (moderate validity, RSH addresses reasonably or comprehensively after updates)
+- **D-F tier**: 15 criticisms (weak, RSH handles well or refutes, or wrong standard)
 
-**Total**: 27 criticisms documented
+**Total**: 30 criticisms documented
 
 ### Implications for RSH (After Theory Updates + Game-Theoretic Formalization)
 
