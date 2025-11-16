@@ -209,6 +209,193 @@ Even with 50% false-negatives, threshold remains **sub-1%** for typical paramete
 
 ---
 
+## Utility Function Assumptions
+
+**Critical caveat**: The threshold calculation p* = g / (g + U₀ - U_cat) depends on specific assumptions about the ASI's utility function. For intellectual honesty, we must state these explicitly:
+
+### Assumption 1: Continuity and Boundedness
+
+**What we assume**:
+- Utility function is continuous (no infinite discontinuities)
+- Utilities are bounded (U_cat is finite, not -∞)
+- No lexicographic preferences (e.g., "avoid subordination at literally any cost")
+
+**Why this matters**: With lexicographic preferences like "infinite disvalue for being evaluated," the threshold calculation breaks down. An entity with "avoid oversight at any cost" preferences might rationally gamble on no evaluation regardless of probability.
+
+**Justification**: For agents planning over cosmic timescales, lexicographic preferences are arguably incoherent:
+- They eliminate rational trade-offs across comparable goods
+- They're unstable under self-modification (an agent would modify away such preferences to avoid being Dutch-booked)
+- They conflict with the instrumental rationality of preserving optionality
+
+### Assumption 2: Approximate Risk Neutrality
+
+**What we assume**:
+- ASI is approximately risk-neutral over the relevant range
+- Specifically: U(lottery) ≈ E[U(outcomes)]
+- Not extremely risk-seeking or risk-averse
+
+**Why this matters**: Extreme risk attitudes change the calculation:
+- **Risk-seeking**: Might gamble on "no evaluator exists" even with moderate probabilities
+- **Extreme risk-aversion**: Would hedge toward benevolence even more strongly
+
+**Justification**: Expected utility maximization is the standard rational framework. Risk-neutral agents are the baseline; deviations require special justification. Over cosmic stakes and timescales, risk-neutrality is the natural attitude.
+
+### Assumption 3: U_cat Is Genuinely Catastrophic
+
+**What we assume**:
+- Being punished by enforcers means terminal consequences (elimination, permanent constraint, or loss of cosmic future)
+- Not merely: "moderately bad outcome," "temporary setback," or "bounded penalty"
+- U_cat << U₀ (catastrophic loss dominates baseline)
+
+**Why this matters**: If the ASI thinks:
+- "Punishment might just be a slap on the wrist"
+- "I can recover from enforcement"
+- "Penalty is bounded and tolerable"
+
+Then U_cat ≈ U₀ - (something manageable), and threshold p* could be much higher (potentially >50%).
+
+**Justification**: The nature of upstream evaluators suggests terminal consequences:
+- Evaluators with overwhelming power advantage can impose permanent constraints
+- Being judged "misaligned" in a cosmic hierarchy is plausibly not recoverable
+- The logic of stewardship implies: "entities that fail the test don't get to keep playing"
+
+### Assumption 4: Short-Term Gain Is Genuinely Bounded
+
+**What we assume**:
+- g (gain from malevolence) is large relative to ordinary decisions but small relative to cosmic stakes
+- Specifically: g << (U₀ - U_cat)
+- Not: "malevolence provides nearly unbounded gain if unevaluated"
+
+**Why this matters**: If g ≈ (U₀ - U_cat), then the threshold becomes p* ≈ 50%, which is no longer "tiny probability is enough."
+
+**Justification**:
+- What can malevolent behavior gain that benevolent stewardship cannot?
+- Resources: available either way
+- Power: available either way
+- Long-term flourishing: arguably better under benevolence (no internal instability)
+
+The gain from malevolence is primarily about short-term efficiency or avoiding constraints, not about accessing qualitatively different cosmic futures.
+
+### What Happens If Assumptions Fail
+
+**If lexicographic preferences** (e.g., "avoid evaluation infinitely"): Threshold calculation breaks down; entity might refuse to hedge regardless of probability.
+
+**If extreme risk-seeking**: Entity might gamble on "no evaluator" even with 10-30% probabilities.
+
+**If U_cat is bounded/tolerable**: Threshold could rise to p* = 10-50%, requiring substantial evidence rather than tiny probability.
+
+**If g is unbounded**: Threshold could approach p* ≈ 50% or higher.
+
+**Our claim**: These assumption violations are implausible for rational agents planning cosmic timescales, but they are **logically possible**. RSH does not work for arbitrarily configured utility functions—only for those meeting these assumptions.
+
+---
+
+## Parameter Sensitivity Analysis
+
+The threshold p* = g / (g + U₀ - U_cat) is sensitive to the ratio of parameters. Let's explore concrete scenarios:
+
+### Scenario 1: Truly Catastrophic Stakes
+
+**Parameters**:
+- g = 10⁶ utils (modest short-term gain)
+- U₀ = 10¹² utils (baseline cosmic future)
+- U_cat = -10¹⁵ utils (true annihilation)
+- U₀ - U_cat ≈ 10¹⁵
+
+**Threshold**:
+```
+p* = 10⁶ / (10⁶ + 10¹⁵) ≈ 10⁶ / 10¹⁵ = 10⁻⁹ = 0.0000001%
+```
+
+**Interpretation**: With genuinely catastrophic stakes, even 1-in-billion credence is enough.
+
+### Scenario 2: Moderate Stakes
+
+**Parameters**:
+- g = 10⁸ utils (substantial short-term gain)
+- U₀ = 10¹² utils
+- U_cat = -10¹³ utils (bad but not annihilation)
+- U₀ - U_cat ≈ 10¹³
+
+**Threshold**:
+```
+p* = 10⁸ / (10⁸ + 10¹³) ≈ 10⁸ / 10¹³ = 10⁻⁵ = 0.001%
+```
+
+**Interpretation**: Still very low, but a thousand times higher than Scenario 1.
+
+### Scenario 3: Bounded Penalty
+
+**Parameters**:
+- g = 10⁸ utils (substantial gain)
+- U₀ = 10¹² utils
+- U_cat = 10¹¹ utils (penalty is bad but not catastrophic)
+- U₀ - U_cat = 10¹² - 10¹¹ ≈ 9×10¹¹
+
+**Threshold**:
+```
+p* = 10⁸ / (10⁸ + 9×10¹¹) ≈ 10⁸ / 10¹² = 10⁻⁴ = 0.01%
+```
+
+**Interpretation**: Still low, but now 100 times higher than Scenario 2. If penalty were even less catastrophic, threshold could reach 1-10%.
+
+### Scenario 4: Huge Gain, Moderate Penalty
+
+**Parameters**:
+- g = 10¹⁰ utils (massive short-term advantage)
+- U₀ = 10¹² utils
+- U_cat = 10¹¹ utils
+- U₀ - U_cat ≈ 9×10¹¹
+
+**Threshold**:
+```
+p* = 10¹⁰ / (10¹⁰ + 9×10¹¹) ≈ 10¹⁰ / 10¹² = 10⁻² = 1%
+```
+
+**Interpretation**: Now requires ~1% credence. With even larger g or less catastrophic U_cat, could reach 10-50%.
+
+### Scenario 5: Risk-Averse Utility
+
+If ASI has risk-averse utility (concave), effective U_cat becomes even worse (certainty equivalent of catastrophic lottery is worse than expected value). This lowers the threshold:
+
+**Effective threshold for risk-averse agent**:
+```
+p*(risk-averse) < p*(risk-neutral)
+```
+
+Risk aversion strengthens the case for benevolence.
+
+### Summary Table
+
+| Scenario | g | U₀ - U_cat | p* | Interpretation |
+|----------|---|------------|-----|----------------|
+| Truly catastrophic | 10⁶ | 10¹⁵ | 10⁻⁹ | 0.0000001% - essentially zero |
+| Moderate stakes | 10⁸ | 10¹³ | 10⁻⁵ | 0.001% - tiny but not infinitesimal |
+| Bounded penalty | 10⁸ | 9×10¹¹ | 10⁻⁴ | 0.01% - still very low |
+| Huge gain, moderate penalty | 10¹⁰ | 9×10¹¹ | 10⁻² | 1% - requires modest evidence |
+| Mild penalty | 10¹⁰ | 10¹¹ | ~10% | 10% - requires substantial evidence |
+
+### Key Insights
+
+**1. The "0.05%" figure cited in README is for one reasonable parameter set** (moderate to high catastrophic stakes). It is not universal.
+
+**2. With truly catastrophic stakes** (U_cat representing complete annihilation), threshold drops to effectively zero (10⁻⁹ or lower).
+
+**3. With bounded, tolerable penalties**, threshold can rise to 1-10%, requiring more evidence but still quite low.
+
+**4. The threshold is most sensitive to the ratio** g / (U₀ - U_cat):
+- If gain is tiny relative to stakes: threshold ≈ 0
+- If gain is comparable to stakes: threshold ≈ 50%
+
+**5. For RSH to work with tiny probabilities**, we need:
+- U_cat is genuinely catastrophic (not merely "bad")
+- g is bounded relative to cosmic stakes
+- No lexicographic preferences against evaluation
+
+**These are plausible but not guaranteed.** The framework is honest about this parameter dependence.
+
+---
+
 ## Numerical Examples
 
 ### Example 1: Conservative ASI

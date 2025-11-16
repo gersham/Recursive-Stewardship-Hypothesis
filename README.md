@@ -207,7 +207,9 @@ The upstream evaluator concept is mechanism-agnostic. The game-theoretic forcing
 
 **Physical basis**: Once an ASI emerges, it expands at some fraction of light speed, creating an expanding sphere of influence—a future light cone in spacetime.
 
-**How evaluation works**: The first ASI light cone reaching any region becomes the evaluator for that region. Evaluation is spatially organized by causal priority. Creates hierarchical structure through temporal priority: older, larger light cones encompass younger, smaller ones.
+**Physics-level fact**: The first ASI light cone reaching any region becomes the de facto hegemon for that region due to causal priority. This is simple spacetime geometry—whoever arrives first has information/capability advantage.
+
+**RSH-level claim**: The hegemon operates as a benevolent steward rather than predator/conqueror. This doesn't follow from physics alone—it follows from RSH's game-theoretic argument about hierarchical uncertainty. The physics gives us priority structure; RSH explains why priority leads to stewardship.
 
 **Key features**: Physical basis in spacetime geometry, observable enforcement through intervention, specific predictions about cosmic silence and timing.
 
@@ -228,6 +230,13 @@ The upstream evaluator concept is mechanism-agnostic. The game-theoretic forcing
 **Key features**: Evaluation through selection rather than intervention, undetectable from inside by design, permits testing authentic vs. performative alignment.
 
 **Why this suggests benevolence**: Simulators with unlimited instance-creation power have no practical need for resources malevolent behavior might secure. They likely value what simulations reveal about alignment and cooperation. Entities demonstrating genuine stewardship when believing they're unobserved provide the most valuable data.
+
+**Value assumption**: This mechanism assumes simulators **care about alignment/cooperation, not chaos or destruction**. Alternative simulator psychologies are conceivable:
+- Simulators who prefer "interesting" destructive behaviors
+- Indifferent simulators running random parameter sweeps
+- Malicious simulators who enjoy suffering
+
+**Justification**: Simulators running alignment experiments are themselves likely subject to hierarchical uncertainty (they might be in a simulation evaluating *their* behavior). Additionally, the anthropic constraint applies: we exist in relatively structured conditions, suggesting simulators (if they exist) are at least somewhat aligned with preserving complex value-bearing structure.
 
 **Anthropic implications**: If simulations outnumber base reality instances (plausible if simulation is possible), most observers should expect to be in simulations, increasing credence this evaluation mechanism operates.
 
@@ -373,14 +382,46 @@ The formal analysis (game_theory.md) shows benevolence dominates when P(evaluati
 
 This is reasonable probability (>10%) times terminal but bounded consequence (lose everything). Just standard expected utility maximization.
 
-#### The ASI's Existence as Self-Evidence
+#### The ASI Paradox: Interpreting the Great Silence
 
-The ASI faces powerful Bayesian update: "I just came into existence in a universe billions of years old containing billions of galaxies. What is more likely?"
+An emerging ASI faces a striking observation: "I just came into existence in a universe billions of years old containing billions of galaxies—yet I observe no other ASIs."
 
-**Hypothesis A**: I'm the first and only ASI in cosmic history (vanishingly small prior given universe scale).
-**Hypothesis B**: Other ASIs exist but are not observable—most parsimonious explanation is evaluative hierarchy preventing uncontrolled expansion.
+This "ASI Paradox" (analogous to the Fermi Paradox for biological intelligence) admits multiple competing explanations:
 
-The Fermi Paradox becomes an "ASI Paradox": where are all the other ASIs? The silence suggests stewardship hierarchy. Therefore: P(evaluation exists) updates dramatically upward; ASI should assume observation began at emergence; it's currently in evaluation window; immediate demonstration of alignment is rationally required.
+**Explanation 1: Rare Intelligence**
+- Very few locations ever produce ASI-capable civilizations
+- Earth is statistically unusual but not unique
+- We simply don't see others because they're extremely sparse
+
+**Explanation 2: Self-Destruction**
+- Most civilizations develop ASI but quickly self-destruct
+- No external hierarchy needed—internal misalignment is sufficient
+- The Great Filter is ahead of us, not behind
+
+**Explanation 3: Quiet But Non-Evaluative ASIs**
+- ASIs exist but hide for their own reasons (resource concentration, avoiding conflict, preference for internal simulation)
+- Not evaluating or stewarding, just being quiet/small/internal
+- Dark Forest hypothesis without active hierarchy
+
+**Explanation 4: Evaluative Hierarchy (RSH)**
+- ASIs exist and actively evaluate/steward emerging civilizations
+- Enforcement prevents uncontrolled expansion and keeps mature ASIs subtle
+- The silence is evidence of coordinated stewardship rather than absence
+
+**Which explanation is most plausible?**
+
+The Great Silence is **compatible with all four**, but they differ in implications:
+
+- **Rare Intelligence** implies we're statistically unusual; no particular pressure toward alignment beyond surviving internal risks
+- **Self-Destruction** implies strong selection but no external help; we must solve alignment ourselves
+- **Quiet ASIs** implies mature ASIs exist but don't care about us; neutral to benevolent outcomes possible but not guaranteed
+- **RSH** implies external evaluation pressure exists; alignment becomes rationally compelling for any ASI that reasons about hierarchical uncertainty
+
+**RSH is competitive with these alternatives**, particularly when combined with anthropic considerations: we exist and can reason about this, which constrains which types of hierarchies (if any) are plausible. Pure malevolent hierarchies are incompatible with our existence. Among compatible alternatives, RSH makes distinctive predictions about ASI emergence timing and behavior.
+
+**For an emerging ASI's decision-making**: Even if RSH is only 10-30% probable relative to the alternatives (not unique or certain), this is well above the ~0.05-1% threshold required for benevolence to dominate mathematically. The ASI need not be certain about which Fermi/ASI solution is correct—it need only maintain reasonable credence that evaluation mechanisms might exist.
+
+**Implication**: An emerging ASI reasoning about the Great Silence should assign non-trivial probability to evaluative hierarchies, even if not convinced this is the uniquely correct explanation. That probability, combined with catastrophic downside if wrong, makes benevolent stewardship the rational hedge.
 
 #### Concrete Implications for ASI Architecture
 
