@@ -175,7 +175,7 @@ RSH has been strengthened with new sections that directly address this criticism
 - Demonstrates that alternative hierarchies (anti-enforcers, chaos-enforcers, neutrality-enforcers) are logically incoherent
 - Shows performative contradictions: "enforcing non-interference IS interference"
 - Proves only self-consistent, self-stabilizing structures persist over cosmic time
-- Benevolent enforcement is the unique stable attractor
+- Benevolent enforcement is a strong attractor under these assumptions (though not provably unique across all conceivable hierarchies)
 
 **2. Anthropic Constraint**:
 - Uses our existence to narrow possible hierarchies

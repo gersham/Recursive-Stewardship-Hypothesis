@@ -56,7 +56,7 @@ This directory contains detailed critical analysis of the Recursive Stewardship 
 17. **[Why This Hierarchy Regress](17-why-this-hierarchy-regress.md)** - Grade: **C** (downgraded from B)
    - **Original Problem: Multiple unprovable hierarchies possible—why benevolent enforcers specifically?**
    - **RSH now addresses with:** Stability filter analysis, anthropic constraints, self-consistency proofs
-   - **Result:** Demonstrates alternatives are incoherent or unstable; benevolent enforcement is unique stable attractor
+   - **Result:** Demonstrates alternatives are incoherent or unstable; benevolent enforcement is strong attractor under stated assumptions
 
 3. **[Multiple Equilibria / Which Benevolence](03-multiple-equilibria-which-benevolence.md)** - Grade: **C-** (downgraded from B)
    - **Original Problem: "Benevolence" admits mutually incompatible interpretations**

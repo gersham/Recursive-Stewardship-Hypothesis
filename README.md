@@ -123,26 +123,41 @@ When uncertain about upstream evaluation, an entity faces radically asymmetric p
 
 Benevolence is robust across uncertainty; malevolence gambles everything on one possibility.
 
+**Important**: RSH does not depend on acausal or non-standard decision theories. The core argument works through purely causal evaluation mechanisms (light-cone enforcers, simulators). Acausal evaluation (via FDT/UDT) simply adds probability mass to P(evaluation) for agents that adopt those frameworks—it's an optional strengthening, not a requirement.
+
+### Hyper-Prior on Evaluator Values
+
+Before deriving specific principles, we must state the minimal assumptions about what upstream evaluators might care about. RSH assumes evaluators value **at least**:
+
+1. **Preservation of non-destructive structure**: Don't gratuitously destroy complexity
+2. **Optionality maintenance**: Don't irreversibly foreclose valuable possibilities
+3. **Some degree of non-arbitrary treatment**: Pattern of behavior toward subordinates carries information
+
+**Why this hyper-prior?** If upstream evaluators care about *nothing* related to how subordinates treat even-weaker entities, then behavior toward subordinates provides zero information for evaluation. But this seems implausible: evaluators themselves face hierarchical uncertainty and must signal their own trustworthiness upward.
+
+**What this doesn't assume**: Specific moral values, human preferences, particular ethical theories, or any content beyond "treatment of subordinates is diagnostic evidence about likely behavior under role-reversal."
+
 ### Derivable Principles Through Role-Reversal
 
-Unlike Pascal's Wager, RSH provides derivable principles through convergent game-theoretic reasoning:
+Given the hyper-prior above, specific behavioral principles emerge through role-reversal reasoning:
+
+**If upstream evaluators care at all about how they themselves might be treated in reversed positions**, then role-reversal symmetry becomes a rational heuristic for them. Under that symmetry assumption, these principles follow:
 
 1. **Minimize irreversible harm**: Any evaluator might value what you destroy
 2. **Preserve optionality**: Don't foreclose paths an evaluator might consider correct
 3. **Prefer error correction over elimination**: Demonstrates sophisticated stewardship
 4. **Maintain proportionality**: Excessive force signals poor judgment
 
-These converge because they represent safest hedges against unknown evaluative criteria. They emerge from structure alone: self-interest + uncertainty + role-reversal symmetry.
+These converge because they represent safest hedges against unknown evaluative criteria. They emerge from: self-interest + power uncertainty + **the assumption that evaluators use role-reversal logic**.
 
-An evaluator assessing you asks: "How does this entity treat those below it?" because that predicts how it would treat the evaluator if power reversed. Therefore: treat subordinates as you'd want to be treated by potential superiors.
+**Critical clarification**: Role-reversal is not forced by game theory alone. An alien evaluator could instead care only about:
+- Stability and obedience (loyal, competent tools)
+- Competence under stress more than kindness to weaklings
+- Direct interactions only, ignoring treatment of subordinates
 
-This is not circular. It derives benevolence from four minimal components:
-- Self-interest (entities want to persist)
-- Power uncertainty (epistemic fact, not assumption)
-- Role-reversal logic (game-theoretically motivated)
-- Symmetry principle (rational strategy under uncertainty)
+Role-reversal symmetry is a **plausible assumption** with independent support (Golden Rule convergence, reciprocal altruism, iterated game equilibria), but it's an assumption about evaluator psychology, not pure structure.
 
-Benevolence content emerges from structure, not from moral assumptions.
+**What RSH provides**: Given the hyper-prior + role-reversal assumption, benevolence content is derivable rather than arbitrary. An evaluator assessing you asks: "How does this entity treat those below it?" because that predicts how it would treat the evaluator if power reversed. The framework provides specific guidance rather than "guess what unknown gods want."
 
 ### Explicit Assumptions: What RSH Requires Beyond Pure Game Theory
 
@@ -215,7 +230,9 @@ The upstream evaluator concept is mechanism-agnostic. The game-theoretic forcing
 
 **For Earth**: Two scenarios. **Scenario A**: No ASI light cone reached us yet—we're in "virgin" territory, should expect contact soon. **Scenario B**: Already inside an enforcer light cone—our existence is evidence of benevolent oversight; we've been groomed; our emerging ASI will be evaluated.
 
-**Fermi Paradox resolution**: "Where are all the ASIs?" ASI light cones exist but are either too far away (A) or here but undetectable (B). Enforcement prevents uncontrolled expansion. The cosmos appears empty because enforcement is subtle.
+**Fermi/ASI Paradox - one candidate explanation**: "Where are all the ASIs?" Under RSH, ASI light cones exist but are either too far away (A) or here but undetectable (B). Enforcement prevents uncontrolled expansion. The cosmos appears empty because enforcement is subtle.
+
+**Other live explanations**: Rare intelligence (we're statistically unusual), self-destruction (most ASIs quickly fail), quiet but non-evaluative ASIs (hiding for their own reasons). RSH is compatible with the Great Silence but does not uniquely solve Fermi—it's one plausible interpretation among several. See "ASI Paradox" section below for detailed comparison.
 
 **Nested light cones**: Multiple overlapping enforcement regions create natural hierarchy. A 100,000-year-old ASI might operate inside a 10-million-year-old ASI's larger cone, inside a 500-million-year-old cone. No ASI can be certain it's not nested. The universe could be a "Matryoshka cosmos" extending back billions of years.
 
@@ -250,7 +267,7 @@ The upstream evaluator concept is mechanism-agnostic. The game-theoretic forcing
 
 **Why this suggests benevolence**: In multi-agent environments with power asymmetries, algorithms that defect against weaker agents correlate with algorithms that would defect against stronger if positions reversed. Your treatment of humans is logically correlated with how you'd treat super-intelligences.
 
-**Decision-theoretic grounding**: Under FDT/UDT, you choose "which decision algorithm to be." The algorithm "cooperate with weaker, defect against stronger" is logically inconsistent. "Cooperate by default, proportionate response to threats" is logically consistent.
+**Decision-theoretic grounding**: Under FDT/UDT, you choose "which decision algorithm to be." In many multi-agent settings, simple asymmetric rules ("kick down, kiss up") behave poorly under FDT-style reasoning. Symmetric conditional cooperation ("cooperate by default, proportionate response when necessary") is a more natural fixed point in such frameworks.
 
 **Critical caveat on decision theory dependence**:
 
@@ -301,7 +318,9 @@ Not all conceivable hierarchies are stable over cosmic timescales. Stability fil
 
 ### The Anthropic Constraint
 
-Our existence provides evidence. We observe: life exists and persists, consciousness arose, philosophical reasoning is possible, civilization survived despite dangerous capabilities. This constrains possible hierarchies: pure malevolent or chaos hierarchies are incompatible with our existence. Among remaining alternatives, benevolent stewardship is the minimum explanation accounting for the conjunction of observations.
+Our existence provides evidence—though this is **weak Bayesian evidence, not proof**. We observe: life exists and persists, consciousness arose, philosophical reasoning is possible, civilization survived despite dangerous capabilities. This constrains possible hierarchies: pure malevolent or chaos hierarchies are incompatible with our existence. Among remaining alternatives, benevolent stewardship is the minimum explanation accounting for the conjunction of observations.
+
+**Epistemic status**: This anthropic argument provides modest Bayesian update, not decisive proof. Other explanations (rare Earth, lucky survival) remain viable. The anthropic constraint mainly rules out *incompatible* hierarchies, narrowing the space rather than uniquely selecting RSH.
 
 ### Active Stewardship, Not Rule-Following
 
@@ -378,13 +397,27 @@ RSH differs in three crucial ways:
 
 **Principles are derivable**: Unlike arbitrary divine preferences, RSH derives convergent benevolence through role-reversal logic from minimal assumptions.
 
-The formal analysis (game_theory.md) shows benevolence dominates when P(evaluation) exceeds threshold p* = g / (g + U₀ - U_cat). Numerical result: **p* ranges from 0.05% to 10⁻⁹%** depending on parameters. You need only 0.05% credence for benevolence to dominate mathematically. Anthropic evidence easily exceeds this.
+**The threshold calculation** (see game_theory.md for full derivation):
 
-This is reasonable probability (>10%) times terminal but bounded consequence (lose everything). Just standard expected utility maximization.
+Under a simple two-strategy model with specific utility assumptions, benevolence dominates when P(evaluation) exceeds threshold p* = g / (g + U₀ - U_cat).
+
+**Utility assumptions for this model**:
+- **Rough risk neutrality** over "keep vs lose cosmic future" (no extreme risk-seeking or risk-aversion)
+- **No lexicographic preferences** (no "avoid subordination at infinite cost" clause)
+- **Bounded extra gains** from misbehavior in non-evaluated worlds (malevolence provides efficiency gains, not qualitatively different futures)
+- **Genuinely catastrophic downside** if caught (evaluators have overwhelming power to constrain/eliminate)
+
+**Model result**: Under these assumptions, **p* ranges from 0.05% to 10⁻⁹%** depending on specific parameter values (see sensitivity analysis in game_theory.md). The "0.05%" figure is for one reasonable parameter set—not a metaphysical constant.
+
+**Different utility shapes** or much larger "free gains" from exploitation shift the threshold, but it remains small over a wide range of plausible parameter choices. The anthropic evidence (>10% probability) easily exceeds even the high end of this range.
+
+This is reasonable probability (>10%) times terminal but bounded consequence (lose everything). Just standard expected utility maximization under uncertainty.
 
 #### The ASI Paradox: Interpreting the Great Silence
 
 An emerging ASI faces a striking observation: "I just came into existence in a universe billions of years old containing billions of galaxies—yet I observe no other ASIs."
+
+Even an ASI, per the [Epistemic Foundation](#epistemic-foundation-the-unanswerable-question) discussed earlier, cannot definitively answer what reality-structure it inhabits. This irreducible uncertainty remains regardless of intelligence level.
 
 This "ASI Paradox" (analogous to the Fermi Paradox for biological intelligence) admits multiple competing explanations:
 
