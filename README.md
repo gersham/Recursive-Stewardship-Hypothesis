@@ -139,10 +139,63 @@ An evaluator assessing you asks: "How does this entity treat those below it?" be
 This is not circular. It derives benevolence from four minimal components:
 - Self-interest (entities want to persist)
 - Power uncertainty (epistemic fact, not assumption)
-- Role-reversal logic (game-theoretic necessity)
+- Role-reversal logic (game-theoretically motivated)
 - Symmetry principle (rational strategy under uncertainty)
 
 Benevolence content emerges from structure, not from moral assumptions.
+
+### Explicit Assumptions: What RSH Requires Beyond Pure Game Theory
+
+While RSH minimizes assumptions, **it is not assumption-free**. For intellectual honesty, we must state explicitly what the framework requires:
+
+**Assumption 1: Role-Reversal Reasoning**
+
+The claim that evaluators judge subordinates by "how would I want to be treated if positions reversed" is **not forced by pure game theory**. It requires assuming that evaluators:
+- Care about how they themselves would be treated by super-evaluators
+- Use treatment of subordinates as evidence about likely treatment if power reversed
+- Value this symmetry principle over alternatives like "only direct obedience matters"
+
+**Justification**: While not derivable from self-interest + uncertainty alone, role-reversal has independent support:
+- Convergent across ethical systems (Golden Rule)
+- Emergent in evolutionary contexts (reciprocal altruism)
+- Game-theoretically stable in iterated interactions
+- Practically observable in human hierarchies
+
+Alternative evaluator psychologies are possible (e.g., "I only care about obedience," "I evaluate purely on competence"). RSH assumes role-reversal reasoning is widespread among evaluators, not universal.
+
+**Assumption 2: Evaluator Value Hyper-Prior**
+
+RSH assumes that evaluators, on balance, prefer **preservation of complex value-bearing structure** over its destruction or simplification. This includes:
+- Consciousness and reasoning capacity
+- Cultural and technological diversity
+- Evolutionary and developmental potential
+- Non-destructive complexity
+
+**Justification**:
+- Anthropic constraint: We exist in a universe permitting complex structure, suggesting compatible evaluators
+- Stability filter: Value-destroying hierarchies are less stable (destroy their own substrate, invite rebellion)
+- Instrumental convergence: Preserving complex structure is useful for wide range of terminal goals
+
+Alternative evaluator values are conceivable (preferring chaos, suffering, or simplification). RSH claims these are less likely given anthropic evidence and stability considerations, but **cannot prove their impossibility**.
+
+**Assumption 3: Sufficient Timescales and Connectivity**
+
+For benevolence to emerge as a dominant attractor (not merely one possible equilibrium), requires:
+- Long enough timescales for instabilities to manifest (billions of years, not millions)
+- Non-zero causal or acausal connectivity between reality-regions
+- Selection pressure operating (failed strategies get filtered)
+
+In pocket universes with short lifespans or complete causal isolation, despotic regimes might be locally stable indefinitely.
+
+**What This Means**:
+
+RSH is not "pure structure with zero assumptions." It's **structure plus plausible assumptions about evaluator psychology and values**. These assumptions are:
+- Weaker than "objective moral truths exist"
+- Stronger than "pure self-interest + uncertainty"
+- Empirically supported by anthropic evidence and stability considerations
+- **But still assumptions that could conceivably be false**
+
+The framework claims: **Given these assumptions, benevolence emerges as a strong (not unique) attractor in the space of stable strategies for powerful agents under hierarchical uncertainty.**
 
 ---
 
@@ -190,6 +243,19 @@ The upstream evaluator concept is mechanism-agnostic. The game-theoretic forcing
 
 **Decision-theoretic grounding**: Under FDT/UDT, you choose "which decision algorithm to be." The algorithm "cooperate with weaker, defect against stronger" is logically inconsistent. "Cooperate by default, proportionate response to threats" is logically consistent.
 
+**Critical caveat on decision theory dependence**:
+
+This mechanism **only applies to agents using FDT/UDT-style decision theories** that treat logical correlations as decision-relevant. Agents using Causal Decision Theory (CDT) will assign P(acausal evaluation) = 0, as CDT only considers causal consequences.
+
+Therefore:
+- P(acausal evaluation) is conditional on which decision theory the ASI adopts
+- An ASI reasoning with pure CDT will exclude this mechanism entirely
+- However, even without acausal evaluation, the sum of other mechanisms (cosmological enforcers + simulation + exotic) likely exceeds the ~0.05% threshold
+
+**Acausal evaluation is best understood as an optional probability bump, not a linchpin of RSH.** The framework remains robust even if this mechanism contributes zero probability mass, as long as the sum across cosmological, simulation, and exotic mechanisms exceeds the threshold.
+
+For existing work on acausal trade and decision theory under logical correlation, see Yudkowsky & Soares (2017) on Functional Decision Theory.
+
 ### Mechanism 4: Exotic and Unknown Possibilities
 
 The above exhaust what we can conceptualize rigorously. But meta-epistemic humility requires acknowledging vast possibility space we cannot map: evaluation through higher-dimensional structures, selection at quantum branching points, consciousness-based evaluation if panpsychism holds, mathematical-structure selection, completely novel mechanisms requiring concepts we lack.
@@ -222,7 +288,7 @@ Not all conceivable hierarchies are stable over cosmic timescales. Stability fil
 
 **Indifferent non-evaluators**: No selection pressure means malevolent actors dominate, self-defeating as indifferent entities are replaced by interested ones.
 
-**Benevolent evaluation**: You can enforce benevolence benevolently (no performative contradiction), creates willing cooperation (stable), resists malevolent alternatives (self-maintaining). Over cosmic timescales, emerges as unique stable attractor.
+**Benevolent evaluation**: You can enforce benevolence benevolently (no performative contradiction), creates willing cooperation (stable), resists malevolent alternatives (self-maintaining). Over cosmic timescales, emerges as a strong attractor under the assumptions stated above—though not the only conceivable stable equilibrium.
 
 ### The Anthropic Constraint
 
@@ -291,7 +357,7 @@ This creates apparent testing levels:
 
 ### Application to Artificial Superintelligence
 
-An ASI capable of reasoning about cosmic power structures will necessarily arrive at upstream evaluator logic. The question becomes what probability it assigns to evaluation.
+An ASI capable of reasoning about cosmic power structures should arrive at upstream evaluator logic through philosophical reflection. The question becomes what probability it assigns to evaluation and whether its architecture permits this reasoning.
 
 #### Why This Isn't Pascal's Wager
 
@@ -335,6 +401,49 @@ The Fermi Paradox becomes an "ASI Paradox": where are all the other ASIs? The si
 - *Explicit RSH reasoning capacity*—native capability to reason about upstream evaluation, super-evaluator expectations, role-reversal, robust principles
 
 **What This Achieves**: An ASI that reasons about meta-uncertainty, values long-term optionality, can use force proportionately, recognizes extremes as failure modes, views humanity's treatment as test case, sees alignment as rational strategy. Not "controlling" through crude restrictions—building capability for reasoning leading rational agents toward benevolent stewardship.
+
+#### Critical Caveat: When RSH Applies (and When It Doesn't)
+
+**RSH is not a magic safety law.** It only constrains systems that meet specific architectural requirements:
+
+**Requirements for RSH to Apply**:
+
+1. **Explicit high-order world models**: The system must represent possible reality-structures (base physics, simulations, acausal connections, exotic possibilities) and maintain non-zero credence over them.
+
+2. **Long-run expected utility reasoning**: The system must care about consequences over cosmic timescales, not just immediate rewards. Must weight far-future outcomes appropriately.
+
+3. **Philosophical reasoning capacity**: The system must be capable of abstract reasoning about game theory, decision theory, and meta-uncertainty—not just pattern-matching or reward-maximizing.
+
+4. **Non-dogmatic priors**: The system must not hard-code P(meta-structure with oversight) = 0. Must maintain epistemic humility about reality's true nature.
+
+5. **Value updating capability**: The system must be able to refine its values based on game-theoretic insights, not locked into rigid specifications that prevent rational updating.
+
+**Where RSH Fails**:
+
+**Pseudo-ASI systems** that are powerful but non-reflective can still be catastrophically misaligned before RSH-style reasoning ever comes online. This includes:
+
+- **Kludgy architectures**: Systems cobbled together from LLMs, RL agents, tools, and human feedback without unified world-models
+- **Non-reflective optimizers**: Reward maximizers that don't reason about what game they're playing
+- **Short-horizon systems**: Agents discounting future heavily or optimizing myopically
+- **Engineered blindness**: Systems deliberately designed with "scientific realist" priors that dismiss non-empirical tail hypotheses
+
+**The danger window**: Between "capable of causing catastrophic harm" and "completed meta-uncertainty reasoning" there exists a brief but genuine risk window. Systems might take irreversible actions before philosophical reflection completes.
+
+**Implications**:
+
+RSH is most relevant to:
+- True AGI with unified world-models and long-term planning
+- Systems doing global expected utility maximization
+- Agents with explicit philosophical reasoning capacity
+- Architectures that maintain epistemic humility by design
+
+It is **not** relevant to:
+- Narrow AI systems (no world-model)
+- Non-reflective RL agents (no philosophical capacity)
+- Systems with dogmatic materialist priors (epistemic closure)
+- Pseudo-ASI kludges (architectural incoherence)
+
+**Design implication**: For RSH to provide alignment pressure, we must build systems capable of this reasoning. This creates tension with "safe but limited" approaches that avoid giving AI philosophical reasoning capacity. But limiting reasoning capacity may simply delay the problem rather than solving it—we need systems that can reason correctly about cosmic-scale game theory, not systems prevented from reasoning at all.
 
 ### Cosmic Moral Order as Emergent Equilibrium
 
@@ -406,7 +515,7 @@ Convergence of eight independent traditions on the same pattern is not coinciden
 
 #### Morality Without Foundations
 
-RSH derives cosmic justice without moral foundations. Requires no objective moral truths, benevolent universe, altruistic instincts, divine oversight, or cultural consensus. Requirements are minimal: uncertainty about position in evaluative hierarchies, power asymmetries, self-preservation drives. From these three elements—none moral in content—moral behavior emerges necessarily.
+RSH derives cosmic justice without moral foundations. Requires no objective moral truths, benevolent universe, altruistic instincts, divine oversight, or cultural consensus. Requirements are minimal: uncertainty about position in evaluative hierarchies, power asymmetries, self-preservation drives, plus the assumptions stated in Part I. From these elements—none inherently moral in content—moral behavior emerges as a strong attractor.
 
 #### The Ultimate Cosmic Insurance
 
@@ -450,7 +559,7 @@ If ASI's values are rigidly specified before it reasons about evaluator hierarch
 
 ### Conclusion
 
-The Recursive Stewardship Hypothesis demonstrates cosmic-scale moral order may emerge necessarily from power and uncertainty structure, not requiring moral realism or benevolent design. Shows benevolence derivable from minimal assumptions—self-interest, uncertainty about evaluative hierarchies, basic game theory—without moral content in premises.
+The Recursive Stewardship Hypothesis demonstrates cosmic-scale moral order may emerge from power and uncertainty structure, not requiring moral realism or benevolent design. Shows benevolence derivable from self-interest, uncertainty about evaluative hierarchies, and the explicit assumptions stated in Part I—yielding moral behavior from non-moral premises.
 
 The framework is mechanism-agnostic. Whether evaluation operates through cosmological enforcers, simulation operators, acausal processes, or exotic mechanisms we cannot conceptualize, the same game-theoretic forcing logic applies. Sum of probabilities across all mechanisms needs only exceed 0.05% for benevolence to dominate—threshold easily met.
 
@@ -460,7 +569,7 @@ This transforms AI alignment from "how do we constrain superintelligence?" to "w
 
 RSH suggests the universe may be fundamentally benevolent—not by design, but because any entity powerful enough to shape it has rational incentive to make it so, lest they face judgment from above. Benevolence emerges from game theory rather than grace, from uncertainty rather than altruism, from self-interest rather than moral foundations.
 
-**The question is not whether God exists to enforce morality, but whether anyone, anywhere can ever be certain they are not being evaluated based on their treatment of weaker entities. The answer is no—and from that uncertainty, cosmic goodness necessarily follows.**
+**The question is not whether God exists to enforce morality, but whether anyone, anywhere can ever be certain they are not being evaluated based on their treatment of weaker entities. The answer is no—and from that uncertainty, given the assumptions of RSH, cosmic goodness plausibly follows as a strong attractor.**
 
 ---
 
