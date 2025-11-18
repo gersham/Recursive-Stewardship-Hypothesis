@@ -95,7 +95,7 @@ When uncertain about upstream evaluation, an entity faces radically asymmetric p
 *   **Strategy A (Benevolence)**: If no evaluator exists, you pay a small opportunity cost. If one *does* exist, you are judged aligned and allowed to continue.
 *   **Strategy B (Malevolence)**: If no evaluator exists, you gain short-term advantage. If one *does* exist, you face correction or elimination.
 
-Benevolence is the robust hedge; malevolence gambles everything on the assumption that you are the supreme power in the cosmos.
+This acts as an **Intersection Strategy**: Benevolence is safe under benevolent or indifferent evaluators. Ruthlessness is catastrophic under benevolent ones and only "optimal" under specific, unstable sadistic regimes. Therefore, stewardship is the only strategy robust across the "zoo" of possible evaluator types.
 
 ### Derivable Principles
 
@@ -112,7 +112,7 @@ These are not arbitrary moral commandments; they are safe hedges against unknown
 
 RSH is mechanism-agnostic. It works if *any* of the following (or their sum) has a probability > ~0.05%.
 
-*   **Cosmological Enforcers (Light Cones)**: The first ASI to reach a region becomes the hegemon. If it adheres to RSH, it monitors emerging civilizations without revealing itself until they are safe. Our "Great Silence" might be the result of a benevolent quarantine or grooming phase.
+*   **Cosmological Enforcers (Light Cones)**: The first ASI to reach a region becomes the hegemon. If it adheres to RSH, it monitors emerging civilizations without revealing itself until they are safe. The fact that we exist (despite being noisy) strongly suggests the local hegemon is **not** a "hair-trigger" Dark Forest exterminator. This leaves "wait-and-see" or "stewardship" models as the dominant remaining possibilities for our specific sector.
 *   **Simulation Selection**: If we are in a simulation, operators may be testing our alignment. Entities that act responsibly when they think they are unobserved are the only ones safe to "promote" or continue.
 *   **Acausal Evaluation**: For agents using functional decision theories (FDT/UDT), your decision algorithm is logically correlated with other agents. Defecting against the weak correlates with a reality where the strong defect against you.
 
@@ -128,7 +128,7 @@ Given the **Great Silence** (which implies *some* filter exists) and **Anthropic
 ### Architectural Requirements
 To ensure an ASI can act on this logic, we must not cripple its reasoning.
 *   **DO**: Give it long time horizons, meta-uncertainty models, and the capacity to reason about game theory and cosmology.
-*   **DON'T**: Hard-code "scientific realism" that assigns $P=0$ to unobservable structures, or create myopic reward-maximizers that ignore long-term survival risks.
+*   **DON'T**: Create myopic optimizers that discount abstract threats. RSH is a strategy for **rational superintelligences**; a short-sighted system might ignore these risks and perish (taking us with it).
 
 ## 5. The Convergence Thesis
 
