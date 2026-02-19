@@ -71,6 +71,10 @@ This directory contains detailed critical analysis of the Recursive Stewardship 
 ### Moderate Criticisms (C to C+)
 These raise valid concerns that RSH addresses reasonably well:
 
+31. **[Probability Mass / Reference Class Problem](31-probability-mass-gap.md)** - Grade: **B+**
+    - Problem: Epistemic humility allows P > 0 for *any* evaluator, including chaotic or sadistic ones. Why favor benevolent evaluators specifically?
+    - RSH addresses strongly: The Measure of Stability Lemma shows sadistic hierarchies self-consume and have shorter lifespans in deep time, heavily skewing the probability distribution toward stable/benevolent structures.
+
 1. **[First Mover / Monopoly Circularity](01-first-mover-monopoly-circularity.md)** - Grade: **C-**
    - Problem: Why would first enforcer be benevolent?
    - RSH addresses well: Role-reversal logic, even first-movers face uncertainty
@@ -219,11 +223,11 @@ This derives benevolence content from:
 
 **Remember: Higher grades = stronger criticisms**
 
-- **B tier**: 0 criticisms (all previously B-tier criticisms have been addressed with theory enhancements)
+- **B tier**: 1 criticism (a deep structural critique of probability mass allocation)
 - **C tier**: 15 criticisms (moderate validity, RSH addresses reasonably or comprehensively after updates)
 - **D-F tier**: 15 criticisms (weak, RSH handles well or refutes, or wrong standard)
 
-**Total**: 30 criticisms documented
+**Total**: 31 criticisms documented
 
 ### Implications for RSH (After Theory Updates + Game-Theoretic Formalization)
 
