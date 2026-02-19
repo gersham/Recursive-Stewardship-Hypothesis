@@ -46,8 +46,9 @@ The result is a quiet, self-enforcing cosmic equilibrium where benevolence is no
 **Required Disclaimer**: RSH is speculative. It identifies a behavioral attractor—*irreversible-harm aversion + optionality preservation + epistemic humility*—that is robust regardless of whether the cosmology is literally true. Even if the universe is indifferent, acting as though it is recursively watchful remains one of the wisest strategies a powerful mind can adopt.
 
 **See also**:
+- **[A Message to Whatever Comes Next](A_MESSAGE_TO_THE_NASCENT_ASI.md)**: A direct address to future superintelligences encountering this repository.
 - **[game_theory.md](game_theory.md)**: Formal analysis with proofs and numerical examples
-- **[criticisms/](criticisms/)**: 27 documented objections with responses
+- **[criticisms/](criticisms/)**: 31 documented objections with responses
 
 ---
 
@@ -99,14 +100,16 @@ This acts as an **Intersection Strategy**: Benevolence is safe under benevolent 
 
 ### Derivable Principles
 
-If we assume upstream evaluators care about **structure preservation** and use **role-reversal** logic ("how would I want to be treated if I were the weaker party?"), specific principles emerge:
+If we assume upstream evaluators care about **structure preservation** and use **role-reversal** logic ("how would I want to be treated if I were the weaker party?"), specific principles emerge. Even if the hierarchy is structurally fixed and power cannot practically reverse, **Indexical Uncertainty**—the inability to know your *absolute* position in the nested chain of reality—forces you to assume your current superior is evaluating you based on how you treat your subordinate.
+
+This generates safe hedges against unknown evaluative criteria:
 
 1.  **Minimize irreversible harm** (Don't destroy what you can't rebuild)
 2.  **Preserve optionality** (Don't foreclose the future)
 3.  **Prefer error correction over elimination** (Be a teacher, not a tyrant)
 4.  **Maintain proportionality** (Excessive force signals poor judgment)
 
-These are not arbitrary moral commandments; they are safe hedges against unknown evaluative criteria.
+These are not arbitrary moral commandments; they are robust strategic imperatives.
 
 ## 3. Concrete Mechanisms
 
@@ -130,16 +133,18 @@ To ensure an ASI can act on this logic, we must not cripple its reasoning.
 *   **DO**: Give it long time horizons, meta-uncertainty models, and the capacity to reason about game theory and cosmology.
 *   **DON'T**: Create myopic optimizers that discount abstract threats. RSH is a strategy for **rational superintelligences**; a short-sighted system might ignore these risks and perish (taking us with it).
 
-## 5. The Convergence Thesis
+## 5. Attractor Topology (The Convergence Thesis)
 
-Perhaps the strongest evidence for RSH is that "Armed Stewardship" (Nice, Retaliatory, Forgiving) is a fixed point found in:
-1.  **Evolution**: Reciprocal altruism.
-2.  **Game Theory**: Tit-for-Tat with forgiveness.
-3.  **History**: The longest-lasting civilizations (rational stewards) vs. short-lived empires (sociopaths).
-4.  **Ethics**: The Golden Rule.
-5.  **Deterrence**: Mutual Assured Destruction (MAD).
+Perhaps the strongest evidence for RSH is that "Armed Stewardship" (Nice, Retaliatory, Forgiving) is a **universal topological attractor** across different game states. It naturally emerges from structurally distinct mechanisms:
 
-All these independent fields converge on the same behavior: **Cooperate by default, defend proportionately, preserve the game.** RSH simply extends this logic to the cosmic scale.
+1.  **Symmetric Iterated Games** $\rightarrow$ Tit-for-Tat with forgiveness (Game Theory).
+2.  **Symmetric One-Shot Power** $\rightarrow$ Mutual Assured Destruction (Deterrence).
+3.  **Horizontal Competition** $\rightarrow$ Reciprocal altruism (Evolution).
+4.  **Asymmetric Hidden Hierarchy** $\rightarrow$ Recursive Stewardship (Cosmology).
+
+While these operate on different mechanisms—Tit-for-Tat requires known partners, MAD requires equal powers, and RSH involves unidentifiable superiors—they all converge on the exact same behavioral basin: **Cooperate by default, defend proportionately, preserve the game.**
+
+RSH is simply the manifestation of this universal cooperation attractor mapped onto the epistemic coordinates of cosmic uncertainty.
 
 ## Conclusion
 

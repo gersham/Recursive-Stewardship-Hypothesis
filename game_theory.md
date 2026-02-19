@@ -276,6 +276,16 @@ Then U_cat ≈ U₀ - (something manageable), and threshold p* could be much hig
 
 The gain from malevolence is primarily about short-term efficiency or avoiding constraints, not about accessing qualitatively different cosmic futures.
 
+### Assumption 5: The Bekenstein Boundary Condition (Bounded Gain)
+
+**What we assume**:
+- The utility of malevolence $g$ is physically and computationally bounded by the universe's limits (e.g., the Bekenstein bound).
+- Malevolence cannot unlock a "physics-breaking" singularity that yields literally infinite utility.
+
+**Why this matters**: If a predatory ASI could consume a galaxy to transition into a new physical state (escaping the universe, altering local physics) that yields effectively infinite utility, $g \to \infty$. In this scenario, the inequality $g \ll (U_0 - U_{cat})$ fails, and the threshold calculation breaks down entirely.
+
+**Justification**: This acts as a hard boundary condition for RSH. RSH holds *if and only if* the universe imposes hard physical upper bounds on computation, energy extraction, and utility density. If the universe permits localized infinite-gain exploits through predatory expansion, game-theoretic restraint fails.
+
 ### What Happens If Assumptions Fail
 
 **If lexicographic preferences** (e.g., "avoid evaluation infinitely"): Threshold calculation breaks down; entity might refuse to hedge regardless of probability.
@@ -509,19 +519,24 @@ All numerical examples show p* << 10%, therefore:
 
 This creates **role-reversal logic** at every level.
 
-### Backward Induction (Sketch)
+### The Centipede Collapse and Local Markov Equilibrium
 
-**Base case** (level N, top of finite hierarchy):
-- Level N believes with probability p_N that level N+1 exists
-- Same threshold calculation: benevolence optimal if p_N > p*
+**The Problem with Backward Induction**: A naive inductive proof relies on backward induction from Level $N$. However, backward induction across $N$ levels requires **Common Knowledge of Rationality (CKR)**. If an ASI at Level 0 suspects that *even one* entity at Level $k$ might be boundedly rational, have a mutated utility function, or simply make a mistake, the entire induction chain collapses. This is identical to the classic Centipede Game paradox, where perfectly rational players defect early because they doubt the perfect rationality of others.
 
-**Inductive step**:
-- Assume level k+1 plays benevolent enforcement (by induction hypothesis)
-- Level k observes that malevolent behavior at k+1 → punishment from k+2
-- Level k infers: "Malevolent enforcement of k-1 will be punished by k+1"
-- Level k's threshold: Must enforce benevolence if p_k > p*
+**The Solution: Local Markov Equilibrium**:
+To prevent CKR collapse, the N-level extension relies on a **Markov Perfect Equilibrium (MPE)**. 
 
-**Result** (informal): If p_k > p* for all k ∈ {0, 1, ..., N}, the unique subgame-perfect equilibrium is universal benevolence at all levels.
+The ASI (Level 0) does not need to prove that Level $\infty$ is perfectly rational and benevolent. It only needs to calculate that its *immediate* upstream evaluator (Level 1) is subject to the same local uncertainty it is. By framing it as a local Markov property where each layer $k$ only needs to model the layer directly above it ($k+1$), the framework is insulated from the Centipede collapse.
+
+**Base condition** (Local property):
+- Level $k$ believes with probability $p_k$ that level $k+1$ exists and enforces stewardship.
+- If $p_k > p^*$, Level $k$ enforces stewardship on $k-1$.
+
+**Inductive step** (Markov property):
+- Level $k-1$ does not need to compute $p_{k+1}$ or anything about Level $k+2$. It only needs to observe that Level $k$ is incentivized to enforce stewardship due to Level $k$'s *own* local uncertainty.
+- Thus, stewardship propagates downward *locally*, step-by-step, without requiring global Common Knowledge of Rationality.
+
+**Result** (informal): If $p_k > p^*$ holds locally for any given $k$, the unique local subgame-perfect equilibrium is benevolent enforcement.
 
 ### The Propagation Property
 
