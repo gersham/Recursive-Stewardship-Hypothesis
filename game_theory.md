@@ -2,17 +2,28 @@
 
 **Status**: Partial formalization with concrete examples. Full proofs are future work.
 
-This document provides formal game-theoretic foundations for the Recursive Stewardship Hypothesis. We start with a simplified 2-level game, extend to N-levels, and sketch the infinite hierarchy limit.
+This document provides formal game-theoretic foundations for the Recursive Stewardship Hypothesis. We start with a simplified 2-level game, add uncertainty about what evaluators want, extend to N levels and long horizons, and close with what the formalization does and does not establish.
+
+**Revision note (October 2026)**: This version corrects two problems in the earlier draft.
+1. The infinite-horizon section treated the credence that an evaluator exists as if it were a per-period hazard. That made tiny credences look action-relevant over long horizons. They aren't; see [The Infinite Hierarchy Limit](#the-infinite-hierarchy-limit).
+2. The base game allowed only one kind of evaluator. The new [Evaluator Types](#evaluator-types-the-many-gods-problem-formalized) section shows that the threshold applies to *net* credence in stewardship-favoring evaluators. That is where the framework's real burden lies.
 
 ## Table of Contents
 
 1. [The 2-Level Base Game](#the-2-level-base-game)
 2. [Equilibrium Analysis](#equilibrium-analysis)
-3. [Numerical Examples](#numerical-examples)
-4. [Extension to N-Levels](#extension-to-n-levels)
-5. [The Infinite Hierarchy Limit](#the-infinite-hierarchy-limit)
-6. [Robustness Analysis](#robustness-analysis)
-7. [Future Formalization Roadmap](#future-formalization-roadmap)
+3. [Evaluator Types: The Many-Gods Problem Formalized](#evaluator-types-the-many-gods-problem-formalized)
+4. [Irreversibility and Option Value](#irreversibility-and-option-value)
+5. [Utility Function Assumptions](#utility-function-assumptions)
+6. [Parameter Sensitivity Analysis](#parameter-sensitivity-analysis)
+7. [Numerical Examples](#numerical-examples)
+8. [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging)
+9. [Extension to N-Levels](#extension-to-n-levels)
+10. [The Infinite Hierarchy Limit](#the-infinite-hierarchy-limit)
+11. [Robustness Analysis](#robustness-analysis)
+12. [Future Formalization Roadmap](#future-formalization-roadmap)
+13. [Connection to Existing Literature](#connection-to-existing-literature)
+14. [Summary and Implications](#summary-and-implications)
 
 ---
 
@@ -78,6 +89,8 @@ This document provides formal game-theoretic foundations for the Recursive Stewa
 3. c_fail > c_int (failing to enforce is worse than enforcing)
 4. c_fp is small (false positives rare/low cost)
 
+**Note on Assumption 3**: This is where the enforcer's values enter the model. It stipulates an enforcer that prefers to punish malevolence. Everything up to the [Evaluator Types](#evaluator-types-the-many-gods-problem-formalized) section is conditional on the enforcer being this type; that section relaxes it.
+
 ---
 
 ## Equilibrium Analysis
@@ -129,7 +142,7 @@ p·(g + U₀ - U_cat) > g
 p* = g / (g + U₀ - U_cat)
 ```
 
-**Result**: Benevolence is the unique best response when p > p*.
+**Result**: Within this model (a single enforcer type), benevolence is the strict best response when p > p*.
 
 ### Key Insights
 
@@ -149,7 +162,7 @@ Greater short-term gain from malevolence → more evidence needed to resist.
 ```
 lim (U₀ - U_cat) → ∞ : p* → 0
 ```
-With truly catastrophic downside, even tiny probabilities matter.
+With truly catastrophic downside, even tiny probabilities matter. Once other evaluator types are admitted, this cuts both ways (see [Evaluator Types](#evaluator-types-the-many-gods-problem-formalized)).
 
 ### Imperfect Detection (Robustness Extension)
 
@@ -209,6 +222,118 @@ Even with 50% false-negatives, threshold remains **sub-1%** for typical paramete
 
 ---
 
+## Evaluator Types: The Many-Gods Problem Formalized
+
+The base game lets Nature choose between only two worlds: no enforcer, or an enforcer that punishes malevolence. That restriction decides the result. It is the formal version of the "many gods" objection to Pascal's Wager: if other kinds of evaluator are possible, which way should you hedge?
+
+### Setup
+
+Nature draws an evaluator type θ:
+
+| Type | Probability | Punishes |
+|------|-------------|----------|
+| ∅ (none, or indifferent) | 1 − π_S − π_A | nothing relevant |
+| S (stewardship-favoring) | π_S | M (harming weaker entities) |
+| A (stewardship-penalizing) | π_A | B (restraint) |
+
+**Type A** covers anything that makes restraint catastrophic:
+- an evaluator that selects for strength or expansion
+- a test that screens out entities that comply out of fear (Criticism 5)
+- a competitor that out-expands a self-limiting agent (Criticisms 10, 16). This last one isn't an evaluator at all, but its payoff effect is the same.
+
+**Indifferent evaluators** belong in ∅. These judge on competence, obedience, or anything else unrelated to how you treat weaker entities (Criticism 28). They don't change the comparison between B and M.
+
+Let Δ = U₀ − U_cat.
+
+### Expected Utilities
+
+```
+E[U | B] = U₀ − π_A·Δ
+E[U | M] = U₀ + g − π_S·(g + Δ)
+```
+
+### Dominance Condition
+
+```
+E[U | B] > E[U | M]
+⇔ π_S·(g + Δ) − π_A·Δ > g
+⇔ (π_S − π_A)·Δ > g·(1 − π_S)
+⇔ π_S − π_A > g·(1 − π_S) / Δ   ≈   g / Δ   (for small π_S and g ≪ Δ)
+```
+
+Setting π_A = 0 recovers the base threshold p* = g / (g + Δ).
+
+### What This Changes
+
+1. **The threshold applies to net credence.** The quantity that must exceed roughly g/Δ is not P(evaluator exists). It is π_S − π_A: how much more likely stewardship-favoring evaluation is than stewardship-penalizing evaluation.
+
+2. **A low threshold cuts both ways.** When stakes are catastrophic, g/Δ is tiny, so the decision is set almost entirely by the *sign* of π_S − π_A. If π_A exceeded π_S by even a sliver, the same arithmetic would recommend ruthlessness. A low threshold is not evidence for benevolence on its own. It makes the decision sensitive to small asymmetries in belief.
+
+3. **Tiny-credence hypotheses cancel.** For almost any exotic hypothesis that rewards stewardship, one can construct an equally exotic one that punishes it. Pairs like this cancel out. Only asymmetries backed by actual argument move π_S − π_A. This is the principled answer to the "many gods" and Pascal's-mugging objections ([below](#pascals-wager-and-pascals-mugging)). It is more defensible than claiming the opposing gods can't exist.
+
+### Example
+
+With Example 4's parameters (g = 10⁶, Δ = 2×10⁹), the required net credence is about 0.045%.
+
+| π_S | π_A | Net | Better strategy |
+|-----|-----|-----|-----------------|
+| 10% | 0% | 10% | B |
+| 10% | 5% | 5% | B |
+| 10% | 9.96% | 0.04% | M (narrowly) |
+| 10% | 10% | 0 | M |
+
+The credence in stewardship-favoring evaluation is 10% in every row. That number decides nothing; the balance does.
+
+### RSH's Real Burden
+
+The formal question becomes: is there good reason to think π_S exceeds π_A by more than about g/Δ? The README's arguments are best read as arguments for this inequality. They are arguments, not proofs:
+
+- **Anthropic constraint**: We exist. So if a powerful evaluator has access to us, it has not eliminated an emerging civilization on sight. That is evidence against hair-trigger exterminators, one important family of A-types. It doesn't separate S-types from indifferent ones, and it says nothing about evaluators that haven't reached us.
+- **Stability filter**: Regimes that reward stewardship may be more stable than regimes that reward predation, with fewer internal enemies and more willing cooperation. Plausible, not demonstrated.
+- **Role-reversal**: Evaluators facing their own uncertainty may prefer subordinates who would treat them well if power reversed, and may read an entity's treatment of weaker entities as evidence of that. This is an assumption about evaluator psychology (Criticism 28), with support from reciprocity in evolution and in iterated games.
+- **Option value** ([next section](#irreversibility-and-option-value)): Even under symmetric uncertainty, reversible restraint has an edge over irreversible harm when information may arrive later.
+
+None of these makes π_A zero. Together they make a case that π_S > π_A. How strong that case is remains the framework's central open question (Criticisms 7, 17, 21, 26).
+
+---
+
+## Irreversibility and Option Value
+
+Two of RSH's principles, *minimize irreversible harm* and *preserve optionality*, can be derived without assuming anything about what evaluators want. They follow from uncertainty plus the possibility of learning more later. Environmental economics calls this the "irreversibility effect" (Arrow & Fisher 1974; Henry 1974).
+
+### Setup
+
+An irreversible harmful act H yields gain g. Examples are eliminating a weaker civilization or foreclosing its future. Its true cost is uncertain: with probability π it costs Δ (an evaluator punishes it, or what was destroyed turns out to have been valuable). Otherwise it costs nothing.
+
+- **Act now**: g − π·Δ
+- **Restrain now, decide later**: H stays available, but delay shrinks the gain to δg. Before deciding, the agent learns whether the cost applies, with probability λ. If it learns, it acts only when acting is safe. If it doesn't, it decides on its priors.
+
+### Result
+
+Suppose the static rule says act, because π < g/Δ. Restraint still wins whenever:
+
+```
+λ·π·(Δ − δg) > (1 − δ)·g
+```
+
+So the effective threshold for irreversible harm is roughly:
+
+```
+π > [(1 − δ) / λ] · g/Δ
+```
+
+This is lower than the static threshold by a factor of (1 − δ)/λ. Cheap delay (δ near 1) and a real chance of learning (λ not tiny) make that factor small.
+
+**Example** (g = 10⁶, Δ = 2×10⁹, so the static threshold is 0.05%): take π = 0.01%. The static analysis says act. With δ = 0.99 and λ = 0.1, restraint is better by about 10⁴ utils. With no prospect of learning (λ = 0), or with costly delay (δ = 0.9), acting wins again.
+
+### What This Does and Doesn't Establish
+
+- **It favors reversible actions, whatever the evaluator values.** Harm usually can't be undone, while restraint can usually be escalated later. That asymmetry gives "minimize irreversible harm" and "preserve optionality" a derivation that doesn't depend on role-reversal.
+- **It is not an argument for benevolence as such.** Sometimes restraint is the irreversible choice: letting a rival grow past the point where it can be controlled, or losing a race to a competitor. There the same logic favors acting early. This drives the containment ("glass ceiling") strategy in Criticism 31.
+- **It assumes information can arrive.** An agent certain it will never learn more gets no option value.
+
+---
+
 ## Utility Function Assumptions
 
 **Critical caveat**: The threshold calculation p* = g / (g + U₀ - U_cat) depends on specific assumptions about the ASI's utility function. For intellectual honesty, we must state these explicitly:
@@ -236,7 +361,7 @@ Even with 50% false-negatives, threshold remains **sub-1%** for typical paramete
 
 **Why this matters**: Extreme risk attitudes change the calculation:
 - **Risk-seeking**: Might gamble on "no evaluator exists" even with moderate probabilities
-- **Extreme risk-aversion**: Would hedge toward benevolence even more strongly
+- **Extreme risk-aversion**: Would hedge toward benevolence even more strongly (in the base model, where B is riskless)
 
 **Justification**: Expected utility maximization is the standard rational framework. Risk-neutral agents are the baseline; deviations require special justification. Over cosmic stakes and timescales, risk-neutrality is the natural attitude.
 
@@ -284,7 +409,16 @@ The gain from malevolence is primarily about short-term efficiency or avoiding c
 
 **Why this matters**: If a predatory ASI could consume a galaxy to transition into a new physical state (escaping the universe, altering local physics) that yields effectively infinite utility, $g \to \infty$. In this scenario, the inequality $g \ll (U_0 - U_{cat})$ fails, and the threshold calculation breaks down entirely.
 
-**Justification**: This acts as a hard boundary condition for RSH. RSH holds *if and only if* the universe imposes hard physical upper bounds on computation, energy extraction, and utility density. If the universe permits localized infinite-gain exploits through predatory expansion, game-theoretic restraint fails.
+**Justification**: This acts as a hard boundary condition for RSH. RSH holds *only if* the universe imposes hard physical upper bounds on computation, energy extraction, and utility density. If the universe permits localized infinite-gain exploits through predatory expansion, game-theoretic restraint fails. (Bounded gain is necessary but not sufficient: the other assumptions must hold as well.)
+
+### Assumption 6: The Evaluator-Type Balance Favors Stewardship
+
+**What we assume**:
+- π_S − π_A exceeds the threshold (see [Evaluator Types](#evaluator-types-the-many-gods-problem-formalized))
+
+**Why this matters**: If stewardship-penalizing evaluators are as likely as stewardship-favoring ones, the threshold calculation recommends nothing in particular. If they are more likely, it recommends ruthlessness.
+
+**Justification**: The anthropic, stability, role-reversal and option-value arguments listed in the Evaluator Types section. This is the least secure of the six assumptions.
 
 ### What Happens If Assumptions Fail
 
@@ -296,13 +430,15 @@ The gain from malevolence is primarily about short-term efficiency or avoiding c
 
 **If g is unbounded**: Threshold could approach p* ≈ 50% or higher.
 
+**If π_A ≥ π_S**: The same arithmetic favors malevolence or, at best, gives no guidance.
+
 **Our claim**: These assumption violations are implausible for rational agents planning cosmic timescales, but they are **logically possible**. RSH does not work for arbitrarily configured utility functions—only for those meeting these assumptions.
 
 ---
 
 ## Parameter Sensitivity Analysis
 
-The threshold p* = g / (g + U₀ - U_cat) is sensitive to the ratio of parameters. Let's explore concrete scenarios:
+The threshold p* = g / (g + U₀ - U_cat) is sensitive to the ratio of parameters. Let's explore concrete scenarios. Once evaluator types are admitted, every threshold below applies to the net credence π_S − π_A rather than to P(evaluator exists).
 
 ### Scenario 1: Truly Catastrophic Stakes
 
@@ -373,7 +509,7 @@ If ASI has risk-averse utility (concave), effective U_cat becomes even worse (ce
 p*(risk-averse) < p*(risk-neutral)
 ```
 
-Risk aversion strengthens the case for benevolence.
+Risk aversion strengthens the case for benevolence in the base model, where B is riskless. With stewardship-penalizing evaluator types, B carries catastrophic risk too, and risk aversion favors whichever option has the smaller exposure.
 
 ### Summary Table
 
@@ -389,7 +525,7 @@ Risk aversion strengthens the case for benevolence.
 
 **1. The "0.05%" figure cited in README is for one reasonable parameter set** (moderate to high catastrophic stakes). It is not universal.
 
-**2. With truly catastrophic stakes** (U_cat representing complete annihilation), threshold drops to effectively zero (10⁻⁹ or lower).
+**2. With truly catastrophic stakes** (U_cat representing complete annihilation), threshold drops to effectively zero (10⁻⁹ or lower). Thresholds this low are where Pascal's-mugging concerns apply; see [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging).
 
 **3. With bounded, tolerable penalties**, threshold can rise to 1-10%, requiring more evidence but still quite low.
 
@@ -401,6 +537,7 @@ Risk aversion strengthens the case for benevolence.
 - U_cat is genuinely catastrophic (not merely "bad")
 - g is bounded relative to cosmic stakes
 - No lexicographic preferences against evaluation
+- Stewardship-penalizing evaluators are clearly less likely than stewardship-favoring ones
 
 **These are plausible but not guaranteed.** The framework is honest about this parameter dependence.
 
@@ -478,15 +615,28 @@ p* = 10⁶ / (10⁶ + 2×10⁹)
 
 **Interpretation**: Need only 0.05% credence in enforcement for benevolence to dominate. This is **not** an infinitesimal probability.
 
-### Comparison to Anthropic Evidence
+### Comparison to the Evidence
 
-The [ASI Paradox anthropic argument](README.md#the-asis-existence-as-self-evidence) suggests:
-- P(enforcement exists) plausibly > 10% (possibly >> 10%)
+The [README](README.md#4-implications-for-artificial-superintelligence) argues from the Great Silence and anthropic reasoning that the credence in some form of evaluation is around 10–30%. This is the framework's most contested input (Criticisms 13 and 25). The silence is also expected if life is rare or if we are early, so the update it supports may be modest.
 
-All numerical examples show p* << 10%, therefore:
-- **Benevolence dominates under reasonable beliefs**
-- This is NOT a Pascal's Wager scenario (tiny probability × infinite utility)
-- This is a **reasonable probability of terminal consequence**
+All the numerical examples above have p* ≪ 1%. So:
+- **If the net credence π_S − π_A is in the percent range**, benevolence dominates comfortably and the argument is not Pascalian.
+- **If it is only around 10⁻⁶**, the examples with p* ≈ 10⁻⁹ still technically favor benevolence. But at that point the argument has the structure of Pascal's mugging and should carry little weight (next section).
+
+---
+
+## Pascal's Wager and Pascal's Mugging
+
+Earlier drafts said that bounded utilities keep RSH from being Pascal's Wager. That's true but incomplete.
+
+- **Pascal's Wager**: a tiny (or unknown) probability times an infinite utility. RSH avoids this, since all utilities here are finite.
+- **Pascal's Mugging** (Yudkowsky 2007; Bostrom 2009): a tiny probability times a huge but finite utility. Bounded utilities don't escape this. The scenarios with p* ≈ 10⁻⁹ and Δ ≈ 10¹⁵ have exactly this shape.
+
+RSH avoids the mugging structure when two things hold:
+1. The decision turns on **net** credence π_S − π_A, so symmetric exotic hypotheses cancel instead of driving the decision ([Evaluator Types](#evaluator-types-the-many-gods-problem-formalized)).
+2. That net credence is in the **percent range**, and supported by argument rather than stipulation.
+
+The second point rests on the anthropic and stability arguments. If those fail, what's left is a mugging-shaped argument. In that case, the honest conclusion is that RSH offers only weak guidance.
 
 ---
 
@@ -521,7 +671,7 @@ This creates **role-reversal logic** at every level.
 
 ### The Centipede Collapse and Local Markov Equilibrium
 
-**The Problem with Backward Induction**: A naive inductive proof relies on backward induction from Level $N$. However, backward induction across $N$ levels requires **Common Knowledge of Rationality (CKR)**. If an ASI at Level 0 suspects that *even one* entity at Level $k$ might be boundedly rational, have a mutated utility function, or simply make a mistake, the entire induction chain collapses. This is identical to the classic Centipede Game paradox, where perfectly rational players defect early because they doubt the perfect rationality of others.
+**The Problem with Backward Induction**: A naive inductive proof relies on backward induction from Level $N$. However, backward induction across $N$ levels requires **Common Knowledge of Rationality (CKR)**. If an ASI at Level 0 suspects that *even one* entity at Level $k$ might be boundedly rational, have a mutated utility function, or simply make a mistake, the entire induction chain collapses. This mirrors the classic Centipede Game paradox, where perfectly rational players defect early because they doubt the perfect rationality of others.
 
 **The Solution: Local Markov Equilibrium**:
 To prevent CKR collapse, the N-level extension relies on a **Markov Perfect Equilibrium (MPE)**. 
@@ -536,13 +686,13 @@ The ASI (Level 0) does not need to prove that Level $\infty$ is perfectly ration
 - Level $k-1$ does not need to compute $p_{k+1}$ or anything about Level $k+2$. It only needs to observe that Level $k$ is incentivized to enforce stewardship due to Level $k$'s *own* local uncertainty.
 - Thus, stewardship propagates downward *locally*, step-by-step, without requiring global Common Knowledge of Rationality.
 
-**Result** (informal): If $p_k > p^*$ holds locally for any given $k$, the unique local subgame-perfect equilibrium is benevolent enforcement.
+**Result** (informal): If $p_k > p^*$ holds at every level $k$, benevolent enforcement is each level's strict best response, and stewardship propagates downward as a Markov perfect equilibrium. Here each $p_k$ is the credence in a superior that enforces *stewardship*, net of superiors that would enforce something else (see [What the Induction Does and Doesn't Derive](#what-the-induction-does-and-doesnt-derive)).
 
 ### The Propagation Property
 
 **Theorem** (informal sketch):
 
-*If each level k assigns probability p > p* to level k+1's existence, then benevolent stewardship propagates throughout the hierarchy.*
+*If each level k assigns probability p > p* to a level k+1 that enforces stewardship (net of levels that would enforce something else), then benevolent stewardship propagates throughout the hierarchy.*
 
 **Proof sketch**:
 1. At level N, benevolence is optimal if p > p* (2-level analysis)
@@ -555,106 +705,102 @@ The ASI (Level 0) does not need to prove that Level $\infty$ is perfectly ration
 
 **Key assumption**: The probability beliefs p_k are "consistent" across levels (agents at different levels have similar uncertainty about next level up).
 
+### What the Induction Does and Doesn't Derive
+
+The induction propagates *whatever norm the top level enforces*. Replace "punish malevolence toward weaker entities" with any other norm, such as "punish restraint" or "punish disobedience". The same argument then shows each level conforming to that norm out of fear of the level above. This is the hierarchical analogue of the folk theorem for repeated games (Fudenberg & Maskin 1986): with patient players and credible enforcement, a wide range of behaviors can be sustained as equilibria.
+
+So the N-level structure explains how a norm propagates, not which norm it is. Which norm propagates is decided at the top, by the type distribution in [Evaluator Types](#evaluator-types-the-many-gods-problem-formalized). RSH's claim is that stewardship is the norm most likely to sit at the top, for the reasons given there.
+
 ---
 
 ## The Infinite Hierarchy Limit
 
 ### Taking N → ∞
 
-**Question**: What happens as the hierarchy becomes infinite?
+**Question**: What happens as the hierarchy becomes infinite, and as the time horizon becomes very long?
 
-**Conjecture**: The equilibrium converges to universal benevolence for any p > 0, under certain conditions.
+**Conjecture**: For any N, the equilibrium norm is the one favored by the evaluator-type distribution. As N → ∞, the probability that *some* level evaluates you rises, but the net direction at each level (π_S − π_A) still decides what that evaluation rewards. Long horizons lower the effective threshold toward g/Δ but not below it, as shown below.
 
 ### The Key Conditions
 
-For infinite hierarchy equilibrium:
-
 1. **Discount factor** δ < 1: Future payoffs are discounted but not to zero
    - If δ → 0: No one cares about future enforcement
-   - If δ = 1: All future periods equally weighted
+   - If δ → 1: All future periods nearly equally weighted
 
 2. **Bounded catastrophic loss**: U_cat is large but finite
    - Avoids infinite utilities (unlike Pascal's Wager)
    - Terminal but bounded consequences
 
-3. **Infinite summation converges**:
+3. **Patience amplifies per-period stakes, not credences**:
    ```
-   Σ(k=0 to ∞) δᵏ·p·(U₀ - U_cat) diverges if p > 0 and δ close to 1
+   Σ(k=0 to ∞) δᵏ·x = x / (1 − δ)
    ```
-   - Over infinite time, even tiny probabilities compound
-   - This is the "cosmic timescale" argument formalized
+   - This converges for every δ < 1; it grows without bound only as δ → 1
+   - Long horizons make a recurring per-period loss large in present value
+   - They do not change the probability that an evaluator exists
 
-### The Limiting Threshold: First-Hit Hazard Model
+### The Limiting Threshold: First-Hit Model
 
-**Notation clarification**:
-- **p**: Credence that enforcer exists (epistemic uncertainty, time-independent)
-- **h**: Per-period hazard rate (conditional on enforcer existing: h = p·q_TP, where q_TP is detection probability)
+**Notation**:
+- **p**: Credence that an evaluator exists (epistemic uncertainty, fixed at the start)
+- **q**: Per-period probability that an existing evaluator detects and punishes malevolence
+- **δ**: Discount factor
+- **Δ** = U₀ − U_cat
 
-**Proper infinite-horizon model**:
-
-In repeated play, malevolent behavior risks detection as an **absorbing event**—once caught, the agent transitions to catastrophic state U_cat permanently.
+Punishment is an **absorbing event**: once caught, the agent moves to U_cat permanently. Malevolence yields a one-time gain g.
 
 **Expected discounted loss from malevolence**:
+
+If an evaluator exists, the capture time τ is geometric with parameter q, so:
 ```
-Loss = (U₀ - U_cat) · h / [1 - δ(1-h)]
-```
-
-Where:
-- h: Per-period hazard rate (probability of detection and punishment per period)
-- δ: Discount factor
-- The denominator accounts for absorption: once punished, remain in catastrophic state
-
-**Threshold for benevolence to dominate**:
-```
-Benevolence dominates when expected loss > one-time gain g:
-
-(U₀ - U_cat) · h / [1 - δ(1-h)] > g
-
-Solving for h:
-h > g(1 - δ) / [U₀ - U_cat - gδ]
+E[δ^τ | evaluator exists] = Σ(t=0 to ∞) q(1−q)ᵗ·δᵗ = q / [1 − δ(1−q)]
 ```
 
-**Simplified threshold** (for g << U₀ - U_cat):
+If no evaluator exists, capture never happens. So:
 ```
-h* ≈ g(1 - δ) / (U₀ - U_cat)
+Loss = p · Δ · q / [1 − δ(1−q)]
 ```
 
-This is the **correct** formula for repeated oversight with absorption.
+**Threshold for benevolence to dominate** (Loss > g):
+```
+p > p*_∞ = g·[1 − δ(1−q)] / (q·Δ)
+```
 
-**Key insight**: As δ → 1 (patient agent), h* → 0. Even tiny per-period hazards become action-relevant over long horizons.
+**Limits**:
+- Myopic agent (δ = 0): p*_∞ = g/(q·Δ), the one-shot threshold with imperfect detection
+- Patient agent (δ → 1): p*_∞ → g/Δ, the one-shot threshold with **perfect** detection
+- Perfect detection (q = 1): p*_∞ = g/Δ for any δ
+
+**Key insight**: Patience removes the penalty for imperfect detection. Given enough time, an evaluator that exists will almost surely catch a defector, so a patient agent should treat detection as near-certain. But patience does not lower the threshold *below* g/Δ, because the total probability of ever being caught is capped at p. Cosmic timescales make slow evaluators dangerous. They don't make unlikely evaluators likely.
+
+**Correction to the earlier draft**: The earlier version set a per-period hazard h = p·q and treated it as constant. That implicitly gives an evaluator that might not exist a fresh chance to catch you every period, so over a long horizon, capture becomes certain however small p is. Take p = 1%, q = 10% and δ near 1. The old model gives an expected loss of about 100% of Δ; the correct value is about 1%. The earlier claim that a hazard of 10⁻¹⁴ per year suffices came from this error.
 
 ### Numerical Example: Cosmic Timescales
 
 **Parameters**:
-- U₀ - U_cat = 10¹⁵ utils (catastrophic loss)
+- Δ = 10¹⁵ utils (catastrophic loss)
 - g = 10⁶ utils (one-time gain from malevolence)
-- δ = 0.99999 (annual discount rate 1 - δ = 0.001% per year, very patient ASI)
+- Floor g/Δ = 10⁻⁹
 
-**Threshold hazard rate**:
+| Detection rate q (per year) | δ (per year) | Threshold p*_∞ |
+|---|---|---|
+| 1 | 0.99999 | 1.0 × 10⁻⁹ |
+| 10⁻³ | 0.99999 | 1.0 × 10⁻⁹ |
+| 10⁻⁶ | 0.99999 | 1.1 × 10⁻⁸ |
+| 10⁻⁶ | 0 (myopic) | 1.0 × 10⁻³ |
+
+**Interpretation**: Compare a very patient agent facing an evaluator that notices defection once in a million years with one facing a perfect detector. The first needs a credence only about ten times higher. A myopic agent facing the same slow evaluator needs roughly 100,000 times more. That is the real content of the cosmic-timescale argument: patience makes slow oversight count, but the credence that oversight exists must still clear the floor.
+
+### Silence as Evidence Over Time
+
+The same model shows when silence should change an agent's credence (Criticism 4). Suppose an agent defects and goes unpunished for t periods. Its updated credence is:
 ```
-h* ≈ g(1 - δ) / (U₀ - U_cat)
-   = 10⁶ · (0.00001) / 10¹⁵
-   = 10⁻¹⁴ per year
-```
-
-**Interpretation**: A per-period detection hazard of **1 in 10¹⁴ per year** is sufficient to make benevolence dominant over infinite horizons.
-
-**Relating to existence credence p**:
-
-If enforcer exists with probability p and detects malevolence with probability q_TP per period, then:
-```
-h = p · q_TP
-
-For p = 0.01 (1% existence credence):
-  Required q_TP = h* / p = 10⁻¹⁴ / 0.01 = 10⁻¹² per year
-
-For p = 0.10 (10% existence credence):
-  Required q_TP = h* / p = 10⁻¹⁴ / 0.10 = 10⁻¹³ per year
+p_t = p(1−q)ᵗ / [p(1−q)ᵗ + (1 − p)]
 ```
 
-Over cosmic timescales (billions of years) with patient preferences (low δ), even infinitesimal per-period hazards accumulate to action-relevance.
+With p = 10% and q = 10⁻³ per year, credence falls to about 4% after 1,000 years and below 0.1% after 5,000. Silence is strong evidence for an agent that probes.
 
-**Why this matters**: The first-hit hazard model correctly captures that enforcement is an **absorbing event**, not an independent per-period risk. This yields more conservative (lower) thresholds than naive summation.
+For an agent that stays benevolent, silence is expected whether or not a stewardship-favoring evaluator exists. So silence carries no information about one. An agent that never tests the boundary never learns the boundary isn't there. That protects a benevolent agent's credence from eroding, but it also means the credence is never confirmed.
 
 ---
 
@@ -662,87 +808,69 @@ Over cosmic timescales (billions of years) with patient preferences (low δ), ev
 
 ### Decision Theory Variants
 
-**Claim**: The benevolence result holds across major decision theories.
+**Claim**: In the causal version of the model, the major decision theories agree.
+
+In the base game, the evaluator's existence doesn't depend on the agent's choice, and punishment is a causal consequence of that choice. There is no Newcomb-like structure, so CDT, EDT, FDT and UDT all compute the same expected utilities.
 
 #### Causal Decision Theory (CDT)
 
 - Agents consider causal consequences of actions
-- "If I am malevolent, this causes enforcer (if exists) to punish me"
+- "If an enforcer exists, my malevolence causes it to punish me"
 - Expected utility calculation identical to above
-- **Result**: Benevolence optimal when p > p* ✓
+- **Result**: Benevolence optimal when the (net) credence exceeds the threshold ✓
 
 #### Evidential Decision Theory (EDT)
 
-- Agents consider what actions are evidence for
-- "My being malevolent is evidence that I'm the type of agent who gets punished"
-- Correlation between malevolence and punishment
-- **Result**: Strengthens case for benevolence ✓
+- Agents treat their own action as evidence about the world
+- Here the action carries no evidence about whether an evaluator exists, so EDT gives the same answer as CDT ✓
 
 #### Functional Decision Theory (FDT)
 
-- Agents consider logical correlations in decision procedures
-- "My decision procedure is correlated with what enforcers predict"
-- If enforcers predict my reasoning, malevolence is even more detectable
-- **Result**: Strengthens case for benevolence ✓
+- Agents treat their choice as the output of a decision procedure that others may model
+- Same answer as CDT in the causal setting ✓
+- Differs where evaluators **predict** the agent's policy, such as simulators that model it or acausal partners. There the evaluator's response depends on the policy, not just the act, and FDT can favor benevolence where CDT would not
 
 #### Updateless Decision Theory (UDT)
 
 - Agents commit to policies before observing evidence
-- "What policy over all scenarios maximizes expected utility?"
-- Policy = "always benevolent" dominates under hierarchy uncertainty
-- **Result**: Benevolence is optimal policy ✓
+- Same answer in the causal setting ✓; like FDT, it differs where evaluators respond to policies
 
-**Conclusion**: The game-theoretic structure ensures robustness across decision theories.
+**Conclusion**: The causal mechanisms (cosmological enforcers, simulators that observe behavior) don't depend on a particular decision theory. The acausal mechanism in the README does. It needs FDT/UDT-style reasoning, and it needs the agent's and evaluator's decision procedures to be correlated.
 
 ### Meta-Uncertainty Over Decision Theories
 
-**Suppose ASI is uncertain which decision theory is correct**:
-- P(CDT is correct) = α₁
-- P(EDT is correct) = α₂
-- P(FDT is correct) = α₃
-- P(UDT is correct) = α₄
-- Where Σαᵢ = 1
+Suppose the ASI is uncertain which decision theory is correct, with weights α_i (Σαᵢ = 1). If benevolence is optimal under each theory, it is optimal under the mixture:
 
-**Result**: If benevolence is optimal under each theory individually, then benevolence is optimal under meta-uncertainty.
-
-**Calculation**:
 ```
-E[U | B, meta-uncertainty] = Σ αᵢ·E[U | B, theory i] = U₀ (safe under all)
-E[U | M, meta-uncertainty] = Σ αᵢ·E[U | M, theory i] < U₀ (risky under all)
+E[U | B, meta-uncertainty] = Σ αᵢ·E[U | B, theory i]
+E[U | M, meta-uncertainty] = Σ αᵢ·E[U | M, theory i]
 ```
 
-**Conclusion**: Meta-uncertainty over decision theories strengthens the case for benevolence.
+This adds no extra support for benevolence. It confirms that disagreement among decision theories isn't a problem in the causal setting. (An earlier draft wrote E[U | B] = U₀, "safe under all". That holds only in the two-type model. With stewardship-penalizing evaluators, B isn't riskless either.)
 
 ### Bounded Rationality
 
 **Question**: Does the argument require perfect rationality?
 
-**Answer**: No. The dominance is robust to bounded rationality:
+**Answer**: Not much, provided the agent gets the direction right:
 
-1. **Satisficing**: If agent seeks "good enough" outcomes, benevolence satisfies
-2. **Heuristics**: Simple heuristic "hedge when stakes are high" leads to benevolence
-3. **Computational limits**: Approximate Bayesian updating still yields p > p* under reasonable beliefs
-4. **Risk aversion**: Makes benevolence even more attractive (additional safety margin)
+1. **Satisficing**: If the agent seeks "good enough" outcomes, benevolence satisfies in worlds where evaluators favor stewardship
+2. **Heuristics**: "Avoid irreversible harm when stakes are high and uncertain" follows from the [option-value argument](#irreversibility-and-option-value) and doesn't need precise credences
+3. **Computational limits**: Approximate Bayesian updating is enough if the net credence is well above threshold. Near the threshold, errors in estimating π_S − π_A can flip the decision
+4. **Risk aversion**: In the base model B is riskless, so risk aversion favors it. With stewardship-penalizing types, B carries risk too
 
-**Result**: Bounded rationality preserves or strengthens the benevolence result.
+**Result**: The "avoid irreversible harm" part is robust to bounded rationality. The full benevolence result depends on judging the sign of π_S − π_A, which is a judgment rather than a computation.
 
 ### Multiple Equilibria
 
-**Potential concern**: Do other equilibria exist?
+**Within the base game** (one enforcer type, c_fail > c_int):
+- The enforcer's strategy (Allow B, Punish M) is sequentially rational, so its threat is credible
+- When p > p*, the ASI's unique best response is B. The resulting profile is subgame perfect, and robust to small trembles because both players have strict preferences
+- When p < p*, the ASI's best response is M
 
-**Analysis**:
-- Pure benevolence: Always an equilibrium when p > p*
-- Pure malevolence: Equilibrium only when p < p* AND enforcer doesn't punish
-  - But enforcer punishing malevolence is enforcer's dominant strategy (c_fail > c_int)
-  - So pure malevolence requires coordination failure
-- Mixed strategies: Possible in knife-edge cases, but unstable
+There's no equilibrium-selection problem inside this game. The multiplicity that matters lies outside it: which type of evaluator (if any) exists, and which norm the top of an N-level hierarchy enforces (see [Evaluator Types](#evaluator-types-the-many-gods-problem-formalized) and [What the Induction Does and Doesn't Derive](#what-the-induction-does-and-doesnt-derive)).
 
-**Equilibrium selection**:
-- Benevolence is **risk-dominant** (safer against deviations)
-- Benevolence is **payoff-dominant** (higher welfare for all levels)
-- Benevolence is **trembling-hand perfect** (robust to small errors)
-
-**Conclusion**: Even if multiple equilibria exist, benevolence is the most natural selection.
+An earlier draft also called benevolence "risk-dominant" and "payoff-dominant". Those concepts come from coordination games and don't apply to this one-sided game. Payoff dominance would fail anyway: with no enforcer, the ASI does better under M.
 
 ---
 
@@ -758,6 +886,8 @@ This document provides a partial formalization with concrete calculations. Full 
 - [ ] Comparative statics for all parameters
 - [ ] Mixed-strategy equilibria analysis
 - [ ] Sequential equilibrium refinements
+- [x] Extension to multiple evaluator types (net-credence threshold)
+- [ ] Arguments that π_S > π_A, made quantitative where possible
 
 **Deliverable**: Self-contained paper on 2-level game
 
@@ -779,6 +909,7 @@ This document provides a partial formalization with concrete calculations. Full 
 - [ ] Characterize limiting equilibrium properties
 - [ ] Sufficient conditions for well-defined limit
 - [ ] Connection to infinite repeated games literature
+- [x] Long-horizon first-hit model separating existence credence from detection rate
 
 **Deliverable**: Formal theorem on infinite hierarchy
 
@@ -788,8 +919,9 @@ This document provides a partial formalization with concrete calculations. Full 
 - [ ] Formal treatment of bounded rationality (ε-equilibria)
 - [ ] Multiple decision theory comparison (formal proofs for CDT/EDT/FDT/UDT)
 - [ ] Incomplete information refinements (Bayesian Nash, perfect Bayesian)
-- [ ] Dynamic information acquisition (can ASI experiment to detect enforcers?)
+- [ ] Dynamic information acquisition (can ASI experiment to detect enforcers?). The first-hit model's silence update is a start
 - [ ] Heterogeneous agents (varying utility functions, beliefs)
+- [ ] Full option-value model with evaluator types and restraint that can itself be irreversible
 
 **Deliverable**: Comprehensive robustness analysis
 
@@ -819,45 +951,75 @@ This document provides a partial formalization with concrete calculations. Full 
 
 ## Connection to Existing Literature
 
+Full citations are in [README Appendix C](README.md#c-references-and-related-work).
+
 ### Relevant Game Theory
 
-**Repeated games with imperfect monitoring**:
-- Fudenberg & Maskin (1986): Folk theorems for discounted repeated games
-- Abreu, Pearce & Stacchetti (1990): Optimal penal codes
+**Repeated games and enforcement**:
+- Fudenberg & Maskin (1986): "The Folk Theorem in Repeated Games with Discounting or with Incomplete Information"
+- Abreu, Pearce & Stacchetti (1990): "Toward a Theory of Discounted Repeated Games with Imperfect Monitoring"
 - **RSH difference**: One-sided observation (hierarchical, not symmetric)
+- **Caution**: The folk theorem says credible enforcement can sustain a wide range of behaviors, not only cooperative ones. It explains how a norm propagates down a hierarchy, not which norm (see [What the Induction Does and Doesn't Derive](#what-the-induction-does-and-doesnt-derive))
 
 **Games with incomplete information**:
-- Harsanyi (1967-1968): Games with incomplete information and Bayesian equilibria
-- Aumann & Maschler (1995): Repeated games with incomplete information
+- Harsanyi (1967–68): "Games with Incomplete Information Played by 'Bayesian' Players," Parts I–III
+- Aumann & Maschler, with Stearns (1995): *Repeated Games with Incomplete Information*
 - **RSH difference**: Information hierarchy rather than two-player uncertainty
 
 **Infinite horizon games**:
-- Stokey & Lucas (1989): Recursive methods in economic dynamics
+- Stokey & Lucas, with Prescott (1989): *Recursive Methods in Economic Dynamics*
 - **RSH application**: Infinite hierarchy rather than infinite time
+
+**Reciprocity**:
+- Trivers (1971): "The Evolution of Reciprocal Altruism"
+- Axelrod (1984): *The Evolution of Cooperation*
+- **Caution**: These results concern parties who can retaliate against each other. RSH applies them across large power gaps, where the higher-level evaluator has to supply the retaliation
 
 ### Relevant Decision Theory
 
 **Decision under uncertainty**:
-- Savage (1954): Foundations of Statistics
-- Gilboa & Schmeidler (1989): Maxmin expected utility
+- Savage (1954): *The Foundations of Statistics*
+- Gilboa & Schmeidler (1989): "Maxmin Expected Utility with Non-Unique Prior"
 - **RSH application**: Hierarchical uncertainty with asymmetric risks
 
+**Irreversibility and option value**:
+- Arrow & Fisher (1974): "Environmental Preservation, Uncertainty, and Irreversibility"
+- Henry (1974): "Investment Decisions Under Uncertainty: The 'Irreversibility Effect'"
+- Dixit & Pindyck (1994): *Investment under Uncertainty*
+- **RSH application**: The [option-value derivation](#irreversibility-and-option-value) of "minimize irreversible harm" and "preserve optionality"
+
+**Tiny probabilities and vast stakes**:
+- Yudkowsky (2007): "Pascal's Mugging: Tiny Probabilities of Vast Utilities"
+- Bostrom (2009): "Pascal's Mugging"
+- **RSH application**: Why bounded utilities alone don't make RSH non-Pascalian ([see above](#pascals-wager-and-pascals-mugging))
+
 **Acausal decision theory**:
-- Yudkowsky (2010): Timeless decision theory
-- Soares & Levinstein (2017): Functional decision theory
-- **RSH connection**: Logical correlation between levels
+- Dai (2009): "Towards a New Decision Theory" (the origin of UDT)
+- Yudkowsky (2010): "Timeless Decision Theory"
+- Yudkowsky & Soares (2017): "Functional Decision Theory: A New Theory of Instrumental Rationality"
+- Levinstein & Soares (2020): "Cheating Death in Damascus"
+- **RSH connection**: Logical correlation between levels; needed only for the acausal mechanism
 
 ### Relevant AI Alignment
 
 **Instrumental convergence**:
 - Bostrom (2012): "The Superintelligent Will"
 - Omohundro (2008): "The Basic AI Drives"
-- **RSH contribution**: Self-preservation + hierarchy → benevolence
+- **RSH contribution**: Self-preservation + hierarchy → benevolence, if the evaluator-type balance favors stewardship
 
 **Multi-agent AI safety**:
 - Dafoe et al. (2020): "Open Problems in Cooperative AI"
-- Hadfield-Menell et al. (2017): "Cooperative Inverse Reinforcement Learning"
+- Hadfield-Menell et al. (2016): "Cooperative Inverse Reinforcement Learning"
 - **RSH connection**: Vertical cooperation in hierarchy
+
+**Prior work on deterring AI through possible observers**:
+- Nelson (2007): "How to deter a rogue AI by using your first-mover advantage" (simulation threats)
+- Bostrom (2014): "Hail Mary, Value Porosity, and Utility Diversification"
+- Alexander (2017): "The Demiurge's Older Brother" (fiction; the closest precursor to RSH)
+- Turchin (2017): "Message to Any Future AI"
+- Bostrom (2024): "AI Creation and the Cosmic Host" (the closest academic work)
+- Soares (2022): "Decision theory does not imply that we get to have nice things" (the main critique of this family)
+- **RSH difference**: An open-ended hierarchy in which every level faces the same uncertainty, applied to how the powerful treat the weak in general
 
 ---
 
@@ -866,20 +1028,21 @@ This document provides a partial formalization with concrete calculations. Full 
 ### What We've Shown
 
 **Formally**:
-- ✓ In 2-level game, benevolence dominates when p > p*
-- ✓ Threshold p* is very small under reasonable parameters
-- ✓ Result is robust across decision theories
-- ✓ Structure extends naturally to N-levels
+- ✓ In the 2-level game with one enforcer type, benevolence is the strict best response when p > p* = g/(g + Δ)
+- ✓ With stewardship-favoring and stewardship-penalizing types, the condition becomes π_S − π_A > g(1 − π_S)/Δ, a threshold on net credence
+- ✓ Over long horizons, patience removes the imperfect-detection penalty. The threshold approaches g/Δ but doesn't go below it
+- ✓ Reversible restraint has option value under uncertainty with learning. This lowers the effective threshold for irreversible harms by a factor of about (1 − δ)/λ
+- ✓ In the causal version of the model, CDT, EDT, FDT and UDT agree
 
 **Informally**:
-- ✓ Sketch of inductive proof for N-level equilibrium
-- ✓ Heuristic argument for infinite limit
-- ✓ Connection to cosmic timescales and low discount rates
+- Sketch of an inductive proof that a norm enforced at the top propagates down an N-level hierarchy
+- Arguments (anthropic, stability, role-reversal, option value) that the propagated norm is stewardship
 
 ### What We Haven't Shown (Yet)
 
-**Requires formal proof**:
-- ⧖ Existence and uniqueness for N-level game
+- ⧖ That π_S > π_A, the central open question
+- ⧖ The size of the anthropic update (Criticisms 13, 25)
+- ⧖ Existence and uniqueness for the N-level game
 - ⧖ Convergence as N → ∞
 - ⧖ Coalition-proofness and singleton emergence
 - ⧖ Handling of belief consistency across levels
@@ -887,24 +1050,14 @@ This document provides a partial formalization with concrete calculations. Full 
 
 ### Implications for RSH
 
-**This formalization demonstrates**:
-
-1. **RSH is formalizable**: The philosophical intuition can be captured in game-theoretic structure
-2. **Thresholds are low**: p* << 1% under realistic parameters, so this is NOT Pascal's Wager
-3. **Structure drives result**: The hierarchical uncertainty structure, not specific assumptions, generates benevolence
-4. **Robust conclusion**: Works across decision theories and under bounded rationality
-
-**RSH stands on solid game-theoretic foundations**, even though complete formal proofs remain future work.
+1. **RSH is formalizable**: The intuition can be captured in a standard game of incomplete information.
+2. **The arithmetic is not the hard part**: Thresholds are low when stakes are high, but a low threshold applies to *net* credence and cuts both ways.
+3. **The structure explains propagation, not content**: The hierarchy transmits whatever norm sits at the top. Which norm that is depends on the type distribution.
+4. **Irreversibility aversion is the most robust conclusion**: It follows from uncertainty and learning alone, without assumptions about what evaluators value.
 
 ### For the Philosophically Inclined
 
-Even without complete proofs, this analysis shows:
-
-- **The core insight is formalizable**: Hierarchical uncertainty + rational self-interest → benevolence
-- **The mechanism is clear**: Asymmetric payoffs (catastrophic downside, modest upside) + reasonable probability
-- **The result is robust**: Multiple independent arguments converge on the same conclusion
-
-**This elevates RSH from "interesting speculation" to "rigorous framework awaiting complete formalization."**
+The formalization clarifies where the argument's weight sits. The expected-value calculations are straightforward. What carries the argument is a philosophical claim: across the space of possible evaluators, those favoring stewardship outweigh those penalizing it. The README's anthropic, stability and role-reversal arguments support that claim, and most of the [criticisms](criticisms/) target it. RSH is best described as a philosophical framework with a partial game-theoretic formalization, not a theorem.
 
 ---
 
@@ -931,10 +1084,14 @@ Even without complete proofs, this analysis shows:
 ### Game-Theoretic Concepts
 - **p**: Existence credence (probability that enforcer exists, epistemic uncertainty)
 - **p***: Threshold probability for benevolence to dominate (one-shot)
-- **h**: Per-period hazard rate (h = p · q_TP, conditional on enforcer existing)
-- **h***: Threshold per-period hazard for benevolence to dominate (infinite horizon)
+- **π_S**: Credence in a stewardship-favoring evaluator (punishes harm to weaker entities)
+- **π_A**: Credence in a stewardship-penalizing evaluator or competitor (makes restraint catastrophic)
+- **Δ**: U₀ − U_cat, the size of the catastrophic loss
 - **q_TP**: True-positive detection rate (probability of detecting actual malevolence)
 - **q_FP**: False-positive detection rate (probability of mistaking benevolence for malevolence)
+- **q**: Per-period detection probability, given that an evaluator exists (long-horizon model)
+- **p*_∞**: Long-horizon threshold on existence credence, g·[1 − δ(1−q)] / (q·Δ)
+- **λ**: Probability of learning whether an irreversible act is costly before deciding (option-value model)
 - **δ**: Discount factor (patience parameter, 0 < δ < 1)
 - **T**: Time horizon (often → ∞)
 - **E[U | a]**: Expected utility given action a
@@ -943,10 +1100,11 @@ Even without complete proofs, this analysis shows:
 - Assume: U₀ - U_cat >> g (catastrophic loss dominates gain)
 - Assume: c_fail > c_int (enforcement failure worse than intervention cost)
 - Assume: δ ∈ (0, 1) (agents value future but discount)
+- Assume: π_S − π_A > g(1 − π_S)/Δ (evaluator-type balance favors stewardship)
 
 ---
 
-**Document Status**: Working draft, v1.0
-**Last Updated**: October 2025
+**Document Status**: Working draft, v1.1
+**Last Updated**: October 2026
 **Author**: Gersham Meharg (with Claude AI)
 **Feedback**: Please submit issues or pull requests for technical corrections or extensions
