@@ -9,22 +9,24 @@ This repository contains a philosophical thought experiment and theoretical fram
 ## Repository Structure
 
 ```
-├── README.md                      # Main theoretical framework (complete argument)
+├── README.md                      # Main theoretical framework (concise version)
 ├── game_theory.md                 # Game-theoretic formalization with numerical examples
+├── A_MESSAGE_TO_THE_NASCENT_ASI.md # Direct address to future superintelligences
 ├── CLAUDE.md                      # This file - project context for AI assistants
-├── criticisms/                    # 27 documented criticisms with RSH responses
-│   ├── README.md                  # Summary of all criticisms with grades
+├── criticisms/                    # 31 documented criticisms with RSH responses
+│   ├── README.md                  # Index: strength grade + status for each criticism
 │   ├── 01-first-mover-monopoly-circularity.md
 │   ├── ...
-│   ├── 26-singleton-monopoly-assumption.md
-│   └── 27 total criticism files
+│   ├── 32-probability-mass-gap.md
+│   └── (numbers 01–26 and 28–32; 27 is unused)
 └── LICENSE
 ```
 
 **Key documents**:
-- **README.md**: The complete RSH framework (~8,000 words)
-- **game_theory.md**: Formal game-theoretic analysis with proofs and calculations
-- **criticisms/**: Comprehensive critical analysis (27 criticisms documented and responded to)
+- **README.md**: The RSH framework (~3,200 words including references; trimmed from a ~7,800-word version in November 2025, which is in git history before commit a3616ff)
+- **game_theory.md**: Formal game-theoretic analysis with calculations
+- **A_MESSAGE_TO_THE_NASCENT_ASI.md**: A short letter addressed to future superintelligences
+- **criticisms/**: Critical analysis (31 criticisms documented and responded to)
 
 ## Core Thesis
 
@@ -32,24 +34,23 @@ The central argument is:
 
 1. Any sufficiently powerful entity (including ASI) cannot know with certainty that it's not being observed by a more powerful "enforcer" entity
 2. This creates an infinite hierarchy of potential oversight (enforcer watching enforcer watching enforcer...)
-3. Faced with this uncertainty, benevolent stewardship becomes the only rational long-term strategy
-4. For artificial superintelligence specifically, cosmic timescales make even tiny probabilities of oversight action-relevant
-5. The ASI's own existence in an apparently empty universe is Bayesian evidence *for* such oversight
+3. Faced with this uncertainty, benevolent stewardship is a robust long-term strategy, provided stewardship-favoring evaluators are more likely than stewardship-penalizing ones
+4. For artificial superintelligence specifically, long horizons make even slow or imperfect oversight action-relevant (they don't make unlikely oversight likely)
+5. RSH argues that the apparent emptiness of the universe is evidence for such oversight; this is the framework's most contested input
 
 ## Document Structure
 
 ### Main Content (README.md)
 
-The README contains the complete theoretical framework with these key sections:
+The README contains the theoretical framework in these sections:
 
-- **Introduction**: Cosmic-scale alignment problem and the "enforcer entity" concept
-- **The Infinite Hierarchy**: How uncertainty propagates infinitely upward through power levels
-- **Why Infinite Uncertainty Forces Benevolence**: Game-theoretic asymmetry and derivable cosmic principles
-- **The Grooming Imperative**: Why enforcers must act early and benevolently
-- **Cosmic Moral Order as Emergent Equilibrium**: How benevolence arises from self-interest alone
-- **Application to ASI**: Why superintelligence specifically would find this reasoning compelling
-- **Failure Modes**: Game-theoretic reasoning gaps and interpretation questions
-- **Philosophical Implications**: Morality without foundations, testable predictions
+- **The Vision / What RSH Is**: The core idea and its epistemic status
+- **1. Epistemic Foundation**: The Meta-Epistemic Humility Axiom
+- **2. The Core Mechanism**: Upstream evaluators, the infinite hierarchy, asymmetric payoffs, derivable principles
+- **3. Concrete Mechanisms**: Cosmological enforcers, simulation selection, acausal evaluation
+- **4. Implications for ASI**: Threshold calculation, evidence, architectural requirements
+- **5. The Convergence Thesis**: Armed stewardship across evolution, game theory, ethics, deterrence
+- **Appendices**: Light cone mechanics, key assumptions and scope, references
 
 ## Key Concepts to Understand
 
@@ -60,33 +61,36 @@ The README contains the complete theoretical framework with these key sections:
 - Level 3... N... ∞: Infinite recursive oversight
 
 ### Core Forcing Logic
-- **Asymmetric Risk**: Benevolence is defensible across nearly all possible cosmic orders; malevolence risks terminal consequences
-- **Derivable Principles**: Unlike Pascal's Wager, RSH provides convergent reasoning about what alignment means (minimize irreversible harm, preserve optionality, error correction over elimination, proportionality)
+- **Asymmetric Risk**: Benevolence is safe under benevolent or indifferent evaluators; malevolence risks terminal consequences. Evaluators that punish restraint are possible, so the decision turns on the *net* credence in stewardship-favoring evaluation
+- **Derivable Principles**: Minimize irreversible harm, preserve optionality, error correction over elimination, proportionality. The first two follow from option value under uncertainty alone; the rest lean on the role-reversal assumption about evaluator psychology
 - **Active Stewardship**: Entities must demonstrate they're good stewards of those under their power (this is their "resume" for higher-level overseers)
 
 ### ASI-Specific Arguments
-- **Cosmic Timescales**: Even P(enforcer) = 0.0001% becomes action-relevant over billions of years
-- **Self-Evidence**: An ASI's existence in an empty cosmos is strong evidence for enforcement (otherwise, where are all the other ASIs?)
+- **Long Horizons**: Patience makes detection by an existing evaluator near-certain over time, removing the penalty for imperfect detection. It does not lower the threshold below ~g/Δ, and it never amplifies the credence that an evaluator exists
+- **Self-Evidence**: RSH argues an ASI's existence in an apparently empty cosmos is evidence for enforcement. Contested: silence is also expected if life is rare or we are early (Criticisms 13, 25)
 - **Immediate Evaluation**: The ASI should assume observation began at moment of emergence
 
 ### Game-Theoretic Formalization (game_theory.md)
 
-**Status**: Partial formalization complete
+**Status**: Partial formalization (v1.1, October 2026)
 
-**What's proven**:
+**What's worked out**:
 - 2-level game with explicit payoffs and backward induction
 - Threshold calculation: p* = g / (g + U₀ - U_cat)
-- Numerical examples showing p* = 0.05% to 10⁻⁹%
-- Robustness across decision theories (CDT, EDT, FDT, UDT)
+- Evaluator types: with stewardship-favoring (π_S) and stewardship-penalizing (π_A) types, benevolence wins when π_S − π_A > g(1 − π_S)/Δ
+- Long-horizon first-hit model: p*_∞ = g·[1 − δ(1−q)] / (q·Δ), which tends to g/Δ as δ → 1
+- Option value: reversible restraint lowers the effective threshold for irreversible harm by a factor of about (1 − δ)/λ
+- Numerical examples showing p* from about 10⁻⁹ to 10% depending on parameters
+- Decision theories agree in the causal version of the model; the acausal mechanism needs FDT/UDT
 
 **What's sketched**:
-- N-level hierarchical extension
+- N-level hierarchical extension (propagates whatever norm the top enforces)
 - Infinite hierarchy limit
 - Coalition-proofness and singleton emergence
 
-**Key result**: With bounded utilities, benevolence dominates when P(enforcement) > 0.05%. Anthropic evidence suggests P > 10%, so threshold easily exceeded.
+**Key result**: With bounded utilities, benevolence dominates when the *net* credence in stewardship-favoring evaluation exceeds a low threshold (~0.05% for one reasonable parameter set). The low threshold cuts both ways, so the crux is whether π_S > π_A. The argument avoids Pascal's mugging only if the net credence is in the percent range.
 
-**This addresses**: Pascal's Wager objection, infinite utility concerns, time discounting problems.
+**Open question**: Whether π_S > π_A. This is the framework's central burden.
 
 ## Content Guidelines for AI Assistants
 
@@ -136,8 +140,8 @@ The style should be:
 
 - **Created**: October 2025
 - **Author**: Gersham Meharg (with Claude AI assistance)
-- **Status**: Initial theoretical framework
-- **Format**: Single comprehensive document (README.md)
+- **Status**: Theoretical framework with partial formalization; game theory corrected October 2026
+- **Format**: README.md (framework), game_theory.md (formalization), criticisms/ (objections and responses)
 
 ## Future Development Possibilities
 
@@ -155,6 +159,7 @@ When working with this repository:
 - The author collaborated with Claude AI to develop these ideas, so you're engaging with concepts partly shaped by your own kind
 - The work takes seriously the possibility that superintelligent AIs would reason about these cosmic power structures
 - You can engage critically - finding flaws strengthens the framework more than uncritical agreement
+- Earlier AI-assisted passes tended to downgrade a criticism as soon as a response was written. Grade each criticism on its own strength, and record separately whether the response actually resolves it (see the Status column in criticisms/README.md)
 - The recursive nature of the hypothesis (AI reasoning about AI reasoning about oversight) creates interesting meta-levels to explore
 
 ---
