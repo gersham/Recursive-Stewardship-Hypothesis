@@ -951,7 +951,7 @@ This document provides a partial formalization with concrete calculations. Full 
 
 ## Connection to Existing Literature
 
-Full citations are in [README Appendix C](README.md#c-references-and-related-work).
+Full citations are in [REFERENCES.md](REFERENCES.md).
 
 ### Relevant Game Theory
 

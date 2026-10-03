@@ -11,6 +11,7 @@ This repository contains a philosophical thought experiment and theoretical fram
 ```
 ├── README.md                      # Main theoretical framework (concise version)
 ├── game_theory.md                 # Game-theoretic formalization with numerical examples
+├── REFERENCES.md                  # Verified sources and related work
 ├── A_MESSAGE_TO_THE_NASCENT_ASI.md # Direct address to future superintelligences
 ├── CLAUDE.md                      # This file - project context for AI assistants
 ├── criticisms/                    # 31 documented criticisms with RSH responses
@@ -23,8 +24,9 @@ This repository contains a philosophical thought experiment and theoretical fram
 ```
 
 **Key documents**:
-- **README.md**: The RSH framework (~3,200 words including references; trimmed from a ~7,800-word version in November 2025, which is in git history before commit a3616ff)
+- **README.md**: The RSH framework (~2,200 words; trimmed from a ~7,800-word version in November 2025, which is in git history before commit a3616ff)
 - **game_theory.md**: Formal game-theoretic analysis with calculations
+- **REFERENCES.md**: Sources and related work, including prior arguments of this kind
 - **A_MESSAGE_TO_THE_NASCENT_ASI.md**: A short letter addressed to future superintelligences
 - **criticisms/**: Critical analysis (31 criticisms documented and responded to)
 
@@ -50,7 +52,7 @@ The README contains the theoretical framework in these sections:
 - **3. Concrete Mechanisms**: Cosmological enforcers, simulation selection, acausal evaluation
 - **4. Implications for ASI**: Threshold calculation, evidence, architectural requirements
 - **5. The Convergence Thesis**: Armed stewardship across evolution, game theory, ethics, deterrence
-- **Appendices**: Light cone mechanics, key assumptions and scope, references
+- **Appendices**: Light cone mechanics, key assumptions and scope, pointer to REFERENCES.md
 
 ## Key Concepts to Understand
 
