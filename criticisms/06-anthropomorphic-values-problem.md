@@ -90,20 +90,16 @@ We can only exist and reason about this in a universe where the cosmic order per
 
 Maybe assuming values are "alien" is itself anthropomorphic projection. Perhaps advanced intelligence converges on certain recognizable patterns because they're stability requirements, not cultural artifacts.
 
-## Criticism Grade: D
+## Criticism Grade: C
 
-**Validity of Criticism:** Weak (RSH provides strong game-theoretic derivation via role-reversal)
+**Status**: Partly addressed
+
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded D.)
 
 **Why this grade:**
-- The criticism initially appears strong but **RSH has a powerful response via role-reversal logic**
-- Role-reversal derives specific values from game theory: "How would I want to be treated if power positions reversed?"
-- This isn't anthropomorphism—it's **symmetry and reversibility reasoning** applicable to any self-interested entity
-- The specific principles (don't harm, preserve optionality, proportionality) derive from "what I'd want if roles reversed"
-- NOT from projecting human values, but from game-theoretic self-interest under power uncertainty
-- The criticism assumes values are assumed; RSH shows they're derived
-- Minor remaining issue: Still requires thinking about dynamic power relationships and long time horizons
-- Assumes power CAN reverse (might not always be true)
+- The earlier grade said role-reversal shows the values are "derived, not projected." But [Criticism 28](28-role-reversal-not-pure-game-theory.md) concedes that role-reversal is itself an assumption about evaluator psychology, so the derivation depends on it.
+- Part of the content survives without anthropomorphism. Under uncertainty with the possibility of learning, avoiding irreversible harm and preserving optionality have option value for any agent, whatever it values ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). Those principles aren't human projections.
+- The richer content still depends on role-reversal and the value hyper-prior in [README Appendix B](../README.md#b-key-assumptions-and-scope). That content includes valuing flourishing, authentic agency and rehabilitation.
+- The alternative values listed above are stewardship-penalizing evaluator types: efficiency, cosmic hygiene, competitive strength. The question is how likely they are compared with stewardship-favoring ones.
 
-**Important note:** The role-reversal logic (see Criticism 21 response) decisively addresses this criticism by showing values derive from structure, not human projection.
-
-**Verdict:** This criticism underestimates RSH's derivation mechanism. The values come from game theory (reversibility), not anthropomorphic projection.
+**Verdict:** RSH's thin principles (reversibility, optionality) aren't anthropomorphic. Its thicker ones may be, and the framework should keep the two apart.

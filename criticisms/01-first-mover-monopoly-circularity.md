@@ -37,7 +37,7 @@ If the cosmic monopoly could equally be malevolent as benevolent, then:
 
 The criticism assumes monopolistic evaluation, but RSH actually works better under pluralistic uncertainty:
 - **Multiple possible evaluator types**: Cosmological enforcers, simulators, acausal processes, exotic mechanisms—an entity cannot optimize for one specific type
-- **Additive probability**: P(evaluation) = P(enforcers) + P(simulation) + P(acausal) + P(exotic unknown)
+- **Combined probability**: P(evaluation) is at least as large as the most likely single mechanism (enforcers, simulation, acausal, exotic). It equals their sum only if the mechanisms are mutually exclusive
 - **Hedging across uncertainty**: When you don't know which evaluator type operates (if any), the robust strategy is benevolence—behavior that performs well across the widest range of possible mechanisms
 - **No single point of failure**: Even if one mechanism (e.g., cosmological enforcers) doesn't exist, other mechanisms might
 
@@ -65,19 +65,16 @@ Benevolent systems may be inherently more stable than malevolent ones because:
 
 Any enforcer, even a first-mover, faces its own hierarchical uncertainty. Even if no Level 2 exists *yet*, a sufficiently powerful Level 1 entity cannot rule out that its actions might create or invite oversight. Therefore, even first-movers face the hedging logic.
 
-## Criticism Grade: C-
+## Criticism Grade: C
 
-**Validity of Criticism:** Moderate weakness (RSH addresses this reasonably well)
+**Status**: Partly addressed
+
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded C-.)
 
 **Why this grade:**
-- RSH provides a strong response via role-reversal logic: even first-movers face uncertainty about super-enforcers
-- The circularity is broken: benevolence emerges from self-interest + uncertainty + role-reversal logic, not from assuming benevolence
-- The anthropic argument provides supporting evidence
-- Stability arguments add additional reasons
-- **The criticism identifies a real gap but RSH has a game-theoretic mechanism to address it**
-- Remaining weakness: Still requires first-mover to care about distant possibilities and think long-term
-- Not a fatal flaw, but points to an assumption that could be questioned
+- The self-application argument is sound as far as it goes. Even a first mover can't rule out a higher level, so it faces the hedging logic too.
+- But that only pushes the question up a level. A first mover hedges toward whatever it expects the level above to reward: stewardship if that's what is rewarded, something else if not. The earlier grade said role-reversal "breaks the circularity." [Criticism 28](28-role-reversal-not-pure-game-theory.md) concedes role-reversal is an assumption, so on its own it doesn't break the circularity. It moves the question to the evaluator-type balance ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)).
+- The pluralism response is fair. But "hedge across evaluator types" favors benevolence only if stewardship-favoring types outweigh the others (see [Criticism 26](26-singleton-monopoly-assumption.md)).
+- The anthropic argument rules out a first mover that has access to us and eliminates emerging civilizations on sight. That is real but limited.
 
-**Important note:** The role-reversal logic (see Criticism 21 response) provides the key mechanism. Enforcers want subordinates who would treat THEM well if power dynamics shifted. This is derived from self-interest, not assumed benevolence.
-
-**Verdict:** Valid concern but RSH handles it reasonably well. The circularity is broken by role-reversal derivation from minimal assumptions.
+**Verdict:** A moderate criticism. RSH answers "why would the first mover care?" (it can't be sure it is first). It only partly answers "why would it enforce benevolence rather than something else?" That second question is the shared open question of Criticisms 7, 17 and 21.

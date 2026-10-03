@@ -160,6 +160,8 @@ ASIs are unitary decision-makers who can commit credibly.
 
 ## Criticism Grade: C
 
+**Status**: Partly addressed
+
 **Validity of Criticism:** Moderate (empirical observation cuts against RSH, but threshold arguments are reasonable)
 
 **Why this grade:**

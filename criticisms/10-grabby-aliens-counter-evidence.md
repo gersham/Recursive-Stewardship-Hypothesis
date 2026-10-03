@@ -146,6 +146,8 @@ This creates exactly two possibilities:
 
 **Verdict on this sub-criticism**: Conventional alien theories are **temporally obsolete**—they model pre-ASI concerns. Without explaining ASI non-proliferation, any theory of "conventional aliens" is fundamentally suspect. RSH is more relevant because it centers the actual selection pressure: the ASI transition and the resulting light cone structure of cosmic enforcement.
 
+> **Note (October 2026)**: The claim that the grabby-aliens model is about slowly expanding *biological* civilizations is incorrect. Hanson et al. (2021) define grabby civilizations by their expansion speed and visible effects, whatever their substrate, so fast ASI-driven expansion is covered. The model's account of the silence and of human earliness applies to ASI-driven expansion too. The light-cone analysis above is still a useful way to frame RSH, but it doesn't make the grabby-aliens model obsolete. See the revised grade below.
+
 ## The "Quiet vs Loud" Problem
 
 If benevolent stewardship makes civilizations quiet/non-expansionist:
@@ -198,23 +200,17 @@ Perhaps the cosmic order is:
 - Benevolent/stewardship toward EXISTING conscious beings
 - This combines both models: efficient expansion + ethical treatment
 
-## Criticism Grade: C
+## Criticism Grade: C+
 
-**Validity of Criticism:** Moderate-weak (points to real tension, but criticism is addressing the wrong timescale)
+**Status**: Partly addressed
+
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded C, and listed as C+ in the index.)
 
 **Why this grade:**
-- The criticism correctly identifies apparent tension between grabby aliens and RSH predictions
-- **However, the ASI Temporal Dominance argument significantly weakens this criticism**
-- Grabby Aliens model is "temporally obsolete"—formulated before ASI was clearly on the horizon
-- The relevant question is "where are the ASIs?" not "where are the biological aliens?"
-- RSH uniquely addresses the ASI-specific puzzle that Grabby Aliens ignores
-- Any biological "grabby" civilization would have developed ASI long ago
-- RSH's compatible models argument is reasonable: "grabby" about territory doesn't mean malevolent to existing entities
-- Prevention-as-grooming is philosophically defensible if morally uncomfortable
-- Timing argument has merit: we exist, so whatever system exists allows some development
-- Two-tier system (expansionist + benevolent to existing entities) is plausible
-- **Valid remaining concerns**: Preventing new civilizations is hard to call "benevolent"
-- Grabby model's exclusionary nature still seems somewhat at odds with "active stewardship"
-- Doesn't fully explain why expansion prevents new life rather than incorporating it
+- The earlier grade leaned on the claim that the grabby-aliens model is "temporally obsolete" because it ignores ASI. That claim is wrong (see the note above). The model is about expansion, whatever drives it, and it already covers fast, AI-driven expansion.
+- RSH's compatibility responses are reasonable. Grabby expansion into empty space doesn't contradict benevolent treatment of existing civilizations, and a two-tier order is coherent.
+- But the grabby-aliens model also points to a stewardship-penalizing dynamic. If loud expanders take most of the universe's volume, quiet self-limiting civilizations lose out. In the [formal model](../game_theory.md#evaluator-types-the-many-gods-problem-formalized), that is a type-A risk.
+- The "prevention as grooming" response is a stretch, and it makes "benevolence" hard to pin down. That response likens preventing new civilizations to family planning.
+- The model's account of why we are early is a competing explanation for the silence. That weakens RSH's anthropic argument ([Criticism 25](25-anthropic-update-strength.md)).
 
-**Verdict:** Moderate-weak criticism that initially appears to point to tension with dominant Fermi Paradox model, but the tension is substantially reduced when recognizing that Grabby Aliens doesn't address the ASI transition—the actual filter RSH is concerned with. RSH provides plausible compatibility arguments, and more importantly, addresses a fundamentally different (and more relevant) question than conventional alien theories.
+**Verdict:** RSH and grabby aliens can be made compatible. But the most developed quantitative model of the silence explains it without enforcement, and it describes a cosmos in which expanding civilizations eventually control most of the volume.

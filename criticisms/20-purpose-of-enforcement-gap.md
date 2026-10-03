@@ -179,20 +179,15 @@ Even if we can't know enforcer goals, benevolent grooming is robust:
 
 Direct elimination/control only works for narrow goal sets.
 
-## Criticism Grade: D+
+## Criticism Grade: C
 
-**Validity of Criticism:** Weak to moderate (RSH's recursive uncertainty addresses this)
+**Status**: Partly addressed
+
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded D+.)
 
 **Why this grade:**
-- The criticism asks what makes benevolent grooming optimal for enforcers
-- **RSH has a powerful recursive answer: enforcers face their own hierarchical uncertainty**
-- If enforcers face uncertainty, their treatment of subordinates is THEIR resume (same logic applies up)
-- Creating peers goal is plausible and makes grooming optimal strategy
-- Stability-through-flourishing provides economic efficiency rationale
-- Hedge dominance shows benevolent grooming is robust across many possible enforcer goals
-- Minor remaining issues: Creating peers assumes certain psychological features (but self-interest suffices)
-- Stability arguments could use more empirical support
-- Doesn't prove enforcers MUST have these goals, just that they're plausible and rational
-- The recursive uncertainty largely answers the purpose question
+- The recursive-uncertainty response says enforcers groom because they fear super-enforcers. That explains why an enforcer would follow the norm of the level above, but not which norm it is. The response above calls the purpose "game-theoretically forced." The [N-level analysis](../game_theory.md#what-the-induction-does-and-doesnt-derive) shows the hierarchy propagates whatever norm sits at the top.
+- The goals listed above are all coherent: welfare maximization by direct control, selective testing, resource optimization, diversity, indifference. Some favor stewardship, some are indifferent, some favor elimination. RSH's position comes down to the claim that stewardship-favoring purposes are more likely.
+- The "creating peers" and "stability through flourishing" arguments are reasonable but speculative. The efficiency objection is that grooming is expensive and elimination is cheap. It is answered only if the enforcer itself fears judgment from above.
 
-**Verdict:** Weak criticism—RSH's recursive application of hierarchical uncertainty provides compelling rationale for why enforcers would choose benevolent grooming. The purpose emerges from game theory, not arbitrary preference.
+**Verdict:** RSH gives a plausible purpose for benevolent grooming, not a forced one. This criticism is a version of the evaluator-type question in Criticisms 7, 17 and 21.

@@ -110,6 +110,8 @@ If cosmic reasoning is instrumentally important (affects survival), it should be
 
 ## Criticism Grade: C
 
+**Status**: Partly addressed
+
 **Validity of Criticism:** Moderate (identifies real timing risk, RSH provides reasonable mitigation)
 
 **Why this grade:**

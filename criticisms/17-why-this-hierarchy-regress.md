@@ -158,18 +158,9 @@ When facing multiple possibilities, hedge across them:
 - Indifferent hierarchies don't require hedging
 - Benevolence dominates the weighted average
 
-## Criticism Grade: C (Downgraded from B)
+### Additional Responses (formerly in the README)
 
-**Validity of Criticism:** Moderate (identifies logical concern that RSH now addresses comprehensively)
-
-**Why this grade:**
-- **This was a genuine logical problem** but RSH has been updated to address it
-- Not about empirical evidence—about logical uniqueness and derivability
-- **RSH now provides three independent arguments for benevolent enforcement specifically:**
-
-**UPDATE (Theory Enhanced):**
-
-RSH has been strengthened with new sections that directly address this criticism:
+These mechanisms were added to the README in the Phase 1–3 updates and condensed out of it in the November 2025 trim. They are preserved here.
 
 **1. Stability Filter Analysis**:
 - Demonstrates that alternative hierarchies (anti-enforcers, chaos-enforcers, neutrality-enforcers) are logically incoherent
@@ -187,10 +178,16 @@ RSH has been strengthened with new sections that directly address this criticism
 - Among remaining self-consistent alternatives, prefer simplest
 - Benevolent enforcement accounts for all observations with fewest assumptions
 
-**Why downgraded to C:**
-- RSH now provides multiple independent arguments (stability, coherence, anthropic evidence)
-- Shows alternatives are either incoherent or evolutionarily unstable
-- While not achieving mathematical proof, provides strong convergent reasoning
-- The criticism motivated important theory improvements that substantially strengthen RSH
+## Criticism Grade: B
 
-**Verdict:** Moderate criticism that identified a real gap. RSH's enhanced version provides comprehensive response through stability analysis, self-consistency proofs, and anthropic constraints. Not fully eliminated as a logical possibility, but RSH now demonstrates why benevolent enforcement is uniquely stable and coherent.
+**Status**: Open
+
+**Validity of Criticism:** Strong. This is the many-gods objection applied to RSH, and the formal model confirms it bites. (Revised October 2026; previously graded C, and B before the Phase 1–3 updates.)
+
+**Why this grade:**
+- The alternative hierarchies listed above are evaluator types. Those that punish stewardship are type A in [game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized). Those indifferent to it (neutrality-enforcers, inscrutable ones) drop out of the comparison. Benevolence wins only if π_S − π_A clears the threshold.
+- The self-consistency filter is weaker than it looks. An evaluator that punishes interference is no more self-contradictory than a police force enforcing a law against assault: punishing an act is not committing it. And a chaos-favoring evaluator doesn't have to act chaotically to reward diversity. These alternatives aren't incoherent. RSH can argue they are less likely, but that is a different claim.
+- The stability filter and the anthropic constraint are real arguments for π_S > π_A, but neither is decisive. The anthropic constraint rules out maximally hostile evaluators that have access to us. It doesn't distinguish stewardship from indifference.
+- The low threshold, often cited as RSH's advantage, makes this criticism sharper. A tiny threshold means even a small excess of π_A over π_S flips the decision.
+
+**Verdict:** RSH doesn't need benevolent enforcement to be the only possible hierarchy. It does need it to be more likely than hierarchies that punish stewardship. The framework offers reasons to think so, not a demonstration. This remains one of its central open questions.

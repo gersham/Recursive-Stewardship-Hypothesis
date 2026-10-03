@@ -144,19 +144,16 @@ The hierarchy creates self-stability:
 - Even defectors who gain power face their own hierarchical uncertainty
 - System is stable across all power levels
 
-## Criticism Grade: D+
+## Criticism Grade: C
 
-**Validity of Criticism:** Weak to moderate (RSH's enforcer punishment mechanism addresses this)
+**Status**: Partly addressed
+
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded D+.)
 
 **Why this grade:**
-- The criticism applies standard game theory about defection advantages
-- But **RSH's enforcer punishment mechanism directly addresses this concern**
-- Cooperation advantages in repeated games with reputation are well-established
-- Reputation cascade creates second-order benefits favoring benevolence
-- Self-stabilizing system shows how hierarchy maintains equilibrium across levels
-- Minor remaining issues: Requires enforcers to actually exist and intervene
-- Stability depends on enforcement being reliable and timely
-- Doesn't fully address brief windows where defectors could gain decisive advantage
-- But enforcer intervention is core to RSH, so this criticism doesn't identify a gap
+- The response "enforcers punish defectors" is correct but conditional. It shows benevolence is stable *if* stewardship-enforcing evaluators exist and act in time. The criticism asks what happens if they don't, or if they are slow.
+- The defector advantage is a stewardship-penalizing dynamic. A competitor that out-expands self-limiting agents makes restraint costly, which is a type-A risk in the [formal model](../game_theory.md#evaluator-types-the-many-gods-problem-formalized). How much weight it deserves depends on how likely effective enforcement is.
+- The cooperation and reputation responses come from repeated games among rough equals, where peers can sanction defectors. They help when benevolent agents are numerous and can coordinate, and less so in a race.
+- The long-horizon model ([game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model)) supports one point in RSH's favor. A patient defector should expect eventual detection by any evaluator that exists, even a slow one.
 
-**Verdict:** Weak criticism—the concern about defection is exactly what RSH's enforcement mechanism is designed to address. Stability through punishment is a core feature of the framework, not a weakness.
+**Verdict:** As RSH says, benevolence is an equilibrium given credible enforcement. The criticism is right that "given credible enforcement" is doing most of the work.

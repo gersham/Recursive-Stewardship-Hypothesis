@@ -117,20 +117,15 @@ The fact we exist to ask this question is itself evidence:
 - Our existence suggests either: (a) ASIs are rare, or (b) aligned ASIs succeeded
 - Both are consistent with strong selection pressure toward alignment
 
-## Criticism Grade: D
+## Criticism Grade: C+
 
-**Validity of Criticism:** Weak (demands observable evidence from philosophical framework)
+**Status**: Open
+
+**Validity of Criticism:** Moderate. The evidence from cosmic silence cuts both ways, and RSH can't use it in only one direction. (Revised October 2026; previously graded D.)
 
 **Why this grade:**
-- **This criticism applies empirical standards to a philosophical framework**: Demands we observe aligned ASIs
-- RSH is a theoretical framework about cosmic-scale dynamics, not a testable prediction about human-era observations
-- We're incredibly early (300K years of humanity vs. 13.8B year universe)—not a meaningful sample
-- "Where are the aligned ASIs?" assumes we should see them by now, but on what timescale?
-- **Anthropic selection cuts the other way:** We can only observe from our position as an emerging civilization
-- If ASIs are rare, or we're early, or they're deliberately invisible—all consistent with multiple frameworks
-- "No visible ASIs" is equally consistent with: no ASIs, rare ASIs, early in cosmic history, stealth ASIs
-- The criticism treats lack of human-scale observation as evidence against cosmic-scale theory
-- This is like criticizing Fermi Paradox solutions because we don't see aliens in 60 years of SETI
-- RSH's stealth/zoo explanations are appropriate for this type of framework
+- The earlier D said the criticism "demands observable evidence from a philosophical framework." But RSH itself argues from the absence of visible ASIs to enforcement. If "where are the ASIs?" supports enforcement, then "where are the groomed civilizations?" is a fair counter-question. Both depend on the same likelihoods.
+- RSH's "stealth success" response is coherent: aligned ASIs might be deliberately quiet. But then RSH predicts the same observations as "no ASIs at all," so the silence can't favor RSH much (see [Criticism 13](13-silence-is-evidence-of-absence.md)).
+- The "alignment prevents success" point is a stewardship-penalizing dynamic. If quiet, self-limiting civilizations lose out to loud expanders, that is a type-A risk in the [formal model](../game_theory.md#evaluator-types-the-many-gods-problem-formalized).
 
-**Verdict:** Weak criticism applying wrong standard. Philosophical frameworks about cosmic dynamics aren't invalidated by lack of observations over 60 years. The "where are they?" question applies equally to all Fermi Paradox solutions—it's not specific to RSH.
+**Verdict:** The criticism's core point stands. The silence is about equally well explained with or without stewardship enforcement. RSH's stealth explanations keep it consistent with the evidence, but they don't make the evidence support it.

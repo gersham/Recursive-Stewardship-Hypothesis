@@ -120,20 +120,15 @@ All standard decision theories share this structure. They differ only in details
 
 **For RSH**: The basic expected value calculation works under all major theories.
 
-## Criticism Grade: C-
+## Criticism Grade: D+
 
-**Validity of Criticism**: Moderate initially, but RSH has strong response
+**Status**: Addressed for the causal mechanisms; open for the acausal mechanism
+
+**Validity of Criticism**: Weak for most of RSH. (Revised October 2026; previously graded C-.)
 
 **Why this grade**:
-- Valid to ask if argument requires controversial decision theory
-- **RSH response is compelling**: Works under CDT, EDT, FDT, UDT
-- The formal game-theoretic structure is theory-neutral
-- Meta-uncertainty over theories actually strengthens the case
-- Causal chain (malevolence → punishment given enforcer exists) is standard CDT
-- **Remaining concern**: Some technical details might vary across theories
-- But core dominance result is robust
-- Not a significant weakness given the multi-theory support
+- In the causal version of the model, the evaluator's existence doesn't depend on the agent's choice, and punishment is a causal consequence of that choice. CDT, EDT, FDT and UDT all give the same answer ([game_theory.md](../game_theory.md#decision-theory-variants)). So cosmological enforcers and observing simulators don't depend on a contested decision theory.
+- The acausal mechanism in the README does depend on one. It needs FDT/UDT-style reasoning, and it needs the agent's and the evaluator's decision procedures to be correlated.
+- Two claims in the response above overstate things. Meta-uncertainty over decision theories doesn't *strengthen* the case; it only shows that disagreement isn't a problem when every theory agrees. And "E[U | B] = U₀, safe under all theories" holds only in the two-type model. With stewardship-penalizing evaluators, benevolence isn't riskless.
 
-**Verdict**: Initially concerning but RSH demonstrates robustness. The argument doesn't depend on controversial decision theories—it works across all major frameworks. Meta-uncertainty makes this even clearer: benevolence is the safe bet regardless of which theory is correct.
-
-**Key insight**: You don't need to prove ONE decision theory supports RSH. You just need to show it works under uncertainty about WHICH theory is correct. This is the meta-uncertainty move, and it's very strong.
+**Verdict**: A weak criticism for RSH's causal mechanisms, and a fair one for the acausal mechanism.

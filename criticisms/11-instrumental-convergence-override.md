@@ -123,6 +123,8 @@ Over sufficient time scales, strategic vs genuine becomes detectable:
 
 ## Criticism Grade: D+
 
+**Status**: Partly addressed
+
 **Validity of Criticism:** Weak to moderate (RSH shows compatibility with instrumental drives)
 
 **Why this grade:**

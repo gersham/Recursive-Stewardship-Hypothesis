@@ -47,7 +47,7 @@ This suggests T₁ < T₂ is plausible, perhaps even likely.
 
 ## RSH Response
 
-**Full acknowledgment**: README (Phase 1 update) includes new section "Critical Caveat: When RSH Applies (and When It Doesn't)" explicitly addressing this:
+**Full acknowledgment**: The Phase 1 update added a README section, "Critical Caveat: When RSH Applies (and When It Doesn't)", that addressed this explicitly. The November 2025 trim condensed it into the Scope paragraph of [README Appendix B](../README.md#b-key-assumptions-and-scope). The Phase 1 version read:
 
 > "RSH is not a magic safety law. It only constrains systems that meet specific architectural requirements..."
 >
@@ -98,6 +98,8 @@ RSH doesn't solve this dilemma—it acknowledges it explicitly.
 - "Pseudo-ASI" catastrophes before reflection completes
 
 ## Grade: C (Moderate Concern, Acknowledged But Not Solved)
+
+**Status**: Acknowledged
 
 **Status after Phase 1**: Explicitly acknowledged with comprehensive caveat section.
 

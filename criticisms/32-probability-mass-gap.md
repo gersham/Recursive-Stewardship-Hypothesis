@@ -1,4 +1,6 @@
-# 31. The Probability Mass / Reference Class Problem
+# Criticism 32: The Probability Mass / Reference Class Problem
+
+*Added in February 2026 as #31; renumbered to 32 because 31 was already in use.*
 
 ## The Problem
 
@@ -31,4 +33,16 @@ When picking a random "evaluator" from the urn of all possible cosmologies, the 
 
 ## Criticism Grade: B+
 
-**Verdict**: This is a strong, deep critique of the epistemic foundations. It correctly identifies that "uncertainty" isn't enough; you need "directed uncertainty." The RSH response handles this effectively by grounding the probability distribution in structural stability and evolutionary dynamics, demonstrating why the "evil god" hypothesis is a statistically negligible edge case in deep time.
+**Status**: Open
+
+**Validity of Criticism**: Strong. This is the many-gods problem stated precisely: uncertainty gives the *possibility* of evaluation, not its *direction*. In the formal model, it is the requirement that π_S − π_A clear the threshold ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)).
+
+**Why this grade**:
+- The criticism is correct. Its example, 0.1% on each side, is exactly the case where the net credence is zero and the threshold calculation gives no guidance.
+- The Measure of Stability Lemma is RSH's best answer, but it is an argument, not a lemma. Its steps are plausible but unproven:
+  - "Self-consumption of malice" assumes predatory hierarchies have subordinates who can defect. A single dominant power that eliminates its rivals faces no internal defection.
+  - "Lifespan discrepancy" and "the deep time filter" assume cooperative hierarchies out-compete predatory ones. Competition can also favor the expansionist ([Criticisms 10](10-grabby-aliens-counter-evidence.md) and [16](16-nash-equilibrium-instability.md)).
+  - Even granting a skew toward stable structures, stable is not the same as stewardship-favoring. An indifferent or obedience-focused evaluator can be stable too. That dilutes π_S without reversing it.
+- The response concludes that the "evil god" hypothesis is "a statistically negligible edge case." That goes further than the argument supports (see [Criticism 7](07-evil-god-objection.md)).
+
+**Verdict**: One of the strongest criticisms in the folder. The stability argument gives a real reason to expect π_S > π_A, but it isn't a demonstration, and it doesn't make the opposite case negligible. Together with 7, 17, 21 and 26, this is RSH's central open question.

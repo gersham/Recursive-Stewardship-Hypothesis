@@ -106,21 +106,16 @@ Natural suffering might not indicate malevolent values:
 
 If the cosmic order were actively malevolent (value suffering, elimination), civilizations wouldn't develop to the point of reasoning about it. Our existence is itself evidence against pure malevolence.
 
-## Criticism Grade: D
+## Criticism Grade: B
 
-**Validity of Criticism:** Weak (RSH's role-reversal logic strongly addresses this)
+**Status**: Open
+
+**Validity of Criticism:** Strong. An "evil god" is a stewardship-penalizing evaluator type, and nothing in RSH rules it out. (Revised October 2026; previously graded D.)
 
 **Why this grade:**
-- The criticism appears strong initially but **RSH has a decisive response via role-reversal logic**
-- Role-reversal provides the mechanism: even "evil" enforcers face uncertainty about super-enforcers
-- An enforcer valuing suffering must ask: "What if a super-enforcer judges ME by how I treat MY subordinates?"
-- If the answer is "I'd want benevolent treatment," then enforcing suffering is **self-defeating**
-- **The "evil god" can't be consistently evil** because it faces its own hierarchical uncertainty
-- Empirical observations (we exist, can flourish) provide weak supporting evidence
-- Anthropic lock-in: civilizations reach this reasoning stage, suggesting compatible cosmic order
-- Minor remaining issue: Assumes even malevolent enforcers care about self-preservation (likely but not certain)
-- Requires them to think about super-enforcers judging them
+- In the formal model ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)), an evaluator that rewards ruthlessness or punishes mercy is type A. Benevolence wins only if π_S − π_A clears a threshold. This criticism amounts to the point that π_A may not be small.
+- The earlier D relied on role-reversal: an evil enforcer would fear super-enforcers, and so enforce benevolence. That assumes the super-enforcers are benevolent, which is the question at issue. If the level above rewards ruthlessness, the same reasoning makes the evil enforcer *more* ruthless.
+- The anthropic response has real but limited force. Our existence is evidence against an evaluator that eliminates emerging civilizations on sight. It isn't evidence against evaluators that test through adversity, select for competitive strength, or haven't reached us yet.
+- The stability argument is plausible but hasn't been demonstrated. It holds that malevolent regimes face more resistance and so are less stable.
 
-**Important note:** The role-reversal logic (see Criticism 21 response) explains why even a potentially malevolent first-mover would enforce benevolence: hedging against its OWN uncertain position.
-
-**Verdict:** The criticism identifies a concerning possibility but RSH shows even "evil" enforcers are constrained by hierarchical uncertainty to enforce benevolence as a hedge.
+**Verdict:** This is one of RSH's central open questions, together with Criticisms 17, 21 and 26. RSH's best response is not that evil gods are impossible. It is that, on balance, the anthropic and stability considerations make them less likely than stewardship-favoring ones. That is an argument about relative credence, and it should be presented as one.

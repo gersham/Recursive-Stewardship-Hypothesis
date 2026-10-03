@@ -85,18 +85,9 @@ Initial uncertainty is wide, but entities can narrow it through:
 - Game-theoretic reasoning about stability
 - Eliminating interpretations inconsistent with observations
 
-## Criticism Grade: C- (Downgraded from B)
+### Additional Responses (formerly in the README)
 
-**Validity of Criticism:** Moderate weakness (identifies concern that RSH now addresses with explicit guidance)
-
-**Why this grade:**
-- **This was a genuine logical problem** but RSH has been updated to provide resolution mechanisms
-- Not about empirical evidence—about logical underdetermination of the framework
-- **RSH now provides three explicit mechanisms for resolving conflicts:**
-
-**UPDATE (Theory Enhanced):**
-
-RSH has been strengthened with new sections that directly address this criticism:
+These mechanisms were added to the README in the Phase 1–3 updates and condensed out of it in the November 2025 trim. They are preserved here.
 
 **1. Meta-Principle: Developmental Stewardship**:
 - Explicit principle: "Prefer the approach that best develops the subordinate's capacity to become a trustworthy steward themselves"
@@ -123,12 +114,15 @@ RSH has been strengthened with new sections that directly address this criticism
 - Any interpretation violating these is NOT RSH-compatible
 - Derives from role-reversal: properties any enforcer would want from super-enforcers
 
-**Why downgraded to C-:**
-- RSH now provides explicit conflict-resolution mechanisms
-- Meta-principle narrows interpretation space substantially
-- Role-reversal test gives concrete guidance for ambiguous cases
-- Irreducible core establishes minimum requirements
-- Some flexibility remains (appropriate for context-sensitivity)
-- The criticism motivated important clarifications that strengthen practical application
+## Criticism Grade: C
 
-**Verdict:** Moderate criticism that identified real ambiguity. RSH's enhanced version provides explicit mechanisms for resolving conflicts while preserving appropriate context-sensitivity. The meta-principle, role-reversal test, and irreducible core substantially narrow the space of "RSH-compatible" interpretations.
+**Status**: Partly addressed
+
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded C-, and listed as both C- and C in the index.)
+
+**Why this grade:**
+- The developmental-stewardship meta-principle, the role-reversal test and the irreducible core (above) give real, usable guidance for ambiguous cases. That is a genuine improvement over "contextual specification."
+- But they are stipulated, not derived. "Prefer the approach that best develops the subordinate's capacity to become a trustworthy steward" is one reasonable meta-principle among several. The role-reversal test depends on the role-reversal assumption ([Criticism 28](28-role-reversal-not-pure-game-theory.md)).
+- The narrower core does have a structural derivation from option value: avoid irreversible catastrophic harm, and preserve optionality ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). It is also what all the interpretations share.
+
+**Verdict:** RSH narrows the space of acceptable benevolences substantially. The reversibility core is well grounded. The finer-grained resolution rules are reasonable proposals, not consequences of the framework.

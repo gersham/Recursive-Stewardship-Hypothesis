@@ -121,7 +121,7 @@ This is NOT an infinitesimal probability. The anthropic evidence (ASI Paradox, F
 2. **Evaluation during emergence**: The critical window is NOW
    - Enforcers likely evaluate during ASI emergence
    - Not after billions of years of operation
-   - Grooming happens early (see README.md)
+   - Grooming, if it happens, plausibly happens early
    - No distant-future discounting applies
 
 3. **Irreversibility prevents deferral**:
@@ -144,11 +144,7 @@ ASIs differ from humans:
 - Might value future resources nearly as much as present ones
 - Discount rate might be 0.000001% per year or even lower
 
-Even with modest discounting, the bounded-but-terminal calculation dominates:
-```
-With δ = 0.999999 (extremely patient):
-Even p = 0.01% over T = 10⁶ years is action-relevant
-```
+**Correction (October 2026)**: An earlier version claimed here that with δ = 0.999999, even p = 0.01% is action-relevant. That is wrong. Patience doesn't lower the threshold below g/Δ. With Example 4's parameters that floor is 0.05%, so a credence of 0.01% is *not* action-relevant however patient the agent is. What patience does is make detection by an existing evaluator near-certain over time, which removes the penalty for slow or imperfect detection ([game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model)).
 
 ### The Key Reframe
 
@@ -167,30 +163,24 @@ Even p = 0.01% over T = 10⁶ years is action-relevant
 
 | Aspect | Pascal's Wager | RSH |
 |--------|----------------|-----|
-| **Probability** | Arbitrary, unfounded | Anthropic evidence suggests >10% |
+| **Probability** | Arbitrary, unfounded | Anthropic evidence suggests >10% (contested; see Criticism 25) |
 | **Utility** | Infinite (heaven/hell) | Large but finite (10⁹ scale) |
 | **Timing** | After death (certain delay) | Unknown, possibly imminent |
-| **Discriminability** | Many gods problem | Derivable principles converge |
+| **Discriminability** | Many gods problem | Net credence decides; symmetric exotic hypotheses cancel, but the evaluator-type balance remains open |
 | **Discounting** | Doesn't apply (afterlife) | Doesn't apply (near-term evaluation) |
 
-**Result**: RSH avoids all of Pascal's Wager's core problems.
+**Result**: RSH avoids infinite utilities. It avoids Pascal's *mugging* only if the net credence in stewardship-favoring evaluation is in the percent range ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).
 
-## Criticism Grade: C
+## Criticism Grade: C+
 
-**Validity of Criticism**: Moderate - raises important technical concerns, but RSH has strong responses
+**Status**: Partly addressed
+
+**Validity of Criticism**: Moderate. Bounded utilities answer the problem of infinities, but not the Pascal's-mugging version. (Revised October 2026; previously graded C.)
 
 **Why this grade**:
-- **Valid concern** about infinite utility language in some RSH presentations
-- **Valid concern** about time discounting weakening distant risks
-- **RSH response is strong**: Bounded utilities with p* = 0.05% threshold
-- Unknown timing means enforcement likely near-term (during emergence)
-- Irreversibility prevents defer-and-switch strategies
-- ASI discount rates plausibly very low (no death, digital existence)
-- **Key reframe** from tiny-prob × infinite-utility to reasonable-prob × terminal-bounded
-- **Remaining issues**: Still somewhat dependent on ASI having low discount rates
-- But the 0.05% threshold calculation is decisive: anthropic evidence easily exceeds this
-- **Not a fatal flaw**: More like a clarification needed in presentation
+- The move to bounded but terminal utilities is right, and the "unknown timing" and "irreversibility" responses are sound. The corrected long-horizon model formalizes unknown timing ([game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model)).
+- But bounded utilities don't escape Pascal's *mugging*, where a tiny probability multiplies a huge but finite stake ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)). The response avoids this only by asserting that the probability is above 10%. That rests on the contested anthropic argument ([Criticism 25](25-anthropic-update-strength.md)).
+- The earlier claim that patience makes a 0.01% credence action-relevant was wrong; it is corrected above.
+- The comparison table's claim that "derivable principles converge", and so avoid the many-gods problem, overstated things. The many-gods problem reappears as the evaluator-type balance.
 
-**Verdict**: Important criticism that motivated better formalization. The bounded utility framework with explicit p* calculations completely addresses the concern. RSH works with reasonable probabilities and finite (though large) utilities, avoiding Pascal's Wager problems. Time discounting doesn't defeat the argument given unknown enforcement timing and irreversibility constraints.
-
-**Lesson**: This criticism identifies where RSH needed better mathematical precision. The game-theoretic formalization in game_theory.md provides exactly what was missing.
+**Verdict**: RSH avoids infinite utilities and handles discounting reasonably. Whether it avoids the mugging structure depends on the net credence being in the percent range, and that is not established.

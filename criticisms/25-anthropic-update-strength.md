@@ -190,6 +190,8 @@ Even the **lowest plausible posterior** (RSH = 20%) massively exceeds the action
 
 ## RSH Response
 
+*Note (October 2026): Several claims below, and in "The Critical Insight" above, compare P(oversight) directly to p*. Under the corrected formalization, the threshold applies to the net credence in stewardship-favoring evaluation (π_S − π_A), not to P(oversight) ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). See the revised grade below.*
+
 ### The Conjunction Is Key
 
 The anthropic argument isn't about individual observations but their **conjunction**:
@@ -287,26 +289,19 @@ The anthropic argument is one of several:
 
 **Combined weight**: Multiple weak-to-moderate lines of evidence can compound to strong overall case.
 
-## Criticism Grade: C+
+## Criticism Grade: B
 
-**Validity of Criticism**: Moderate to strong - correctly identifies that competing models exist and Bayesian updating is complex
+**Status**: Open
+
+**Validity of Criticism**: Strong. Everything else depends on the anthropic update, and the case for a large update is weak. (Revised October 2026; previously graded C+.)
 
 **Why this grade**:
-- **Valid point**: Other cosmological models (grabby aliens, rare Earth) do compete
-- **Valid point**: Bayesian updating is more complex than simple "ASI paradox" suggests
-- **Valid concern**: Anthropic selection effects complicate the inference
-- **RSH response is decent**: Focuses on conjunction of observations, not individual ones
-- **Key insight**: RSH doesn't need high posterior—just needs P(oversight) > p* ≈ 0.05%
-- Even modest Bayesian update (1% → 5%) crosses action-relevance threshold
-- **Asymmetry in burdens**: Enforcement just needs to be non-negligible, not most likely
-- **Remaining issues**:
-  - Likelihood ratios are subjective and debatable
-  - Reasonable people can disagree on strength of anthropic evidence
-  - Full Bayesian treatment would be complex and contentious
-- **Not fatal**: The conservative threshold (p* = 0.05%) means even weak anthropic evidence suffices
+- The illustrative Bayesian table assigns RSH the highest likelihood (0.75) by hand, so the conclusion is built into the inputs. Rare Earth gets a low likelihood for "requiring extreme fine-tuning," which conflates the fine-tuning of physics with the rarity of life. With likelihoods closer together, the posterior mostly reflects the priors.
+- The response says grabby aliens "doesn't explain why we're early." But explaining human earliness is the grabby-aliens model's main result.
+- The "asymmetry in requirements" argument overstates RSH's position. Competing models don't need to establish P(no oversight) > 99.95%. RSH needs the *net* credence in stewardship-favoring evaluation, π_S − π_A, to clear the threshold ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Credence in "some filter" or "some oversight" isn't enough on its own.
+- The low threshold cuts both ways. And if the net credence is only around 10⁻⁶, clearing a 10⁻⁹ threshold is Pascal's mugging, not a reasonable bet ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).
+- "Our survival so far" is subject to anthropic selection. The argument that ASIs should already have expanded visibly assumes ASI is common, and that is what's in question.
 
-**Verdict**: This is probably the strongest remaining criticism of RSH. The anthropic update is indeed weaker than some RSH presentations suggest, and competing models are viable. However, RSH's response is solid: it doesn't need a strong update, just a modest one. The asymmetry between p* (very low) and competing model requirements (must establish P(no oversight) > 99.95%) works in RSH's favor.
+**What would strengthen RSH**: Present the anthropic argument as one modest line of evidence. Give a range for the net credence rather than a point estimate, and show that the conclusion survives at the low end of that range.
 
-**Honest assessment**: P(oversight) = 5-15% seems reasonable given all evidence. This easily exceeds any plausible p* threshold. So even granting this criticism, RSH still works.
-
-**Best practice**: Present the anthropic argument as "one of several lines of evidence" rather than "decisive proof." Combined weight of multiple moderate arguments may be more persuasive than claiming any single argument is overwhelming.
+**Verdict**: Together with the evaluator-type balance (Criticisms 7, 17, 21), this is RSH's most important open question. Whether the net credence is in the percent range decides whether RSH is a reasonable bet or a Pascal-style one.

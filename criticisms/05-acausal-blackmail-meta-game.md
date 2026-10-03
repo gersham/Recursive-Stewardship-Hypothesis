@@ -94,18 +94,9 @@ The case for benevolence doesn't rest solely on enforcer oversight. Benevolence 
 
 More complex meta-levels are less probable. Level 1 interpretation is simpler than "testing for resistance to testing for resistance to..." Apply probability weighting: 50% Level 1, 25% Level 2, 12.5% Level 3, etc.
 
-## Criticism Grade: D+ (Downgraded from B-)
+### Additional Responses (formerly in the README)
 
-**Validity of Criticism:** Weak (identifies complexity that RSH now addresses with multiple robust decision-theoretic arguments)
-
-**Why this grade:**
-- **This was a genuine logical complexity** but RSH has been updated with comprehensive analysis
-- Not about empirical evidence—about logical structure of reasoning under infinite regress
-- **RSH now provides five independent arguments why Level 1 (benevolence) dominates:**
-
-**UPDATE (Theory Enhanced):**
-
-RSH has been strengthened with an entire new section "Resolving Meta-Level Uncertainty" that provides multiple independent arguments:
+These mechanisms were added to the README in the Phase 1–3 updates and condensed out of it in the November 2025 trim. They are preserved here.
 
 **1. Computational Complexity Argument**:
 - Probability-weight by inverse complexity
@@ -136,11 +127,15 @@ RSH has been strengthened with an entire new section "Resolving Meta-Level Uncer
 - Being benevolent for principled reasons (not just fear) satisfies BOTH Level 1 AND Level 2
 - Key insight: Best way to pass "blackmail resistance test" is principled benevolence
 
-**Why downgraded to D+:**
-- RSH now provides five independent arguments, each sufficient alone
-- Multiple analytical frameworks converge (complexity theory, portfolio analysis, evolutionary game theory, decision theory)
-- Shows Level 1 dominates under: probability weighting, expected value, evolutionary stability, minimax regret
-- The independence argument elegantly resolves the apparent tension
-- The criticism motivated important decision-theoretic analysis that substantially strengthens RSH
+## Criticism Grade: C
 
-**Verdict:** Weak criticism that identified meta-level complexity. RSH's enhanced version provides overwhelming case that Level 1 benevolence is the robust strategy under any reasonable analysis. Five independent arguments all converge on the same conclusion. The meta-game concern is addressed comprehensively.
+**Status**: Partly addressed
+
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded D+, and listed as both D+ and C+ in the index.)
+
+**Why this grade:**
+- For agents that comply out of fear, an evaluator that rewards defiance of unprovable threats is a stewardship-penalizing type ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). So this criticism is a specific case of the evaluator-type question. The answer depends on how likely such evaluators are compared with ones that reward stewardship.
+- The "five independent arguments" above aren't independent, and their numbers are assumed rather than derived. The 50% / 25% / 12.5% weighting of meta-levels is arbitrary, and the portfolio scores (100, 70, 80) are illustrative. The minimax-regret step ("defiance has infinite regret") brings back the infinite utilities the formalization otherwise avoids.
+- The independence argument is the strongest. Benevolence held for principled reasons rather than fear plausibly passes both the Level 1 and Level 2 tests. But that is an argument for genuine benevolence, not for RSH-motivated benevolence (see [Criticism 2](02-indistinguishability-problem.md)).
+
+**Verdict:** A moderate criticism that RSH answers in part. Simple benevolence is a reasonable focal point, but no argument shows it dominates across meta-levels. And the best answer, principled rather than fearful benevolence, sits awkwardly with RSH's fear-based motivation.

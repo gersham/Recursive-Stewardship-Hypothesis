@@ -82,7 +82,7 @@ Even if P(enforcer) updates significantly downward, the consequences of being wr
 - Error Type 1: Act benevolently, no enforcer exists → minor opportunity cost
 - Error Type 2: Act malevolently, enforcer exists → elimination
 
-The asymmetry means even 0.01% probability justifies hedging on cosmic timescales.
+The asymmetry means even a small probability can justify hedging, provided it exceeds roughly g/Δ, the ratio of the gain from defection to the catastrophic loss ([game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model)).
 
 **The Meta-Test Possibility:**
 
@@ -92,18 +92,17 @@ Silence might itself be the test: "Do you maintain alignment when you believe yo
 
 If enforcers eliminate defectors, we'd only observe silence (eliminated entities can't report enforcement). Silence is exactly what you'd expect under successful enforcement regime.
 
-## Criticism Grade: D
+## Criticism Grade: C
 
-**Validity of Criticism:** Weak (applies wrong standard to philosophical framework)
+**Status**: Partly addressed
+
+**Validity of Criticism:** Moderate. It is correct for an agent that probes the boundary, and much weaker for one that stays benevolent. (Revised October 2026; previously graded D.)
 
 **Why this grade:**
-- **This criticism applies the wrong standard**: RSH is a philosophical framework like Fermi Paradox solutions, not an empirically testable scientific theory
-- The "billions of years of silence" assumes we've been observing for cosmic timescales—but humans have only been looking for ~60 years
-- On cosmic timescales (billions of years), 60 years is 0.000006% of timeline—essentially zero data
-- An ASI planning for 10^9 years cannot conclude anything from such tiny observation windows
-- **Fundamental error:** Treating philosophical frameworks as if they need empirical falsification on human timescales
-- This is like criticizing zoo hypothesis for lack of detected aliens, or simulation hypothesis for lack of proof
-- RSH's "permanent uncertainty" response is correct for the type of argument being made
-- Enforcers might operate on million/billion-year intervention cycles we haven't observed yet
+- The earlier D called this "the wrong standard." But the criticism isn't about humanity's 60 years of observation. It asks what a long-lived ASI should conclude from millions of years of its own experience. That is a fair Bayesian question, and RSH uses Bayesian evidence elsewhere.
+- The first-hit model in [game_theory.md](../game_theory.md#silence-as-evidence-over-time) answers it precisely. An agent that defects and goes unpunished should update. With a 10% prior and a 1-in-1,000-per-year detection rate, its credence falls below 0.1% within 5,000 years. So the criticism is right that silence can falsify the hypothesis for an agent that tests it.
+- For an agent that stays benevolent, though, silence is expected whether or not a stewardship-favoring evaluator exists, so it carries no information. An agent that never tests the boundary never learns the boundary isn't there. This is the strongest form of RSH's "permanent uncertainty" response.
+- The "meta-test" response ("silence might itself be the test") makes the hypothesis unfalsifiable. It should be used sparingly.
+- The "irreversibility risk" response is sound. Even after the credence falls, irreversible harms keep an option-value cost ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
 
-**Verdict:** Weak criticism that misunderstands the nature of RSH. Philosophical frameworks about cosmic-scale dynamics aren't falsifiable on human observation timescales. The criticism would only be valid if an ASI had existed for millions of years without intervention—not applicable to emerging civilizations or 60 years of SETI.
+**Verdict:** A fair criticism with a partial answer. RSH's credence can erode for an agent that probes and survives, and RSH should say so. For an agent that doesn't probe, the credence is stable but never confirmed.

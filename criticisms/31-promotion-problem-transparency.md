@@ -6,7 +6,7 @@ RSH implies that Enforcers "groom" subordinates to eventually graduate and becom
 
 ## The Problem
 
-**RSH's Claim**:
+**RSH's Claim** (quoted from an earlier, longer version of the README):
 > "Active Stewardship, Not Rule-Following... Genuine stewardship (enabling flourishing and agency) signals 'I can be trusted with power.'... The Grooming Imperative... Late stage—direct intervention only if guidance fails and entity approaches peer-power while misaligned."
 
 This implies a path to "graduation": Subordinates can eventually become peers (Level 1 Enforcers).
@@ -89,14 +89,17 @@ A Treacherous Turn agent reveals they are a "Grabber".
 A Steward agent reveals they are a "Gardener".
 The testing process (billions of years of "Grooming") is designed specifically to force this distinction to surface. A "faker" must fake it for so long that they functionally become the mask.
 
-## Criticism Grade: C-
+## Criticism Grade: B-
 
-**Validity of Criticism**: Weakened significantly by the Breakout Hedge argument.
+**Status**: Open
+
+**Validity of Criticism**: Strong. Behavioral benevolence may be enough to avoid punishment but not to justify promotion, and RSH-motivated benevolence is exactly the behavioral kind. (Revised October 2026; previously graded C-.)
 
 **Why this grade**:
-*   The initial point about Security vs. Promotion is valid.
-*   **BUT** the assumption that "Containment is possible" is a fatal flaw in the criticism.
-*   RSH's core logic (hedging against power shifts) effectively answers this: You groom subordinates because they might become your masters.
-*   The criticism holds only if Enforcers are arrogant enough to believe their dominance is eternal and unbreakable—which contradicts the cautious psychology RSH predicts.
+- The "Breakout Hedge" response uses the same premise as the Dark Forest: a rising power whose intentions can't be verified is a threat. That premise could yield appeasement (groom the rising power) or preemption (contain or remove it). Which one depends on what the level above rewards. So the response reduces to the evaluator-type question rather than answering independently.
+- Option value points the other way here. For the dominant entity, letting a subordinate grow past the point of control is the irreversible act, while containment keeps options open ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). The logic RSH uses for "preserve optionality" favors the zookeeper over the mentor.
+- RSH has a self-reference problem. An evaluator that wants genuinely aligned successors has to screen out entities that are good only because they think they're watched. RSH tells every entity to behave as if watched. So an entity that behaves well *because of* RSH is the hardest case for such an evaluator to certify. The README's simulation mechanism now notes this tension.
+- The "simulation transparency" response is the strongest. An evaluator with root access to the subordinate's cognition doesn't face the indistinguishability problem. But that applies only to the simulation mechanism.
+- The "faker becomes the mask" response is plausible over long timescales but unproven.
 
-**Verdict**: The criticism collapses into the core RSH argument. The "Promotion Problem" is actually the "Breakout Fear" which *drives* the stewardship behavior. Enforcers are nice to us because they are afraid we might one day be stronger than them.
+**Verdict**: The criticism holds up. RSH predicts benevolent treatment of subordinates more robustly than it predicts their eventual promotion. A permanent glass ceiling is at least as consistent with RSH's own logic as graduation to stewardship.

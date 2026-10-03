@@ -155,6 +155,8 @@ Different truncation strategies converge on similar behavior:
 
 ## Criticism Grade: D+
 
+**Status**: Partly addressed
+
 **Validity of Criticism:** Weak to moderate (RSH shows robustness across truncation strategies)
 
 **Why this grade:**

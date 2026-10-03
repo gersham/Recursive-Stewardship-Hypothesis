@@ -95,7 +95,7 @@ This recreates Pascal's Wager's "many gods" problem that RSH claimed to solve.
 
 ## RSH Response
 
-### The Brilliant Inversion: Pluralism STRENGTHENS RSH
+### The Inversion: Pluralism Strengthens RSH
 
 **Key insight**: You don't need to prove monopoly. Pluralistic uncertainty actually **makes the argument stronger**.
 
@@ -236,27 +236,17 @@ Even with pluralism, unstable enforcement types get filtered out:
 
 **Implication**: The monopoly assumption was never necessary. Pluralism actually strengthens the argument.
 
-## Criticism Grade: D+
+## Criticism Grade: C+
 
-**Validity of Criticism**: Initially seems strong, but inverts to strengthen RSH upon analysis
+**Status**: Partly addressed
+
+**Validity of Criticism**: Moderate. Dropping the monopoly assumption was right, but pluralism doesn't automatically strengthen RSH. (Revised October 2026; previously graded D+.)
 
 **Why this grade**:
-- **Valid initial concern**: Monopoly assumption is indeed unproven
-- **Valid initial concern**: Competing enforcers might create complications
-- **However, RSH inversion is powerful**: Pluralism actually strengthens the argument
-- **Key insight**: Hedging across multiple possible enforcers is MORE constraining than optimizing for one
-- Universal principles emerge from intersection of acceptable behaviors
-- Competition among enforcers pushes toward MORE caution, not less
-- Portfolio approach to enforcer uncertainty is more robust than monopoly assumption
-- **No need to prove monopoly**: The argument works (even better) without it
-- **Remaining issues**: Very minor
-  - Still requires some convergence in what counts as "plausible" enforcer
-  - Completely arbitrary enforcer types might create paralysis
-  - But implausible/unstable types get filtered by self-consistency
-- **Net effect**: This criticism actually reveals RSH is stronger than originally presented
+- RSH was right to drop the monopoly claim. The hedging logic doesn't need a single enforcer.
+- The intersection principle assumes the intersection P₁ ∩ … ∩ Pₙ is non-empty. Suppose some plausible enforcers punish what others require: one punishes ruthlessness, another punishes restraint. Then the intersection is empty, and "satisfy every enforcer" gives no guidance. The agent has to weigh enforcers by credence, which is the net-credence comparison in [game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized).
+- "Satisfy the harshest enforcer" assumes harshness varies along one axis. An enforcer that is harsh about weakness and one that is harsh about cruelty can't both be satisfied.
+- The self-consistency filter's claim that anti-enforcers are "logically incoherent" is weak; see the revised grade for [Criticism 17](17-why-this-hierarchy-regress.md).
+- The reversibility core does survive pluralism. Irreversible harm is costly under almost any mix of evaluators, because it rules out adjusting once you learn which ones exist ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
 
-**Verdict**: This criticism initially appears to identify a weak assumption but actually reveals a path to strengthening RSH. By abandoning the unnecessary monopoly assumption and embracing pluralistic uncertainty, RSH becomes MORE robust. The intersection of acceptable behaviors across diverse enforcers is more constraining than any single enforcer's preferences.
-
-**Critical lesson**: Sometimes what seems like a weakness is actually a hidden strength. Pluralistic enforcer uncertainty makes RSH work better, not worse.
-
-**Best practice going forward**: Remove or downplay monopoly claims. Emphasize that RSH works REGARDLESS of whether enforcement is monopolistic or pluralistic—and may actually work better under pluralism.
+**Verdict**: Pluralism strengthens RSH against evaluator types that agree on stewardship and differ only on details. Against types that disagree about stewardship itself, it does nothing and can weaken RSH. The many-gods problem returns as this criticism predicted, though in a weaker form than the original Pascal version.

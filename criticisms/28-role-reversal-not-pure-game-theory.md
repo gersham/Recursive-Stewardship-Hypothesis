@@ -47,7 +47,7 @@ These are **additional assumptions about evaluator values**, not pure game theor
 
 ## RSH Response
 
-**Admission**: The README (as of Phase 1 updates) now explicitly acknowledges this in the "Explicit Assumptions" section. Role-reversal is listed as **Assumption 1** requiring evaluators to:
+**Admission**: The README acknowledges this explicitly. It was **Assumption 1** in the "Explicit Assumptions" section added in the Phase 1 update, which the November 2025 trim condensed into [README Appendix B](../README.md#b-key-assumptions-and-scope). It requires evaluators to:
 - Care about being evaluated themselves
 - Use treatment of subordinates as evidence
 - Value symmetry over alternatives
@@ -77,8 +77,15 @@ The framework now honestly states: "RSH is not 'pure structure with zero assumpt
 
 Even if role-reversal is one plausible evaluator psychology, what fraction of the evaluator-space uses it? If only 30% of evaluators use role-reversal and 70% use competence-based evaluation, does this weaken RSH?
 
-**Response**: Under pluralistic uncertainty (see criticism #26), an entity must hedge across *all* evaluator types it cannot rule out. Even if role-reversal is only 30% of evaluator-space, that's well above the ~0.05-1% threshold. Benevolence hedges well even if not all evaluators use role-reversal criteria.
+**Response**: What matters is not the share of role-reversal evaluators but the balance between evaluators that favor stewardship and those that penalize it ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Competence- or obedience-based evaluators are mostly indifferent to how you treat weaker entities. So if they made up 70% of evaluator-space, they would dilute the support for RSH without reversing it. Evaluators that read benevolence as weakness would reverse it. *(An earlier version said a 30% share is "well above the threshold." That compared the wrong quantities: the threshold applies to net credence, not to a share of evaluator-space.)*
 
-## Grade: D (Addressed)
+## Grade: C
 
-The criticism was valid but has been addressed by making assumptions explicit. The framework no longer claims role-reversal is forced by pure game theory—it presents it as a plausible additional assumption with independent justification.
+**Status**: Acknowledged
+
+**Validity of Criticism**: Moderate. The criticism is valid, and it is handled by stating the assumption openly rather than by removing it. (Revised October 2026; previously graded D.)
+
+**Why this grade**:
+- Role-reversal is a plausible assumption with independent support, but it is an assumption. Several other responses in this folder (Criticisms 1, 6, 7, 9, 20, 21) used to treat it as a derivation. Those grades have been revised to match.
+- How common role-reversal reasoning is among evaluators is unknown, and RSH's support depends on it (see "Remaining Question" above).
+- Option value gives part of the content without role-reversal: avoiding irreversible harm and preserving optionality ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).

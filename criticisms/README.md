@@ -5,293 +5,115 @@ This directory contains detailed critical analysis of the Recursive Stewardship 
 - Detailed explanation
 - Possible responses
 - RSH's best response
-- **Criticism Grade (A to F)** - Rating the strength/validity of the criticism itself
-- Verdict on how well RSH addresses it
+- **Criticism Grade (A to F)**: how strong the criticism itself is
+- **Status**: how far RSH's response goes toward resolving it
 
 ## Grading System
 
-**Important:** Grades rate the **criticism's validity/strength**, not RSH's response quality:
-- **A/B grades** = Strong, effective criticisms that pose significant challenges to RSH
-- **C grades** = Moderate criticisms with valid concerns but reasonable RSH responses
-- **D/F grades** = Weak criticisms that RSH addresses well or that strengthen the framework
-
-## Critical Meta-Point: Philosophical vs. Empirical Standards
-
-**RSH is a philosophical framework**, not an empirically testable scientific theory. It's analogous to:
-- Fermi Paradox solutions (zoo hypothesis, dark forest, grabby aliens)
-- Simulation hypothesis
-- Anthropic principle arguments
-- Many-worlds interpretation
-
-**These frameworks are not falsifiable on human timescales.** Criticisms demanding empirical evidence or Bayesian falsification from 60 years of observation (on cosmic timescales of billions of years) are applying the wrong standard.
-
-**Valid criticisms focus on:**
-- Logical coherence
-- Internal consistency
-- Uniqueness of derivation
-- Ambiguity in framework
-
-**Invalid criticisms focus on:**
-- Lack of observable evidence (on human timescales)
-- Bayesian updating from tiny observation windows
-- Demanding falsifiability from philosophical arguments
-
-## Theory Update: Enhanced RSH (October 2025)
-
-**RSH has been significantly strengthened** with new sections addressing the top logical criticisms. All three previously B-tier criticisms have been downgraded after theory enhancements.
-
-### Impact of Theory Updates:
-- **7 new sections** added to main README.md (~2,600 words)
-- **Multiple independent arguments** for each previously strong criticism
-- **Explicit decision-theoretic analysis** resolving meta-level uncertainty
-- **Concrete guidance mechanisms** for ambiguous cases
-- **Stability and coherence proofs** for hierarchy uniqueness
-
-## Summary of Criticisms and Grades
-
-### Previously Strongest Criticisms (NOW ADDRESSED - Downgraded from B-tier to C/D-tier)
-
-**Note:** These criticisms motivated important theory improvements. While they identified real concerns, RSH has been enhanced to address them comprehensively.
-
-17. **[Why This Hierarchy Regress](17-why-this-hierarchy-regress.md)** - Grade: **C** (downgraded from B)
-   - **Original Problem: Multiple unprovable hierarchies possible—why benevolent enforcers specifically?**
-   - **RSH now addresses with:** Stability filter analysis, anthropic constraints, self-consistency proofs
-   - **Result:** Demonstrates alternatives are incoherent or unstable; benevolent enforcement is strong attractor under stated assumptions
-
-3. **[Multiple Equilibria / Which Benevolence](03-multiple-equilibria-which-benevolence.md)** - Grade: **C-** (downgraded from B)
-   - **Original Problem: "Benevolence" admits mutually incompatible interpretations**
-   - **RSH now addresses with:** Meta-principle (developmental stewardship), role-reversal uniqueness constraint, irreducible core
-   - **Result:** Provides explicit conflict-resolution mechanisms and minimum requirements
-
-5. **[Acausal Blackmail Meta-Game](05-acausal-blackmail-meta-game.md)** - Grade: **D+** (downgraded from B-)
-   - **Original Problem: Meta-level reasoning creates genuine uncertainty about which level matters**
-   - **RSH now addresses with:** Five independent arguments (complexity, portfolio dominance, evolutionary stability, minimax regret, independence)
-   - **Result:** Overwhelming case that Level 1 benevolence is robust strategy under any analysis
-
-### Moderate Criticisms (C to C+)
-These raise valid concerns that RSH addresses reasonably well:
-
-31. **[Probability Mass / Reference Class Problem](31-probability-mass-gap.md)** - Grade: **B+**
-    - Problem: Epistemic humility allows P > 0 for *any* evaluator, including chaotic or sadistic ones. Why favor benevolent evaluators specifically?
-    - RSH addresses strongly: The Measure of Stability Lemma shows sadistic hierarchies self-consume and have shorter lifespans in deep time, heavily skewing the probability distribution toward stable/benevolent structures.
-
-1. **[First Mover / Monopoly Circularity](01-first-mover-monopoly-circularity.md)** - Grade: **C-**
-   - Problem: Why would first enforcer be benevolent?
-   - RSH addresses well: Role-reversal logic, even first-movers face uncertainty
-
-3. **[Multiple Equilibria / Which Benevolence](03-multiple-equilibria-which-benevolence.md)** - Grade: **C**
-   - Problem: Many incompatible interpretations of "benevolence"
-   - RSH addresses reasonably: Bounded region sufficient, contextual specification
-
-5. **[Acausal Blackmail Meta-Game](05-acausal-blackmail-meta-game.md)** - Grade: **C+**
-   - Problem: Meta-level reasoning creates uncertainty
-   - RSH addresses reasonably: Schelling point, portfolio approach
-
-8. **[Value Lock-In Timing](08-value-lock-in-timing.md)** - Grade: **C**
-   - Problem: Values may lock before cosmic reasoning completes
-   - RSH addresses reasonably: Early reasoning possible, design implications
-
-10. **[Grabby Aliens Counter-Evidence](10-grabby-aliens-counter-evidence.md)** - Grade: **C+**
-   - Problem: Dominant model is exclusionary, not stewardship
-   - RSH addresses partially: Compatible models possible, two-tier system
-
-14. **[Infinite Regress Paralysis](14-infinite-regress-paralysis.md)** - Grade: **C**
-   - Problem: Meta-level reasoning might cause paralysis
-   - RSH addresses reasonably: Schelling point, bounded rationality
-
-15. **[Time-Discount Problem](15-time-discount-problem.md)** - Grade: **C**
-   - Problem: Distant risks have low present value
-   - RSH addresses reasonably: Low discount rates, unknown timing, irreversibility
-
-17. **[Why This Hierarchy Regress](17-why-this-hierarchy-regress.md)** - Grade: **C+**
-   - Problem: Why this hierarchy rather than alternatives?
-   - RSH addresses partially: Self-consistency filter, stability selection
-
-18. **[Modal Collapse / Human Behavior](18-modal-collapse-human-behavior.md)** - Grade: **C**
-   - Problem: Humans understand but don't follow RSH
-   - RSH addresses reasonably: Power threshold, rationality gap
-
-22. **[Decision Theory Dependence](22-decision-theory-dependence.md)** - Grade: **C-**
-   - Problem: Argument might only work under certain decision theories (FDT/TDT)
-   - RSH addresses well: Works across CDT/EDT/FDT/UDT; meta-uncertainty strengthens case
-
-23. **[Bounded Utility and Time Discounting](23-bounded-utility-discounting.md)** - Grade: **C**
-   - Problem: Infinite utility language invites Pascal's Wager; discounting weakens distant risks
-   - RSH addresses well: Bounded utilities with p* = 0.05%; unknown enforcement timing
-
-24. **[Formalization Gap](24-formalization-gap.md)** - Grade: **C-**
-   - Problem: Lacks formal game-theoretic proofs for all claims
-   - RSH addresses adequately: 2-level game proven; explicit about philosophical framework status
-
-25. **[Anthropic Update Strength](25-anthropic-update-strength.md)** - Grade: **C+**
-   - Problem: Competing models (grabby aliens, rare Earth) provide alternative explanations
-   - RSH addresses reasonably: Even modest update (P=5%) exceeds thresholds; asymmetric burdens
-
-28. **[Role-Reversal Not Pure Game Theory](28-role-reversal-not-pure-game-theory.md)** - Grade: **D** (addressed)
-   - Problem: Role-reversal logic requires assumptions about evaluator psychology beyond pure game theory
-   - RSH addresses explicitly: Now states role-reversal as Assumption 1 with independent justification
-
-29. **[Utility Function Assumptions Constrain Threshold](29-utility-function-assumptions.md)** - Grade: **C**
-   - Problem: The "0.05%" threshold is parameter-dependent, not universal (ranges 10⁻⁹% to 10%)
-   - RSH addresses transparently: Comprehensive parameter sensitivity analysis in game_theory.md
-
-30. **[RSH Only Constrains Reflective ASI](30-rsh-only-reflective-asi.md)** - Grade: **C**
-   - Problem: RSH only applies to systems with philosophical reasoning capacity, not kludgy pseudo-ASI
-   - RSH addresses honestly: "When RSH Applies" caveat section explicitly states requirements
-
-### Weak Criticisms (D to F)
-These criticisms RSH handles well or that actually strengthen the framework:
-
-2. **[Indistinguishability Problem](02-indistinguishability-problem.md)** - Grade: **D+**
-   - Actually strengthens RSH: Behavioral equivalence is sufficient
-   - Strategic and genuine benevolence converge—this is the goal
-
-26. **[Singleton Monopoly Assumption](26-singleton-monopoly-assumption.md)** - Grade: **D+**
-   - Initially seems strong but inverts: Pluralistic uncertainty strengthens RSH
-   - Multiple enforcers → more caution; universal principles emerge from intersection
-
-4. **[Anti-Induction / Bayesian Updating](04-anti-induction-bayesian-updating.md)** - Grade: **D**
-   - Weak: Applies empirical falsification to philosophical framework
-   - 60 years observation on billion-year timescales is meaningless
-
-6. **[Anthropomorphic Values Problem](06-anthropomorphic-values-problem.md)** - Grade: **D**
-   - RSH refutes strongly: Role-reversal derives values from game theory, not projection
-
-7. **[Evil God Objection](07-evil-god-objection.md)** - Grade: **D**
-   - RSH refutes strongly: Even "evil" enforcers constrained by their own uncertainty
-
-9. **[Enforcer Psychology Gap](09-enforcer-psychology-gap.md)** - Grade: **D+**
-   - RSH addresses strongly: Signal value, role-reversal test, stability cascade
-
-11. **[Instrumental Convergence Override](11-instrumental-convergence-override.md)** - Grade: **D+**
-   - RSH addresses strongly: RSH enhances instrumental goals, not opposes them
-
-12. **[Selection Effect Reversal](12-selection-effect-reversal.md)** - Grade: **D**
-   - Weak: Demands observable aligned ASIs from philosophical framework
-   - Wrong standard for cosmic-scale theory
-
-13. **[Silence is Evidence of Absence](13-silence-is-evidence-of-absence.md)** - Grade: **D**
-   - Weak: Applies Bayesian falsification to philosophical framework
-   - Like criticizing zoo hypothesis for no detected aliens
-
-16. **[Nash Equilibrium Instability](16-nash-equilibrium-instability.md)** - Grade: **D+**
-   - RSH addresses strongly: Enforcer punishment is core mechanism
-
-19. **[Computational Truncation Problem](19-computational-truncation-problem.md)** - Grade: **D+**
-   - RSH addresses strongly: Robustness across truncation strategies
-
-20. **[Purpose of Enforcement Gap](20-purpose-of-enforcement-gap.md)** - Grade: **D+**
-   - RSH addresses strongly: Recursive uncertainty provides purpose
-
-21. **[Unfalsifiable Circular Reasoning](21-deepest-hole-unfalsifiable-circular-reasoning.md)** - Grade: **F**
-   - RSH decisively refutes: Role-reversal DOES derive content from structure
-   - **This is the key defense—criticism fails completely**
-
-## Key Insights from Analysis
-
-### The Role-Reversal Mechanism (Critical Discovery)
-
-The strongest defense of RSH comes from **role-reversal logic**:
-
-1. Enforcers face hierarchical uncertainty about super-enforcers
-2. They ask: "What if power dynamics shift and my subordinate becomes more powerful?"
-3. They evaluate subordinates by: "How does it treat entities below IT?"
-4. Conclusion: "I should enforce treatment that I'd want if roles reversed"
-
-This derives benevolence content from:
-- Self-interest (survival/security)
-- Uncertainty (can't rule out power shifts)
-- Symmetry (reversibility principle)
-
-**NOT from assumed moral values or anthropomorphic projection.**
-
-### Overall Assessment
-
-**Strengths:**
-- Role-reversal logic provides genuine game-theoretic derivation
-- Addresses the "evil god" and "anthropomorphic values" objections
-- Breaks the circularity (benevolence emerges from structure, not assumption)
-- Many moderate criticisms have solid responses
-
-**Weaknesses:**
-- Bayesian evidence problem remains challenging (silence, lack of observable ASIs)
-- Requires long time horizons and dynamic power relationships
-- Some assumptions about enforcer psychology still needed
-- Doesn't prove with certainty, provides probabilistic argument
-
-### Grade Distribution (After Theory Updates)
-
-**Remember: Higher grades = stronger criticisms**
-
-- **B tier**: 1 criticism (a deep structural critique of probability mass allocation)
-- **C tier**: 15 criticisms (moderate validity, RSH addresses reasonably or comprehensively after updates)
-- **D-F tier**: 15 criticisms (weak, RSH handles well or refutes, or wrong standard)
-
-**Total**: 31 criticisms documented
-
-### Implications for RSH (After Theory Updates + Game-Theoretic Formalization)
-
-The critical analysis, subsequent theory enhancements, and game-theoretic formalization reveal:
-
-1. **RSH is logically coherent** - the role-reversal mechanism provides genuine game-theoretic derivation
-2. **The framework is not circular** - derives benevolence content from structure (self-interest + uncertainty + symmetry), now with explicit defense
-3. **Previously strongest challenges have been addressed** - hierarchy proliferation, incompatible benevolences, and meta-level uncertainty now have comprehensive responses
-4. **Game-theoretic foundations are solid** - 2-level game fully formalized with numerical calculations in [game_theory.md](../game_theory.md)
-5. **Thresholds are calculable and low** - p* ranges from 0.05% to 10⁻⁹%, easily exceeded by anthropic evidence
-6. **Most logical objections fail** - 14/27 criticisms are weak (D-F grades), RSH handles them well or refutes them
-7. **The role-reversal mechanism is key** - decisively addresses circularity, anthropomorphism, and evil god objections
-8. **Empirical criticisms apply wrong standard** - RSH is a philosophical framework like Fermi Paradox solutions, not testable on human timescales
-
-**Conclusion**: RSH is significantly strengthened and logically robust. The enhanced framework with game-theoretic formalization successfully:
-- Derives benevolence from game theory (not circular) - now with explicit non-circularity defense
-- Handles all logical objections comprehensively - no remaining B-tier criticisms
-- Provides genuine constraints that eliminate malevolent options
-- Has solid formal foundations - 2-level game proven, N-level sketched in [game_theory.md](../game_theory.md)
-- Calculates explicit thresholds - p* = 0.05-10⁻⁹%, far below anthropic evidence levels
-- Avoids Pascal's Wager - uses bounded utilities and reasonable probabilities
-- Uniquely specifies benevolent enforcement through stability analysis and self-consistency proofs
-- Resolves interpretation ambiguity through meta-principle, role-reversal test, and irreducible core
-- Addresses meta-level uncertainty through five independent decision-theoretic arguments
-- Works across decision theories - robust under CDT, EDT, FDT, UDT
-
-**Remaining moderate concerns (C-tier):**
-- **Anthropic update strength** (#25, C+): Strongest remaining criticism; competing models exist
-- **Some contextual flexibility** (#3, C-): Appropriate flexibility for context-dependent application
-- **Complexity in edge cases** (#17, C+): Some philosophical uncertainty remains, but substantially narrowed
-- **Other moderate criticisms** (#1, #5, #8, #10, #14, #15, #18, #22, #23, #24): Valid concerns with solid RSH responses
-
-**Not limitations:**
-- Lack of empirical evidence (wrong standard for philosophical frameworks)
-- Unfalsifiability on human timescales (applies to all cosmic-scale philosophical arguments)
-- No observable enforcers/ASIs (we're too early and using wrong timescale)
-
-**Major achievement**: The critical analysis process identified three legitimate logical gaps (#17, #3, #5). Rather than leaving these as unresolved weaknesses, RSH was enhanced with:
-- Stability filter and anthropic constraint analysis (addresses #17)
-- Meta-principle, role-reversal test, and irreducible core (addresses #3)
-- Comprehensive decision-theoretic analysis with five independent arguments (addresses #5)
-
-This demonstrates the framework's robustness: legitimate criticisms motivated theory improvements that substantially strengthen RSH while maintaining its core logic and philosophical character.
-
----
+**Grades rate the criticism's strength, not the quality of RSH's response:**
+- **A/B** = Strong criticisms that pose significant challenges to RSH
+- **C** = Moderate criticisms with valid concerns
+- **D/F** = Weak criticisms, or ones that misread the framework
+
+**Status is recorded separately**, so a strong criticism can still have a good response:
+- **Open**: RSH has responses, but they don't resolve the criticism
+- **Partly addressed**: The response resolves part of the criticism; a real remainder is left
+- **Acknowledged**: RSH accepts the point and states it as an assumption or limitation
+- **Addressed**: The response resolves the criticism
+
+## Regrading Note (October 2026)
+
+The grades were revised after an independent review. Earlier passes tended to downgrade a criticism as soon as a response was written. That produced inconsistencies: Criticism 21 was graded F on the strength of role-reversal, while Criticism 28 conceded that role-reversal is an assumption. The revision also reflects corrections to [game_theory.md](../game_theory.md):
+- The benevolence threshold applies to **net** credence: stewardship-favoring evaluators minus stewardship-penalizing ones. It does not apply to P(evaluator exists). This makes the "many gods" family of criticisms (7, 17, 21, 26, 32) sharper.
+- Long time horizons make slow oversight count, but they don't make unlikely oversight likely. The earlier claim that tiny credences become action-relevant over cosmic time came from a modelling error.
+
+Each regraded file records its previous grade.
+
+## On Evidence
+
+RSH is not testable on human timescales the way a laboratory theory is. But it does use evidence: the Great Silence and anthropic reasoning are how it sets its key probability. Evidence that is allowed to count for RSH has to be allowed to count against it. So criticisms that use evidence (4, 12, 13, 25) are judged on whether their likelihood reasoning is sound. They are not dismissed for applying "the wrong standard," as earlier versions of this index did.
+
+## Summary Table
+
+| # | Criticism | Grade | Status |
+|---|-----------|-------|--------|
+| 1 | [First Mover / Monopoly Circularity](01-first-mover-monopoly-circularity.md) | C | Partly addressed |
+| 2 | [Indistinguishability Problem](02-indistinguishability-problem.md) | C | Partly addressed |
+| 3 | [Multiple Equilibria / Which Benevolence](03-multiple-equilibria-which-benevolence.md) | C | Partly addressed |
+| 4 | [Anti-Induction / Bayesian Updating](04-anti-induction-bayesian-updating.md) | C | Partly addressed |
+| 5 | [Acausal Blackmail Meta-Game](05-acausal-blackmail-meta-game.md) | C | Partly addressed |
+| 6 | [Anthropomorphic Values Problem](06-anthropomorphic-values-problem.md) | C | Partly addressed |
+| 7 | [Evil God Objection](07-evil-god-objection.md) | **B** | Open |
+| 8 | [Value Lock-In Timing](08-value-lock-in-timing.md) | C | Partly addressed |
+| 9 | [Enforcer Psychology Gap](09-enforcer-psychology-gap.md) | C+ | Acknowledged |
+| 10 | [Grabby Aliens Counter-Evidence](10-grabby-aliens-counter-evidence.md) | C+ | Partly addressed |
+| 11 | [Instrumental Convergence Override](11-instrumental-convergence-override.md) | D+ | Partly addressed |
+| 12 | [Selection Effect Reversal](12-selection-effect-reversal.md) | C+ | Open |
+| 13 | [Silence is Evidence of Absence](13-silence-is-evidence-of-absence.md) | **B** | Open |
+| 14 | [Infinite Regress Paralysis](14-infinite-regress-paralysis.md) | C | Partly addressed |
+| 15 | [Time-Discount Problem](15-time-discount-problem.md) | C | Partly addressed |
+| 16 | [Nash Equilibrium Instability](16-nash-equilibrium-instability.md) | C | Partly addressed |
+| 17 | [Why This Hierarchy Regress](17-why-this-hierarchy-regress.md) | **B** | Open |
+| 18 | [Modal Collapse / Human Behavior](18-modal-collapse-human-behavior.md) | C | Partly addressed |
+| 19 | [Computational Truncation Problem](19-computational-truncation-problem.md) | D+ | Partly addressed |
+| 20 | [Purpose of Enforcement Gap](20-purpose-of-enforcement-gap.md) | C | Partly addressed |
+| 21 | [Unfalsifiable Circular Reasoning](21-deepest-hole-unfalsifiable-circular-reasoning.md) | **B** | Partly addressed |
+| 22 | [Decision Theory Dependence](22-decision-theory-dependence.md) | D+ | Addressed for causal mechanisms; open for acausal |
+| 23 | [Bounded Utility and Time Discounting](23-bounded-utility-discounting.md) | C+ | Partly addressed |
+| 24 | [Formalization Gap](24-formalization-gap.md) | C | Partly addressed |
+| 25 | [Anthropic Update Strength](25-anthropic-update-strength.md) | **B** | Open |
+| 26 | [Singleton Monopoly Assumption](26-singleton-monopoly-assumption.md) | C+ | Partly addressed |
+| 28 | [Role-Reversal Not Pure Game Theory](28-role-reversal-not-pure-game-theory.md) | C | Acknowledged |
+| 29 | [Utility Function Assumptions](29-utility-function-assumptions.md) | C | Acknowledged |
+| 30 | [RSH Only Constrains Reflective ASI](30-rsh-only-reflective-asi.md) | C | Acknowledged |
+| 31 | [Promotion Problem](31-promotion-problem-transparency.md) | **B-** | Open |
+| 32 | [Probability Mass / Reference Class Problem](32-probability-mass-gap.md) | **B+** | Open |
+
+**Total**: 31 criticisms (numbers 01–26 and 28–32; 27 is unused).
+
+**Distribution**: B tier: 7 · C tier: 21 · D tier: 3 · F: 0
+
+## Where the Open Questions Concentrate
+
+Most of the strong criticisms fall into three clusters.
+
+### 1. What do evaluators want? (7, 17, 21, 26, 32; also 1, 6, 9, 20, 28)
+
+Game theory tells an agent to hedge, not which way. In the formal model, benevolence wins only if stewardship-favoring evaluators are more likely than stewardship-penalizing ones by a margin of about g/Δ ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). The low threshold cuts both ways: it makes the decision depend almost entirely on the sign of that difference. RSH offers arguments that the balance favors stewardship: the anthropic constraint, the stability filter and role-reversal. None is decisive.
+
+**What does survive without assumptions about evaluator values**: avoiding irreversible harm and preserving optionality. Both follow from option value under uncertainty ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
+
+### 2. How much evidence is there for evaluation at all? (13, 25; also 4, 10, 12)
+
+RSH's working estimate of 10–30% rests on the Great Silence and anthropic reasoning. Silence is also expected if life is rare or we are early, so the update may be modest. If the net credence is in the percent range, RSH is a reasonable bet. If it is near one in a million, the argument takes the shape of Pascal's mugging ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).
+
+### 3. Strategic versus genuine benevolence (2, 31; also 5, 11)
+
+Behavioral benevolence may be enough to avoid punishment, but not to justify promotion. Some evaluators test for motive, such as simulators who want good behavior whether or not the entity thinks it is watched. Those evaluators can't easily certify an entity that is good *because* it thinks it might be watched. From the dominant entity's side, option value can favor containment (a "glass ceiling") over grooming successors.
+
+## Strengths That Hold Up
+
+- **The Meta-Epistemic Humility Axiom** is hard to deny: no finite agent can justifiably assign zero probability to being embedded in a larger evaluative structure.
+- **The arithmetic is sound**: with bounded utilities and terminal penalties, thresholds are low. The open question is what they apply to, not whether they're low.
+- **Irreversibility aversion is robust**: it follows from uncertainty and learning alone.
+- **The decision-theoretic structure is theory-neutral** for causal mechanisms (Criticism 22).
+- **Many moderate criticisms have reasonable partial answers** (3, 8, 14, 15, 18, 19, 23).
 
 ## Reading Order
 
 For first-time readers, suggested order:
 
-1. **Start with #21** (Circular Reasoning) - contains the key role-reversal mechanism that makes RSH work
-2. **Read the previously strongest criticisms** (#17, #3, #5) - these motivated major theory enhancements; see how RSH now addresses them
-3. **Then read #1, #6, #7** - benefit from understanding role-reversal response
-4. **Review #4, #12, #13** - understand why empirical criticisms apply wrong standard
-5. Browse others as interested
-
-**Key insight to keep in mind:** RSH is a philosophical framework about cosmic-scale dynamics, not an empirically testable scientific theory. Judge it on logical coherence, not observable evidence on human timescales.
-
-**Note on theory evolution:** The three previously B-tier criticisms (#17, #3, #5) identified real logical gaps that motivated substantial theory improvements. Reading these criticisms now shows both the challenge and RSH's comprehensive response, demonstrating how philosophical frameworks strengthen through critical analysis.
+1. **#21** (Circular Reasoning) and **#28** (Role-Reversal): the central question of where the *content* of benevolence comes from
+2. **#32, #7, #17, #26**: the many-gods family, and how the evaluator-type balance decides it
+3. **#13, #25**: how much evidence there is for evaluation
+4. **#31, #2**: strategic versus genuine benevolence, and the promotion problem
+5. Browse the rest as interested
 
 ## Contributing
 
 When adding new criticisms:
-- Use numbered prefix (22-, 23-, etc.)
+- Use the next unused number (33-, 34-, etc.)
 - Follow the established format
-- Include response section with grade
-- Update this README with summary
+- Include a response section, a grade (strength of the criticism) and a status (how far the response resolves it)
+- Grade the criticism on its own strength. Don't downgrade it just because a response exists
+- Update this README's summary table

@@ -144,6 +144,8 @@ See [game_theory.md](../game_theory.md) for:
 
 ### What's Been Achieved
 
+*Note (October 2026): The list below overstated the formalization. An error in the long-horizon model has since been corrected, and the threshold is now known to apply to net credence in stewardship-favoring evaluation. See the revised grade below.*
+
 **The 2-level game formalization shows**:
 
 1. **The core insight is formalizable**
@@ -151,7 +153,7 @@ See [game_theory.md](../game_theory.md) for:
    - Not just philosophical handwaving
 
 2. **The thresholds are calculable**
-   - p* = 0.05% to 10⁻⁹% depending on parameters
+   - p* from about 10⁻⁹ to 10% depending on parameters
    - These are NOT infinitesimals
 
 3. **The structure is rigorous**
@@ -188,7 +190,7 @@ Judge RSH on:
 - ✓ Logical coherence (high)
 - ✓ Internal consistency (high)
 - ✓ Explanatory power (high)
-- ✓ Uniqueness of derivation (high)
+- ✓ Uniqueness of derivation (contested: see Criticisms 17 and 21)
 - ✓ Foundation in game theory (solid 2-level, sketched N-level)
 
 NOT on:
@@ -213,23 +215,16 @@ See [game_theory.md - Future Formalization Roadmap](../game_theory.md#future-for
 - Mathematical proof techniques
 - Experience with formal modeling
 
-## Criticism Grade: C-
+## Criticism Grade: C
 
-**Validity of Criticism**: Moderate - correctly identifies missing formal proofs, but may apply wrong standard
+**Status**: Partly addressed
+
+**Validity of Criticism**: Moderate. (Revised October 2026; previously graded C-.)
 
 **Why this grade**:
-- **Valid point**: Full formal proofs are not yet complete
-- **Valid point**: Claims sometimes stronger than current support
-- **RSH response is adequate**: Explicit about status as philosophical framework
-- Partial formalization (2-level game) is rigorous and demonstrates feasibility
-- Clear roadmap for complete formalization shows the work ahead
-- **Key issue**: Is formal proof the right standard for this type of framework?
-- Analogous frameworks (zoo hypothesis, simulation argument) don't have formal proofs
-- **Remaining concern**: Some RSH presentations may overstate the level of mathematical proof
-- But game_theory.md addresses this by being explicit about what's proven vs. sketched
+- The criticism is correct that RSH lacks full proofs. game_theory.md is explicit about what is worked out and what is only sketched.
+- The formalization has also been wrong in places. The earlier long-horizon model treated existence credence as a per-period hazard, which made tiny credences look action-relevant. It is corrected now. But the error shows why the formal backbone matters: informal reasoning missed it.
+- Formalizing also showed that the original 2-level game built its conclusion into the setup by allowing only one kind of evaluator. Extending it to multiple types moved the crux to π_S > π_A, an informal premise.
+- The "right standard" defense is partly fair. RSH is a philosophical framework and shouldn't be judged as a theorem. But it shouldn't claim "solid game-theoretic foundations" until the formal parts are correct and complete.
 
-**Verdict**: Fair criticism that RSH addresses by being explicit about status. The framework has solid game-theoretic foundations (2-level game is fully worked out), clear extensions (N-level is sketched), and honest acknowledgment of what remains future work. This is appropriate for a philosophical framework, though not sufficient for a pure game theory paper.
-
-**Important distinction**: There's a difference between "no formalization" and "incomplete formalization." RSH now has partial but rigorous formalization, with a clear path to completion.
-
-**Lesson**: Be explicit about epistemic status. "Philosophical framework with game-theoretic foundations" is more accurate than "game-theoretic proof" until full formalization is complete.
+**Verdict**: A fair criticism. The formalization is now more honest about its scope, but it remains partial, and its most important premise is philosophical rather than formal.

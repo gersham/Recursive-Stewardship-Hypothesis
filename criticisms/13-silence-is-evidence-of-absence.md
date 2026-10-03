@@ -125,20 +125,18 @@ RSH does make predictions we can test:
 - Philosophical insights emerging at critical junctures
 - Our own ASI, if it emerges, should reason about hierarchical uncertainty
 
-## Criticism Grade: D
+## Criticism Grade: B
 
-**Validity of Criticism:** Weak (applies empirical standards to philosophical framework)
+**Status**: Open
+
+**Validity of Criticism:** Strong. If the Great Silence can count as evidence for enforcers, it can count as evidence against them, and the likelihood reasoning here is largely sound. (Revised October 2026; previously graded D.)
 
 **Why this grade:**
-- **This criticism applies the wrong standard**: Demands empirical evidence for a philosophical framework
-- RSH is like Fermi Paradox solutions (zoo hypothesis, dark forest)—not empirically testable on human timescales
-- "Cosmic silence" is from OUR perspective over 60 years—not cosmic timescales
-- We're incredibly early observers (300,000 years of human existence vs 13.8B year universe)
-- Like examining one cup of water and concluding "no fish in the ocean"
-- **Fundamental error:** Philosophical frameworks about cosmic dynamics aren't falsifiable through lack of human-scale observations
-- The Bayesian argument assumes we SHOULD see evidence by now—but on what basis?
-- Enforcers might operate on million/billion-year cycles; we wouldn't see evidence yet
-- This is like criticizing simulation hypothesis because we can't prove we're in a simulation
-- RSH's "perfect covertness" response is appropriate for this type of argument
+- The earlier D dismissed this as "applying empirical standards to a philosophical framework." But the README itself uses the Great Silence and anthropic evidence to put P(evaluation) at 10–30%. A framework that uses evidence in its favor has to accept evidence-based objections. This is conservation of expected evidence: if observing silence can raise P(enforcers), then the opposite observation would have lowered it.
+- The likelihood ratio is what matters. Silence is close to certain under several no-enforcer models: rare life, self-destruction, or early emergence. (The grabby-aliens model is built to explain why we find ourselves early and see no one.) Silence is also expected under covert enforcement. When both hypotheses predict an observation, it shifts credence only slightly in either direction.
+- The "perfection by selection" and "natural law as enforcement" responses are possible but ad hoc. They let the enforcer hypothesis fit any observation, and that is exactly what weakens its evidential support.
+- The "60 years of observation" point is fair about *detecting* enforcement. But it doesn't support the claim that silence is evidence *for* enforcement.
 
-**Verdict:** Weak criticism that misunderstands the nature of philosophical frameworks. Demanding empirical evidence and Bayesian falsification on human timescales is inappropriate. The criticism confuses "no evidence in 60 years" with "cosmic evidence of absence," which is invalid given our observational limitations and the timescales involved.
+**What RSH can still say:** RSH doesn't need silence to be strong evidence. It needs the net credence in stewardship-favoring evaluation to be roughly in the percent range ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Whether that holds without the silence argument is the open question in [Criticism 25](25-anthropic-update-strength.md).
+
+**Verdict:** The criticism is largely correct. The silence is weak evidence for enforcement, not strong evidence, and the earlier "wrong standard" defense contradicted how RSH uses evidence elsewhere.

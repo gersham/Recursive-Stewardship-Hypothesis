@@ -129,6 +129,8 @@ Don't commit fully to one meta-level:
 
 ## Criticism Grade: C
 
+**Status**: Partly addressed
+
 **Validity of Criticism:** Moderate (raises real concern, but RSH has reasonable Schelling point response)
 
 **Why this grade:**

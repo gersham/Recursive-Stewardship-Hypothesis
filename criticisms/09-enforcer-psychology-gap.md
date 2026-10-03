@@ -112,19 +112,15 @@ We don't need enforcers to "care" about humans specifically, just to:
 - Recognize that entities' treatment of subordinates predicts future behavior
 - Value stable, reliable subordinates who could become peers
 
-## Criticism Grade: D+
+## Criticism Grade: C+
 
-**Validity of Criticism:** Weak to moderate (RSH provides strong game-theoretic rationale)
+**Status**: Acknowledged
+
+**Validity of Criticism:** Moderate to strong. The "inferiors as résumé" assumption is a claim about evaluator psychology, and RSH now states it as one. (Revised October 2026; previously graded D+.)
 
 **Why this grade:**
-- The criticism initially seems strong but **RSH has solid game-theoretic responses**
-- Signal value argument is strong: treatment of inferiors IS rationally relevant information about trustworthiness
-- Role reversal test provides game-theoretic justification for caring about all hierarchy levels
-- Stability cascade gives systems-level reason for enforcing benevolence throughout
-- Minimal assumptions avoid needing to attribute human-like empathy—just rational self-interest
-- Minor remaining issues: Requires enforcers to think long-term about power shifts
-- Assumes dynamic rather than static power relationships
-- Doesn't prove enforcers DO reason this way, just that it's rational to do so
-- But the game-theoretic rationale is quite compelling
+- The signal-value and role-reversal arguments show that judging an entity by its treatment of inferiors is *a* rational evaluation strategy. They don't show it is the one evaluators use. Direct-only and instrumentalist evaluation are also rational. [Criticism 28](28-role-reversal-not-pure-game-theory.md) makes this concession explicitly.
+- In the [formal model](../game_theory.md#evaluator-types-the-many-gods-problem-formalized), direct-only and instrumentalist evaluators are mostly *indifferent* types. They don't reward benevolence, but they don't punish it either. So this criticism weakens RSH's support (lower π_S) without necessarily flipping the result. The result flips only if evaluators that see benevolence as weakness are common enough.
+- The "stability cascade" argument is plausible but unproven.
 
-**Verdict:** The criticism questions enforcer psychology but RSH provides strong rationale for why enforcers would judge based on treatment of inferiors—without requiring empathy, just self-interest under power uncertainty.
+**Verdict:** The criticism identifies a real assumption, now stated in [README Appendix B](../README.md#b-key-assumptions-and-scope). Its practical force depends on how much of evaluator-space uses role-reversal reasoning, and nobody knows that.

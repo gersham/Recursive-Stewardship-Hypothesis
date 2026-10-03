@@ -158,6 +158,8 @@ But none of these escape the fundamental circularity: **the values must be put i
 
 ## RSH Response
 
+*Note (October 2026): This response overstates what role-reversal achieves. Role-reversal is an assumption about evaluator psychology, not a derivation from self-interest and uncertainty alone ([Criticism 28](28-role-reversal-not-pure-game-theory.md)). See the revised grade below.*
+
 **The Role-Reversal Derivation:**
 
 The content CAN be derived from game theory through role-reversal:
@@ -199,25 +201,17 @@ RSH: Can derive what entities facing hierarchy want (role-reversal logic)
 
 The derivation is: Uncertainty → Self-interest → Role-reversal → Benevolence as safe bet
 
-## Criticism Grade: F
+## Criticism Grade: B
 
-**Validity of Criticism:** Fails (RSH decisively refutes this via role-reversal logic)
+**Status**: Partly addressed
+
+**Validity of Criticism:** Strong. Game theory tells an agent to hedge, not which way to hedge. (Revised October 2026; previously graded F.)
 
 **Why this grade:**
-- **This criticism initially appears devastating but RSH has a complete answer**
-- The criticism claims RSH can't derive WHAT enforcers want from game theory
-- **RSH refutes this via role-reversal derivation**: Enforcers face power uncertainty → ask "what if subordinate becomes more powerful?" → evaluate treatment of inferiors → enforce treatment they'd want if roles reversed
-- This derives benevolence content from minimal assumptions:
-  - Self-interest (survival/security) - applies to any entity
-  - Uncertainty (can't rule out power shifts)
-  - Symmetry (reversibility principle)
-- NOT from assumed moral values or divine preferences
-- Stability-through-reversibility explains why THESE specific principles (harm, optionality, proportionality)
-- **Clear distinction from Pascal's Wager**: RSH has derivation mechanism through role-reversal, Pascal doesn't
-- Minor remaining issues: Requires thinking about power dynamics and long time horizons
-- Assumes power CAN shift (not always true)
-- But these are weak compared to the core derivation
+- The earlier F rested on the claim that role-reversal derives benevolence from self-interest and uncertainty alone. [Criticism 28](28-role-reversal-not-pure-game-theory.md) concedes that it doesn't: role-reversal is an assumption about how evaluators reason. The two grades couldn't both stand.
+- The formalization makes the criticism precise. The hierarchical structure propagates *whatever* norm the top level enforces; this is the folk-theorem point in [game_theory.md](../game_theory.md#what-the-induction-does-and-doesnt-derive). Which norm that is depends on the distribution over evaluator types, and game theory doesn't supply it.
+- The "alternative cosmic values" listed above correspond to stewardship-penalizing evaluator types (π_A). RSH's conclusion holds only if π_S > π_A, and that inequality is argued for, not derived ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)).
 
-**Verdict:** The criticism fails—it underestimates RSH's role-reversal mechanism. RSH CAN derive the content of cosmic values from game-theoretic structure. This is the KEY defense of the framework.
+**What RSH does derive:** Part of the content survives without any assumption about what evaluators value. Under uncertainty with the possibility of learning, irreversible actions carry an option-value cost ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). That gives "minimize irreversible harm" and "preserve optionality" a structural derivation, and arguably "error correction over elimination" too. It does not give "treat the weak well" as such. Where restraint is the irreversible choice, the same logic favors acting.
 
-**Critical importance:** This response also decisively addresses Criticisms 1, 6, and 7 (first-mover circularity, anthropomorphic values, evil god objection). The role-reversal logic is the central mechanism of RSH.
+**Verdict:** The criticism is largely right that the content of benevolence can't come from structure alone. RSH's honest position has three parts. The reversibility principles are structural. The rest depends on the role-reversal and value assumptions in [README Appendix B](../README.md#b-key-assumptions-and-scope). The case for those assumptions is an argument that π_S > π_A, not a proof.

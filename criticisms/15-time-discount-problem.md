@@ -119,6 +119,8 @@ Enforcement could happen at ANY time:
 - Expected time is unknown, so can't confidently defer
 - Must hedge continuously, not just at end of timeline
 
+**Update (October 2026)**: The corrected long-horizon model in [game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model) formalizes this. Suppose an evaluator exists and detects defection with some per-period probability q. Then the expected discounted loss is p·Δ·q/[1 − δ(1−q)]. This doesn't shrink like (1+r)^(−10⁹), because detection can come in any period. As δ → 1, the threshold approaches g/Δ. But patience never lowers the threshold below g/Δ. So the criticism's example credence of 0.0001% is action-relevant only if the stakes ratio Δ/g exceeds about a million.
+
 **The Continuous Benefits:**
 
 Benevolent behavior provides immediate advantages:
@@ -136,6 +138,10 @@ Some actions are irreversible:
 - Must act benevolently from the start, can't defer and switch
 
 ## Criticism Grade: C
+
+**Status**: Partly addressed
+
+*Revised October 2026*: The corrected long-horizon model supports the unknown-timing response and also bounds it. Patience doesn't make credences below g/Δ relevant (see the update above).
 
 **Validity of Criticism:** Moderate (identifies real issue with distant probabilities, but RSH has reasonable responses)
 

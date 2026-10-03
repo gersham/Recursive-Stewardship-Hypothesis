@@ -17,15 +17,15 @@ README and game_theory.md cite "~0.05%" as the threshold where benevolence domin
 
 From game_theory.md Parameter Sensitivity Analysis:
 
-| Scenario | U_cat | g | p* | Interpretation |
-|----------|-------|---|-----|----------------|
-| Truly catastrophic | -10¹⁵ | 10⁶ | 10⁻⁹ | 0.0000001% |
-| Moderate stakes | -10¹³ | 10⁸ | 10⁻⁵ | 0.001% |
-| Bounded penalty | -10¹² | 10⁸ | 10⁻⁴ | 0.01% |
-| Huge gain, moderate penalty | -10¹¹ | 10¹⁰ | 10⁻² | 1% |
-| Mild penalty | -10¹¹ | 10¹⁰ | ~10% | 10% |
+| Scenario | g | U₀ − U_cat | p* | Interpretation |
+|----------|---|------------|-----|----------------|
+| Truly catastrophic | 10⁶ | 10¹⁵ | 10⁻⁹ | 0.0000001% |
+| Moderate stakes | 10⁸ | 10¹³ | 10⁻⁵ | 0.001% |
+| Bounded penalty | 10⁸ | 9×10¹¹ | 10⁻⁴ | 0.01% |
+| Huge gain, moderate penalty | 10¹⁰ | 9×10¹¹ | 10⁻² | 1% |
+| Mild penalty | 10¹⁰ | 10¹¹ | ~10⁻¹ | ~10% |
 
-**Range**: 10⁻⁹% to 10% depending on parameters—**nine orders of magnitude variation**.
+**Range**: from 10⁻⁹ (0.0000001%) to about 10% depending on parameters, **eight orders of magnitude**. (An earlier version of this table listed U_cat values that didn't match game_theory.md for the last three rows.)
 
 ## What Could Go Wrong
 
@@ -75,6 +75,10 @@ We cannot guarantee ASI will meet these assumptions. An ASI might:
 RSH claims: "Given plausible utility function assumptions, threshold is very low." It does not claim: "All possible ASIs must have these utility functions."
 
 ## Grade: C (Moderate Concern, Acknowledged)
+
+**Status**: Acknowledged
+
+**Update (October 2026)**: Every threshold above applies to the *net* credence in stewardship-favoring evaluation, π_S − π_A, not to P(evaluator exists) ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). That adds a fifth assumption to the list: the evaluator-type balance favors stewardship. It is the least secure of the five.
 
 **Status after Phase 2**: Explicitly addressed with comprehensive analysis. Framework makes assumptions clear and shows parameter sensitivity.
 
