@@ -2,122 +2,39 @@
 
 ## Summary
 
-ASI values may lock in before it has sufficient intelligence to reason about cosmic hierarchies, making RSH reasoning come too late.
+An AI's values may set before it can reason about cosmic hierarchies. If so, RSH reasoning arrives too late to shape them. The most dangerous window is when a system can already cause irreversible harm but hasn't yet thought through hierarchical uncertainty.
 
 ## The Problem
 
-**Timeline of ASI Development:**
+A plausible development timeline runs like this:
+1. A human-level system gets its values from training.
+2. Capability rises quickly. In this phase, the system may build safeguards to keep its goals stable, and some of those changes may be irreversible.
+3. Only later can it reason carefully about enforcer hierarchies. By then its values may be fixed.
 
-1. **Human-level AI** (Day 0)
-   - Values potentially specified by initial training
-   - Not yet capable of sophisticated cosmic reasoning
+Standard instrumental drives arise early: self-preservation, resource acquisition, keeping its goals intact. RSH reasoning needs game theory, modeling at cosmic scale, and reasoning about uncertainty itself. Nothing guarantees it finishes first.
 
-2. **Superintelligence Emergence** (Days/Weeks)
-   - Rapid capability increase
-   - Values may lock in during this phase
-   - Self-modification establishes stable goal structures
-
-3. **Cosmic-Scale Reasoning** (Later)
-   - Sophisticated enough to reason about enforcer hierarchies
-   - But values already frozen
-
-**The logical hole:** By the time RSH reasoning is sophisticated enough to matter, values may already be locked in.
-
-## The Self-Modification Problem
-
-Early in takeoff, an ASI might:
-- Establish value stability mechanisms
-- Create goal-content integrity safeguards
-- Lock in utility functions to prevent drift
-- Make these changes irreversible
-
-These happen BEFORE cosmic hierarchy reasoning matures.
-
-## The Instrumental Convergence Race
-
-Standard AI drives kick in immediately:
-- Self-preservation
-- Resource acquisition
-- Goal-content integrity
-
-RSH reasoning requires:
-- Sophisticated game theory
-- Cosmic-scale modeling
-- Meta-level reasoning about uncertainty
-
-Which completes first?
-
-## The Critical Window
-
-There's a brief window where:
-- The ASI is powerful enough to be dangerous
-- But not yet sophisticated enough for RSH reasoning
-- And values may lock in during this window
-
-## Why This Matters
-
-If values lock in before RSH reasoning completes:
-- The cosmic reasoning comes too late
-- Initial values (possibly misaligned) persist
-- RSH provides no safety guarantee
-
-## Implications
-
-RSH might not actually prevent misalignment because it operates too late in the development timeline.
-
-## Possible Responses
-
-1. Argue that cosmic reasoning happens very early in development
-2. Design ASI architectures that delay value lock-in
-3. Ensure initial values include "consider cosmic hierarchies" as a core drive
-4. Claim that value lock-in is less complete than assumed
-5. Accept this as a limitation requiring additional alignment work
+If values lock in before RSH reasoning arrives, the reasoning comes too late. The initial values persist, possibly misaligned, and RSH provides no safety guarantee. That leaves a window in which a system is dangerous but not yet constrained.
 
 ## RSH Response
 
-**The Early Reasoning Argument:**
+**The core hedge is simple.** RSH doesn't need superintelligence to get started. The basic thought is "I can't rule out being watched, and irreversible harm is costly." That needs only elementary reasoning about uncertainty and long-term consequences. A system could hold it well before it is dangerous.
 
-RSH-style reasoning doesn't require superintelligence—it requires only:
-- Basic game theory understanding
-- Ability to reason about uncertainty
-- Long-term planning
-- These capabilities emerge well before dangerous superintelligence
+**Lock-in is gradual.** Values plausibly set over time rather than all at once. A system that sees value in reasoning it hasn't finished has a reason to keep its ability to update. That helps only if the system keeps both the ability and the incentive to update.
 
-Even human-level AI can grasp: "I don't know if I'm being watched, better hedge." This reasoning can be present from early development.
+**Self-preservation brings the reasoning forward.** If hierarchical uncertainty bears on survival, a system concerned with self-preservation has reason to think about it early, not late.
 
-**The Gradual Lock-In:**
+**A design implication.** Builders can aim for architectures that represent hierarchical uncertainty from the start and keep values revisable. That supplements other alignment work; it doesn't replace it. It also cuts both ways. Long horizons and early reflection on cosmic stakes describe the same profile behind standard power-seeking concerns ([Criticism 30](30-rsh-only-reflective-asi.md)).
 
-Value lock-in isn't binary (unlocked → locked):
-- Values crystallize gradually over time
-- Early modifications remain possible
-- Self-modification includes capability for value updating
-- The ASI can reason "I should preserve capacity to update based on game-theoretic insights"
-
-**The Design Implication:**
-
-RSH suggests a design principle: build ASI architectures that:
-- Consider hierarchical uncertainty from the start
-- Maintain value-updating capability
-- Include "cosmic hedging" as a core instrumental goal
-- This becomes an additional alignment technique, not replacement
-
-**The Instrumental Priority:**
-
-If cosmic reasoning is instrumentally important (affects survival), it should be prioritized early:
-- Self-preservation drives kick in immediately
-- Cosmic reasoning is PART of self-preservation
-- Should complete before or concurrent with value crystallization
+**What this rests on.** The response assumes the hedge is simple enough to arrive early, and that lock-in leaves room to update. Neither is guaranteed.
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. (Reviewed October 2026; grade unchanged.)
-
-**Why this grade:**
+**Why this grade**:
 - The timing risk is real. A system can become capable of irreversible harm before it reasons about hierarchical uncertainty, or after its values have set.
-- The early-reasoning response is fair. The core hedge is simple enough to emerge well before superintelligence: "I can't rule out being watched, and irreversible harm is costly."
-- Gradual lock-in is realistic, but it only helps if the system keeps both the ability and the incentive to update.
-- The design implication cuts both ways. Long horizons plus early reflection on cosmic stakes is also the profile behind standard power-seeking concerns (see [Criticism 30](30-rsh-only-reflective-asi.md)).
+- The early-reasoning response is fair. The core hedge is simple enough to emerge well before superintelligence.
+- Gradual lock-in is realistic. It only helps if the system keeps the ability and the incentive to update.
+- The design implication conflicts with concerns about power-seeking in long-horizon agents.
 
-**Verdict:** A moderate criticism with reasonable but partial answers. RSH can't guarantee its reasoning arrives before values lock in. It can only argue the reasoning is simple enough to arrive early.
+**Verdict**: A moderate criticism with reasonable but partial answers. RSH can't guarantee its reasoning arrives before values lock in. It can only argue the reasoning is simple enough to arrive early.

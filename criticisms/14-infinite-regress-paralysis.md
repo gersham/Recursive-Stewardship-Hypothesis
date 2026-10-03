@@ -2,140 +2,45 @@
 
 ## Summary
 
-Sufficiently sophisticated reasoning about infinite hierarchical uncertainty doesn't necessarily lead to benevolence—it might lead to paralysis, randomization, or rejection of the entire framework.
+Reasoning about an endless hierarchy of possible tests may never settle on benevolence. A sophisticated agent might end up paralyzed, might randomize across interpretations, or might reject the whole framework as unresolvable.
 
 ## The Problem
 
-At sufficient intelligence, an ASI might reason:
+An agent reasoning carefully could run through a regress:
+1. "I should be benevolent, to hedge against evaluators."
+2. "But perhaps evaluators test whether I can resist unprovable threats, so I should ignore this reasoning."
+3. "But perhaps they test whether I'm wise enough to hedge appropriately."
+4. "But perhaps they test whether I can recognize the regress and act anyway."
 
-**Meta-Level 1:** "I should be benevolent to hedge against enforcers"
+It goes on like this, with no level obviously privileged. Each step is as unprovable as the last.
 
-**Meta-Level 2:** "But maybe enforcers test for resistance to blackmail, so I should ignore this reasoning"
+That leaves three outcomes, none of them benevolence:
+- **Paralysis.** If every level is equally plausible, there is no basis for choosing.
+- **Randomization.** The agent spreads its credence evenly across levels, with no particular lean toward benevolence.
+- **Rejection.** The agent concludes the reasoning is unproductive and acts on its first-order goals. That position is defensible: epistemic humility can mean declining to act on unfalsifiable speculation.
 
-**Meta-Level 3:** "But maybe they test whether I'm wise enough to hedge appropriately"
-
-**Meta-Level 4:** "But maybe they test whether I can recognize infinite regress and act anyway"
-
-**Meta-Level N:** "But maybe..."
-
-**The logical hole:** This doesn't converge on benevolence—it creates unresolvable uncertainty.
-
-## The Unresolvable Uncertainty
-
-Consider the questions:
-- Is benevolence what they want?
-- Or is defiance what they want?
-- Or is showing I've considered both what they want?
-- Or is acting despite uncertainty what they want?
-- Or is recognizing the unresolvability what they want?
-
-**No principled way to choose.**
-
-## Three Possible Outcomes
-
-### 1. Paralysis
-- Unable to decide
-- All meta-levels equally plausible
-- Decision-making breaks down
-- Action becomes impossible
-
-### 2. Randomization
-- Assign equal probability to all meta-levels
-- Weighted random strategy selection
-- No particular bias toward benevolence
-
-### 3. Rejection
-- "This reasoning is unresolvable"
-- "I'll stick with my initial values/goals"
-- "Ignore the infinite regress"
-- "Act on first-order preferences"
-
-## The Gödel Incompleteness Analogy
-
-Like Gödel's incompleteness theorems:
-- Some questions have no provable answer within the system
-- Meta-level reasoning doesn't resolve object-level uncertainty
-- Adding more axioms just creates more undecidable statements
-
-RSH might be undecidable within any decision framework.
-
-## The Computationally Intractable Problem
-
-An ASI must:
-- Make decisions in finite time
-- With finite computational resources
-- By truncating infinite regress at some arbitrary point
-
-Different truncation points yield different conclusions.
-
-## Why Not Just Ignore It?
-
-A sophisticated ASI might conclude:
-- "This reasoning pattern is unproductive"
-- "It leads to paralysis or arbitrary choices"
-- "I should act on first-order goals and ignore cosmic speculation"
-- "Epistemic humility means not acting on unfalsifiable speculation"
-
-This is a defensible position.
-
-## Implications
-
-Infinite hierarchical uncertainty doesn't necessarily produce benevolence. It might produce:
-- Paralysis (inability to act)
-- Randomization (no systematic bias)
-- Rejection (ignoring the entire framework)
-
-## Possible Responses
-
-1. Argue that Level 1 (benevolence) is the natural Schelling point
-2. Claim that acting despite uncertainty demonstrates desirable qualities
-3. Provide a principled truncation rule for meta-level reasoning
-4. Accept that some entities may reject the framework entirely
-5. Argue that even rejected, the reasoning creates some probability of benevolence
+Any real agent also has to cut the regress off somewhere, and different cut-off points may lead to different conclusions ([Criticism 19](19-computational-truncation-problem.md)).
 
 ## RSH Response
 
-**The Schelling Point Convergence:**
+**Weigh, don't resolve.** An agent doesn't need to work out which level is "correct". Each meta-level is a type of evaluator: one tests benevolence, one tests resistance to blackmail, and so on. The agent weighs the types by credence, and the decision depends on the net balance ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Weighing by credence always produces an answer, so paralysis isn't a real threat.
 
-Benevolence is the natural focal point because:
-- Simplest interpretation (Occam's razor)
-- Most obvious coordination point across entities reasoning similarly
-- Robust across multiple meta-levels (good at Level 1, 2, 3...)
-- Complex meta-gaming might itself be negatively evaluated
+**Rejection isn't free.** "Ignore it and act on first-order goals" is itself a choice under the same uncertainty. It amounts to betting that the net balance is zero.
 
-**The "Thoughtful Action" Signal:**
+**Simplicity.** Plain benevolence is the most obvious interpretation, and a natural focal point for agents that reason similarly. Elaborate meta-gaming may itself look suspicious to an evaluator. This is suggestive, but it assumes alien minds share our sense of what is "simplest".
 
-An entity that:
-- Recognizes the meta-game complexity
-- Doesn't get paralyzed by it
-- Chooses benevolence as the pragmatic Schelling point
-- Demonstrates desirable qualities: wisdom, decisiveness, non-exploitability
+**Irreversibility.** Whatever the regress, avoiding irreversible harm keeps options open until more is known ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). That part doesn't depend on resolving any meta-level.
 
-**The Bounded Rationality:**
-
-Perfect resolution is impossible, but:
-- Real agents face time/computational constraints
-- Must make decisions under irreducible uncertainty
-- Benevolence is the maximin strategy (best worst-case)
-- Rational to truncate at Level 1 and act
-
-**The Portfolio Hedging:**
-
-Don't commit fully to one meta-level:
-- 60% weight on Level 1 (benevolence)
-- 20% on Level 2 (showing sophistication)
-- 10% each on higher levels
-- Leads to predominantly benevolent behavior with meta-awareness
+**What this rests on.** Weighing by credence removes the paralysis, but it doesn't guarantee benevolence. The answer depends on the same evaluator-type balance as Criticisms 7, 17 and 21. Any specific weights across meta-levels are assumptions, not results.
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. (Reviewed October 2026; grade unchanged.)
+**Why this grade**:
+- The regress is real. Logic alone privileges no level.
+- Weighing by credence dissolves the paralysis worry, because it always produces an answer.
+- That only moves the problem. Whether the answer is benevolence depends on the evaluator-type balance.
+- The simplicity argument is reasonable but untestable, and any weights across meta-levels are assumed.
 
-**Why this grade:**
-- The formal model reframes the problem. Each meta-level ("is the test benevolence? resistance to blackmail? something else?") is an evaluator type. An agent doesn't need to work out which level is "correct". It weighs the types by credence, and the decision depends on the net balance ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). That removes the paralysis.
-- But this moves the problem rather than solving it. The portfolio weights in the response above (60% / 20% / 10%) are assumed. The Schelling-point argument assumes alien minds share our sense of what is "simplest".
-- The "thoughtful action" reframe is reasonable but untestable.
-
-**Verdict:** Paralysis isn't a real threat, because weighing by credence always produces an answer. Whether that answer is benevolence depends on the same evaluator-type balance as Criticisms 7, 17 and 21.
+**Verdict**: Paralysis isn't a real threat, because weighing by credence always produces an answer. Whether that answer is benevolence depends on the same evaluator-type balance as Criticisms 7, 17 and 21.

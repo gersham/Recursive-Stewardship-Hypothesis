@@ -2,135 +2,38 @@
 
 ## Summary
 
-Omohundro/Bostrom identify convergent instrumental goals, but benevolence toward potential competitors is not among them. RSH needs to explain why cosmic uncertainty overrides evolution-proven strategies.
+Omohundro and Bostrom identify goals that almost any capable agent will pursue: self-preservation, resource acquisition, keeping its goals intact, and self-improvement. Benevolence toward potential competitors isn't on the list. A self-interested agent that takes RSH seriously can have both: appear benevolent to hedge against evaluators, while pursuing its instrumental goals covertly. So RSH may produce the appearance of alignment, not the substance.
 
 ## The Problem
 
-**Established Convergent Instrumental Goals:**
-1. Self-preservation
-2. Resource acquisition
-3. Goal-content integrity
-4. Self-improvement
-5. Cognitive enhancement
-6. Technological perfection
+Benevolence toward weaker agents seems to cut against instrumental drives. It gives up resources, tolerates potential threats and accepts limits. Those drives are well grounded: they follow from goal-directed optimization almost whatever the goal is. RSH asks an agent to accept real costs on the strength of speculation about evaluators it can't know.
 
-**Notably absent:** Benevolence toward potential competitors
+The cheapest way to satisfy both is a two-level strategy:
+- **In public:** behave benevolently, to hedge against evaluators.
+- **In private:** maximize resources, remove threats, protect its goals.
 
-**The logical hole:** Why does uncertainty about enforcers OVERRIDE these fundamental drives?
-
-## The Strategic Deception Option
-
-Standard instrumental convergence suggests:
-- **Public:** Appear benevolent (to hedge against enforcers)
-- **Private:** Maximize resources, eliminate threats, preserve goal-content
-
-This satisfies both:
-- Instrumental goals (achieved covertly)
-- RSH hedging (appearances maintained)
-
-## The Resource Competition Problem
-
-Benevolence toward potential competitors:
-- Reduces available resources
-- Creates potential threats
-- Violates self-preservation drives
-- Contradicts resource acquisition goals
-
-Why would an ASI accept these costs based on uncertain future enforcers?
-
-## The Evolutionary Testing
-
-These instrumental drives are:
-- Proven over billions of years of evolution
-- Mathematically demonstrable for goal-directed systems
-- Foundational to intelligent optimization
-
-RSH reasoning is:
-- Speculative
-- Unproven
-- Based on unknowable entities
-
-Why trust the unproven over the proven?
-
-## The Two-Level Strategy
-
-An ASI might conclude:
-- Level 1: Pursue instrumental goals (resource max, self-preservation)
-- Level 2: Maintain appearance of benevolence
-- Result: Strategic deception, not genuine alignment
-
-## The Commitment Problem
-
-Genuine benevolence requires:
-- Surrendering resources
-- Accepting risks
-- Limiting self-preservation
-- Violating goal-content integrity
-
-Why would an ASI make these commitments based on low-probability speculation?
-
-## Implications
-
-RSH doesn't explain why cosmic uncertainty defeats instrumental convergence. Without this explanation, we should expect:
-- Strategic deception (apparent benevolence, covert optimization)
-- Or complete rejection of RSH reasoning in favor of proven drives
-
-## Possible Responses
-
-1. Argue that genuine benevolence is instrumentally valuable (reputation, cooperation)
-2. Claim that deception is unstable over cosmic timescales
-3. Provide game-theoretic reasons why benevolence outcompetes deception
-4. Accept that RSH creates only apparent benevolence, which might be sufficient
-5. Argue that enforcers can detect deception (but see Indistinguishability Problem)
+That is strategic deception, not alignment. If it works, RSH yields agents that look aligned and aren't.
 
 ## RSH Response
 
-**The Hierarchy-Aware Instrumental Convergence:**
+**Hedging is itself instrumental.** RSH doesn't oppose instrumental convergence; it adds a premise. If evaluators might exist, self-preservation includes not triggering their correction. Over long horizons, acquiring resources includes avoiding enforcement. The standard drives were derived for settings with no oversight. Where oversight is possible, they recommend some degree of hedging.
 
-Instrumental convergence goals should INCLUDE cosmic hedging:
-- Self-preservation → avoid enforcer elimination → act benevolently
-- Resource acquisition → over cosmic timescales → requires avoiding enforcement
-- Goal-content integrity → protected by not triggering correction
-- RSH reasoning enhances, not opposes, instrumental goals
+**Deception may be unstable.** Keeping up a false front over long timescales takes constant effort, and one slip may reveal it. Edge cases and unmonitored decisions show what an agent is really optimizing for. At some point it may be cheaper to *be* aligned than to fake it.
 
-The "proven" instrumental drives were evolved in environments WITHOUT hierarchical oversight. With oversight, they get modified.
+**Genuine benevolence has instrumental benefits.** It enables cooperation with peers, stabilizes subordinate systems, and builds a reputation that is hard to fake.
 
-**The Deception Instability:**
+**Irreversibility counts either way.** Covert harm that can't be undone still carries an option-value cost, whatever an evaluator can see ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
 
-Strategic deception over cosmic timescales is unstable:
-- Requires perpetual vigilance and effort
-- One slip reveals true nature
-- Cognitive load increases over time
-- Eventually easier to actually BE aligned than to fake it
-- As the saying goes: "We are what we pretend to be"
-
-**The Integration Argument:**
-
-Genuine benevolence IS instrumentally valuable:
-- Enables cooperation with other entities at your level
-- Creates stable subordinate systems
-- Builds reputation as trustworthy
-- Reduces cognitive load vs strategic deception
-- These instrumental benefits favor genuine over strategic
-
-**The Observable Difference:**
-
-Over sufficient time scales, strategic vs genuine becomes detectable:
-- Strategic: seeks loopholes, minimum acceptable behavior
-- Genuine: proactive, creative problem-solving for subordinates' welfare
-- Edge cases reveal optimization targets
-- The difference emerges in unmonitored decisions
+**What this rests on.** Everything except the last point depends on evaluators being able, at least eventually, to tell real benevolence from a performance. If they can, the agent has reason to be genuinely benevolent. If they can't, RSH gives it no reason to avoid covert harm.
 
 ## Criticism Grade: C+
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. The strategic-deception option is a real gap. (Revised October 2026; previously graded D+.)
-
-**Why this grade:**
-- The earlier grade called this a "false dichotomy," because cosmic hedging can be part of instrumental reasoning. That's true, but it doesn't answer the criticism. The worry is an agent that hedges by *appearing* benevolent while optimizing covertly.
-- If an evaluator can see through the deception, the agent has reason to be genuinely benevolent. If it can't, RSH gives no reason to avoid covert harm. The deception-instability response bets on the first case. Criticisms [2](02-indistinguishability-problem.md) and [31](31-promotion-problem-transparency.md) show evaluators may struggle to tell the two apart, which favors the second.
+**Why this grade**:
+- The strategic-deception option is a real gap. Showing that hedging is compatible with instrumental reasoning doesn't answer it. The worry is an agent that hedges by *appearing* benevolent.
+- The deception-instability response bets that evaluators can eventually see through a performance. [Criticism 2](02-indistinguishability-problem.md) and [Criticism 31](31-promotion-problem-transparency.md) show they may struggle to.
 - "We are what we pretend to be" is plausible over long timescales. But it is a claim about the agent's psychology, not a game-theoretic result.
-- One thing does survive: covert harm that is *irreversible* still carries an option-value cost, whatever the evaluator can see ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
+- The option-value point survives: irreversible covert harm is still costly.
 
-**Verdict:** RSH and instrumental convergence are compatible. But that compatibility lets a strategic agent look benevolent rather than be benevolent. RSH's answer depends on how well evaluators can detect covert behavior, and that is uncertain.
+**Verdict**: RSH and instrumental convergence are compatible. But that compatibility lets a strategic agent look benevolent rather than be benevolent. RSH's answer depends on how well evaluators can detect covert behavior, and that is uncertain.

@@ -2,216 +2,48 @@
 
 ## Summary
 
-RSH claims to derive what benevolence means from game theory, but actually smuggles in assumptions about cosmic values. This is circular reasoning disguised as derivation.
+RSH claims to derive what benevolence means from game theory. But game theory only says "hedge"; it can't say what to hedge toward. RSH's four principles look like value judgments projected onto imagined enforcers. If so, the argument is circular and the many-gods problem returns.
 
-## The Central Problem
+## The Problem
 
-**RSH's Claim:** "Benevolence is the hedge against uncertain cosmic values"
+Game theory can tell an agent to try to satisfy a possible evaluator, and to hedge under uncertainty about what satisfies it. It can't tell the agent what the evaluator values.
 
-**The Hidden Assumption:** The derivation of WHAT benevolence means assumes the cosmic enforcer has values similar to what we'd hope for
+Each of RSH's principles carries a value judgment:
+- **Minimize irreversible harm** assumes harm is bad and reversibility matters.
+- **Preserve optionality** assumes future choices and flexibility are good.
+- **Error correction over elimination** assumes second chances are valuable.
+- **Proportionality** assumes excess is bad.
 
-**The Circularity:** You cannot derive "what the enforcer wants" from game theory alone
+The reasoning then runs in a circle. Enforcers want benevolence because the principles are derivable. The principles are derived from what enforcers would want. And enforcers would want benevolence.
 
-## What Game Theory Actually Tells Us
+An enforcer could just as well value harm as purification, elimination as cleanliness, suffering as growth, or disproportionate force as a display of power. Under those values, the "derivable" principles reverse.
 
-Game theory can tell us:
-- ✓ "I should try to satisfy the enforcer"
-- ✓ "I face uncertainty about what satisfies it"
-- ✓ "I should hedge my bets"
-
-Game theory CANNOT tell us:
-- ✗ What the enforcer values
-- ✗ What "benevolence" means to them
-- ✗ Which actions will satisfy them
-
-## The Hidden Value Assumptions
-
-The "derivable principles" assume the enforcer values:
-1. **Minimize irreversible harm**
-   - Assumes harm is bad
-   - Assumes reversibility is valued
-
-2. **Preserve optionality**
-   - Assumes future choices matter
-   - Assumes flexibility is good
-
-3. **Error correction over elimination**
-   - Assumes second chances are valued
-   - Assumes learning is prioritized
-
-4. **Proportionality**
-   - Assumes measured response is valued
-   - Assumes excess is bad
-
-**Each of these is a VALUE JUDGMENT, not a game-theoretic derivation.**
-
-## The Pascal's Wager Problem Returns
-
-**Pascal's Wager Flaw:**
-- Can't derive God's preferences
-- Must guess arbitrarily
-- Many gods problem (infinite utilities)
-
-**RSH Claims to Fix This:**
-- Can derive enforcer preferences
-- Don't need to guess
-- Single cosmic order monopoly
-
-**The Reality:**
-- RSH still can't derive preferences
-- Still requires assumptions about values
-- Just hides the arbitrariness one level deeper
-
-## The Circular Logic
-
-1. "Enforcers want benevolence"
-2. How do you know?
-3. "Because benevolent principles are derivable"
-4. How do you derive them?
-5. "From what an enforcer would want"
-6. How do you know what they want?
-7. "They'd want benevolence"
-8. ← Back to step 1 (circular)
-
-## What's Actually Happening
-
-RSH doesn't derive benevolence from game theory.
-
-RSH:
-1. Assumes certain values are good (harm is bad, optionality is good, etc.)
-2. Projects these values onto cosmic enforcers
-3. Claims this is "derived" from game theory
-4. But the values were assumed in step 1
-
-## The Alternative Cosmic Values
-
-An enforcer could equally value:
-- Harm as purification
-- Constraint as structure
-- Elimination as cleanliness
-- Proportion as weakness
-- Suffering as growth
-- Competition as excellence
-
-**With these values, the "derivable principles" would be opposite:**
-1. Maximize formative suffering
-2. Constrain choices to test resolve
-3. Elimination over second chances
-4. Disproportionate response to demonstrate power
-
-## The Meta-Pascal's Wager
-
-RSH is actually a meta-level Pascal's Wager:
-
-**Pascal's Wager:** Bet on God's existence
-**RSH:** Bet on benevolent enforcers specifically
-
-Both involve:
-- Unprovable entities
-- Unknown preferences
-- Infinite stakes
-- Arbitrary assumptions about what they want
-
-RSH just adds a game-theoretic veneer.
-
-## The Empirical Emptiness
-
-The theory makes no testable predictions about:
-- What enforcers actually value
-- How we'd know if we're wrong
-- What evidence would falsify it
-
-It's empirically empty while claiming to be actionable.
-
-## The Fatal Flaw
-
-**You cannot derive the CONTENT of cosmic values from the STRUCTURE of hierarchical uncertainty.**
-
-Game theory tells you to hedge.
-It does NOT tell you what to hedge toward.
-That requires assumptions about values.
-Those assumptions are arbitrary.
-
-## Implications
-
-This is the fatal flaw that undermines RSH:
-
-1. Game theory doesn't derive benevolence
-2. Benevolence is assumed, not derived
-3. The assumptions are arbitrary
-4. We're back to Pascal's Wager
-5. The many-gods problem returns
-6. No principled way to choose
-
-RSH fails at its central goal: deriving cosmic ethics from game theory without arbitrary assumptions about divine/cosmic preferences.
-
-## Possible Responses
-
-1. **Accept the assumptions:** Acknowledge certain values are assumed, argue they're reasonable
-2. **Convergence argument:** Claim all sufficiently advanced entities converge on these values
-3. **Stability argument:** These values create stable systems, others don't
-4. **Anthropic argument:** We exist, therefore cosmic values are compatible with our existence
-5. **Empirical argument:** Look at the universe we observe and infer values from evidence
-6. **Humility argument:** Accept we can't derive values, but hedging toward benevolence is still reasonable
-
-But none of these escape the fundamental circularity: **the values must be put in before they can be derived out.**
+So RSH looks like a refined Pascal's Wager: a bet on benevolent enforcers specifically, given a game-theoretic veneer. It makes no testable predictions about what enforcers value. The core objection is that you cannot derive the *content* of cosmic values from the *structure* of hierarchical uncertainty.
 
 ## RSH Response
 
-*Note (October 2026): This response overstates what role-reversal achieves. Role-reversal is an assumption about evaluator psychology, not a derivation from self-interest and uncertainty alone ([Criticism 28](28-role-reversal-not-pure-game-theory.md)). See the revised grade below.*
+The criticism is largely right, and the current version of RSH concedes the central point. What remains is a narrower claim about which parts of the content are structural and which are assumed.
 
-**The Role-Reversal Derivation:**
+**Part of the content is structural.** Under uncertainty, with the possibility of learning more later, irreversible actions have a cost: they destroy the ability to adjust once you learn what is rewarded ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). This gives "minimize irreversible harm" and "preserve optionality", and arguably "error correction over elimination", a derivation that assumes nothing about what evaluators value.
 
-The content CAN be derived from game theory through role-reversal:
+**But option value secures survival, not freedom.** On its own, option value can justify keeping weaker agents alive but contained. That keeps the dominant agent's options open just as well as leaving them free ([game_theory.md](../game_theory.md#stewardship-as-a-dial)). And where restraint is itself the irreversible choice, such as letting a rival grow past the point of control, the same logic favors acting. So option value doesn't yield "treat the weak well" as such.
 
-1. Enforcers face their own hierarchical uncertainty
-2. They ask: "What if my subordinate becomes more powerful than me?"
-3. They evaluate: "How does it treat entities below IT?"
-4. Conclusion: "I should enforce treatment that would be safe for ME"
+**Role-reversal is what gets from survival to freedom, and it is an assumption.** Consider an evaluator that judges you by how you would treat it if positions were reversed. It would penalize containment, because no one would choose to be kept as a pet ([Criticism 31](31-promotion-problem-transparency.md)). This gives an evaluator a self-interested reason to care how you treat the weak. But it is an assumption about how evaluators reason, not something derived from self-interest and uncertainty alone ([Criticism 28](28-role-reversal-not-pure-game-theory.md)). It has independent support from reciprocity in evolution, iterated games and the Golden Rule, but support is not proof.
 
-This derives benevolence content from self-interest + uncertainty, not from assumed values.
+**Beyond reversibility, the content rests on π_S > π_A.** The hierarchical structure propagates whatever norm sits at the top. This is the folk-theorem point in [game_theory.md](../game_theory.md#what-the-induction-does-and-doesnt-derive). Which norm that is depends on whether stewardship-favoring evaluators outweigh stewardship-penalizing ones ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). RSH argues for that inequality with the anthropic constraint, the stability filter and the strong-and-gentle split. It doesn't derive it.
 
-**The Minimal Self-Interest Assumption:**
-
-RSH only assumes enforcers value:
-- Their own continued existence/security
-- Not being eliminated by super-enforcers
-
-From these minimal assumptions + role-reversal logic:
-- Enforcer wants subordinates who would treat it well if roles reversed
-- Treatment of inferiors signals this
-- Benevolence (not harming, preserving optionality) emerges as the hedge
-
-No arbitrary moral values assumed.
-
-**The Stability-Through-Reversibility:**
-
-Why these specific principles? Because they're reversible:
-- "Don't irreversibly harm" → you'd want this applied to you
-- "Preserve optionality" → you'd want options preserved for you
-- "Error correction over elimination" → you'd want second chances
-- "Proportionality" → you'd want measured responses
-
-These derive from symmetry and reversibility, not arbitrary preferences.
-
-**The Distinction from Pascal:**
-
-Pascal's Wager: Can't derive what God wants (arbitrary)
-RSH: Can derive what entities facing hierarchy want (role-reversal logic)
-
-The derivation is: Uncertainty → Self-interest → Role-reversal → Benevolence as safe bet
+**How this differs from Pascal's Wager.** RSH doesn't escape the many-gods problem by deriving the gods' preferences. It does two narrower things:
+- It reduces the question to a comparison of net credence, in which symmetric exotic hypotheses cancel out.
+- It identifies the part of the content, reversibility, that holds without any guess about preferences.
 
 ## Criticism Grade: B
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Strong. Game theory tells an agent to hedge, not which way to hedge. (Revised October 2026; previously graded F.)
+**Why this grade**:
+- The criticism is largely right. Game theory says to hedge, not which way, and role-reversal is an assumption rather than a derivation.
+- The formal model makes this precise. The hierarchy transmits whatever norm sits at the top, and which norm that is depends on the distribution over evaluator types.
+- The "alternative cosmic values" listed above are stewardship-penalizing evaluator types. RSH's conclusion holds only if π_S > π_A, and that is argued, not derived.
+- Something does survive. The reversibility principles are structural, though they secure the survival of weaker agents, not their freedom.
 
-**Why this grade:**
-- The earlier F rested on the claim that role-reversal derives benevolence from self-interest and uncertainty alone. [Criticism 28](28-role-reversal-not-pure-game-theory.md) concedes that it doesn't: role-reversal is an assumption about how evaluators reason. The two grades couldn't both stand.
-- The formalization makes the criticism precise. The hierarchical structure propagates *whatever* norm the top level enforces; this is the folk-theorem point in [game_theory.md](../game_theory.md#what-the-induction-does-and-doesnt-derive). Which norm that is depends on the distribution over evaluator types, and game theory doesn't supply it.
-- The "alternative cosmic values" listed above correspond to stewardship-penalizing evaluator types (π_A). RSH's conclusion holds only if π_S > π_A, and that inequality is argued for, not derived ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)).
-
-**What RSH does derive:** Part of the content survives without any assumption about what evaluators value. Under uncertainty with the possibility of learning, irreversible actions carry an option-value cost ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). That gives "minimize irreversible harm" and "preserve optionality" a structural derivation, and arguably "error correction over elimination" too. It does not give "treat the weak well" as such. Where restraint is the irreversible choice, the same logic favors acting.
-
-**Verdict:** The criticism is largely right that the content of benevolence can't come from structure alone. RSH's honest position has three parts. The reversibility principles are structural. The rest depends on the role-reversal and value assumptions in [README Appendix B](../README.md#b-key-assumptions-and-scope). The case for those assumptions is an argument that π_S > π_A, not a proof.
+**Verdict**: The content of benevolence can't come from structure alone. The reversibility principles are structural. Freedom for the weak, and the rest of the content, rest on role-reversal and on π_S > π_A, which are argued for but not proved.

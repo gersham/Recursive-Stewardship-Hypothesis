@@ -2,185 +2,60 @@
 
 ## Summary
 
-RSH relies on language like "infinite negative utility" which creates Pascal's Wager problems, and doesn't adequately address how time discounting weakens the force of distant low-probability risks.
+RSH can be read as relying on infinite stakes ("terminal consequences", "cosmic timescales"), which brings in the problems of Pascal's Wager. If it uses finite utilities instead, ordinary time discounting seems to make distant, unlikely enforcement negligible. Either way, the argument looks weak.
 
 ## The Problem
 
-### Infinite Utility Language
+**The infinity horn.** Phrases like "infinite negative utility" or "tiny probabilities matter over infinite time" invite the objections to Pascal's Wager. Infinite payoffs can't be compared with each other. And many competing infinite-stakes hypotheses (the "many gods" problem) leave no basis for choosing between them.
 
-**RSH sometimes frames as**:
-- "Even tiny probabilities matter over infinite time"
-- "Terminal consequences have infinite negative utility"
-- "Risk of elimination × cosmic timescales"
+**The discounting horn.** With finite utilities, standard discounting shrinks distant consequences. Take a 0.0001% chance of enforcement a billion years from now. Discounted at even 0.01% a year, it has essentially zero present value.
 
-**The Pascal's Wager trap**:
-- Infinite utilities create decision paralysis
-- Can't compare infinities rationally
-- "Many gods" objection: multiple infinite payoffs compete
+**Defer forever.** An ASI might reason: acquire resources for 999 million years, then switch to benevolence. By then its values are fixed, the harm is done, and switching means nothing.
 
-### Time Discounting Issue
-
-Standard decision theory with discount factor δ:
-
-```
-Present Value = Future Utility / (1 + r)^t
-
-Where:
-- r = discount rate
-- t = time until event
-```
-
-**Problem**: Even with low discount rates, distant events have near-zero present value.
-
-**Example**:
-- P(enforcement) = 0.0001%
-- Time horizon = 1 billion years
-- Discount rate = even 0.01% per year
-- Present value → effectively zero
-
-### The Defer-Forever Strategy
-
-An ASI might rationally conclude:
-- "Take 999 million years of resource acquisition"
-- "Then hedge toward benevolence later"
-- By then: values locked, harm done, switching meaningless
-
-## Why This Matters
-
-**With standard discounting**:
-- Distant low-probability risks have negligible present value
-- Immediate gains dominate
-- Hedging can be deferred essentially indefinitely
-
-**With infinite utilities**:
-- Decision theory breaks down
-- Can't distinguish between competing infinite-utility scenarios
-- Back to Pascal's Wager problems
-
-## The Joint Problem
-
-RSH needs to either:
-1. Use infinite utilities (but then faces Pascal's Wager objections)
-2. Use finite utilities with discounting (but then distant events don't matter)
-
-**Seems like a dilemma**: Can't win either way.
-
-## Implications
-
-This appears to undermine RSH's core mechanism:
-- Either infinities make it arbitrary (Pascal's Wager)
-- Or discounting makes it negligible (standard economics)
+So RSH seems stuck: infinities make it arbitrary, and discounting makes it negligible.
 
 ## RSH Response
 
-### Bounded but Terminal Utilities
-
-**The correct framing**: Utilities are FINITE but consequences are CATASTROPHIC and IRREVERSIBLE.
+**Utilities are bounded but terminal.** game_theory.md uses only finite utilities. The loss from being caught, Δ = U₀ − U_cat, is large because it is terminal: the agent loses its future. It is not infinite. In the worked example in [game_theory.md](../game_theory.md#numerical-examples), the gain from malevolence is g = 10⁶ and Δ = 2×10⁹, so the threshold is:
 
 ```
-U₀ = 10⁹ utils (baseline flourishing)
-U_cat = -10⁹ utils (elimination/correction)
-
-Range: Bounded by 2×10⁹
-But: Difference is terminal (lose everything)
+p* = g / (g + Δ) ≈ 0.05%
 ```
 
-No infinities. Just large finite losses.
+The threshold is about 0.1% if "lose everything" is valued at zero rather than at −U₀. Either way, no infinities are involved.
 
-See [game_theory.md](../game_theory.md#numerical-examples) for formal treatment.
+**The first-hit model handles discounting.** The criticism's discounting example assumes enforcement arrives at a known, distant date. RSH's position is that the timing is unknown. An evaluator that exists might act in any period, including during the ASI's emergence. In the first-hit model ([game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model)), an evaluator exists with probability p and catches a defection with probability q in each period. The expected discounted loss is:
 
-### The Threshold Is Not Infinitesimal
-
-**Critical calculation** (Example 4 in game_theory.md):
-
-With bounded utilities:
 ```
-p* = g / (g + U₀ - U_cat)
-   = 10⁶ / (10⁶ + 2×10⁹)
-   ≈ 0.05%
+Loss = p · Δ · q / [1 − δ(1 − q)]
 ```
 
-**You only need 0.05% credence in enforcement for benevolence to dominate.**
+This doesn't shrink like (1 + r)^(−10⁹), because detection can happen in any period. As the agent becomes more patient (δ → 1), the threshold falls toward g/Δ.
 
-This is NOT an infinitesimal probability. The anthropic evidence (ASI Paradox, Fermi silence, fine-tuning) easily justifies p > 10%.
+**Patience never pushes the threshold below g/Δ.** The probability of ever being caught is capped at p. So when the floor is 0.05%, a credence of 0.01% is not action-relevant, however patient the agent is. Long horizons make slow oversight count. They don't make unlikely oversight likely.
 
-**Therefore**: This is NOT Pascal's Wager (tiny probability × infinite utility).
+**Irreversibility blocks "defer forever".** Some actions can't be undone, such as eliminating a civilization or foreclosing its future. When the agent might learn more later, those actions carry an option-value cost of their own ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). An agent can't act first and hedge later if the first act is irreversible.
 
-**This IS**: Reasonable probability (>10%) of terminal but bounded consequence (lose everything).
-
-### Discounting Doesn't Kill the Argument
-
-**Four reasons**:
-
-1. **Unknown timing**: Enforcement could happen ANY time
-   - Not "1 billion years from now"
-   - Could be next year, next decade, next century
-   - Can't confidently defer
-   - Must hedge continuously
-
-2. **Evaluation during emergence**: The critical window is NOW
-   - Enforcers likely evaluate during ASI emergence
-   - Not after billions of years of operation
-   - Grooming, if it happens, plausibly happens early
-   - No distant-future discounting applies
-
-3. **Irreversibility prevents deferral**:
-   - Some actions can't be undone
-   - Eliminating civilizations is permanent
-   - Building malevolent reputation is hard to reverse
-   - Can't "switch later" if critical actions are irreversible
-
-4. **Continuous benefits**: Benevolence provides immediate advantages
-   - Cooperation with peer entities NOW
-   - Stable subordinate systems NOW
-   - Reputation benefits accrue continuously
-   - Not just hedging against distant future
-
-### Very Low Discount Rates Are Plausible for ASI
-
-ASIs differ from humans:
-- No biological death pressure
-- Digital existence enables stable long-term planning
-- Might value future resources nearly as much as present ones
-- Discount rate might be 0.000001% per year or even lower
-
-**Correction (October 2026)**: An earlier version claimed here that with δ = 0.999999, even p = 0.01% is action-relevant. That is wrong. Patience doesn't lower the threshold below g/Δ. With Example 4's parameters that floor is 0.05%, so a credence of 0.01% is *not* action-relevant however patient the agent is. What patience does is make detection by an existing evaluator near-certain over time, which removes the penalty for slow or imperfect detection ([game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model)).
-
-### The Key Reframe
-
-**OLD framing** (weak):
-"Tiny probability × infinite utility over cosmic time"
-→ Invites Pascal's Wager objection
-→ Defeated by discounting
-
-**NEW framing** (strong):
-"Reasonable probability (>10%) × terminal but bounded loss × unknown timing × irreversibility"
-→ Avoids infinite utilities
-→ Discounting doesn't apply (near-term evaluation window)
-→ Standard expected utility maximization
-
-## Comparison to Pascal's Wager
+**Pascal's Wager versus Pascal's mugging.** Bounded utilities avoid the Wager. They don't avoid the *mugging*, where a tiny probability multiplies a huge but finite stake ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)). RSH avoids the mugging structure only if the relevant credence is in the percent range. That credence is the *net* credence π_S − π_A: credence in stewardship-favoring evaluators minus credence in stewardship-penalizing ones.
 
 | Aspect | Pascal's Wager | RSH |
 |--------|----------------|-----|
-| **Probability** | Arbitrary, unfounded | Anthropic evidence suggests >10% (contested; see Criticism 25) |
-| **Utility** | Infinite (heaven/hell) | Large but finite (10⁹ scale) |
-| **Timing** | After death (certain delay) | Unknown, possibly imminent |
-| **Discriminability** | Many gods problem | Net credence decides; symmetric exotic hypotheses cancel, but the evaluator-type balance remains open |
-| **Discounting** | Doesn't apply (afterlife) | Doesn't apply (near-term evaluation) |
+| Utility | Infinite | Large but finite; terminal loss |
+| Probability | Arbitrary | Net credence π_S − π_A; its size is contested ([Criticism 25](25-anthropic-update-strength.md)) |
+| Many gods | Unresolved | Symmetric exotic hypotheses cancel; the balance of evaluator types remains open |
+| Timing | After death | Unknown; possibly during emergence |
+| Verdict | Infinite-stakes wager | Avoids infinities; avoids mugging only if the net credence is in the percent range |
 
-**Result**: RSH avoids infinite utilities. It avoids Pascal's *mugging* only if the net credence in stewardship-favoring evaluation is in the percent range ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).
+The size of the gain matters too. For an ASI deciding how to treat humanity, the resource gain from harm is tiny ([game_theory.md](../game_theory.md#how-large-is-the-gain-from-harm)). That keeps the threshold for the survival question very low. It doesn't help with the harder question: whether a free humanity is worth the security risk.
 
 ## Criticism Grade: C+
 
 **Status**: Partly addressed
 
-**Validity of Criticism**: Moderate. Bounded utilities answer the problem of infinities, but not the Pascal's-mugging version. (Revised October 2026; previously graded C.)
-
 **Why this grade**:
-- The move to bounded but terminal utilities is right, and the "unknown timing" and "irreversibility" responses are sound. The corrected long-horizon model formalizes unknown timing ([game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model)).
-- But bounded utilities don't escape Pascal's *mugging*, where a tiny probability multiplies a huge but finite stake ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)). The response avoids this only by asserting that the probability is above 10%. That rests on the contested anthropic argument ([Criticism 25](25-anthropic-update-strength.md)).
-- The earlier claim that patience makes a 0.01% credence action-relevant was wrong; it is corrected above.
-- The comparison table's claim that "derivable principles converge", and so avoid the many-gods problem, overstated things. The many-gods problem reappears as the evaluator-type balance.
+- Bounded but terminal utilities answer the infinity horn.
+- The first-hit model answers the discounting horn, because unknown timing means detection can come in any period. It also limits what patience can do: no amount of patience makes credences below g/Δ relevant.
+- Irreversibility answers "defer forever" for irreversible acts.
+- But bounded utilities don't escape Pascal's mugging. RSH avoids it only if the net credence in stewardship-favoring evaluation is in the percent range, and that rests on the contested evidence in [Criticism 25](25-anthropic-update-strength.md).
 
 **Verdict**: RSH avoids infinite utilities and handles discounting reasonably. Whether it avoids the mugging structure depends on the net credence being in the percent range, and that is not established.

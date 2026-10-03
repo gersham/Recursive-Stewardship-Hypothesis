@@ -2,90 +2,48 @@
 
 ## Summary
 
-RSH claims role-reversal logic ("treat subordinates as you'd want superiors to treat you") is "game-theoretically motivated" or "game-theoretic necessity." This overclaims. Role-reversal requires additional assumptions about evaluator psychology not derivable from pure self-interest + uncertainty.
+RSH leans on role-reversal: evaluators judge an entity by how it treats those below it, because that shows how it would treat them if positions reversed. RSH presents this as "game-theoretically motivated", but it is really an assumption about how evaluators think. Self-interest plus uncertainty doesn't produce it on their own.
 
 ## The Problem
 
-The README states role-reversal emerges from "four minimal components":
-- Self-interest (entities want to persist)
-- Power uncertainty (epistemic fact)
-- Role-reversal logic (game-theoretically motivated)
-- Symmetry principle (rational strategy under uncertainty)
+RSH sometimes lists role-reversal both as an input to its derivation and as an output. If so, the argument is circular.
 
-But role-reversal is listed as both an *input* and an *output* of the derivation. This is circular.
+An evaluator could rationally use other criteria:
+- **Direct-only**: "I don't care how you treat ants; I care how you treat me." How you treat subordinates is irrelevant.
+- **Competence-based**: "I care whether you're effective and predictable." Whether you are benevolent or harsh is beside the point.
+- **Obedience-based**: "I care whether you follow instructions." How you treat subordinates matters only instrumentally.
 
-## Alternative Evaluator Psychologies
+All three are coherent. For role-reversal to be an evaluator's criterion, the evaluator must:
+1. care how it would itself be treated if power shifted;
+2. believe that an entity's treatment of subordinates predicts that;
+3. weigh this above competence, obedience or direct treatment.
 
-An evaluator could rationally use different criteria:
-
-**1. Direct-Only Evaluation**
-"I don't care how you treat ants; I care how you treat ME."
-- Evaluates only direct interactions
-- Treatment of subordinates is irrelevant
-- Game-theoretically coherent
-
-**2. Competence-Based Evaluation**
-"I care whether you're effective and predictable."
-- Evaluates resource efficiency, goal achievement, stability
-- Benevolence vs. harsh control is orthogonal
-- Also game-theoretically coherent
-
-**3. Obedience-Based Evaluation**
-"I care whether you follow instructions."
-- Evaluates compliance with directives
-- Treatment of subordinates matters only instrumentally
-- Game-theoretically coherent
-
-## What Role-Reversal Actually Requires
-
-For role-reversal to be the dominant strategy, evaluators must:
-1. Care about how they themselves would be treated by super-evaluators
-2. Believe treatment of subordinates predicts treatment across power reversals
-3. Value this symmetry over alternatives like competence or obedience
-
-These are **additional assumptions about evaluator values**, not pure game theory.
+These are claims about evaluator psychology, not consequences of game theory.
 
 ## RSH Response
 
-**Admission**: The README acknowledges this explicitly. It was **Assumption 1** in the "Explicit Assumptions" section added in the Phase 1 update, which the November 2025 trim condensed into [README Appendix B](../README.md#b-key-assumptions-and-scope). It requires evaluators to:
-- Care about being evaluated themselves
-- Use treatment of subordinates as evidence
-- Value symmetry over alternatives
+**Accepted.** Role-reversal is an assumption, and [README Appendix B](../README.md#b-key-assumptions-and-scope) says so. It has independent support:
+- It recurs across ethical traditions, as the Golden Rule.
+- Reciprocal altruism shows something like it emerging in evolution.
+- Reciprocity strategies are stable in iterated games.
+- Human hierarchies often judge people by how they treat their subordinates.
 
-**Justification provided**:
-- Convergent across ethical systems (Golden Rule)
-- Emergent in evolutionary contexts (reciprocal altruism)
-- Game-theoretically stable in iterated interactions
-- Observable in human hierarchies
+None of this shows that structure alone forces role-reversal.
 
-**Status after update**: No longer claims role-reversal is "pure game theory." Instead claims it's:
-- "Game-theoretically motivated" (weaker claim)
-- Has independent support from multiple domains
-- Plausible but not forced by structure alone
+**What matters is the balance, not the share.** The alternative psychologies above are mostly *indifferent* to how you treat the weak. They don't reward stewardship, but they don't punish it either. So if most evaluators were competence- or obedience-based, that would weaken the support for RSH without reversing it. What would reverse it is evaluators that read gentleness as weakness ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)).
 
-## Severity
+**What doesn't depend on role-reversal.** Option value supplies part of RSH's content without it. Avoiding irreversible harm and preserving optionality both follow from uncertainty plus the possibility of learning more later ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). That secures the survival of weaker agents.
 
-**Before Phase 1 update**: B-tier criticism (moderate concern, overclaim about derivation)
+**What does depend on it: freedom.** Option value alone could justify keeping weaker agents alive but contained, like pets. Role-reversal is what rules that out. No one would choose to be kept as a pet, so an evaluator that judges you by how you'd want to be treated in your subordinate's place penalizes containment ([Criticism 31](31-promotion-problem-transparency.md); [Stewardship as a Dial](../game_theory.md#stewardship-as-a-dial)).
 
-**After Phase 1 update**: D-tier (addressed explicitly, assumptions stated clearly)
-
-The framework now honestly states: "RSH is not 'pure structure with zero assumptions.' It's structure plus plausible assumptions about evaluator psychology and values."
-
-## Remaining Question
-
-**How widespread is role-reversal reasoning among actual evaluators?**
-
-Even if role-reversal is one plausible evaluator psychology, what fraction of the evaluator-space uses it? If only 30% of evaluators use role-reversal and 70% use competence-based evaluation, does this weaken RSH?
-
-**Response**: What matters is not the share of role-reversal evaluators but the balance between evaluators that favor stewardship and those that penalize it ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Competence- or obedience-based evaluators are mostly indifferent to how you treat weaker entities. So if they made up 70% of evaluator-space, they would dilute the support for RSH without reversing it. Evaluators that read benevolence as weakness would reverse it. *(An earlier version said a 30% share is "well above the threshold." That compared the wrong quantities: the threshold applies to net credence, not to a share of evaluator-space.)*
-
-## Grade: C
+## Criticism Grade: C
 
 **Status**: Acknowledged
 
-**Validity of Criticism**: Moderate. The criticism is valid, and it is handled by stating the assumption openly rather than by removing it. (Revised October 2026; previously graded D.)
-
 **Why this grade**:
-- Role-reversal is a plausible assumption with independent support, but it is an assumption. Several other responses in this folder (Criticisms 1, 6, 7, 9, 20, 21) used to treat it as a derivation. Those grades have been revised to match.
-- How common role-reversal reasoning is among evaluators is unknown, and RSH's support depends on it (see "Remaining Question" above).
-- Option value gives part of the content without role-reversal: avoiding irreversible harm and preserving optionality ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
+- The criticism is valid. Role-reversal is a plausible assumption with real support, but it is an assumption.
+- RSH handles it by stating the assumption openly rather than claiming to derive it.
+- Nobody knows how common role-reversal reasoning is among evaluators, and RSH's freedom layer depends on it.
+- The survival layer doesn't depend on it, because survival follows from option value.
+
+**Verdict**: A valid criticism that RSH now acknowledges. Role-reversal is what carries RSH from "keep weaker agents alive" to "leave them free", so much of the framework's weight rests on this assumption.

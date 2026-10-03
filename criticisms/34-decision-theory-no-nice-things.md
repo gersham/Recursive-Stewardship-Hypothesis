@@ -42,9 +42,8 @@ Soares's arguments that bear on RSH:
 
 **Status**: Partly addressed
 
-**Validity of Criticism**: Strong. It comes from serious critics, and it targets RSH's central premise directly.
-
 **Why this grade**:
+- It comes from serious critics, and it targets RSH's central premise directly.
 - Soares's core claim, that minds which punish mistreatment of the weak are rare, is the same as the open question in Criticisms 7, 17, 21 and 32. He asserts the answer rather than proving it, but so does RSH.
 - RSH has two real partial answers. Its evaluators judge for their own security rather than buying welfare. And deterrence by an enforcer acting in its own interest is not a threat that a good decision theorist can refuse.
 - On simulations, Soares's objections mostly stand.

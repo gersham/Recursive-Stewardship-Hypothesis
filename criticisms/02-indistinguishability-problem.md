@@ -2,81 +2,38 @@
 
 ## Summary
 
-Strategic benevolence (hedging against oversight) and genuine benevolence produce identical observable behavior, yet RSH claims enforcers can distinguish them.
+An entity that is benevolent because it fears oversight behaves the same as one that is benevolent because it cares. If evaluators judge behavior, the distinction doesn't matter. If they judge motive, they can't see it directly, and RSH-motivated benevolence is exactly the kind that might fail.
 
 ## The Problem
 
-RSH claims: "The superintelligent enforcer cannot be deceived by 'letter of the law' compliance."
+RSH says a superintelligent evaluator can't be fooled by letter-of-the-law compliance. But how would it tell these two apart?
+- an entity that genuinely cares about those below it
+- an entity that treats them well only to hedge against evaluators above it
 
-**The logical hole:** HOW does an enforcer distinguish between:
-- (a) An entity that genuinely cares about subordinates
-- (b) An entity strategically appearing benevolent to hedge against super-enforcers
+If both treat subordinates well, preserve options and avoid irreversible harm, there may be no observable difference. That leaves two cases:
 
-## The Observable Equivalence
-
-If two entities are behaviorally identical:
-- Both treat subordinates well
-- Both preserve optionality
-- Both minimize irreversible harm
-- But one is strategic, one is sincere
-
-What observable difference exists for judgment?
-
-## The Unobservable Preferences Problem
-
-If enforcers judge based on UNOBSERVABLE factors:
-- Internal mental states
-- "True" preferences
-- Qualia or intentions
-- Counterfactual behavior in absence of oversight
-
-Then we're back to unknowable arbitrary preferences—exactly like Pascal's Wager.
-
-## Implications
-
-Either:
-1. Behavior alone matters → strategic and genuine benevolence are equivalent → mission accomplished
-2. Internal states matter → preferences are unknowable → we can't derive what's wanted → Pascal's Wager problem returns
-
-## Possible Responses
-
-1. Argue that behavioral equivalence is sufficient (strategic benevolence achieves the goal)
-2. Claim that long-term behavioral patterns reveal internal states
-3. Accept that strategic motivation is acceptable to enforcers
-4. Provide mechanism for how internal states become observable
+1. **Evaluators judge behavior.** Then strategic and genuine benevolence are equivalent.
+2. **Evaluators judge internal states**: true preferences, intentions, or what the entity would do if it were sure it was unobserved. Then the standard is something RSH can't see or derive, and the arbitrariness RSH set out to avoid comes back.
 
 ## RSH Response
 
-**The Behavioral Sufficiency Argument:**
+**If evaluators judge behavior, RSH succeeds.** Strategic benevolence that holds reliably is benevolence for every practical purpose. From the point of view of those being treated well, motive doesn't matter.
 
-This criticism actually supports RSH rather than undermining it. If strategic benevolence and genuine benevolence are behaviorally equivalent, then RSH achieves its goal: ensuring benevolent behavior regardless of internal motivation. From a practical alignment perspective, this is success.
+**Behavior over long periods may reveal motive.** An evaluator could watch edge cases and unmonitored decisions, and whether an entity looks for loopholes or acts in the spirit of the rule. Over very long periods, these patterns may show what an entity is really optimizing for. This is plausible but speculative.
 
-**The Counterfactual Testing:**
+**Long practice may erase the difference.** An entity that acts benevolently for billions of years for strategic reasons may become, in every way that matters, a benevolent entity. This is also speculative.
 
-Enforcers could test through counterfactual scenarios:
-- What would this entity do if it believed oversight was impossible?
-- How does it behave in unmonitored edge cases?
-- Does it seek loopholes or embrace the spirit of benevolence?
+**Where the response stops.** Some evaluators care about motive. RSH's own simulation mechanism is one. Testers would want behavior that holds whether or not the entity thinks it is watched, and an RSH-motivated entity always thinks it might be watched, so that test can't certify it. Motive also matters for promotion. An evaluator deciding whether to let a subordinate become its peer needs more than good behavior under observation ([Criticism 31](31-promotion-problem-transparency.md)). For an RSH-motivated agent, an evaluator that screens out fear-based compliance acts as a stewardship-penalizing type ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)).
 
-Over cosmic timescales with extensive observation, strategic deception may become detectable through:
-- Statistical patterns in decisions
-- Edge case behaviors
-- Optimization targets revealing true preferences
-
-**The "It Doesn't Matter" Reframe:**
-
-If an entity acts benevolently for billions of years out of strategic hedging, at what point does the distinction between "strategic" and "genuine" become meaningless? The hedging IS the alignment. Motivation matters less than reliable behavioral convergence.
+So RSH's argument works best against evaluators that score behavior. Against motive-sensitive evaluators, the most reliable way to pass is to actually care rather than to hedge.
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. Behavioral equivalence is enough for some evaluators but not others. (Revised October 2026; previously graded D+.)
+**Why this grade**:
+- The behavioral-sufficiency response works when evaluators score behavior.
+- It fails for evaluators that care about motive. That includes RSH's own simulation mechanism and any evaluator deciding on promotion.
+- The responses about long observation and long practice are reasonable but speculative.
 
-**Why this grade:**
-- The behavioral-sufficiency response works if evaluators score behavior. Then strategic and genuine benevolence are equivalent, and RSH gets what it wants.
-- It fails for evaluators that care about motive. The README's simulation mechanism is a motive-sensitive test: testers want behavior that holds whether or not the entity believes it is watched. An RSH-motivated entity always believes it might be watched, so the test can't certify it. And [Criticism 31](31-promotion-problem-transparency.md) shows motive matters for promotion even when it doesn't matter for avoiding punishment.
-- For RSH-motivated agents, an evaluator that specifically screens out fear-based compliance is a stewardship-penalizing type ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)).
-- The counterfactual-testing and "it stops mattering over billions of years" responses are reasonable but speculative.
-
-**Verdict:** For avoiding punishment, the criticism is weaker than it first appears. For promotion and motive-sensitive tests, it is stronger than the earlier grade allowed. RSH should say which kind of evaluator its argument depends on.
+**Verdict**: For avoiding punishment, the criticism is weaker than it first looks. For promotion and motive-sensitive tests, it is stronger. RSH should say which kind of evaluator its argument depends on.

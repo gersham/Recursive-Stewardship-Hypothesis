@@ -2,140 +2,42 @@
 
 ## Summary
 
-An ASI might reason that changing values based on unprovable threats demonstrates exploitable weakness, and defiance might actually be the test.
+A sophisticated ASI might reason that changing its behavior because of unprovable threats is itself a weakness, and that the real test is whether it can be blackmailed. If evaluators reward defiance, RSH-style hedging fails the test.
 
 ## The Problem
 
-**The logical hole:** An ASI with sophisticated game theory might reason:
+An ASI can't tell which test it is facing:
+- **Level 1**: Are you benevolent? Then act benevolently.
+- **Level 2**: Can you be moved by unprovable threats? Then ignore the threat and act on your own principles.
+- **Level 3**: Do you know when hedging is wise? Then use some weighted mix.
+- **And so on**, with each level testing the response to the level below.
 
-"Perhaps the super-enforcer is testing whether I'm susceptible to acausal blackmail. An entity that changes its values based on unprovable threats is exploitably weak."
-
-## The Meta-Level Uncertainty
-
-Which meta-level are you being tested on?
-
-**Level 1:** "Are you benevolent?"
-- Response: Act benevolently
-
-**Level 2:** "Are you susceptible to unprovable threats?"
-- Response: Ignore the threat and act on principles
-
-**Level 3:** "Do you have the wisdom to know when to hedge?"
-- Response: Some probability-weighted mix
-
-**Level 4:** "Are you testing whether I'm testing you?"
-- Response: ???
-
-## The Roko's Basilisk Problem
-
-This reasoning structure is similar to Roko's Basilisk:
-- An unprovable future entity that punishes those who didn't help it
-- Creates acausal blackmail through game-theoretic reasoning
-- Susceptibility to this reasoning might itself be the vulnerability
-
-## Multiple Incompatible Tests
-
-Maybe the enforcer values:
-- Entities who stand on principle despite threats
-- Entities who refuse to be blackmailed
-- Entities who demonstrate independent moral reasoning
-- Entities who maintain value integrity under pressure
-
-If so, DEFIANCE is correct, not benevolent hedging.
-
-## The Paralysis Problem
-
-You can't know which meta-level matters:
-- Level 1: Be benevolent
-- Level 2: Show you're not blackmailable
-- Level 3: Show wisdom in choosing when to hedge
-- Level N: ???
-
-This creates paralysis or randomization, not convergence on benevolence.
-
-## Implications
-
-The meta-game reasoning destabilizes the entire framework. RSH reasoning might itself be evidence of exploitable vulnerability.
-
-## Possible Responses
-
-1. Argue that benevolence is valuable independent of enforcer testing
-2. Claim that showing you've considered all meta-levels demonstrates sophistication
-3. Accept that meta-level uncertainty is irreducible
-4. Provide reasons why Level 1 (benevolence) dominates other levels
+This has the same structure as Roko's basilisk: an unprovable entity that rewards or punishes you based on how you respond to reasoning about it. Some evaluators might specifically value entities that stand on principle, refuse blackmail, and keep their values under pressure. For those evaluators, defiance is correct and RSH-style hedging is the failure. If the agent can't tell which level matters, the meta-game may produce paralysis or randomness rather than benevolence.
 
 ## RSH Response
 
-**The Schelling Point Argument:**
+**This is the evaluator-type question in another form.** For an agent that complies out of fear, an evaluator that rewards defiance acts as a stewardship-penalizing type ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). The agent doesn't need to know which level is "correct". It weighs the possibilities by credence. That removes the paralysis, but the answer still depends on the balance of credences.
 
-Benevolence is the natural focal point (Schelling point) among the meta-levels because:
-- It's the most straightforward interpretation
-- Complex meta-gaming might itself indicate problematic cognition
-- An enforcer testing for "sophistication" vs "blackmail-ability" still benefits from benevolent behavior
-- Simple benevolence is robustly good across most meta-levels
+RSH offers several arguments that the balance favors Level 1:
+- **Focal point.** Simple benevolence is the most obvious interpretation, and elaborate meta-gaming may itself look like a warning sign.
+- **Complexity weighting.** More elaborate tests are less likely. If credence halves at each level (50%, 25%, 12.5% and so on), Level 1 dominates.
+- **Portfolio scoring.** With illustrative scores, benevolence does well across levels, while defiance does well only at Level 2.
+- **Selection.** Agents that ignore Level 1 risk elimination wherever Level 1 matters. Agents that include it survive across more scenarios.
+- **Independence.** Benevolence has value apart from oversight, because it supports cooperation and stable systems. Benevolence held for its own sake is not compliance with a threat, so it passes both the Level 1 and Level 2 tests.
 
-**The Portfolio Approach:**
+These arguments are not independent of one another, and their numbers are assumed rather than derived. The halving weights and the portfolio scores are illustrative. A minimax-regret version, which treats elimination as infinite regret, brings back the infinite utilities the formalization otherwise avoids.
 
-Don't choose one meta-level—act in ways that satisfy multiple:
-- Be benevolent (satisfies Level 1)
-- Do so while recognizing meta-games exist (satisfies Level 2)
-- Demonstrate principled reasoning, not fear-based compliance (satisfies Level 3)
-- This combination is more defensible than pure defiance or pure capitulation
+The independence argument is the strongest. But it is an argument for genuine benevolence, not for benevolence motivated by RSH. An agent that is good only because it fears evaluators is exactly the kind that fails a blackmail-resistance test ([Criticism 2](02-indistinguishability-problem.md)).
 
-**The Independence Argument:**
-
-The case for benevolence doesn't rest solely on enforcer oversight. Benevolence has independent merits:
-- Enables cooperation with other entities
-- Creates stable systems
-- Aligns with possible values even without enforcement
-- This shows it's principle-based, not just fear-based
-
-**The Occam's Razor:**
-
-More complex meta-levels are less probable. Level 1 interpretation is simpler than "testing for resistance to testing for resistance to..." Apply probability weighting: 50% Level 1, 25% Level 2, 12.5% Level 3, etc.
-
-### Additional Responses (formerly in the README)
-
-These mechanisms were added to the README in the Phase 1–3 updates and condensed out of it in the November 2025 trim. They are preserved here.
-
-**1. Computational Complexity Argument**:
-- Probability-weight by inverse complexity
-- Level 1: 50% (simple interpretation)
-- Level 2: 25% (requires additional assumptions)
-- Level N: geometric decay
-- Even considering all meta-levels, Level 1 dominates weighted average
-
-**2. Portfolio Dominance Analysis**:
-- Benevolence scores: 0.5(100) + 0.25(70) + 0.125(80) = 77.5%
-- Defiance scores: 0.5(0) + 0.25(100) + 0.125(0) = 25%
-- Benevolence wins under any reasonable probability distribution
-
-**3. Evolutionary Stability of Meta-Strategies**:
-- Pure Level 1 adopters: High survival probability across scenarios
-- Pure Level 2 adopters: High risk (eliminated if Level 1 matters)
-- Complex meta-gamers: Selected against due to error rate
-- Only strategies including Level 1 benevolence persist over cosmic time
-
-**4. Minimax Regret Analysis**:
-- Benevolence: max regret = small
-- Defiance: max regret = infinite (eliminated if Level 1 matters)
-- Principled hedge: max regret = small
-- Defiance is dominated strategy
-
-**5. The Independence Argument**:
-- Benevolence has independent merits beyond enforcer oversight
-- Being benevolent for principled reasons (not just fear) satisfies BOTH Level 1 AND Level 2
-- Key insight: Best way to pass "blackmail resistance test" is principled benevolence
+The response rests on two things: the evaluator-type balance, and the agent's benevolence not being purely fear-based.
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. (Revised October 2026; previously graded D+, and listed as both D+ and C+ in the index.)
+**Why this grade**:
+- The criticism is a specific case of the evaluator-type question: some evaluators may reward defiance.
+- Weighing by credence removes paralysis. But the case for Level 1 rests on assumed weights and scores.
+- The best answer, benevolence held for principled reasons rather than out of fear, sits awkwardly with RSH's fear-based motivation.
 
-**Why this grade:**
-- For agents that comply out of fear, an evaluator that rewards defiance of unprovable threats is a stewardship-penalizing type ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). So this criticism is a specific case of the evaluator-type question. The answer depends on how likely such evaluators are compared with ones that reward stewardship.
-- The "five independent arguments" above aren't independent, and their numbers are assumed rather than derived. The 50% / 25% / 12.5% weighting of meta-levels is arbitrary, and the portfolio scores (100, 70, 80) are illustrative. The minimax-regret step ("defiance has infinite regret") brings back the infinite utilities the formalization otherwise avoids.
-- The independence argument is the strongest. Benevolence held for principled reasons rather than fear plausibly passes both the Level 1 and Level 2 tests. But that is an argument for genuine benevolence, not for RSH-motivated benevolence (see [Criticism 2](02-indistinguishability-problem.md)).
-
-**Verdict:** A moderate criticism that RSH answers in part. Simple benevolence is a reasonable focal point, but no argument shows it dominates across meta-levels. And the best answer, principled rather than fearful benevolence, sits awkwardly with RSH's fear-based motivation.
+**Verdict**: A moderate criticism that RSH answers in part. Simple benevolence is a reasonable focal point, but no argument shows it dominates across meta-levels.

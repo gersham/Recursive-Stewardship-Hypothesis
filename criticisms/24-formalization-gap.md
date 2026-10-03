@@ -2,229 +2,51 @@
 
 ## Summary
 
-RSH is a philosophical argument without formal game-theoretic proofs. It lacks the mathematical rigor needed to be considered a proper game-theoretic solution.
+RSH presents itself as a game-theoretic argument, but it lacks the formal proofs a game-theoretic result needs. It has no precise model, no equilibrium proofs and no rigorous treatment of the infinite hierarchy. Without these, its claims are stronger than its support.
 
 ## The Problem
 
-**RSH claims to derive benevolence from game theory**, but:
-- No formal proof of equilibrium existence
-- No proof of uniqueness
-- No rigorous treatment of infinite hierarchy
-- Informal arguments where theorems are needed
+A proper game-theoretic result needs:
+- **A formal model**: players, actions, information, payoffs, and the equilibrium concept used.
+- **Equilibrium results**: proof that an equilibrium exists; either proof that it is unique or a description of every equilibrium; and stability under perturbation.
+- **The infinite case**: proof that the N-level game has a well-defined limit as N grows, and a description of that limit.
+- **Robustness**: how the result holds up under bounded rationality (ε-equilibria), coalitions (coalition-proofness), different decision theories, and different parameter values.
 
-## What's Missing
-
-### Formal Game Definition
-
-**Needed**:
-- Precise definition of players, action spaces, payoff functions
-- Information structure (what each player knows/observes)
-- Strategy spaces
-- Equilibrium concepts being used
-
-**Current status**: Informal description
-
-### Equilibrium Proofs
-
-**Needed**:
-- Existence: Does an equilibrium exist?
-- Uniqueness: Is the benevolent equilibrium the only one?
-- Characterization: What are the properties of equilibria?
-- Stability: Are equilibria robust to perturbations?
-
-**Current status**: Plausibility arguments, not proofs
-
-### Infinite Hierarchy Treatment
-
-**Needed**:
-- Proof that N-level game converges as N → ∞
-- Characterization of limiting equilibrium
-- Conditions for well-defined limit
-
-**Current status**: Heuristic arguments about cosmic timescales
-
-### Robustness Analysis
-
-**Needed**:
-- Formal treatment of bounded rationality (ε-equilibria)
-- Proof that result holds across decision theories
-- Sensitivity analysis on parameters
-- Coalition-proofness
-
-**Current status**: Informal claims
-
-## Comparison to Rigorous Game Theory
-
-**Standard game theory paper includes**:
-- Formal model definition
-- Theorems with proofs
-- Lemmas establishing key steps
-- Rigorous mathematical arguments
-
-**RSH currently provides**:
-- Conceptual framework
-- Intuitive explanations
-- Informal reasoning
-
-## Implications
-
-**As philosophical framework**: Fine
-- Analogous to zoo hypothesis, simulation argument
-- Judged on coherence, not formal proof
-
-**As game-theoretic solution**: Incomplete
-- Needs the formal backbone
-- Can't be published in game theory journals yet
-- Claims stronger than current support
-
-## The Gap Between Claim and Execution
-
-**RSH claims**:
-- "Game-theoretic solution to cosmic alignment"
-- "Derives benevolence from structure"
-- "Demonstrates emergent moral order"
-
-**What's actually shown**:
-- Plausible game-theoretic intuition
-- Informal derivation with logical coherence
-- Conceptual demonstration without formal proof
-
-## Is This a Problem?
-
-**Depends on goals**:
-
-1. **If RSH is a philosophical framework**: The formalization gap is acceptable
-   - Analogous to Fermi paradox solutions
-   - Judged on logical coherence and explanatory power
-   - Formal proofs not required
-
-2. **If RSH is a mathematical theorem**: The formalization gap is critical
-   - Claims require proof
-   - Informal arguments insufficient
-   - Needs 6-12 months of technical work
+Phrases such as "derives benevolence from structure" suggest results of this kind. If RSH is meant as a theorem, the gap is critical. If it is meant as a philosophical framework, like the zoo hypothesis or the simulation argument, it doesn't need formal proof. But then it shouldn't claim the authority of one.
 
 ## RSH Response
 
-### Explicit Status Declaration
+RSH is a philosophical framework with a partial formalization, not a theorem. [game_theory.md](../game_theory.md) says what is worked out and what is only sketched ([Summary and Implications](../game_theory.md#summary-and-implications)).
 
-**RSH is a philosophical framework, not a formal proof.**
+**Worked out, as simple models with explicit calculations:**
+- A 2-level game with one enforcer type: benevolence is the strict best response when p > p* = g/(g + Δ).
+- Multiple evaluator types: benevolence wins when π_S − π_A > g(1 − π_S)/Δ. The threshold applies to *net* credence in stewardship-favoring evaluation.
+- A long-horizon first-hit model: patience removes the penalty for imperfect detection, but the threshold never falls below g/Δ.
+- Option value: when information may arrive later, the effective threshold for irreversible harm drops by a factor of about (1 − δ)/λ.
+- Stewardship as a dial: preservation is cheap. Freedom wins when the risk ε that a free subordinate becomes a dangerous rival is below π_S·w₂, the credence in role-reversal evaluators.
+- In the causal version of the model, CDT, EDT, FDT and UDT agree.
 
-Analogous to:
-- **Zoo Hypothesis** (explains Fermi Paradox) - no formal proof required
-- **Simulation Hypothesis** - conceptual argument, not mathematical theorem
-- **Dark Forest Theory** - game-theoretic intuition, not rigorous proof
-- **Anthropic Principle arguments** - philosophical reasoning, not empirical science
+**Sketched:**
+- The N-level extension. It is framed locally: each level holds a belief only about the level above it ([Backward Induction and Local Reasoning](../game_theory.md#backward-induction-and-local-reasoning)). It shows how a norm propagates down the hierarchy, not which norm it is ([What the Induction Does and Doesn't Derive](../game_theory.md#what-the-induction-does-and-doesnt-derive)).
+- The limit of an infinite hierarchy.
 
-**NOT analogous to**:
-- Formal game-theoretic theorems
-- Empirically testable scientific theories
-- Mathematical proofs in economics journals
+**Open premises, which are philosophical rather than formal:**
+- That π_S > π_A. The strong-and-gentle argument narrows this to π_S > π_G but doesn't establish it.
+- The size of the anthropic update ([Criticism 25](25-anthropic-update-strength.md)).
+- The security case: whether ε < π_S·w₂ for a free humanity.
 
-### Partial Formalization Now Exists
+**Not yet done:** proofs of existence and uniqueness for the N-level game, convergence as N → ∞, coalition-proofness, and consistency of beliefs across levels.
 
-See [game_theory.md](../game_theory.md) for:
-
-**Fully worked out**:
-- ✓ 2-level game with explicit payoffs
-- ✓ Backward induction proof
-- ✓ Mathematical derivation of threshold p*
-- ✓ Numerical examples with realistic parameters
-- ✓ Decision theory variant analysis
-
-**Sketched**:
-- ⧖ N-level extension with inductive structure
-- ⧖ Infinite hierarchy limit (heuristic)
-- ⧖ Robustness arguments
-
-**Future work** (6-12 months):
-- ⧖ Complete N-level existence and uniqueness proofs
-- ⧖ Formal infinite limit theorems
-- ⧖ Coalition-proofness proofs
-- ⧖ Full robustness analysis
-
-### What's Been Achieved
-
-*Note (October 2026): The list below overstated the formalization. An error in the long-horizon model has since been corrected, and the threshold is now known to apply to net credence in stewardship-favoring evaluation. See the revised grade below.*
-
-**The 2-level game formalization shows**:
-
-1. **The core insight is formalizable**
-   - Hierarchical uncertainty + rational self-interest → benevolence
-   - Not just philosophical handwaving
-
-2. **The thresholds are calculable**
-   - p* from about 10⁻⁹ to 10% depending on parameters
-   - These are NOT infinitesimals
-
-3. **The structure is rigorous**
-   - Expected utility maximization
-   - Backward induction
-   - Standard game theory
-
-4. **The conclusion is robust**
-   - Works across decision theories
-   - Survives bounded rationality
-   - Multiple equilibrium concepts support it
-
-### The Honest Assessment
-
-**What RSH has**:
-- Rigorous 2-level game-theoretic analysis
-- Clear mathematical foundations
-- Explicit calculation of key thresholds
-- Informal but logically sound extensions
-
-**What RSH lacks**:
-- Complete proofs for N-level and infinite cases
-- Full mathematical treatment of all robustness claims
-- Academic peer review of formal components
-
-**What this means**:
-- RSH is a **well-founded philosophical framework**
-- With **partial mathematical formalization**
-- And a **clear roadmap for complete formalization**
-
-### The Right Standard
-
-Judge RSH on:
-- ✓ Logical coherence (high)
-- ✓ Internal consistency (high)
-- ✓ Explanatory power (high)
-- ✓ Uniqueness of derivation (contested: see Criticisms 17 and 21)
-- ✓ Foundation in game theory (solid 2-level, sketched N-level)
-
-NOT on:
-- ✗ Complete formal proofs for all claims
-- ✗ Peer-reviewed publication in game theory journals
-- ✗ Mathematical rigor appropriate for pure mathematics
-
-**RSH is philosophy informed by game theory, not pure game theory.**
-
-## Future Formalization Roadmap
-
-See [game_theory.md - Future Formalization Roadmap](../game_theory.md#future-formalization-roadmap)
-
-**Estimated effort**:
-- Minimum viable (2-level + N-level sketch): ✓ Done
-- Complete formalization (N-level + infinite + robustness): 6-12 months
-- Publishable in game theory journal: Add 3-6 months for literature review, writing, peer review
-
-**Skills required**:
-- Advanced game theory (incomplete information, infinite games)
-- Bayesian decision theory
-- Mathematical proof techniques
-- Experience with formal modeling
+The right standard is the one RSH now applies to itself. Judge it on logical coherence and on how honestly it states its premises. Don't credit it with "solid game-theoretic foundations" until the formal parts are complete.
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism**: Moderate. (Revised October 2026; previously graded C-.)
-
 **Why this grade**:
-- The criticism is correct that RSH lacks full proofs. game_theory.md is explicit about what is worked out and what is only sketched.
-- The formalization has also been wrong in places. The earlier long-horizon model treated existence credence as a per-period hazard, which made tiny credences look action-relevant. It is corrected now. But the error shows why the formal backbone matters: informal reasoning missed it.
-- Formalizing also showed that the original 2-level game built its conclusion into the setup by allowing only one kind of evaluator. Extending it to multiple types moved the crux to π_S > π_A, an informal premise.
-- The "right standard" defense is partly fair. RSH is a philosophical framework and shouldn't be judged as a theorem. But it shouldn't claim "solid game-theoretic foundations" until the formal parts are correct and complete.
+- The criticism is correct. RSH lacks full proofs, and the N-level and infinite cases are only sketches.
+- game_theory.md is now explicit about what is calculated, what is sketched and what is assumed.
+- Formalizing has repeatedly exposed problems that informal reasoning missed. A model with only one evaluator type builds its conclusion into the setup. Treating the credence that an evaluator exists as a per-period hazard makes tiny credences look action-relevant. That is a strong reason to finish the formal work.
+- The most important premise, π_S > π_A, is philosophical. No amount of formalization will settle it.
 
-**Verdict**: A fair criticism. The formalization is now more honest about its scope, but it remains partial, and its most important premise is philosophical rather than formal.
+**Verdict**: A fair criticism. The formalization is honest about its scope but remains partial, and its central premise is philosophical rather than formal.

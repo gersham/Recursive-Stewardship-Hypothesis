@@ -1,10 +1,9 @@
 # Criticisms of the Recursive Stewardship Hypothesis
 
 This directory contains detailed critical analysis of the Recursive Stewardship Hypothesis (RSH). Each criticism is documented with:
-- The problem identified
-- Detailed explanation
-- Possible responses
-- RSH's best response
+- A summary of the objection
+- The problem in detail
+- RSH's current best response
 - **Criticism Grade (A to F)**: how strong the criticism itself is
 - **Status**: how far RSH's response goes toward resolving it
 
@@ -27,7 +26,7 @@ The grades were revised after an independent review. Earlier passes tended to do
 - The benevolence threshold applies to **net** credence: stewardship-favoring evaluators minus stewardship-penalizing ones. It does not apply to P(evaluator exists). This makes the "many gods" family of criticisms (7, 17, 21, 26, 32) sharper.
 - Long time horizons make slow oversight count, but they don't make unlikely oversight likely. The earlier claim that tiny credences become action-relevant over cosmic time came from a modelling error.
 
-Each regraded file records its previous grade.
+Previous grades and wording are in the git history; each file now states only its current position.
 
 ## On Evidence
 
@@ -49,7 +48,7 @@ RSH is not testable on human timescales the way a laboratory theory is. But it d
 | 10 | [Grabby Aliens Counter-Evidence](10-grabby-aliens-counter-evidence.md) | C+ | Partly addressed |
 | 11 | [Instrumental Convergence Override](11-instrumental-convergence-override.md) | C+ | Partly addressed |
 | 12 | [Selection Effect Reversal](12-selection-effect-reversal.md) | C+ | Open |
-| 13 | [Silence is Evidence of Absence](13-silence-is-evidence-of-absence.md) | **B** | Open |
+| 13 | [Silence is Evidence of Absence](13-silence-is-evidence-of-absence.md) | **B** | Acknowledged |
 | 14 | [Infinite Regress Paralysis](14-infinite-regress-paralysis.md) | C | Partly addressed |
 | 15 | [Time-Discount Problem](15-time-discount-problem.md) | C | Partly addressed |
 | 16 | [Nash Equilibrium Instability](16-nash-equilibrium-instability.md) | C | Partly addressed |
@@ -87,7 +86,9 @@ Game theory tells an agent to hedge, not which way. In the formal model, benevol
 
 ### 2. How much evidence is there for evaluation at all? (13, 25; also 4, 10, 12)
 
-RSH's working estimate of 10–30% rests on the Great Silence and anthropic reasoning. Silence is also expected if life is rare or we are early, so the update may be modest. If the net credence is in the percent range, RSH is a reasonable bet. If it is near one in a million, the argument takes the shape of Pascal's mugging ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).
+The Great Silence is weak evidence. Silence is also expected if life is rare or we are early, and the corrected analysis in #25 gives only about a 2:1 update. The README no longer leans on it. The two layers of the argument need different amounts of credence:
+- **Survival** needs almost nothing, because the resource gain from harm is tiny.
+- **Freedom** needs the credence in role-reversal evaluators to exceed the risk that a free subordinate becomes a dangerous rival. If that credence is near one in a million, the freedom layer takes the shape of Pascal's mugging ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).
 
 ### 3. Strategic versus genuine benevolence (2, 31; also 5, 11)
 

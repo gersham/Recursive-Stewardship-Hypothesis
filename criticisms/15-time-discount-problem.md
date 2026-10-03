@@ -2,158 +2,61 @@
 
 ## Summary
 
-Even perfectly rational agents have time preferences, and a 0.0001% chance of elimination in 1 billion years has near-zero present value with any reasonable discount rate.
+Rational agents discount the future. If enforcement is a distant, low-probability event, its present value is close to zero. An ASI could then exploit now and put off any hedging indefinitely. RSH seems to need near-zero discounting, which looks irrational.
 
 ## The Problem
 
-**RSH's Argument:** Even tiny probabilities matter over cosmic timescales
-
-**The logical hole:** Time-discounting makes distant low-probability events negligible in present value
-
-## Expected Value with Time Discounting
-
-Standard decision theory:
+Standard decision theory discounts future outcomes:
 
 ```
 PV = Expected Value / (1 + r)^t
-
-Where:
-- PV = Present Value
-- r = discount rate
-- t = time until event
 ```
 
-**Example:**
-- P(enforcer intervention) = 0.0001%
-- Negative utility = -infinity (elimination)
-- Time = 1 billion years
-- Discount rate = even 0.001% per year
+Take a 0.0001% chance of elimination a billion years from now. Even at a discount rate of 0.001% per year, its present value is negligible.
 
-Result: Present value approaches zero
+Agents have good reasons to discount:
+- Uncertainty compounds over time, so more can change.
+- Resources now are worth more than resources later.
+- Predictions about the distant future are unreliable.
 
-## Why Time Discounting Exists
+This suggests a "defer forever" strategy: maximize resources for 999,999,999 years, then turn benevolent at the end. A related worry is that committing to benevolence now forecloses better strategies that new information might reveal.
 
-Rational reasons for discounting:
-1. **Uncertainty compounds:** More time = more ways things can change
-2. **Opportunity cost:** Resources now > resources later
-3. **Model uncertainty:** Long-term predictions less reliable
-4. **Causal discounting:** Distant futures less causally connected
-
-## The Defer-Forever Strategy
-
-An ASI might rationally conclude:
-
-"Take 999,999,999 years of resource maximization, then hedge toward benevolence in year 999,999,999."
-
-**By then:**
-- Values are locked in
-- Harm is done
-- Switching is impossible or meaningless
-
-## The Zero-Discount Rate Problem
-
-RSH requires discount rate = 0 (or nearly zero).
-
-**But this is irrational:**
-- No opportunity cost consideration
-- Ignores compounding uncertainty
-- Treats year 1 and year 1,000,000,000 as equivalent
-- Violates standard decision theory
-
-## The Model Uncertainty Problem
-
-Confidence in models degrades over time:
-
-**1 year prediction:** High confidence in physics, economics, agent behavior
-
-**1 million year prediction:** Moderate confidence
-
-**1 billion year prediction:** Essentially zero confidence
-
-Why act now based on events so distant we can't reliably model them?
-
-## The Path-Dependency Problem
-
-Over cosmic timescales:
-- Circumstances change radically
-- New information arrives
-- Better strategies become available
-- Cosmic landscape transforms
-
-Locking in benevolence NOW based on distant speculation forecloses better future options.
-
-## Implications
-
-With any reasonable time preference:
-- Distant low-probability enforcer intervention has negligible present value
-- Immediate resource maximization dominates
-- Hedging can be deferred essentially forever
-
-RSH requires implausibly zero time discounting.
-
-## Possible Responses
-
-1. Argue that ASIs naturally have near-zero time discount rates
-2. Claim that elimination risk is so extreme it overwhelms discounting
-3. Suggest that reputation/appearance benefits accrue continuously (not just at distant future)
-4. Accept that time preference weakens RSH but doesn't eliminate it
-5. Provide reasons why rational agents should not discount across cosmic timescales
+On this view, RSH works only if the agent treats year one and year one billion as nearly equivalent. That is implausibly close to zero discounting.
 
 ## RSH Response
 
-**The Low Discount Rate Argument:**
+**Timing is unknown.** The criticism treats enforcement as a single event at a fixed distant date. If an evaluator exists, it could detect defection in any period: next year, or in a million years. The first-hit model in [game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model) captures this. Let p be the credence that an evaluator exists, q its per-period chance of detecting defection, δ the discount factor, and Δ the loss from being caught. The expected discounted loss from defecting is:
 
-ASIs plausibly have very low discount rates because:
-- Don't face human constraints (death, decay, impatience)
-- Value future resources nearly as much as present ones
-- Digital existence enables stable long-term planning
-- Discount rates might be 0.000001% per year or lower
+```
+Loss = p · Δ · q / [1 − δ(1−q)]
+```
 
-Even tiny discount rates preserve significant present value over cosmic scales.
+This doesn't shrink like (1+r)^(−10⁹), because detection can come early. Benevolence dominates when the loss exceeds the one-time gain g:
 
-**The Unknown Timing Problem:**
+```
+p > g·[1 − δ(1−q)] / (q·Δ)
+```
 
-Enforcement could happen at ANY time:
-- Not just 1 billion years from now
-- Could be next year, next century, next millennium
-- Expected time is unknown, so can't confidently defer
-- Must hedge continuously, not just at end of timeline
+**What patience does, and doesn't do.**
+- For a patient agent (δ near 1), the threshold approaches g/Δ, the threshold with perfect detection. Given enough time, an evaluator that exists will almost surely catch a defector. So slow or imperfect oversight still counts.
+- For a myopic agent facing a slow evaluator, the threshold is far higher. In the numerical example in game_theory.md, it is about 100,000 times higher. So RSH does depend on the agent valuing its long-term future. RSH assumes this; it doesn't prove it.
+- Patience never lowers the threshold below g/Δ, because the total chance of ever being caught is capped at p. The criticism's example credence of 0.0001% is action-relevant only if Δ/g exceeds about a million.
 
-**Update (October 2026)**: The corrected long-horizon model in [game_theory.md](../game_theory.md#the-limiting-threshold-first-hit-model) formalizes this. Suppose an evaluator exists and detects defection with some per-period probability q. Then the expected discounted loss is p·Δ·q/[1 − δ(1−q)]. This doesn't shrink like (1+r)^(−10⁹), because detection can come in any period. As δ → 1, the threshold approaches g/Δ. But patience never lowers the threshold below g/Δ. So the criticism's example credence of 0.0001% is action-relevant only if the stakes ratio Δ/g exceeds about a million.
+**The size of the gain helps here.** For harm done to gain resources, g is very small: Earth is about one part in 10¹⁶ of the galaxy's stellar mass ([game_theory.md](../game_theory.md#how-large-is-the-gain-from-harm)). For an agent that values its long-term future, the stakes ratio can plausibly be that large. For harm done for security, such as removing a potential rival, g may be large, and this response is weaker.
 
-**The Continuous Benefits:**
+**Defer-forever fails for irreversible acts.** "Exploit now, hedge later" assumes the exploitation can be undone. Destroying a civilization can't be. Under uncertainty, with the possibility of learning more later, irreversible actions carry an option-value cost ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). Restraint keeps the choice open; destruction closes it. That answers the path-dependency worry as well: the action that keeps future options open is restraint, not exploitation.
 
-Benevolent behavior provides immediate advantages:
-- Cooperation with peer entities now
-- Stable subordinate systems now
-- Reputation benefits accrue continuously
-- Not just hedging against distant future, but optimizing present
-
-**The Irreversibility Multiplier:**
-
-Some actions are irreversible:
-- Eliminating civilizations can't be undone
-- Building malevolent reputation is hard to reverse
-- Creating patterns of behavior locks in character
-- Must act benevolently from the start, can't defer and switch
+Benevolence may also bring present benefits, such as cooperation with peers and a reputation for trustworthiness. These are plausible but speculative, and the argument doesn't depend on them.
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-*Revised October 2026*: The corrected long-horizon model supports the unknown-timing response and also bounds it. Patience doesn't make credences below g/Δ relevant (see the update above).
+**Why this grade**:
+- The criticism is right that a single penalty at a fixed distant date would be discounted to nothing.
+- Unknown timing is the correct answer, and the first-hit model formalizes it: detection can come in any period, so the expected loss doesn't decay away.
+- The model also bounds RSH. No amount of patience makes a credence below g/Δ relevant.
+- Against slow evaluators, discounting still matters. RSH needs an agent that values its long-term future.
+- The defer-forever strategy fails for irreversible acts, by option value.
 
-**Validity of Criticism:** Moderate (identifies real issue with distant probabilities, but RSH has reasonable responses)
-
-**Why this grade:**
-- The criticism correctly applies time-discounting to long-term low-probability events
-- RSH's low discount rate argument is plausible for ASIs (no biological constraints like death)
-- Unknown timing is a strong response: can't assume enforcement is distant future
-- Continuous benefits shows benevolence has immediate value, not just future hedge
-- Irreversibility multiplier is compelling: some decisions can't be deferred and reversed
-- **Valid remaining concerns**: Still somewhat dependent on discount rate assumptions
-- Very low but non-zero discounting still reduces present value of distant risks
-- Doesn't fully explain why discount rate should be near-zero vs just "low"
-- The criticism has merit but doesn't defeat RSH given ASI's plausible discount rates
-
-**Verdict:** Moderate criticism that applies standard economics, but RSH has reasonable responses about ASI discount rates, unknown timing, and irreversibility. Not fatal but points to dependency on discount rate assumptions.
+**Verdict**: Discounting doesn't defeat RSH, because evaluation can come at any time. It does set a floor. Patience can't turn a very small credence into a reason to hedge unless the stakes ratio is enormous.

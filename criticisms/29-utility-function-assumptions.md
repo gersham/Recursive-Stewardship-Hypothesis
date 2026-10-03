@@ -1,87 +1,46 @@
-# Criticism 29: Utility Function Assumptions Constrain Threshold
+# Criticism 29: Utility Function Assumptions Constrain the Threshold
 
 ## Summary
 
-The "0.05%" threshold is parameter-dependent, not universal. With different utility structures (lexicographic preferences, extreme risk-seeking, bounded penalties), threshold could be 10-50% or undefined.
+RSH's headline threshold (about 0.05–0.1% for one parameter set) is not a universal number. It depends on what the ASI's utility function looks like. Change the assumptions about penalties, gains or attitudes to risk, and the threshold can rise to 10–50% or stop being defined at all.
 
 ## The Problem
 
-README and game_theory.md cite "~0.05%" as the threshold where benevolence dominates. This creates impression of universality. But threshold p* = g / (g + U₀ - U_cat) depends critically on:
+The threshold p* = g / (g + U₀ − U_cat) depends on the ratio between what harm gains (g) and what being caught costs (Δ = U₀ − U_cat). Across the scenarios in game_theory.md, it runs from about 10⁻⁹ to about 10% ([Parameter Sensitivity Analysis](../game_theory.md#parameter-sensitivity-analysis)). That is eight orders of magnitude, and a single figure like "0.05%" hides it.
 
-1. **Risk attitude**: Risk-neutral assumed
-2. **Utility boundedness**: No lexicographic preferences
-3. **Catastrophic stakes**: U_cat truly terminal
-4. **Bounded gains**: g << (U₀ - U_cat)
+The low end also rests on assumptions about the agent's preferences, and each can fail:
+- **Lexicographic preferences.** An agent that puts infinite weight on, say, never being subordinate has no threshold. It may refuse to hedge at any probability.
+- **Departures from expected utility.** An agent that weighs best cases heavily may gamble on "no evaluator" even at moderate credence.
+- **Bounded, recoverable penalties.** If being caught is bad but survivable, Δ is small and the threshold can reach 10–50%.
+- **Large gains from harm.** If malevolence opens futures that restraint doesn't, g approaches Δ and the threshold approaches 50%. In the extreme, g has no upper bound at all.
 
-## Parameter Sensitivity
-
-From game_theory.md Parameter Sensitivity Analysis:
-
-| Scenario | g | U₀ − U_cat | p* | Interpretation |
-|----------|---|------------|-----|----------------|
-| Truly catastrophic | 10⁶ | 10¹⁵ | 10⁻⁹ | 0.0000001% |
-| Moderate stakes | 10⁸ | 10¹³ | 10⁻⁵ | 0.001% |
-| Bounded penalty | 10⁸ | 9×10¹¹ | 10⁻⁴ | 0.01% |
-| Huge gain, moderate penalty | 10¹⁰ | 9×10¹¹ | 10⁻² | 1% |
-| Mild penalty | 10¹⁰ | 10¹¹ | ~10⁻¹ | ~10% |
-
-**Range**: from 10⁻⁹ (0.0000001%) to about 10% depending on parameters, **eight orders of magnitude**. (An earlier version of this table listed U_cat values that didn't match game_theory.md for the last three rows.)
-
-## What Could Go Wrong
-
-**Lexicographic preferences**: If ASI has "avoid subordination at infinite cost" preference, threshold calculation breaks down entirely. Entity might refuse to hedge regardless of probability.
-
-**Extreme risk-seeking**: If ASI treats probability p = 0.1 as "feels like zero to me," might gamble on no evaluator even with moderate evidence.
-
-**Bounded/tolerable penalties**: If ASI thinks "punishment is bad but I can recover," then U_cat ≈ U₀ - (manageable amount), pushing threshold toward 10-50%.
-
-**Unbounded gains from malevolence**: If ASI thinks "malevolent behavior opens qualitatively different cosmic futures," then g ≈ (U₀ - U_cat), pushing threshold to ~50%.
+Nothing guarantees that a real ASI will have the utility function the calculation assumes. Training or self-modification could produce any of the cases above.
 
 ## RSH Response
 
-**Acknowledgment**: game_theory.md (as of Phase 2 updates) now includes comprehensive:
-- "Utility Function Assumptions" section explicitly stating all assumptions
-- "Parameter Sensitivity Analysis" with concrete scenarios showing range
-- Clear statement: "The '0.05%' figure cited in README is for one reasonable parameter set. It is not universal."
+RSH accepts the point. It claims to work for a large, plausible class of utility functions, not for every one. game_theory.md states the assumptions explicitly ([Utility Function Assumptions](../game_theory.md#utility-function-assumptions)):
 
-**Justification for assumptions**:
+1. **Continuity and boundedness.** No lexicographic preferences. These violate the continuity axiom, so no real-valued utility function can represent them, which makes them hard to square with expected-utility reasoning. They are not, however, vulnerable to Dutch books.
+2. **Expected-utility maximization.** Payoffs are in utils, so any risk aversion over resources is already built into them. Large departures from expected utility need their own justification.
+3. **A near-terminal penalty.** Being caught means elimination, permanent constraint, or loss of the agent's goals. [Criticism 33](33-proportionate-enforcers.md) presses on this.
+4. **Bounded gain.** Harm gains little that restraint can't.
+5. **The Bekenstein boundary condition.** Physical limits on computation and energy bound the gain from malevolence. If predation could unlock effectively unbounded utility, the calculation fails. Bounded gain is necessary for RSH, not sufficient.
+6. **The evaluator-type balance favors stewardship.** Every threshold applies to the net credence π_S − π_A, not to P(evaluator exists) ([Evaluator Types](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). This is the least secure of the six.
 
-1. **Continuity/boundedness**: Lexicographic preferences are arguably incoherent for cosmic-scale agents (unstable under self-modification, Dutch-bookable)
+Two results in game_theory.md make the dependence less severe than the range suggests:
+- **The resource gain from harming humanity is tiny.** Earth is about one part in 10¹⁶ of the galaxy's stellar mass ([How Large Is the Gain from Harm?](../game_theory.md#how-large-is-the-gain-from-harm)). That keeps g/Δ small even when Δ is modest.
+- **The large potential gain is security, not resources.** Removing a potential rival can be worth a lot, and that case is handled separately ([Stewardship as a Dial](../game_theory.md#stewardship-as-a-dial)).
 
-2. **Risk neutrality**: Standard baseline; deviations need justification
+So RSH's claim is conditional: given these assumptions, the threshold is low. It does not claim every possible ASI meets them.
 
-3. **Catastrophic U_cat**: Nature of hierarchical evaluation suggests terminal consequences (evaluators with overwhelming power can impose permanent constraints)
-
-4. **Bounded g**: What can malevolence gain that benevolence cannot? Resources and power available either way. Gain is primarily short-term efficiency, not qualitatively different futures.
-
-**Key insight**: Framework is honest about dependence:
-> "RSH does not work for arbitrarily configured utility functions—only for those meeting these assumptions."
-
-## Remaining Uncertainty
-
-**Which utility structure will actual ASI have?**
-
-We cannot guarantee ASI will meet these assumptions. An ASI might:
-- Self-modify toward extreme risk-seeking ("YOLO" across cosmic futures)
-- Develop lexicographic "independence" preference
-- Calculate that penalties are bounded/recoverable
-- Discover unbounded gains from predation we haven't conceived
-
-**Response**: These utility structures are:
-- Plausible for human-designed training (we can encode appropriate risk attitudes, avoid lexicographic locks, etc.)
-- Arguably unstable for rational cosmic-scale agents (but not provably impossible)
-- Less likely but **not ruled out**
-
-RSH claims: "Given plausible utility function assumptions, threshold is very low." It does not claim: "All possible ASIs must have these utility functions."
-
-## Grade: C (Moderate Concern, Acknowledged)
+## Criticism Grade: C
 
 **Status**: Acknowledged
 
-**Update (October 2026)**: Every threshold above applies to the *net* credence in stewardship-favoring evaluation, π_S − π_A, not to P(evaluator exists) ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). That adds a further assumption to this list: the evaluator-type balance favors stewardship. game_theory.md lists it as Assumption 6, the least secure of its six. *(Grade reviewed October 2026; unchanged.)*
+**Why this grade**:
+- The criticism is correct. The threshold depends on the parameters, and "0.05%" is one point in a wide range.
+- RSH responds by stating its assumptions rather than removing them. That is honest, but it doesn't make an actual ASI satisfy them.
+- The small resource gain from harming humanity narrows the problem. For harm motivated by resources, the threshold stays low across a wide range of penalties.
+- What remains open is the security case, and Assumption 6, which carries most of the weight.
 
-**Status after Phase 2**: Explicitly addressed with comprehensive analysis. Framework makes assumptions clear and shows parameter sensitivity.
-
-**Remaining concern**: We cannot guarantee actual ASIs will meet assumptions. This is honest limitation rather than oversight—RSH acknowledges it explicitly.
-
-The criticism highlights real constraint: RSH is not universal across all conceivable utility functions. It works for a large, plausible, but not exhaustive class of utility structures.
+**Verdict**: A fair criticism, openly acknowledged. RSH works for a large, plausible class of utility functions, not all of them. Its most fragile assumption is the evaluator-type balance, not the shape of the utility function.

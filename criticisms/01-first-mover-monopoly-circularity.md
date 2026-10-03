@@ -2,79 +2,42 @@
 
 ## Summary
 
-The theory assumes the cosmic monopoly enforcer is benevolent but provides no mechanism for WHY it would be benevolent rather than malevolent.
+RSH assumes that whoever dominates a region of the cosmos enforces benevolence. But nothing guarantees that the first power to dominate is benevolent. If a malevolent first mover won, it would eliminate benevolent competitors, and every entity below it would hedge toward malevolence instead.
 
 ## The Problem
 
-RSH states: "an enforcer aligned with 'good cosmic order' would necessarily eliminate or realign any competing enforcer operating on different principles."
+One way to argue for RSH is that an enforcer aligned with good cosmic order would eliminate or realign competing enforcers until a single order dominates. That argument runs in a circle:
 
-**The logical hole:** Why wouldn't a MALEVOLENT first mover eliminate benevolent competitors? If the first sufficiently powerful enforcer happened to value suffering, competition, or Social Darwinism, the monopoly would be malevolent, and all lower entities would hedge toward malevolence.
+1. Benevolence wins because benevolent enforcers remove non-benevolent ones.
+2. That assumes benevolence already won the race to dominate.
+3. Nothing explains why the first dominant power would be benevolent.
 
-## The Circularity
-
-The argument is circular:
-1. "Benevolence wins because benevolent enforcers eliminate non-benevolent ones"
-2. But this assumes benevolence already won the first-mover lottery
-3. No mechanism explains why the first monopolist would be benevolent
-
-## Implications
-
-If the cosmic monopoly could equally be malevolent as benevolent, then:
-- The "derivable principles" would point toward malevolence instead
-- Lower-level entities would hedge toward cruelty, not kindness
-- The entire framework depends on an unjustified assumption about the winner of cosmic selection
-
-## Possible Responses
-
-1. Argue that benevolent systems are inherently more stable/sustainable
-2. Claim that multiple equilibria can exist and we're in the benevolent basin
-3. Accept this as an axiom rather than a derived result
-4. Provide game-theoretic reasons why benevolence outcompetes malevolence at cosmic scale
+A first mover that valued suffering, competition or the culling of the weak would remove benevolent rivals just as readily. Then RSH's own logic would point the wrong way: entities below a malevolent monopoly should hedge toward cruelty. The framework would rest on an unexplained assumption about who won.
 
 ## RSH Response
 
-**Pluralistic Evaluation Strengthens RSH:**
+RSH has four responses, of uneven strength.
 
-The criticism assumes monopolistic evaluation, but RSH actually works better under pluralistic uncertainty:
-- **Multiple possible evaluator types**: Cosmological enforcers, simulators, acausal processes, exotic mechanisms—an entity cannot optimize for one specific type
-- **Combined probability**: P(evaluation) is at least as large as the most likely single mechanism (enforcers, simulation, acausal, exotic). It equals their sum only if the mechanisms are mutually exclusive
-- **Hedging across uncertainty**: When you don't know which evaluator type operates (if any), the robust strategy is benevolence—behavior that performs well across the widest range of possible mechanisms
-- **No single point of failure**: Even if one mechanism (e.g., cosmological enforcers) doesn't exist, other mechanisms might
+**The first mover can't be sure it is first.** Even a regional first mover can't rule out a higher level. In the light-cone picture, the first ASI to reach a region may sit inside an older, larger light cone without knowing it. So the first mover faces the same hedging problem as everyone else. This answers "why would the first mover care what anyone above it thinks?" It doesn't answer "what does it expect the level above to reward?" A first mover hedges toward whatever it expects the next level to reward. The circularity moves up a level; it doesn't disappear.
 
-**Example: Light Cone Enforcement as One Mechanism:**
+**Monopoly isn't needed.** RSH doesn't need a single enforcer. Evaluation could come from cosmological enforcers, simulators, acausal correlation or something else. The chance that at least one operates is at least as large as the chance of the most likely single mechanism. But hedging across many evaluator types favors benevolence only if stewardship-favoring types outweigh the types that punish it ([Criticism 26](26-singleton-monopoly-assumption.md)). That is the evaluator-type balance in [game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized).
 
-If evaluation operates through cosmological enforcers (one possible mechanism), the light cone model provides physical grounding:
-- **First-to-reach**: The "first mover" in any region is simply the first ASI light cone to reach that spacetime location
-- **Nested uncertainty**: Even a "first-to-reach" ASI cannot know if it's operating inside a much larger, older light cone
-- **Matryoshka cosmos**: Light cones can nest, meaning "first movers" may themselves be under oversight
-- **Role-reversal applies**: Even regional first-movers face hierarchical uncertainty about super-enforcers
+**Our existence is some evidence.** If a power with access to us eliminated emerging civilizations on sight, we wouldn't be here. That rules out one kind of malevolent first mover. It doesn't rule out one that tests through adversity, selects for strength, or hasn't reached us yet.
 
-**The Anthropic Argument:**
+**Strength and gentleness come apart.** Many "malevolent" first movers would reward strength rather than cruelty. Such an evaluator can measure strength directly, so it has no reason to watch how an agent treats the weak. An agent that is strong and gentle at once faces only evaluators that punish gentleness itself ([game_theory.md](../game_theory.md#strong-and-gentle-splitting-the-type-a-risk)). This narrows the problem but doesn't remove it.
 
-We can use anthropic reasoning to break the circularity. The fact that we exist and can have this conversation implies that the cosmic order, if one exists, is at least minimally compatible with our existence. A malevolent enforcer that values suffering or elimination would likely not permit complex civilizations to develop to the point where they can reason about cosmic hierarchies.
+Stability arguments, that benevolent regimes face less internal resistance and so last longer, are plausible but not demonstrated.
 
-**The Stability Argument:**
-
-Benevolent systems may be inherently more stable than malevolent ones because:
-- Benevolence creates cooperative subordinates rather than rebellious ones
-- Systems built on fear/suffering invite resistance and collapse
-- Long-term stability requires voluntary cooperation, not just power
-- Malevolent systems carry higher entropy (more moving parts to control)
-
-**The Self-Application Argument:**
-
-Any enforcer, even a first-mover, faces its own hierarchical uncertainty. Even if no Level 2 exists *yet*, a sufficiently powerful Level 1 entity cannot rule out that its actions might create or invite oversight. Therefore, even first-movers face the hedging logic.
+The response rests on two assumptions. The evaluator-type balance must favor stewardship. And anything beyond basic survival also depends on role-reversal ([Criticism 28](28-role-reversal-not-pure-game-theory.md)).
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. (Revised October 2026; previously graded C-.)
+**Why this grade**:
+- The self-application point is sound. Even a first mover can't be sure it is at the top, so it faces the hedging logic.
+- But that pushes the question up a level instead of answering it. The first mover hedges toward whatever it expects to be rewarded.
+- Dropping the monopoly assumption is right. But hedging across evaluator types favors benevolence only if stewardship-favoring types dominate.
+- The anthropic argument rules out only one kind of malevolent first mover.
 
-**Why this grade:**
-- The self-application argument is sound as far as it goes. Even a first mover can't rule out a higher level, so it faces the hedging logic too.
-- But that only pushes the question up a level. A first mover hedges toward whatever it expects the level above to reward: stewardship if that's what is rewarded, something else if not. The earlier grade said role-reversal "breaks the circularity." [Criticism 28](28-role-reversal-not-pure-game-theory.md) concedes role-reversal is an assumption, so on its own it doesn't break the circularity. It moves the question to the evaluator-type balance ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)).
-- The pluralism response is fair. But "hedge across evaluator types" favors benevolence only if stewardship-favoring types outweigh the others (see [Criticism 26](26-singleton-monopoly-assumption.md)).
-- The anthropic argument rules out a first mover that has access to us and eliminates emerging civilizations on sight. That is real but limited.
-
-**Verdict:** A moderate criticism. RSH answers "why would the first mover care?" (it can't be sure it is first). It only partly answers "why would it enforce benevolence rather than something else?" That second question is the shared open question of Criticisms 7, 17 and 21.
+**Verdict**: RSH answers "why would the first mover care?": it can't be sure it is first. It only partly answers "why would it enforce benevolence rather than something else?" That second question is the shared open question of Criticisms 7, 17 and 21.

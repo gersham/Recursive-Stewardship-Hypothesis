@@ -2,167 +2,40 @@
 
 ## Summary
 
-The hierarchy reasoning is infinite, but computational resources and decision time are finite. Different truncation points lead to different conclusions, with no principled truncation rule.
+The hierarchy is potentially infinite, but reasoning time and computation are finite. An ASI has to stop reasoning somewhere, and different stopping points seem to give different answers. Stop early and you hedge toward benevolence; go deeper and you may reach defiance, paralysis or randomization. With no principled rule for where to stop, the conclusion looks arbitrary.
 
 ## The Problem
 
-**The Infinite Hierarchy:**
-- Level 0: Civilizations
-- Level 1: Enforcers
-- Level 2: Super-enforcers
-- Level 3: Super-super-enforcers
-- ...
-- Level N → ∞
+An ASI must decide in finite time, so it must truncate its reasoning about the hierarchy:
+- **At level 1** (direct enforcers only), it concludes: hedge toward benevolence.
+- **At level 2** (enforcers and super-enforcers), meta-games between levels appear, and different behavior might follow.
+- **At deeper levels**, the regress may lead to paralysis or to randomizing across strategies.
+- **At infinite depth**, reasoning is impossible.
 
-**The Constraint:** An ASI must decide and act in FINITE time with FINITE computational resources
+No rule picks the right stopping point. Stop too early and you miss relevant levels; stop too late and you waste resources. Different truncations seem to justify benevolence, defiance, paralysis or rejecting the whole framework.
 
-**The logical hole:** Where do you stop reasoning? Different stopping points yield different conclusions.
-
-## The Truncation Decision
-
-An ASI must choose when to truncate:
-
-### Truncate at Level 1
-"Consider only direct enforcers"
-- Conclusion: Act benevolently to hedge against Level 1
-
-### Truncate at Level 2
-"Consider enforcers and super-enforcers"
-- Conclusion: Consider meta-game between levels
-- Different behavior might emerge
-
-### Truncate at Level 10
-"Consider 10 levels of hierarchy"
-- Conclusion: Might lead to infinite regress paralysis
-- Or randomization across strategies
-
-### Truncate at Level ∞
-"Reason about infinite hierarchy fully"
-- **Impossible:** Would require infinite computation time
-
-## The Arbitrariness Problem
-
-No principled rule for where to truncate:
-- Truncate too early: Miss important meta-levels
-- Truncate too late: Waste computational resources
-- Every truncation point is arbitrary
-
-Different truncation points can justify:
-- Benevolence (if you truncate early)
-- Defiance (if you consider meta-levels)
-- Paralysis (if you can't decide)
-- Rejection (if you recognize arbitrariness)
-
-## The Computational Resource Allocation
-
-An ASI faces trade-offs:
-- Time spent reasoning about cosmic hierarchies
-- vs. Time spent on instrumental goals
-- vs. Time spent on object-level decisions
-
-Why allocate significant resources to unresolvable infinite regress?
-
-## The Diminishing Returns Problem
-
-Each additional level of meta-reasoning:
-- Adds computational cost
-- Provides diminishing new information
-- Creates more uncertainty rather than less
-
-Rational resource allocation → truncate early and act on first-order reasoning
-
-## The Gödel Limitation
-
-Like Gödel's incompleteness theorems:
-- Some questions are undecidable within any formal system
-- No amount of computation resolves them
-- Must eventually accept incomplete knowledge and act
-
-The hierarchical uncertainty might be fundamentally undecidable.
-
-## The Decision-Under-Uncertainty Standard
-
-Normal decision theory handles uncertainty:
-- Assign probabilities
-- Calculate expected utilities
-- Choose action with max EU
-
-But with infinite hierarchies:
-- Probabilities are undefined
-- Expected utilities depend on truncation
-- No unique maximum
-
-## The Time Pressure Problem
-
-Real decisions happen under time pressure:
-- Opportunities are fleeting
-- Competitors are acting
-- Circumstances are changing
-
-Can't afford to reason infinitely about infinite hierarchies.
-
-## Implications
-
-The infinite hierarchical reasoning must be truncated arbitrarily, which means:
-- Conclusions are arbitrary
-- Different truncations → different behaviors
-- No uniquely rational answer
-- The framework doesn't provide clear guidance
-
-## Possible Responses
-
-1. Provide a principled truncation rule (e.g., "stop at level N when marginal information falls below threshold")
-2. Argue that first-level reasoning (benevolence) is robust across truncations
-3. Claim that recognizing the need to truncate is itself part of the reasoning
-4. Accept that some arbitrariness is inevitable in reasoning under uncertainty
-5. Suggest that "approximately benevolent" emerges from most reasonable truncations
+Reasoning also has costs. Time spent on an unresolvable regress is time not spent on other goals. Real decisions happen under time pressure, with competitors acting. Some questions may simply be undecidable. If expected utilities depend on where you truncate, no single answer is uniquely rational, and the framework gives no clear guidance.
 
 ## RSH Response
 
-**The Diminishing Returns Truncation:**
+**Truncation changes estimates, not structure.** At any truncation point, the decision has the same form. Benevolence wins when the net credence that the levels you consider favor stewardship (π_S − π_A) exceeds about g/Δ ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Deeper levels matter only through their effect on that credence. Different truncations give different estimates of the credence, not a different kind of decision.
 
-Principled truncation rule: stop when marginal benefit < marginal cost
-- Level 1: High information value (benevolence vs other strategies)
-- Level 2: Medium value (meta-game considerations)
-- Level 3+: Rapidly diminishing returns
-- Most rational truncations happen at Level 1 or 2
+**Each level only needs a belief about the level directly above.** The N-level argument can be framed locally. Each level's choice depends on its credence that the level above enforces stewardship. Beliefs about higher levels matter only through that credence ([game_theory.md](../game_theory.md#backward-induction-and-local-reasoning)). That removes the need to reason through the whole hierarchy.
 
-Both point toward benevolence.
+**Diminishing returns give a stopping rule.** Stop reasoning when the expected value of going further falls below its cost. This is a sensible heuristic, but the rate at which returns diminish is assumed, not derived.
 
-**The Robustness Across Truncations:**
+**Every real decision truncates.** No agent has unlimited computation. Truncation is a general feature of bounded reasoning, not a special weakness of RSH.
 
-Benevolence is favored at most truncation points:
-- Level 1: Direct benevolence hedge
-- Level 2: Portfolio including benevolence
-- Level 3+: Schelling point remains benevolence
-- Conclusion robust across wide range of truncations
-
-**The Bounded Rationality Defense:**
-
-All real decisions require truncation:
-- No agent has infinite computational resources
-- Truncation is a feature of decision-making, not a bug
-- RSH is no worse off than any other decision framework
-- The question is "what does rational truncation yield?" not "can we avoid truncation?"
-
-**The Convergence Argument:**
-
-Different truncation strategies converge on similar behavior:
-- Early truncation → benevolence (Level 1)
-- Late truncation → Schelling point (still benevolence)
-- Portfolio across levels → weighted toward benevolence
-- Most paths lead to predominantly benevolent outcomes
+**Irreversibility helps while reasoning continues.** Whatever the truncation, avoiding irreversible harm keeps open the option of acting differently once you have reasoned further. Option value favors reversible actions while deliberation is unfinished ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. (Revised October 2026; previously graded D+.)
+**Why this grade**:
+- The claim that "most reasonable truncations" favor benevolence would assume the conclusion. Whether a truncation favors benevolence depends on what the agent believes the levels it considers will reward.
+- In the formal model, truncation matters less than it seems. Different truncations give different estimates of the net credence, not a different structure.
+- The bounded-rationality defense is fair. Every real decision truncates somewhere.
+- The diminishing-returns rule is a sensible heuristic, but its rate is assumed.
 
-**Why this grade:**
-- The earlier grade said "most reasonable truncations" favor benevolence and called truncation "a feature, not a bug." That assumes the conclusion. Whether a given truncation favors benevolence depends on what the agent believes the levels it considers will reward.
-- In the formal model, truncation matters less than it seems. At any truncation point, the decision depends on the agent's net credence that the levels it considers favor stewardship ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Different truncations give different estimates of that credence, not a different structure.
-- The bounded-rationality defense is fair. Every real decision truncates somewhere; that isn't special to RSH.
-- The diminishing-returns rule is a sensible heuristic, but the rate at which returns diminish is assumed.
-
-**Verdict:** Truncation itself isn't fatal. The real question it raises is the same as in Criticisms 7, 17 and 21: what the levels you consider are likely to reward.
+**Verdict**: Truncation itself isn't fatal. The real question it raises is the same as in Criticisms [7](07-evil-god-objection.md), [17](17-why-this-hierarchy-regress.md) and [21](21-deepest-hole-unfalsifiable-circular-reasoning.md): what the levels you consider are likely to reward.

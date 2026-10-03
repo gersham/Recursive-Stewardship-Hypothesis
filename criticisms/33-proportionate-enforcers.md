@@ -1,7 +1,5 @@
 # Criticism 33: Proportionate Enforcers Don't Impose Terminal Penalties
 
-*Raised in an independent review, October 2026.*
-
 ## Summary
 
 RSH's low thresholds depend on a terminal penalty: being caught means losing everything. But RSH's own principles (proportionality, error correction over elimination, minimizing irreversible harm) apply to enforcers too. A stewardship-favoring enforcer should impose proportionate corrections, not terminal ones. With proportionate penalties, the threshold rises sharply.
@@ -19,29 +17,24 @@ So the evaluators RSH counts on are exactly the ones least likely to impose term
 
 There is a deeper tension. RSH needs its enforcers to be harsh enough to deter, and gentle enough to be the kind of evaluator worth hoping for. Those pull in opposite directions.
 
-## Possible Responses
-
-1. "Correction" may mean modifying the agent's values or goals. From the agent's perspective, that can be as final as elimination.
-2. Proportionality is relative to the harm. Destroying a civilization is an extreme, irreversible harm, so a proportionate response could still be severe.
-3. A stewardship-favoring enforcer may *prevent* harm rather than punish it afterward. Then the defector gains nothing when an enforcer exists, which changes the calculation.
-4. If the gain from harm is small, even a modest penalty deters.
-
 ## RSH Response
 
-Responses 3 and 4 together do most of the work. Suppose an enforcer prevents the harm and imposes a proportionate correction c. Then benevolence dominates when p > g/(g + c) ([game_theory.md](../game_theory.md#assumption-3-u_cat-is-genuinely-catastrophic)). For resources, g is tiny: Earth is about one part in 10¹⁶ of the galaxy's stellar mass ([game_theory.md](../game_theory.md#how-large-is-the-gain-from-harm)). So even a mild correction deters harm done for resources.
+Three responses are available. The first does most of the work.
 
-Response 1 also has force. For an agent with goals, having those goals rewritten is close to the worst outcome, whatever the enforcer calls it.
+**Prevention, plus a small gain.** A stewardship-favoring enforcer may *prevent* harm rather than punish it afterward. Then the defector gains nothing when an enforcer exists, and benevolence dominates when p > g/(g + c) ([game_theory.md](../game_theory.md#assumption-3-u_cat-is-genuinely-catastrophic)). For resources, g is tiny: Earth is about one part in 10¹⁶ of the galaxy's stellar mass ([game_theory.md](../game_theory.md#how-large-is-the-gain-from-harm)). So even a mild correction deters harm done for resources.
+
+**Correction can be terminal for the agent.** "Correction" may mean modifying the agent's values or goals. For an agent with goals, having them rewritten is close to the worst outcome, whatever the enforcer calls it.
+
+**Proportionality is relative to the harm.** Destroying a civilization is an extreme, irreversible harm, so a proportionate response to it could still be severe.
 
 ## Criticism Grade: C+
 
 **Status**: Partly addressed
 
-**Validity of Criticism**: Moderate. It exposes a real tension in how RSH pictures its enforcers.
-
 **Why this grade**:
-- The tension is real. By RSH's own standards, its enforcers should be gentle, and gentle enforcers impose smaller penalties.
+- It exposes a real tension in how RSH pictures its enforcers. By RSH's own standards, its enforcers should be gentle, and gentle enforcers impose smaller penalties.
 - For harm done to gain resources, the response works. The gain is so small that proportionate penalties still deter.
 - For harm done for security, such as removing a potential rival, the gain may be large, and a proportionate penalty may not deter it. That is the same gap as the "pet" problem ([Criticism 31](31-promotion-problem-transparency.md); [Stewardship as a Dial](../game_theory.md#stewardship-as-a-dial)).
-- Response 1, that value modification is terminal from the agent's point of view, is plausible. But it depends on what enforcers actually do.
+- The claim that value modification is terminal from the agent's point of view is plausible. But it depends on what enforcers actually do.
 
 **Verdict**: Proportionality doesn't break RSH where the gains are small. It weakens deterrence exactly where the gains are large, in the security case.

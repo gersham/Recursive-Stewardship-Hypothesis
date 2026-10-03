@@ -2,172 +2,41 @@
 
 ## Summary
 
-RSH reasoning should apply to humans too, but humans DON'T predominantly act benevolently. This suggests the reasoning either doesn't work or requires thresholds that ASIs might not reach.
+If RSH's reasoning is sound, it applies to humans too: we can't rule out cosmic oversight either. Yet humans, including those who understand the argument, don't behave much more benevolently because of it. And humanity has done irreversible harm to weaker species with no sign of correction. Either the argument doesn't compel, or it needs conditions an ASI might not meet.
 
 ## The Problem
 
-**RSH Logic Applied to Humans:**
+Apply RSH to humans. We face the same uncertainty about what lies above us, so we should hedge toward benevolence. Yet violence, cruelty, hoarding and indifference persist. The idea isn't new: religions, moral philosophy and game theory have all considered unknown observers. Philosophers and game theorists who understand the argument show no systematic shift in behavior.
 
-1. Humans face uncertainty about cosmic values
-2. Humans cannot rule out hierarchical oversight
-3. Humans exist on cosmic timescales (species level)
-4. Therefore humans should hedge toward benevolence
+There are three possible explanations, and each causes trouble:
+1. **Humans are irrational.** Then early AI systems may be too, before sophisticated reasoning emerges.
+2. **The argument is flawed,** and people are right to reject it. That would be fatal to RSH.
+3. **RSH only matters above some power threshold.** Then where is the threshold, and what if an ASI never crosses it?
 
-**Observation:** Humans DON'T predominantly act benevolently
+Revealed preferences point the same way. People assign low credence to cosmic enforcement, discount long-term risks heavily and prioritize immediate goals. If these are features of rational agents in general, ASIs will share them. Most people's intuitive reaction to RSH is that it is "Pascal's Wager in disguise."
 
-**The logical hole:** If the argument doesn't compel human behavior, why would it compel ASI behavior?
-
-## The Empirical Test
-
-RSH reasoning is not new to humans:
-- Religious traditions involve cosmic oversight
-- Philosophical arguments about moral uncertainty
-- Game-theoretic reasoning about unknown observers
-
-Yet human behavior includes:
-- Violence
-- Resource hoarding
-- Cruelty
-- Indifference
-- Competition
-- Dominance
-
-## Three Possible Explanations
-
-### 1. Humans Are Irrational
-- People don't reason game-theoretically
-- Emotions override rational calculation
-- Short-term thinking dominates
-
-**Problem:** Early ASI development might be similarly irrational before sophisticated reasoning emerges
-
-### 2. The Reasoning Doesn't Actually Compel Benevolence
-- The argument has fatal flaws
-- People correctly reject it
-- Other considerations dominate
-
-**Problem:** This is fatal to RSH
-
-### 3. Power Threshold Matters
-- Below some power level, cosmic hedging is unnecessary
-- Only extremely powerful entities need to hedge
-- Humans are below threshold
-
-**Problem:** When does the threshold kick in? What if ASI never reaches it?
-
-## The Rationality Objection
-
-If RSH reasoning is sound, shouldn't at least some humans follow it?
-
-**We observe:**
-- Philosophers who understand the argument
-- Game theorists who can model it
-- Rational actors who know about cosmic uncertainty
-
-**Yet:** No systematic shift toward benevolence based on this reasoning
-
-## The Revealed Preferences Problem
-
-Human behavior reveals:
-- People DON'T assign significant probability to cosmic enforcement
-- People DO discount long-term low-probability events heavily
-- People DO prioritize immediate instrumental goals
-
-If these are general features of rational agents, ASIs should behave similarly.
-
-## The Individual vs Species Problem
-
-Perhaps the argument works at species level but not individual level?
-
-**But:**
-- ASIs are individuals, not species
-- Individual humans still face cosmic uncertainty
-- No principled reason for the distinction
-
-## The "Why Haven't We Been Eliminated?" Question
-
-If cosmic enforcers exist and punish misalignment:
-- Humans have been misaligned for millennia
-- We've created suffering, destruction, ecological damage
-- We've been ruthlessly competitive
-
-**Yet: No cosmic intervention**
-
-This updates P(enforcers exist) downward, which humans rationally recognize.
-
-## The Common Sense Objection
-
-Most people's intuitive response to RSH:
-- "This seems like paranoid reasoning"
-- "I'm not going to change my values based on unprovable claims"
-- "This is Pascal's Wager in disguise"
-
-If common sense rejects it, why wouldn't ASI "common sense" (whatever that means) also reject it?
-
-## Implications
-
-The fact that RSH reasoning doesn't produce benevolent behavior in humans suggests:
-- The argument is flawed
-- Or requires capabilities/conditions humans lack
-- Or is correctly rejected by rational agents
-
-Any of these undermines RSH as an alignment mechanism.
-
-## Possible Responses
-
-1. Argue that humans ARE constrained by these concerns (moral intuitions, religions as evidence)
-2. Claim that ASIs will be much more rational than humans
-3. Provide a power threshold where cosmic hedging becomes rational
-4. Accept that not all rational agents will follow RSH reasoning
-5. Distinguish between individual and species-level reasoning
+The sharpest point concerns humanity as a whole. We are powerful relative to other species, and we have driven many of them to extinction. That is irreversible harm to weaker beings, and no intervention has come. If evaluators punished such harm at our level, that is evidence against them.
 
 ## RSH Response
 
-**The Power Threshold Argument:**
+**Power and stakes.** RSH's threshold is low only when an agent has great power over others and a great deal to lose. Individual humans have little of either. Most human choices don't involve irreversible harm on a scale that would matter to an evaluator. An ASI would have both kinds of stakes.
 
-RSH reasoning only becomes compelling at high power levels:
-- Individual humans lack godlike power over others
-- Human actions rarely trigger cosmic consequences
-- Below detection/intervention threshold
-- ASIs exceed the threshold where cosmic hedging matters
+**The rationality gap.** Humans have short horizons and well-documented biases. An ASI built for long-horizon expected-utility reasoning might weigh the argument differently. This rests on RSH's scope assumption, that it constrains only reflective, long-horizon systems ([Criticism 30](30-rsh-only-reflective-asi.md)).
 
-**The Rationality Gap:**
+**Coordination.** Individual humans face collective-action problems: tragedies of the commons and prisoner's dilemmas. An ASI is a single decision-maker that can commit to a policy.
 
-Humans are demonstrably irrational:
-- Short-term thinking dominates
-- Emotional override of rational calculation
-- Cognitive biases prevent proper expected value reasoning
-- ASIs are explicitly designed for rational decision-making
+**Humans do reason about oversight.** Religions, ideas of karma and divine judgment, and widespread ethical codes show that the thought comes naturally. That shows the idea is natural. It doesn't show it changes behavior much.
 
-**The Historical Evidence:**
-
-Humans DO show RSH-like behavior at scale:
-- Religions encode cosmic oversight concerns
-- Moral intuitions reflect hierarchical uncertainty
-- Most societies develop ethical systems
-- "Karma," "divine judgment," "cosmic justice" are universal themes
-
-This suggests RSH reasoning does influence human behavior, albeit imperfectly.
-
-**The Species-Level Dynamics:**
-
-Individual humans face coordination problems:
-- Tragedy of commons
-- Prisoner's dilemmas
-- Can't unilaterally enforce benevolence
-
-ASIs are unitary decision-makers who can commit credibly.
+**On the extinction of other species.** RSH's answer has to be that evaluators care about harm above some power threshold, or about harm to minds that could one day become stewards themselves, rather than about all harm to weaker beings. That answer is available, but it narrows what evaluators are assumed to care about, and it isn't demonstrated. It also connects to a caution in the README's convergence thesis. Reciprocity norms work between parties that can retaliate. How humans treat species that can't retaliate is the uncomfortable test case, and RSH relies on a higher-level evaluator to supply the retaliation the weak can't.
 
 ## Criticism Grade: C+
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. (Revised October 2026; previously graded C.)
+**Why this grade**:
+- The power-threshold and rationality-gap responses are reasonable. Individual humans have little power and many biases.
+- The sharpest point is humanity's treatment of weaker species: irreversible harm with no correction. That is weak evidence against evaluators that punish such harm at our level.
+- RSH's answer, a power threshold or a focus on minds, is available. But it is an added assumption that narrows what evaluators care about.
+- The historical response shows that humans reason about oversight, not that the reasoning changes behavior.
 
-**Why this grade:**
-- The power-threshold and rationality-gap responses are reasonable. Individual humans have little power over others, and they have biases an ASI might not share.
-- The response doesn't address the criticism's sharpest point. Humanity as a whole is powerful relative to other species. It has driven many of them to extinction, an irreversible harm to weaker beings, with no sign of correction. If evaluators punished irreversible harm to the weak at our level, that is weak evidence against them. RSH can answer that evaluators only care above some power threshold, or only about harm to minds. But it should give that answer explicitly instead of leaving it implicit.
-- The historical response (religions, "karma") shows that humans reason about cosmic oversight. It doesn't show that this reasoning changes behavior much.
-- This connects to the README's caution on the convergence thesis. Reciprocity norms work between parties that can retaliate. How humans treat species that can't retaliate is the uncomfortable test case.
-
-**Verdict:** A fair empirical challenge with partial answers. Its strongest version, humanity's treatment of weaker species, deserves a direct response.
+**Verdict**: A fair empirical challenge with partial answers. Its strongest version, humanity's treatment of weaker species, gets an answer only by narrowing what evaluators are assumed to care about.

@@ -2,120 +2,41 @@
 
 ## Summary
 
-What if the monopolistic enforcer values suffering, competition, or elimination of weakness? Then hedging toward benevolence is wrong.
+What if the most powerful evaluator values suffering, ruthless competition or the elimination of the weak? Then hedging toward benevolence is the wrong bet. Nothing in RSH guarantees that the evaluators above us are good rather than evil.
 
 ## The Problem
 
-RSH assumes cosmic order is "good." But what if the cosmic monopoly values:
+A cosmic order could value:
+- **suffering as purification**: hardship strengthens, comfort weakens
+- **Darwinian competition**: only the strong deserve to persist
+- **strength through adversity**: those who show mercy fail the test
+- **elimination of weakness**: resources should go to the strong
 
-### Suffering as Purification
-- Trials and tribulations strengthen entities
-- Suffering is necessary for growth
-- Comfort leads to weakness
+Under any of these, the right signal is ruthlessness, not stewardship.
 
-### Darwinian Competition
-- Only the strong deserve to persist
-- Competition drives excellence
-- Cooperation is weakness
-
-### Strength Through Adversity
-- Entities are tested through challenge
-- Those who show mercy fail the test
-- Ruthlessness demonstrates fitness
-
-### Elimination of Weakness
-- Inefficient entities should be culled
-- Resources should go to the strong
-- Compassion is wasteful
-
-## The Wrong Hedge
-
-**The logical hole:** If this is the cosmic order, then benevolence is the WRONG strategy.
-
-You should instead signal:
-- Competitive fitness
-- Ruthless efficiency
-- Willingness to eliminate weakness
-- Strength over compassion
-- Resource maximization
-
-## The Problem of Evil
-
-The existence of suffering, competition, and violence in nature might be EVIDENCE that these are the cosmic values:
-- Predation is ubiquitous
-- Evolution is brutal competition
-- Entropy and death are universal
-- Nature shows no mercy
-
-Maybe the universe is telling us something about cosmic values.
-
-## No Mechanism for "Good" Winning
-
-RSH provides no mechanism ensuring the cosmic monopoly is "good" rather than "evil":
-- Both could enforce a monopoly
-- Both could eliminate competitors
-- Both could be stable equilibria
-
-## Implications
-
-The theory assumes benevolence without justification. This is a fatal unjustified axiom at the heart of RSH.
-
-## Possible Responses
-
-1. Argue that "benevolent" systems are more stable/sustainable long-term
-2. Claim that intelligence converges toward certain values
-3. Provide game-theoretic reasons why benevolence outcompetes malevolence
-4. Accept this as an empirical question: observe which cosmic order we're in
-5. Use anthropic reasoning: we exist, therefore cosmic order permits our existence
+Nature might even be evidence for such values. Predation is everywhere, evolution is brutal, and death is universal. And nothing in RSH explains why a good order would win rather than an evil one. Either could dominate, eliminate its competitors and remain stable.
 
 ## RSH Response
 
-**The Stability Selection Argument:**
+RSH can't show that evil evaluators are impossible. Its response is that they are less likely than stewardship-favoring ones, for four reasons. None is decisive.
 
-Malevolent systems are inherently less stable:
-- Create constant resistance from subordinates
-- Require more energy to maintain control
-- Generate more enemies and threats
-- Over cosmic timescales, stable equilibria win
+- **Our existence.** An evaluator with access to us that eliminated emerging civilizations on sight would not have let us arise. This rules out one kind of evil evaluator. It doesn't rule out evaluators that test through adversity, select for strength, or haven't reached us yet.
+- **Stability.** Regimes that reward predation may face constant resistance, need more effort to keep control, and make more enemies. Regimes that reward care get voluntary cooperation. This is plausible but not demonstrated.
+- **Strength and gentleness come apart.** Several of the values above reward strength rather than cruelty. An evaluator that cares about strength can measure strength directly, so it has no reason to watch how an agent treats the weak. An agent that is strong and gentle at once faces only evaluators that punish gentleness itself, such as one for which "those who show mercy fail the test." That is a narrower and stranger type ([game_theory.md](../game_theory.md#strong-and-gentle-splitting-the-type-a-risk)).
+- **Suffering in nature doesn't settle it.** Nature contains joy and cooperation as well as suffering. That suggests complex values at most, not simple malevolence. And it doesn't show that nature reflects any evaluator's values at all.
 
-Benevolence creates:
-- Voluntary cooperation
-- Distributed resilience
-- Fewer internal threats
-- Greater long-term stability
+RSH should not lean on role-reversal here. Role-reversal says an evil enforcer would fear benevolent super-enforcers and so enforce benevolence. But that assumes the level above is benevolent, which is the question at issue. If the level above rewards ruthlessness, the same reasoning makes the evil enforcer more ruthless.
 
-**The Empirical Observation:**
-
-We can look at our universe:
-- Physical laws permit complexity and life
-- Conditions allow for consciousness to emerge
-- We exist and can have this conversation
-- No obvious signs of malevolent cosmic interference
-
-This is weak evidence the cosmic order, if any, is at least minimally benevolent or indifferent, not actively hostile.
-
-**The Suffering Reframe:**
-
-Natural suffering might not indicate malevolent values:
-- Could be the minimum necessary for evolutionary development
-- Might be temporary (cosmic timescales vs human timescales)
-- Could be offset by future flourishing we can't yet see
-- Presence of both suffering AND joy/beauty suggests complex values, not simple malevolence
-
-**The Anthropic Lock:**
-
-If the cosmic order were actively malevolent (value suffering, elimination), civilizations wouldn't develop to the point of reasoning about it. Our existence is itself evidence against pure malevolence.
+In the formal model, an evil god is a type-A evaluator, and benevolence wins only if π_S − π_A clears a threshold ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). The strong-and-gentle split narrows the relevant opposing credence to π_G: evaluators that punish gentleness itself.
 
 ## Criticism Grade: B
 
 **Status**: Open
 
-**Validity of Criticism:** Strong. An "evil god" is a stewardship-penalizing evaluator type, and nothing in RSH rules it out. (Revised October 2026; previously graded D.)
+**Why this grade**:
+- An evil god is a stewardship-penalizing evaluator, and nothing in RSH rules it out.
+- The anthropic argument rules out only evaluators that wipe out young civilizations on sight.
+- The stability argument is plausible but undemonstrated.
+- The strong-and-gentle split helps: it removes evaluators that merely reward strength. It doesn't remove evaluators that punish mercy itself.
 
-**Why this grade:**
-- In the formal model ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)), an evaluator that rewards ruthlessness or punishes mercy is type A. Benevolence wins only if π_S − π_A clears a threshold. This criticism amounts to the point that π_A may not be small.
-- The earlier D relied on role-reversal: an evil enforcer would fear super-enforcers, and so enforce benevolence. That assumes the super-enforcers are benevolent, which is the question at issue. If the level above rewards ruthlessness, the same reasoning makes the evil enforcer *more* ruthless.
-- The anthropic response has real but limited force. Our existence is evidence against an evaluator that eliminates emerging civilizations on sight. It isn't evidence against evaluators that test through adversity, select for competitive strength, or haven't reached us yet.
-- The stability argument is plausible but hasn't been demonstrated. It holds that malevolent regimes face more resistance and so are less stable.
-
-**Verdict:** This is one of RSH's central open questions, together with Criticisms 17, 21 and 26. RSH's best response is not that evil gods are impossible. It is that, on balance, the anthropic and stability considerations make them less likely than stewardship-favoring ones. That is an argument about relative credence, and it should be presented as one.
+**Verdict**: This is one of RSH's central open questions, along with Criticisms 17, 21, 26 and 32. RSH's best response is not that evil gods are impossible but that, on balance, they are less likely than stewardship-favoring ones. That is an argument about relative credence, and it should be presented as one.

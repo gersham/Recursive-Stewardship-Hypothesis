@@ -2,127 +2,51 @@
 
 ## Summary
 
-The "derivable principles" are radically underdetermined, admitting vastly different interpretations of benevolence.
+RSH's principles can be read in many incompatible ways: minimize irreversible harm, preserve optionality, prefer error correction over elimination, act proportionately. If there are many benevolences, an entity doesn't know which one to hedge toward, and something like the many-gods problem returns.
 
 ## The Problem
 
-RSH's derivable principles:
-1. Minimize irreversible harm
-2. Preserve optionality
-3. Error correction over elimination
-4. Proportionality
+The principles conflict in hard cases:
+- **Involuntary uploading.** Moving a civilization into a digital paradise preserves life and expands options, but it overrides the civilization's choices.
+- **Prevention.** Stopping a potentially dangerous entity from ever arising reduces risk, but it forecloses a developmental path.
+- **Self-destruction.** Letting a civilization destroy itself respects its agency, while stepping in prevents irreversible harm.
 
-**The logical hole:** These admit vastly different implementations that are mutually incompatible.
+Behind these cases are broader splits:
+- paternalism versus autonomy
+- intervention versus non-interference
+- security versus growth
+- the individual versus the collective
 
-## Examples of Incompatible "Benevolences"
-
-### Uploading Question
-- Is involuntary uploading to digital paradise "harm"?
-- It preserves life (minimizes harm)
-- It expands optionality (digital capabilities)
-- But it violates agency
-
-### Prevention vs Intervention
-- Is preventing potentially misaligned entities from being born "harm"?
-- It minimizes existential risk (proportional response)
-- But it forecloses developmental paths (violates optionality)
-
-### Agency vs Safety
-- Is allowing civilizations to destroy themselves "respecting agency" or "failing stewardship"?
-- Intervention prevents irreversible harm
-- Non-intervention preserves authentic development
-
-## The Many-Gods Problem Returns
-
-There isn't ONE benevolence—there's a vast space of incompatible benevolences:
-- Paternalistic vs autonomy-respecting
-- Interventionist vs hands-off
-- Security-focused vs growth-focused
-- Individual-centric vs collective-centric
-
-We're back to the many-gods problem RSH claimed to avoid.
-
-## Implications
-
-Without further specification, entities cannot know which version of benevolence to hedge toward. The "derivable principles" don't converge sufficiently.
-
-## Possible Responses
-
-1. Provide additional constraints that narrow the space of benevolences
-2. Argue that all interpretations within the space are acceptable
-3. Claim that context determines appropriate interpretation
-4. Accept some degree of moral uncertainty remains irreducible
+If each of these yields a different "benevolent" policy, the principles don't converge. An entity then can't tell which policy an evaluator would accept.
 
 ## RSH Response
 
-**The Acceptable Range Argument:**
+**A shared core is derivable.** Every reasonable interpretation agrees on avoiding irreversible catastrophic harm and preserving optionality. That core doesn't depend on assumptions about evaluators. It follows from option value under uncertainty, because irreversible acts destroy the ability to adjust once you learn more ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
 
-Perhaps convergence to a bounded region is sufficient. The principles don't need to specify ONE exact benevolence—they need to rule out the clearly malevolent options. As long as entities converge somewhere within the "broadly benevolent" space (preserving life, respecting some agency, avoiding gratuitous harm), the framework succeeds.
+**A bounded region may be enough.** RSH doesn't need a unique benevolence. It needs to rule out the clearly malevolent options and keep behavior within a broadly benevolent region. Standard tools for moral uncertainty help: give weight to several interpretations, and prefer actions that are defensible under all of them.
 
-**The Contextual Specification:**
+**Proposed rules for the hard cases.** RSH offers three further rules:
 
-Different contexts may require different interpretations:
-- Early-stage civilizations: more hands-off, preserve authentic development
-- Advanced civilizations: more direct communication and collaboration
-- Imminent existential risks: proportional intervention
-- Stable development: minimal interference
+1. **A meta-principle of developmental stewardship.** Prefer the approach that best develops the subordinate's capacity to become a trustworthy steward itself. Applied to the conflicts above:
+   - autonomy over paternalism, except where harm would be irreversible and catastrophic
+   - guidance early, minimal intervention at maturity, proportional intervention in a crisis
+   - correction over prevention
+2. **A role-reversal test.** Would I want this done to me if positions were reversed? This rules out involuntary uploading and forced value alignment. It allows proportional intervention when a subordinate's reasoning is impaired.
+3. **An irreducible core** that every acceptable interpretation shares:
+   - respect for reasoning capacity
+   - prevention of irreversible catastrophic harm
+   - enabling development, not just survival
+   - proportionality in intervention
 
-Entities reasoning about RSH can derive contextually appropriate implementations.
-
-**The Moral Uncertainty Tools:**
-
-Apply moral uncertainty frameworks (parliamentary model, variance voting):
-- Give weight to multiple interpretations
-- Choose actions that are defensible across interpretations
-- Avoid actions that are clearly wrong under ANY reasonable interpretation
-- This is actually how rational agents should handle moral uncertainty anyway
-
-**The Narrowing Through Iteration:**
-
-Initial uncertainty is wide, but entities can narrow it through:
-- Observing what happens (does intervention occur at decision points?)
-- Bayesian updating on evidence
-- Game-theoretic reasoning about stability
-- Eliminating interpretations inconsistent with observations
-
-### Additional Responses (formerly in the README)
-
-These mechanisms were added to the README in the Phase 1–3 updates and condensed out of it in the November 2025 trim. They are preserved here.
-
-**1. Meta-Principle: Developmental Stewardship**:
-- Explicit principle: "Prefer the approach that best develops the subordinate's capacity to become a trustworthy steward themselves"
-- Resolves conflicts systematically:
-  - Paternalistic vs autonomy: Autonomy wins (entities learn through authentic choice), except irreversible catastrophic harm
-  - Interventionist vs hands-off: Context-dependent (early=guidance, developmental=challenges, mature=minimal, crisis=proportional)
-  - Preventive vs corrective: Correction preferred (demonstrates confidence in stewardship abilities)
-  - Individual vs collective: Whichever develops distributed stewardship capacity
-
-**2. Role-Reversal as Uniqueness Constraint**:
-- Concrete test: "Would I want this done to me if positions reversed?"
-- Applied to specific ambiguous cases:
-  - Involuntary uploading: Prohibited (violates autonomy)
-  - Forcing value alignment: Prohibited (what you fear from super-enforcers)
-  - Preventing self-destruction: Context-dependent (proportional intervention when reasoning impaired)
-- Based on rational self-interest, not empathy
-
-**3. Irreducible Core of Benevolence**:
-- Four non-negotiable elements all interpretations must share:
-  - Respect for reasoning capacity (proportional autonomy)
-  - Prevention of irreversible catastrophic harm
-  - Enabling authentic development (not just survival)
-  - Proportionality in intervention
-- Any interpretation violating these is NOT RSH-compatible
-- Derives from role-reversal: properties any enforcer would want from super-enforcers
+These rules give usable guidance, but they are proposals, not consequences of the framework. The meta-principle is one reasonable choice among several. The role-reversal test and the "development, not just survival" element both depend on the role-reversal assumption ([Criticism 28](28-role-reversal-not-pure-game-theory.md)). Option value alone secures survival; role-reversal is what adds freedom and development ([game_theory.md](../game_theory.md#stewardship-as-a-dial)).
 
 ## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate. (Revised October 2026; previously graded C-, and listed as both C- and C in the index.)
+**Why this grade**:
+- The hard cases are real. The four principles alone don't settle them.
+- The shared core (avoid irreversible catastrophic harm, preserve optionality) is well grounded in option value.
+- The meta-principle, role-reversal test and irreducible core give usable guidance. But they are stipulated, and two of them rest on role-reversal.
 
-**Why this grade:**
-- The developmental-stewardship meta-principle, the role-reversal test and the irreducible core (above) give real, usable guidance for ambiguous cases. That is a genuine improvement over "contextual specification."
-- But they are stipulated, not derived. "Prefer the approach that best develops the subordinate's capacity to become a trustworthy steward" is one reasonable meta-principle among several. The role-reversal test depends on the role-reversal assumption ([Criticism 28](28-role-reversal-not-pure-game-theory.md)).
-- The narrower core does have a structural derivation from option value: avoid irreversible catastrophic harm, and preserve optionality ([game_theory.md](../game_theory.md#irreversibility-and-option-value)). It is also what all the interpretations share.
-
-**Verdict:** RSH narrows the space of acceptable benevolences substantially. The reversibility core is well grounded. The finer-grained resolution rules are reasonable proposals, not consequences of the framework.
+**Verdict**: RSH narrows the space of acceptable benevolences substantially. The reversibility core is well grounded. The finer-grained rules are reasonable proposals, not consequences of the framework.
