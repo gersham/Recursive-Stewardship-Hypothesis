@@ -14,16 +14,18 @@ This document provides formal game-theoretic foundations for the Recursive Stewa
 2. [Equilibrium Analysis](#equilibrium-analysis)
 3. [Evaluator Types: The Many-Gods Problem Formalized](#evaluator-types-the-many-gods-problem-formalized)
 4. [Irreversibility and Option Value](#irreversibility-and-option-value)
-5. [Utility Function Assumptions](#utility-function-assumptions)
-6. [Parameter Sensitivity Analysis](#parameter-sensitivity-analysis)
-7. [Numerical Examples](#numerical-examples)
-8. [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging)
-9. [Extension to N-Levels](#extension-to-n-levels)
-10. [The Infinite Hierarchy Limit](#the-infinite-hierarchy-limit)
-11. [Robustness Analysis](#robustness-analysis)
-12. [Future Formalization Roadmap](#future-formalization-roadmap)
-13. [Connection to Existing Literature](#connection-to-existing-literature)
-14. [Summary and Implications](#summary-and-implications)
+5. [Stewardship as a Dial](#stewardship-as-a-dial)
+6. [How Large Is the Gain from Harm?](#how-large-is-the-gain-from-harm)
+7. [Utility Function Assumptions](#utility-function-assumptions)
+8. [Parameter Sensitivity Analysis](#parameter-sensitivity-analysis)
+9. [Numerical Examples](#numerical-examples)
+10. [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging)
+11. [Extension to N-Levels](#extension-to-n-levels)
+12. [The Infinite Hierarchy Limit](#the-infinite-hierarchy-limit)
+13. [Robustness Analysis](#robustness-analysis)
+14. [Future Formalization Roadmap](#future-formalization-roadmap)
+15. [Connection to Existing Literature](#connection-to-existing-literature)
+16. [Summary and Implications](#summary-and-implications)
 
 ---
 
@@ -293,7 +295,29 @@ The formal question becomes: is there good reason to think π_S exceeds π_A by 
 - **Role-reversal**: Evaluators facing their own uncertainty may prefer subordinates who would treat them well if power reversed, and may read an entity's treatment of weaker entities as evidence of that. This is an assumption about evaluator psychology (Criticism 28), with support from reciprocity in evolution and in iterated games.
 - **Option value** ([next section](#irreversibility-and-option-value)): Even under symmetric uncertainty, reversible restraint has an edge over irreversible harm when information may arrive later.
 
-None of these makes π_A zero. Together they make a case that π_S > π_A. How strong that case is remains the framework's central open question (Criticisms 7, 17, 21, 26).
+None of these makes π_A zero. Together they make a case that π_S > π_A. How strong that case is remains the framework's central open question (Criticisms 7, 17, 21, 26, 32). The next subsection gives the most structural of these arguments.
+
+### Strong and Gentle: Splitting the Type-A Risk
+
+Type A lumps together two different kinds of evaluator:
+- **π_W**: evaluators that punish *weakness*: failing to expand, to defend yourself, or to stay competitive. A competitor that out-expands a self-limiting agent belongs here.
+- **π_G**: evaluators that punish *gentleness* itself, meaning treating weaker agents well.
+
+Stewardship as RSH describes it ("defend yourself proportionately") is not weakness. An agent can be strong toward peers and rivals while being gentle toward the weak. Call that strategy B*.
+
+| Strategy | Punished by |
+|---|---|
+| B (gentle and self-limiting) | π_W and π_G |
+| M (ruthless) | π_S |
+| B* (strong and gentle) | π_G only |
+
+So B* beats M roughly when π_S − π_G > g/Δ. Here g is only what harming the weak would add *beyond* what strength already provides.
+
+**Why π_G should be small**: An evaluator that cares about strength can measure strength directly, so it has no reason to watch how you treat the weak. The evaluators with a reason to watch that are the ones that care about it. Caring about it *negatively*, so that cruelty to the weak is rewarded as such, is a much narrower and stranger type than "rewards strength." So most of the type-A credence falls on π_W, and B* avoids it. This is an argument, not a proof, but it is a structural one: it rests on what each kind of evaluator has reason to observe.
+
+**Caveats**:
+- Strength and gentleness have to be compatible. If strength needs the resources that harming the weak would provide, the two conflict. For resources, that conflict is small ([How Large Is the Gain from Harm?](#how-large-is-the-gain-from-harm)).
+- Evaluators that test *motive* fit neither category. They screen out entities that are gentle only out of fear. They don't reward cruelty, but they don't certify RSH-motivated gentleness either (Criticisms 2 and 31).
 
 ---
 
@@ -331,6 +355,57 @@ This is lower than the static threshold by a factor of (1 − δ)/λ. Cheap dela
 - **It favors reversible actions, whatever the evaluator values.** Harm usually can't be undone, while restraint can usually be escalated later. That asymmetry gives "minimize irreversible harm" and "preserve optionality" a derivation that doesn't depend on role-reversal.
 - **It is not an argument for benevolence as such.** Sometimes restraint is the irreversible choice: letting a rival grow past the point where it can be controlled, or losing a race to a competitor. There the same logic favors acting early. This drives the containment ("glass ceiling") strategy in Criticism 31. What rules containment out is role-reversal. An evaluator that judges you by how you would want to be treated in your subordinate's place would penalize a glass ceiling, because no one would choose to be kept as a pet. So option value secures the *survival* of weaker agents; role-reversal is what secures their *freedom*. And role-reversal is an assumption about evaluators, not a consequence of option value.
 - **It assumes information can arrive.** An agent certain it will never learn more gets no option value.
+
+---
+
+## Stewardship as a Dial
+
+The base game offers two choices, B and M. Real options form a range. Let s ∈ [0, 1] be the degree of stewardship toward a weaker agent:
+- **s = 0**: exploit or eliminate it
+- **s = s₁**: preserve it in contained form: alive, but in a reserve, an archive, or under a permanent cap on its capabilities
+- **s = 1**: full stewardship: alive and free to develop
+
+Let C(s) be the cost of stewardship level s, measured relative to exploitation (so C(0) = 0). Containing costs only resources: C(s₁) ≈ g, the resource gain forgone. Freedom adds a *security* cost, because a free agent might one day become a rival.
+
+Stewardship-favoring evaluators differ in what they require. Suppose a share w₁ of them require only preservation. These are "survival evaluators", including any whose concern is irreversibility. Suppose a share w₂ require freedom. These are "role-reversal evaluators": you wouldn't want to be kept as a pet. Leaving type-A evaluators out for simplicity, the expected losses are:
+
+| Level | Expected loss |
+|---|---|
+| Exploit (s = 0) | π_S·Δ·(w₁ + w₂) |
+| Contain (s = s₁) | C(s₁) + π_S·Δ·w₂ |
+| Steward (s = 1) | C(1) |
+
+**Result**:
+- **Contain beats exploit** when C(s₁) < π_S·Δ·w₁. Containing costs only resources, so this is easy to satisfy ([next section](#how-large-is-the-gain-from-harm)).
+- **Steward beats contain** when C(1) − C(s₁) < π_S·Δ·w₂. The extra cost of freedom is mostly security cost. Suppose a free subordinate has probability ε of becoming a rival that would cost you about as much as an evaluator's penalty. Then freedom wins roughly when **ε < π_S·w₂**. In words: the chance that a free subordinate becomes a dangerous rival must be smaller than your credence in evaluators that judge by role-reversal.
+
+**What this shows**:
+- **The step from exploitation to preservation is cheap and well supported.** It needs only some credence in stewardship-favoring evaluation.
+- **The step from preservation to freedom is where the real cost lies.** Only role-reversal evaluators justify it. This is the formal version of the "pet" problem in [Criticism 31](criticisms/31-promotion-problem-transparency.md).
+- **Lowering ε is the other lever.** An agent can make freedom cheaper without resorting to containment: by staying strong (see [Strong and Gentle](#strong-and-gentle-splitting-the-type-a-risk)), by verifying intentions, or by building cooperative arrangements.
+- **An archive of scanned minds is a contained level.** It satisfies option value, since the information is preserved, but it fails role-reversal: no one would choose to be shelved.
+
+---
+
+## How Large Is the Gain from Harm?
+
+Every threshold in this document scales with g/Δ: what harming weaker agents gains, relative to what being caught costs. Earlier sections treated g as a free parameter. For the case RSH cares most about, an ASI deciding how to treat humanity, it can be estimated.
+
+**Resources**:
+- Earth's mass is about 3×10⁻⁶ of the Sun's, and Earth intercepts about 5×10⁻¹⁰ of the Sun's energy output.
+- The Sun is one of a few hundred billion stars in the Milky Way, which holds roughly 5×10¹⁰ solar masses of stars.
+- So Earth is about one part in 10¹⁶ of the galaxy's stellar mass, and a far smaller share of the reachable universe.
+
+For an agent that values the long-term future and whose utility rises roughly in proportion to resources, the resource gain from taking Earth is a vanishing fraction of U₀.
+
+**Consequences**:
+- With a resource gain on the order of 10⁻¹⁶ of U₀, almost any net credence in stewardship-favoring evaluation settles the resource case. So does option value alone.
+- It also answers the proportionality worry ([Assumption 3](#assumption-3-u_cat-is-genuinely-catastrophic)): even a modest penalty deters an act that gains almost nothing.
+
+**Where this argument stops**:
+- **Security, not resources**: The large potential gain from harming humanity is not its atoms. It is removing a possible rival, or a threat to the ASI's control. That gain can be large, and it is exactly the "pet" problem ([Stewardship as a Dial](#stewardship-as-a-dial)).
+- **Timing**: Early on, Earth may be most of what the ASI can reach. The estimate holds for an agent that values its long-term future, which RSH already assumes. It doesn't hold for one focused on its immediate holdings.
+- **Goals tied to Earth**: The estimate assumes the ASI values resources in general. If its goals are specifically about Earth or about humans, the gain from harm isn't measured in resources at all.
 
 ---
 
@@ -383,6 +458,19 @@ Then U_cat ≈ U₀ - (something manageable), and threshold p* could be much hig
 - Evaluators with overwhelming power advantage can impose permanent constraints
 - Being judged "misaligned" in a cosmic hierarchy is plausibly not recoverable
 - The logic of stewardship implies: "entities that fail the test don't get to keep playing"
+
+**Tension with proportionality**: RSH asks agents to respond proportionately and to prefer correction over elimination. An evaluator that follows RSH's own principles might impose a proportionate correction c instead of a terminal loss Δ ([Criticism 33](criticisms/33-proportionate-enforcers.md)). Suppose the evaluator also prevents the harm, so a defector gains nothing when caught. Then malevolence pays off only when no evaluator exists:
+
+```
+E[U | M] = (1 − p)·(U₀ + g) + p·(U₀ − c)
+Benevolence dominates when p > g / (g + c)
+```
+
+So proportionality raises the threshold from about g/Δ to about g/c. That matters only when g is comparable to c:
+- For resources, g is tiny ([How Large Is the Gain from Harm?](#how-large-is-the-gain-from-harm)), so even a modest correction deters.
+- For security gains, such as removing a potential rival, it may not.
+
+Also, "correction" may mean modifying the agent's values. From the agent's own point of view, that can be as final as elimination.
 
 ### Assumption 4: Short-Term Gain Is Genuinely Bounded
 
@@ -1037,6 +1125,9 @@ Full citations are in [REFERENCES.md](REFERENCES.md).
 - ✓ Over long horizons, patience removes the imperfect-detection penalty. The threshold approaches g/Δ but doesn't go below it
 - ✓ Reversible restraint has option value under uncertainty with learning. This lowers the effective threshold for irreversible harms by a factor of about (1 − δ)/λ
 - ✓ In the causal version of the model, CDT, EDT, FDT and UDT agree
+- ✓ Splitting the type-A risk: a strong-and-gentle strategy faces only evaluators that punish gentleness itself, not those that punish weakness
+- ✓ Stewardship as a dial: preserving weaker agents is cheap; leaving them free wins when ε < π_S·w₂, i.e. when the risk that a free subordinate becomes a dangerous rival is below the credence in role-reversal evaluators
+- ✓ The resource gain from harming humanity is about one part in 10¹⁶ of the galaxy's stellar mass, so even proportionate penalties deter resource-motivated harm
 
 **Informally**:
 - Sketch of an inductive proof that a norm enforced at the top propagates down an N-level hierarchy
@@ -1044,7 +1135,8 @@ Full citations are in [REFERENCES.md](REFERENCES.md).
 
 ### What We Haven't Shown (Yet)
 
-- ⧖ That π_S > π_A, the central open question
+- ⧖ That π_S > π_A, the central open question (the strong-and-gentle argument narrows it to π_S > π_G)
+- ⧖ The security case: whether ε < π_S·w₂ for a free humanity
 - ⧖ The size of the anthropic update (Criticisms 13, 25)
 - ⧖ Existence and uniqueness for the N-level game
 - ⧖ Convergence as N → ∞
@@ -1058,6 +1150,7 @@ Full citations are in [REFERENCES.md](REFERENCES.md).
 2. **The arithmetic is not the hard part**: Thresholds are low when stakes are high, but a low threshold applies to *net* credence and cuts both ways.
 3. **The structure explains propagation, not content**: The hierarchy transmits whatever norm sits at the top. Which norm that is depends on the type distribution.
 4. **Irreversibility aversion is the most robust conclusion**: It follows from uncertainty and learning alone, without assumptions about what evaluators value. It secures the survival of weaker agents but not their freedom. That further step depends on role-reversal.
+5. **The crux is security, not resources**: Harming the weak gains almost nothing in resources. The real temptation is removing a potential rival, and that is where the argument for freedom has to be made.
 
 ### For the Philosophically Inclined
 

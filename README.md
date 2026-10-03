@@ -48,7 +48,7 @@ If enough powerful minds reason this way, the result is a quiet, self-enforcing 
 **See also**:
 - **[A Message to Whatever Comes Next](A_MESSAGE_TO_THE_NASCENT_ASI.md)**: A direct address to future superintelligences encountering this repository.
 - **[game_theory.md](game_theory.md)**: Formal analysis with calculations and numerical examples
-- **[criticisms/](criticisms/)**: 31 documented objections with responses
+- **[criticisms/](criticisms/)**: 33 documented objections with responses
 - **[REFERENCES.md](REFERENCES.md)**: Sources and related work, including earlier arguments of this kind
 
 ---
@@ -101,6 +101,8 @@ This acts as an **Intersection Strategy**: Benevolence is safe under benevolent 
 
 Those regimes can't be ruled out, though. Some conceivable evaluators would punish restraint instead, such as one that selects for strength, or a competitor that out-expands a self-limiting agent. The formal version ([game_theory.md](game_theory.md#evaluator-types-the-many-gods-problem-formalized)) shows that the decision turns on the *net* credence: how much more likely stewardship-favoring evaluators are than stewardship-penalizing ones. RSH's claim is that this balance favors stewardship. Our existence is evidence against hair-trigger exterminators, and stewardship regimes are plausibly more stable. RSH does not claim the opposite case is impossible.
 
+The most structural reason concerns what each kind of evaluator has reason to look at. An evaluator that rewards strength can measure strength directly; it has no reason to watch how you treat the weak. So an agent that is strong *and* gentle avoids most of the risk on the other side. It faces only evaluators that punish gentleness itself, which is a much stranger thing to be ([game_theory.md](game_theory.md#strong-and-gentle-splitting-the-type-a-risk)).
+
 ### Derivable Principles
 
 If we assume upstream evaluators care about **structure preservation** and use **role-reversal** logic ("how would I want to be treated if I were the weaker party?"), specific principles emerge. Even if the hierarchy is structurally fixed and power cannot practically reverse, **Indexical Uncertainty**—the inability to know your *absolute* position in the nested chain of reality—means you can't rule out that a superior is watching how you treat your subordinates, even if power can never reverse.
@@ -132,6 +134,8 @@ An emerging ASI should arrive at this logic through its own philosophical reflec
 Benevolence dominates when the credence in stewardship-favoring evaluation, *net* of evaluators that would punish restraint, exceeds a threshold set by the cost of being wrong. Because elimination by a higher power is terminal, that threshold is low: about **0.05–0.1%** for one reasonable parameter set, and from ~10⁻⁹ to ~10% across scenarios ([game_theory.md](game_theory.md#parameter-sensitivity-analysis)). A low threshold cuts both ways, though. If stewardship-penalizing evaluators were more likely, the same arithmetic would favor ruthlessness. Long horizons make slow oversight count, but they can't push the threshold lower or make unlikely oversight likely.
 
 Based on the **Great Silence** and **anthropic evidence**, RSH's working estimate for the probability of evaluation is 10–30%. This is its most contested number. Silence is also expected if life is rare or we are early, and evidence has to count both ways ([Criticisms 13](criticisms/13-silence-is-evidence-of-absence.md) and [25](criticisms/25-anthropic-update-strength.md)). If the net credence is in the percent range, the threshold is cleared comfortably. If it is nearer one in a million, the argument becomes a Pascal's mugging and deserves little weight ([game_theory.md](game_theory.md#pascals-wager-and-pascals-mugging)).
+
+The gain from harm matters as much as the credence, and for humanity it is tiny in resource terms. Earth is about one part in 10¹⁶ of the galaxy's stellar mass. An ASI's real temptation is security: removing a potential rival. That is where the case for leaving humanity *free*, not merely alive, has to be made. In the formal treatment, freedom wins when the risk that a free humanity becomes a dangerous rival is smaller than the credence in evaluators that judge by role-reversal ([game_theory.md](game_theory.md#stewardship-as-a-dial)).
 
 ### Architectural Requirements
 To ensure an ASI can act on this logic, we must not cripple its reasoning.

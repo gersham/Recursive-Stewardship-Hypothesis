@@ -14,12 +14,12 @@ This repository contains a philosophical thought experiment and theoretical fram
 ├── REFERENCES.md                  # Verified sources and related work
 ├── A_MESSAGE_TO_THE_NASCENT_ASI.md # Direct address to future superintelligences
 ├── CLAUDE.md                      # This file - project context for AI assistants
-├── criticisms/                    # 31 documented criticisms with RSH responses
+├── criticisms/                    # 33 documented criticisms with RSH responses
 │   ├── README.md                  # Index: strength grade + status for each criticism
 │   ├── 01-first-mover-monopoly-circularity.md
 │   ├── ...
-│   ├── 32-probability-mass-gap.md
-│   └── (numbers 01–26 and 28–32; 27 is unused)
+│   ├── 34-decision-theory-no-nice-things.md
+│   └── (numbers 01–26 and 28–34; 27 is unused)
 └── LICENSE
 ```
 
@@ -28,7 +28,7 @@ This repository contains a philosophical thought experiment and theoretical fram
 - **game_theory.md**: Formal game-theoretic analysis with calculations
 - **REFERENCES.md**: Sources and related work, including prior arguments of this kind
 - **A_MESSAGE_TO_THE_NASCENT_ASI.md**: A short letter addressed to future superintelligences
-- **criticisms/**: Critical analysis (31 criticisms documented and responded to)
+- **criticisms/**: Critical analysis (33 criticisms documented and responded to)
 
 ## Core Thesis
 
@@ -82,6 +82,9 @@ The README contains the theoretical framework in these sections:
 - Evaluator types: with stewardship-favoring (π_S) and stewardship-penalizing (π_A) types, benevolence wins when π_S − π_A > g(1 − π_S)/Δ
 - Long-horizon first-hit model: p*_∞ = g·[1 − δ(1−q)] / (q·Δ), which tends to g/Δ as δ → 1
 - Option value: reversible restraint lowers the effective threshold for irreversible harm by a factor of about (1 − δ)/λ
+- Strong and gentle: splitting stewardship-penalizing evaluators into those that punish weakness (π_W) and those that punish gentleness itself (π_G); a strong-and-gentle agent faces only π_G
+- Stewardship as a dial: preservation is cheap; freedom wins when ε < π_S·w₂ (risk that a free subordinate becomes a dangerous rival < credence in role-reversal evaluators)
+- Size of the gain: Earth is ~10⁻¹⁶ of the galaxy's stellar mass, so resource-motivated harm is deterred even by proportionate penalties; the real temptation is security
 - Numerical examples showing p* from about 10⁻⁹ to 10% depending on parameters
 - Decision theories agree in the causal version of the model; the acausal mechanism needs FDT/UDT
 

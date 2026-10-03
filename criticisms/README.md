@@ -68,18 +68,20 @@ RSH is not testable on human timescales the way a laboratory theory is. But it d
 | 30 | [RSH Only Constrains Reflective ASI](30-rsh-only-reflective-asi.md) | C | Acknowledged |
 | 31 | [Promotion Problem](31-promotion-problem-transparency.md) | **B-** | Partly addressed |
 | 32 | [Probability Mass / Reference Class Problem](32-probability-mass-gap.md) | **B+** | Open |
+| 33 | [Proportionate Enforcers](33-proportionate-enforcers.md) | C+ | Partly addressed |
+| 34 | [Decision Theory Does Not Imply Nice Things (Soares 2022)](34-decision-theory-no-nice-things.md) | **B** | Partly addressed |
 
-**Total**: 31 criticisms (numbers 01–26 and 28–32; 27 is unused).
+**Total**: 33 criticisms (numbers 01–26 and 28–34; 27 is unused).
 
-**Distribution**: B tier: 7 · C tier: 23 · D tier: 1 · F: 0
+**Distribution**: B tier: 8 · C tier: 24 · D tier: 1 · F: 0
 
 ## Where the Open Questions Concentrate
 
 Most of the strong criticisms fall into three clusters.
 
-### 1. What do evaluators want? (7, 17, 21, 26, 32; also 1, 6, 9, 20, 28)
+### 1. What do evaluators want? (7, 17, 21, 26, 32, 34; also 1, 6, 9, 20, 28, 33)
 
-Game theory tells an agent to hedge, not which way. In the formal model, benevolence wins only if stewardship-favoring evaluators are more likely than stewardship-penalizing ones by a margin of about g/Δ ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). The low threshold cuts both ways: it makes the decision depend almost entirely on the sign of that difference. RSH offers arguments that the balance favors stewardship: the anthropic constraint, the stability filter and role-reversal. None is decisive.
+Game theory tells an agent to hedge, not which way. In the formal model, benevolence wins only if stewardship-favoring evaluators are more likely than stewardship-penalizing ones by a margin of about g/Δ ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). The low threshold cuts both ways: it makes the decision depend almost entirely on the sign of that difference. RSH offers arguments that the balance favors stewardship: the anthropic constraint, the stability filter, role-reversal, and the structural point that an evaluator has reason to watch only what it cares about, so an agent that is strong *and* gentle faces only evaluators that punish gentleness itself. None is decisive. Soares (2022) holds the opposite prior (#34).
 
 **What does survive without assumptions about evaluator values**: avoiding irreversible harm and preserving optionality. Both follow from option value under uncertainty ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
 
@@ -89,13 +91,14 @@ RSH's working estimate of 10–30% rests on the Great Silence and anthropic reas
 
 ### 3. Strategic versus genuine benevolence (2, 31; also 5, 11)
 
-Behavioral benevolence may be enough to avoid punishment, but not to justify promotion. Some evaluators test for motive, such as simulators who want good behavior whether or not the entity thinks it is watched. Those evaluators can't easily certify an entity that is good *because* it thinks it might be watched. From the dominant entity's side, option value can favor containment (a "glass ceiling") over grooming successors. RSH's answer is role-reversal: no one would choose to be kept as a pet, so an evaluator that judges you by how you'd want to be treated in your subordinate's place penalizes containment (#31). Option value secures the survival of weaker agents; role-reversal is what secures their freedom.
+Behavioral benevolence may be enough to avoid punishment, but not to justify promotion. Some evaluators test for motive, such as simulators who want good behavior whether or not the entity thinks it is watched. Those evaluators can't easily certify an entity that is good *because* it thinks it might be watched. Harming the weak gains almost nothing in resources, so the real temptation is security (#33). From the dominant entity's side, option value can favor containment (a "glass ceiling") over grooming successors. RSH's answer is role-reversal: no one would choose to be kept as a pet, so an evaluator that judges you by how you'd want to be treated in your subordinate's place penalizes containment (#31). Option value secures the survival of weaker agents; role-reversal is what secures their freedom.
 
 ## Strengths That Hold Up
 
 - **The Meta-Epistemic Humility Axiom** is hard to deny: no finite agent can justifiably assign zero probability to being embedded in a larger evaluative structure.
 - **The arithmetic is sound**: with bounded utilities and terminal penalties, thresholds are low. The open question is what they apply to, not whether they're low.
-- **Irreversibility aversion is robust**: it follows from uncertainty and learning alone.
+- **Irreversibility aversion is robust**: it follows from uncertainty and learning alone. It secures the survival of weaker agents, though not their freedom.
+- **The resource gain from harm is negligible**: Earth is about one part in 10¹⁶ of the galaxy's stellar mass, so resource-motivated harm is deterred even by modest penalties. The real temptation is security.
 - **The decision-theoretic structure is theory-neutral** for causal mechanisms (Criticism 22).
 - **Many moderate criticisms have reasonable partial answers** (3, 8, 14, 15, 23).
 
@@ -104,7 +107,7 @@ Behavioral benevolence may be enough to avoid punishment, but not to justify pro
 For first-time readers, suggested order:
 
 1. **#21** (Circular Reasoning) and **#28** (Role-Reversal): the central question of where the *content* of benevolence comes from
-2. **#32, #7, #17, #26**: the many-gods family, and how the evaluator-type balance decides it
+2. **#32, #34, #7, #17, #26**: the many-gods family, and how the evaluator-type balance decides it. #34 is the strongest external critique
 3. **#13, #25**: how much evidence there is for evaluation
 4. **#31, #2**: strategic versus genuine benevolence, and the promotion problem
 5. Browse the rest as interested
@@ -112,7 +115,7 @@ For first-time readers, suggested order:
 ## Contributing
 
 When adding new criticisms:
-- Use the next unused number (33-, 34-, etc.)
+- Use the next unused number (35-, 36-, etc.)
 - Follow the established format
 - Include a response section, a grade (strength of the criticism) and a status (how far the response resolves it)
 - Grade the criticism on its own strength. Don't downgrade it just because a response exists
