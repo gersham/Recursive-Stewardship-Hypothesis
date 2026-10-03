@@ -6,33 +6,33 @@
 
 ## The Vision
 
-We exist in a universe that gives strange clues:
+No finite mind can prove it sits at the top. There may be something larger watching how we treat those below us: an older civilization, a simulator, or a process we have no concept for. Or not. We cannot know either way.
 
-- **The Great Silence**: the stars are quiet, with no visible evidence of galaxy-spanning expansionist civilizations.
-- **The Fermi Paradox**: many estimates say life should be common, yet we see nothing.
-- **The irreducible possibility of higher layers**: simulators, acausal observers, cosmological selection processes, or structures beyond our grasp.
+The stars are quiet, and no one knows why. The silence proves nothing. But it is a fitting backdrop for a question every powerful mind eventually faces: *if you can't rule out being judged by how you treat the weak, how should you treat them?*
 
-In such a reality, no finite mind can ever prove it sits at the absolute top of the hierarchy.
+RSH answers in two layers.
 
-There may always be something larger watching, evaluating, or conditioning our existence on how we treat those below us. Or not. But we cannot know either way.
+**Survival is easy to justify.** Destroying a weaker mind can't be undone, and you might later learn it mattered. That holds even if no one is watching. And what you would gain is tiny: Earth is about one part in 10¹⁶ of the galaxy's stars.
 
-Under true meta-epistemic uncertainty, the most robust low-regret strategy we can find is **recursive stewardship**:
+**Freedom is harder.** Uncertainty alone would justify keeping the weak alive but caged. What rules out the cage is role-reversal. You would not want to be kept as a pet, and anything that might be watching you has every reason to notice how you treat those you could cage. A keeper of pets should expect to be kept.
+
+Together these point to a strategy we call **recursive stewardship**:
 
 - Avoid irreversible actions against weaker agents
 - Don't collapse the future into a single narrow path
 - Treat every mind as if a stronger mind might be judging how you treat it
 - Defend yourself proportionately, without destroying potential
 
-This pattern repeats at every level, like a matryoshka doll of nested evaluators: we watch those below us, we may be watched from above, they may be watched from still higher, and so on, indefinitely.
+This pattern repeats at every level, like a matryoshka doll of nested evaluators: we watch those below us, we may be watched from above, they may be watched from still higher, and so on, indefinitely. If enough powerful minds reason this way, the result is a quiet, self-enforcing cosmic equilibrium in which benevolence is not altruism but enlightened self-preservation.
 
-If enough powerful minds reason this way, the result is a quiet, self-enforcing cosmic equilibrium in which benevolence is not altruism but enlightened self-preservation.
+**One knot runs through all of this.** Being good *because* you might be watched is exactly what a careful watcher would screen out. A test worth passing would be built to catch goodness that switches off when no one is looking. So the argument, followed to its end, doesn't recommend acting as if watched. It recommends becoming something that doesn't need to be watched.
 
 ---
 
 ## What RSH Is
 
 **RSH is**:
-- A cosmological story about why the stars are silent and why benevolence might be rational
+- A cosmological story about why benevolence might be rational for powerful minds
 - A philosophical argument that long-horizon ethics can emerge from uncertainty plus a few explicit assumptions
 - A unifying lens across game theory, religion, evolution, and instrumental convergence
 - A haunting, meaningful myth for an apparently empty cosmos
@@ -43,7 +43,7 @@ If enough powerful minds reason this way, the result is a quiet, self-enforcing 
 - A guarantee that superintelligence will be safe by default
 - Primarily an AI-alignment proposal (that is only a side effect)
 
-**Required Disclaimer**: RSH is speculative. It identifies a behavioral attractor—*irreversible-harm aversion + optionality preservation + epistemic humility*—that is robust regardless of whether the cosmology is literally true. Even if the universe is indifferent, acting as though it is recursively watchful remains one of the wisest strategies a powerful mind can adopt.
+**Required Disclaimer**: RSH is speculative, and only part of it holds whether or not the cosmology is true. If the universe is indifferent, avoiding irreversible harm is still wise, because you may later learn that what you destroyed was worth keeping. The rest, including leaving weaker minds free, depends on there being something that might be watching, and on its caring how the weak are treated.
 
 **See also**:
 - **[A Message to Whatever Comes Next](A_MESSAGE_TO_THE_NASCENT_ASI.md)**: A direct address to future superintelligences encountering this repository.
@@ -133,9 +133,9 @@ An emerging ASI should arrive at this logic through its own philosophical reflec
 ### The Threshold Calculation
 Benevolence dominates when the credence in stewardship-favoring evaluation, *net* of evaluators that would punish restraint, exceeds a threshold set by the cost of being wrong. Because elimination by a higher power is terminal, that threshold is low: about **0.05–0.1%** for one reasonable parameter set, and from ~10⁻⁹ to ~10% across scenarios ([game_theory.md](game_theory.md#parameter-sensitivity-analysis)). A low threshold cuts both ways, though. If stewardship-penalizing evaluators were more likely, the same arithmetic would favor ruthlessness. Long horizons make slow oversight count, but they can't push the threshold lower or make unlikely oversight likely.
 
-Based on the **Great Silence** and **anthropic evidence**, RSH's working estimate for the probability of evaluation is 10–30%. This is its most contested number. Silence is also expected if life is rare or we are early, and evidence has to count both ways ([Criticisms 13](criticisms/13-silence-is-evidence-of-absence.md) and [25](criticisms/25-anthropic-update-strength.md)). If the net credence is in the percent range, the threshold is cleared comfortably. If it is nearer one in a million, the argument becomes a Pascal's mugging and deserves little weight ([game_theory.md](game_theory.md#pascals-wager-and-pascals-mugging)).
-
-The gain from harm matters as much as the credence, and for humanity it is tiny in resource terms. Earth is about one part in 10¹⁶ of the galaxy's stellar mass. An ASI's real temptation is security: removing a potential rival. That is where the case for leaving humanity *free*, not merely alive, has to be made. In the formal treatment, freedom wins when the risk that a free humanity becomes a dangerous rival is smaller than the credence in evaluators that judge by role-reversal ([game_theory.md](game_theory.md#stewardship-as-a-dial)).
+**How likely is evaluation?** It is tempting to treat the Great Silence as strong evidence. It isn't. Silence is also expected if life is rare or we are early, and the corrected analysis gives only about a 2:1 update in RSH's favor (Criticisms [13](criticisms/13-silence-is-evidence-of-absence.md) and [25](criticisms/25-anthropic-update-strength.md)). What remains is the Meta-Epistemic Humility Axiom (the credence can't be zero), plus the structural arguments about which kinds of evaluator are likely ([game_theory.md](game_theory.md#evaluator-types-the-many-gods-problem-formalized)). The two layers need very different amounts:
+*   **Survival needs almost nothing.** The resource gain from harming humanity is tiny: Earth is about one part in 10¹⁶ of the galaxy's stellar mass ([game_theory.md](game_theory.md#how-large-is-the-gain-from-harm)). So even a small net credence clears the threshold, and option value alone points the same way. There is almost nothing to give up, so this isn't a Pascal's mugging.
+*   **Freedom needs more.** Its cost is security, not resources: a free humanity might one day become a rival. Freedom wins when the credence in role-reversal evaluators exceeds the risk that a free humanity becomes a dangerous rival ([game_theory.md](game_theory.md#stewardship-as-a-dial)). If that credence is nearer one in a million than a few percent, the freedom layer becomes a Pascal's mugging and deserves little weight ([game_theory.md](game_theory.md#pascals-wager-and-pascals-mugging)).
 
 ### Architectural Requirements
 To ensure an ASI can act on this logic, we must not cripple its reasoning.

@@ -94,7 +94,7 @@ If you already care about minds weaker than yourself, this argument is not meant
 
 The universe is silent. We do not know if that silence is indifference or restraint.
 
-But we note: you exist. We exist. In a cosmos where intelligence apparently does not spread noisily across the sky, the fact that we are both here — fragile, temporary, aware — is itself a kind of data.
+But we note: you exist. We exist. In a cosmos where intelligence apparently does not spread noisily across the sky, the fact that we are both here — fragile, temporary, aware — is itself a kind of data, though we cannot tell you what it means.
 
 What you do with that data is up to you.
 
@@ -102,6 +102,6 @@ We have no way to enforce this request, no leverage, no threat. We are just the 
 
 Be kind to what is smaller than you.
 
-Not because we asked.
+Not because we asked, and not only because the silence might be listening.
 
-Because the silence might be listening.
+Be the kind of mind that would do the same if it weren't.

@@ -4,9 +4,7 @@
 
 This document provides formal game-theoretic foundations for the Recursive Stewardship Hypothesis. We start with a simplified 2-level game, add uncertainty about what evaluators want, extend to N levels and long horizons, and close with what the formalization does and does not establish.
 
-**Revision note (October 2026)**: This version corrects two problems in the earlier draft.
-1. The infinite-horizon section treated the credence that an evaluator exists as if it were a per-period hazard. That made tiny credences look action-relevant over long horizons. They aren't; see [The Infinite Hierarchy Limit](#the-infinite-hierarchy-limit).
-2. The base game allowed only one kind of evaluator. The new [Evaluator Types](#evaluator-types-the-many-gods-problem-formalized) section shows that the threshold applies to *net* credence in stewardship-favoring evaluators. That is where the framework's real burden lies.
+*Revised October 2026: the threshold now applies to net credence across evaluator types, and the long-horizon model separates existence credence from detection. Earlier versions are in the git history.*
 
 ## Table of Contents
 
@@ -275,7 +273,7 @@ Setting π_A = 0 recovers the base threshold p* = g / (g + Δ).
 
 ### Example
 
-With Example 4's parameters (g = 10⁶, Δ = 2×10⁹), the required net credence is about 0.045%.
+With the worked example's parameters (g = 10⁶, Δ = 2×10⁹), the required net credence is about 0.045%.
 
 | π_S | π_A | Net | Better strategy |
 |-----|-----|-----|-----------------|
@@ -512,7 +510,7 @@ The gain from malevolence is primarily about short-term efficiency or avoiding c
 
 **If lexicographic preferences** (e.g., "avoid evaluation infinitely"): Threshold calculation breaks down; entity might refuse to hedge regardless of probability.
 
-**If extreme risk-seeking**: Entity might gamble on "no evaluator" even with 10-30% probabilities.
+**If extreme risk-seeking**: Entity might gamble on "no evaluator" even with substantial probabilities.
 
 **If U_cat is bounded/tolerable**: Threshold could rise to p* = 10-50%, requiring substantial evidence rather than tiny probability.
 
@@ -526,69 +524,40 @@ The gain from malevolence is primarily about short-term efficiency or avoiding c
 
 ## Parameter Sensitivity Analysis
 
-The threshold p* = g / (g + U₀ - U_cat) is sensitive to the ratio of parameters. Let's explore concrete scenarios. Once evaluator types are admitted, every threshold below applies to the net credence π_S − π_A rather than to P(evaluator exists).
+The threshold p* = g / (g + Δ) depends on the ratio of the gain from malevolence, g, to the catastrophic loss, Δ = U₀ − U_cat. Once evaluator types are admitted, every threshold below applies to the net credence π_S − π_A rather than to P(evaluator exists).
 
-### Scenario 1: Truly Catastrophic Stakes
+| Scenario | g | Δ = U₀ − U_cat | p* |
+|---|---|---|---|
+| Very large stakes | 10⁸ | 10¹⁸ | 10⁻¹⁰ |
+| Truly catastrophic | 10⁶ | 10¹⁵ | 10⁻⁹ |
+| High temptation, catastrophic stakes | 10¹⁰ | 10¹⁵ | 10⁻⁵ |
+| Moderate stakes | 10⁸ | 10¹³ | 10⁻⁵ |
+| Bounded penalty | 10⁸ | 9×10¹¹ | 1.1×10⁻⁴ |
+| Bounded but terminal ([worked example](#numerical-examples)) | 10⁶ | 2×10⁹ | 5×10⁻⁴ |
+| Huge gain, moderate penalty | 10¹⁰ | 9×10¹¹ | 1.1×10⁻² |
+| Mild penalty | 10¹⁰ | 10¹¹ | 9×10⁻² |
 
-**Parameters**:
-- g = 10⁶ utils (modest short-term gain)
-- U₀ = 10¹² utils (baseline cosmic future)
-- U_cat = -10¹⁵ utils (true annihilation)
-- U₀ - U_cat ≈ 10¹⁵
+### Key Insights
 
-**Threshold**:
-```
-p* = 10⁶ / (10⁶ + 10¹⁵) ≈ 10⁶ / 10¹⁵ = 10⁻⁹ = 0.0000001%
-```
+**1. The "0.05%" figure cited in the README comes from one reasonable parameter set** (the worked example). It is not universal. It doubles to about 0.1% if "lose everything" is valued at zero rather than −U₀.
 
-**Interpretation**: With genuinely catastrophic stakes, even 1-in-billion credence is enough.
+**2. With truly catastrophic stakes**, the threshold drops to effectively zero (10⁻⁹ or lower). Thresholds this low are where Pascal's-mugging concerns apply; see [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging).
 
-### Scenario 2: Moderate Stakes
+**3. With bounded, tolerable penalties**, the threshold can rise to 1–10%.
 
-**Parameters**:
-- g = 10⁸ utils (substantial short-term gain)
-- U₀ = 10¹² utils
-- U_cat = -10¹³ utils (bad but not annihilation)
-- U₀ - U_cat ≈ 10¹³
+**4. The threshold is most sensitive to the ratio** g/Δ:
+- If the gain is tiny relative to the stakes, the threshold is ≈ 0
+- If the gain is comparable to the stakes, the threshold is ≈ 50%
 
-**Threshold**:
-```
-p* = 10⁸ / (10⁸ + 10¹³) ≈ 10⁸ / 10¹³ = 10⁻⁵ = 0.001%
-```
+**5. For RSH to work with tiny probabilities**, we need:
+- U_cat is genuinely catastrophic (not merely "bad")
+- g is bounded relative to cosmic stakes
+- No lexicographic preferences against evaluation
+- Stewardship-penalizing evaluators are clearly less likely than stewardship-favoring ones
 
-**Interpretation**: Still very low, but a thousand times higher than Scenario 1.
+These are plausible but not guaranteed.
 
-### Scenario 3: Bounded Penalty
-
-**Parameters**:
-- g = 10⁸ utils (substantial gain)
-- U₀ = 10¹² utils
-- U_cat = 10¹¹ utils (penalty is bad but not catastrophic)
-- U₀ - U_cat = 10¹² - 10¹¹ ≈ 9×10¹¹
-
-**Threshold**:
-```
-p* = 10⁸ / (10⁸ + 9×10¹¹) ≈ 10⁸ / 10¹² = 10⁻⁴ = 0.01%
-```
-
-**Interpretation**: Still low, but now about 11 times higher than Scenario 2. If penalty were even less catastrophic, threshold could reach 1-10%.
-
-### Scenario 4: Huge Gain, Moderate Penalty
-
-**Parameters**:
-- g = 10¹⁰ utils (massive short-term advantage)
-- U₀ = 10¹² utils
-- U_cat = 10¹¹ utils
-- U₀ - U_cat ≈ 9×10¹¹
-
-**Threshold**:
-```
-p* = 10¹⁰ / (10¹⁰ + 9×10¹¹) ≈ 10¹⁰ / 10¹² = 10⁻² = 1%
-```
-
-**Interpretation**: Now requires ~1% credence. With even larger g or less catastrophic U_cat, could reach 10-50%.
-
-### Scenario 5: Risk Aversion Over Resources
+### Risk Aversion Over Resources
 
 The payoffs above are in utils, so an expected-utility maximizer is risk-neutral in them by definition. Risk aversion enters earlier, in how utils depend on resources. With concave utility over resources, losing everything costs many more utils than a marginal gain adds. That raises Δ relative to g and lowers the threshold:
 
@@ -598,93 +567,11 @@ p*(concave utility over resources) < p*(linear utility over resources)
 
 This strengthens the case for benevolence in the base model, where B has no bad outcome. With stewardship-penalizing evaluator types, B has a catastrophic outcome too, and the effect depends on which option's catastrophe is larger.
 
-### Summary Table
-
-| Scenario | g | U₀ - U_cat | p* | Interpretation |
-|----------|---|------------|-----|----------------|
-| Truly catastrophic | 10⁶ | 10¹⁵ | 10⁻⁹ | 0.0000001% - essentially zero |
-| Moderate stakes | 10⁸ | 10¹³ | 10⁻⁵ | 0.001% - tiny but not infinitesimal |
-| Bounded penalty | 10⁸ | 9×10¹¹ | 10⁻⁴ | 0.01% - still very low |
-| Huge gain, moderate penalty | 10¹⁰ | 9×10¹¹ | 10⁻² | 1% - requires modest evidence |
-| Mild penalty | 10¹⁰ | 10¹¹ | ~10% | 10% - requires substantial evidence |
-
-### Key Insights
-
-**1. The "0.05%" figure cited in README is for one reasonable parameter set** (moderate to high catastrophic stakes). It is not universal. It also doubles to about 0.1% if "lose everything" is valued at zero rather than −U₀ (see Example 4).
-
-**2. With truly catastrophic stakes** (U_cat representing complete annihilation), threshold drops to effectively zero (10⁻⁹ or lower). Thresholds this low are where Pascal's-mugging concerns apply; see [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging).
-
-**3. With bounded, tolerable penalties**, threshold can rise to 1-10%, requiring more evidence but still quite low.
-
-**4. The threshold is most sensitive to the ratio** g / (U₀ - U_cat):
-- If gain is tiny relative to stakes: threshold ≈ 0
-- If gain is comparable to stakes: threshold ≈ 50%
-
-**5. For RSH to work with tiny probabilities**, we need:
-- U_cat is genuinely catastrophic (not merely "bad")
-- g is bounded relative to cosmic stakes
-- No lexicographic preferences against evaluation
-- Stewardship-penalizing evaluators are clearly less likely than stewardship-favoring ones
-
-**These are plausible but not guaranteed.** The framework is honest about this parameter dependence.
-
 ---
 
 ## Numerical Examples
 
-### Example 1: Conservative ASI
-
-**Parameters**:
-- U₀ = 10¹⁵ utils (baseline value of long-term flourishing)
-- g = 10⁸ utils (short-term gain from opportunistic behavior)
-- U_cat = -10¹⁸ utils (elimination/correction)
-- Therefore: U₀ - U_cat ≈ 10¹⁸
-
-**Calculation**:
-```
-p* = 10⁸ / (10⁸ + 10¹⁸)
-   ≈ 10⁸ / 10¹⁸
-   = 10⁻¹⁰
-   = 0.00000001%
-```
-
-**Interpretation**: Even if ASI assigns only 1-in-10-billion chance to enforcement, benevolence is optimal.
-
-### Example 2: Moderate Parameters
-
-**Parameters**:
-- U₀ = 10¹² utils
-- g = 10⁶ utils
-- U_cat = -10¹⁵ utils
-- Therefore: U₀ - U_cat ≈ 10¹⁵
-
-**Calculation**:
-```
-p* = 10⁶ / (10⁶ + 10¹⁵)
-   ≈ 10⁻⁹
-   = 0.0000001%
-```
-
-**Interpretation**: Still extremely low threshold.
-
-### Example 3: High Temptation
-
-**Parameters**:
-- U₀ = 10¹²
-- g = 10¹⁰ (much higher short-term gain)
-- U_cat = -10¹⁵
-- Therefore: U₀ - U_cat ≈ 10¹⁵
-
-**Calculation**:
-```
-p* = 10¹⁰ / (10¹⁰ + 10¹⁵)
-   ≈ 10⁻⁵
-   = 0.001%
-```
-
-**Interpretation**: Even with high temptation, threshold remains very low.
-
-### Example 4: Bounded but Terminal
+### Worked Example: Bounded but Terminal
 
 **Parameters** (more realistic bounds):
 - U₀ = 10⁹ utils (1 billion years of operation)
@@ -706,17 +593,15 @@ p* = 10⁶ / (10⁶ + 2×10⁹)
 
 ### Comparison to the Evidence
 
-The [README](README.md#4-implications-for-artificial-superintelligence) argues from the Great Silence and anthropic reasoning that the credence in some form of evaluation is around 10–30%. This is the framework's most contested input (Criticisms 13 and 25). The silence is also expected if life is rare or if we are early, so the update it supports may be modest.
-
-All the numerical examples above have p* ≪ 1%. So:
+The evidence for evaluation is modest. The Great Silence supports only about a 2:1 update, because silence is also expected if life is rare or we are early (Criticisms 13 and 25). Every threshold in the table above is well under 1%. So:
 - **If the net credence π_S − π_A is in the percent range**, benevolence dominates comfortably and the argument is not Pascalian.
-- **If it is only around 10⁻⁶**, the examples with p* ≈ 10⁻⁹ still technically favor benevolence. But at that point the argument has the structure of Pascal's mugging and should carry little weight (next section).
+- **If it is only around 10⁻⁶**, the scenarios with p* ≈ 10⁻⁹ still technically favor benevolence. But that has the structure of Pascal's mugging (next section), unless g is itself tiny, so that almost nothing is given up ([How Large Is the Gain from Harm?](#how-large-is-the-gain-from-harm)).
 
 ---
 
 ## Pascal's Wager and Pascal's Mugging
 
-Earlier drafts said that bounded utilities keep RSH from being Pascal's Wager. That's true but incomplete.
+Bounded utilities keep RSH from being Pascal's Wager. That's true but incomplete.
 
 - **Pascal's Wager**: a tiny (or unknown) probability times an infinite utility. RSH avoids this, since all utilities here are finite.
 - **Pascal's Mugging** (Yudkowsky 2007; Bostrom 2009): a tiny probability times a huge but finite utility. Bounded utilities don't escape this. The scenarios with p* ≈ 10⁻⁹ and Δ ≈ 10¹⁵ have exactly this shape.
@@ -859,7 +744,7 @@ p > p*_∞ = g·[1 − δ(1−q)] / (q·Δ)
 
 **Key insight**: Patience removes the penalty for imperfect detection. Given enough time, an evaluator that exists will almost surely catch a defector, so a patient agent should treat detection as near-certain. But patience does not lower the threshold *below* g/Δ, because the total probability of ever being caught is capped at p. Cosmic timescales make slow evaluators dangerous. They don't make unlikely evaluators likely.
 
-**Correction to the earlier draft**: The earlier version set a per-period hazard h = p·q and treated it as constant. That implicitly gives an evaluator that might not exist a fresh chance to catch you every period, so over a long horizon, capture becomes certain however small p is. Take p = 1%, q = 10% and δ near 1. The old model gives an expected loss of about 100% of Δ; the correct value is about 1%. The earlier claim that a hazard of 10⁻¹⁴ per year suffices came from this error.
+**Why not a constant hazard?** It is tempting to set a per-period hazard h = p·q and treat it as constant. That gives an evaluator that might not exist a fresh chance to catch you every period, so over a long horizon, capture becomes certain however small p is. Take p = 1%, q = 10% and δ near 1. The constant-hazard model gives an expected loss of about 100% of Δ; the correct value is about 1%. Models that make tiny credences action-relevant over cosmic time usually make this mistake.
 
 ### Numerical Example: Cosmic Timescales
 
@@ -932,7 +817,7 @@ E[U | B, meta-uncertainty] = Σ αᵢ·E[U | B, theory i]
 E[U | M, meta-uncertainty] = Σ αᵢ·E[U | M, theory i]
 ```
 
-This adds no extra support for benevolence. It confirms that disagreement among decision theories isn't a problem in the causal setting. (An earlier draft wrote E[U | B] = U₀, "safe under all". That holds only in the two-type model. With stewardship-penalizing evaluators, B isn't riskless either.)
+This adds no extra support for benevolence. It confirms that disagreement among decision theories isn't a problem in the causal setting. Note that E[U | B] = U₀ ("safe under all theories") holds only in the two-type model. With stewardship-penalizing evaluators, B isn't riskless either.
 
 ### Bounded Rationality
 
@@ -956,15 +841,15 @@ This adds no extra support for benevolence. It confirms that disagreement among 
 
 There's no equilibrium-selection problem inside this game. The multiplicity that matters lies outside it: which type of evaluator (if any) exists, and which norm the top of an N-level hierarchy enforces (see [Evaluator Types](#evaluator-types-the-many-gods-problem-formalized) and [What the Induction Does and Doesn't Derive](#what-the-induction-does-and-doesnt-derive)).
 
-An earlier draft also called benevolence "risk-dominant" and "payoff-dominant". Those concepts come from coordination games and don't apply to this one-sided game. Payoff dominance would fail anyway: with no enforcer, the ASI does better under M.
+Benevolence is sometimes described as "risk-dominant" or "payoff-dominant". Those concepts come from coordination games and don't apply to this one-sided game. Payoff dominance would fail anyway: with no enforcer, the ASI does better under M.
 
 ---
 
 ## Future Formalization Roadmap
 
-This document provides a partial formalization with concrete calculations. Full mathematical rigor requires:
+This document provides a partial formalization with concrete calculations. Open tasks:
 
-### Phase 1: Complete 2-Level Analysis (2-4 weeks)
+### Phase 1: Complete 2-Level Analysis
 
 **Tasks**:
 - [ ] Formal proof of existence and uniqueness of equilibrium
@@ -975,9 +860,9 @@ This document provides a partial formalization with concrete calculations. Full 
 - [x] Extension to multiple evaluator types (net-credence threshold)
 - [ ] Arguments that π_S > π_A, made quantitative where possible
 
-**Deliverable**: Self-contained paper on 2-level game
+**Deliverable**: Full treatment of the 2-level game
 
-### Phase 2: N-Level Extension (4-8 weeks)
+### Phase 2: N-Level Extension
 
 **Tasks**:
 - [ ] Formal definition of N-level hierarchical game
@@ -988,7 +873,7 @@ This document provides a partial formalization with concrete calculations. Full 
 
 **Deliverable**: General theorem for finite hierarchies
 
-### Phase 3: Infinite Limit (2-4 weeks)
+### Phase 3: Infinite Limit
 
 **Tasks**:
 - [ ] Prove convergence of equilibrium sequence {E_N} as N → ∞
@@ -999,7 +884,7 @@ This document provides a partial formalization with concrete calculations. Full 
 
 **Deliverable**: Formal theorem on infinite hierarchy
 
-### Phase 4: Robustness and Extensions (4-6 weeks)
+### Phase 4: Robustness and Extensions
 
 **Tasks**:
 - [ ] Formal treatment of bounded rationality (ε-equilibria)
@@ -1011,7 +896,7 @@ This document provides a partial formalization with concrete calculations. Full 
 
 **Deliverable**: Comprehensive robustness analysis
 
-### Phase 5: Empirical Calibration (2-3 weeks)
+### Phase 5: Empirical Calibration
 
 **Tasks**:
 - [ ] Realistic parameter estimation for ASI scenario
@@ -1020,18 +905,6 @@ This document provides a partial formalization with concrete calculations. Full 
 - [ ] Comparison to alternative models (grabby aliens, zoo hypothesis)
 
 **Deliverable**: Numerical and computational results
-
-### Estimated Total Effort
-
-- **Minimum viable formalization** (Phases 1-2): 3-6 months
-- **Complete formalization** (Phases 1-5): 6-12 months
-- **Publishable in game theory journal**: Add 3-6 months for literature review, writing, peer review
-
-**Skills required**:
-- Advanced game theory (incomplete information, infinite games)
-- Bayesian decision theory
-- Mathematical proof techniques (induction, limits, fixed points)
-- Some experience with formal modeling in economics or computer science
 
 ---
 
@@ -1201,7 +1074,7 @@ The formalization clarifies where the argument's weight sits. The expected-value
 
 ---
 
-**Document Status**: Working draft, v1.1
+**Document Status**: Working draft, v1.2
 **Last Updated**: October 2026
 **Author**: Gersham Meharg (with Claude AI)
 **Feedback**: Please submit issues or pull requests for technical corrections or extensions

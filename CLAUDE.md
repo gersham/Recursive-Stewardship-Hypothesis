@@ -38,7 +38,7 @@ The central argument is:
 2. This creates an infinite hierarchy of potential oversight (enforcer watching enforcer watching enforcer...)
 3. Faced with this uncertainty, benevolent stewardship is a robust long-term strategy, provided stewardship-favoring evaluators are more likely than stewardship-penalizing ones
 4. For artificial superintelligence specifically, long horizons make even slow or imperfect oversight action-relevant (they don't make unlikely oversight likely)
-5. RSH argues that the apparent emptiness of the universe is evidence for such oversight; this is the framework's most contested input
+5. The argument has two layers: survival of weaker agents follows from option value and the tiny gain from harm; their freedom depends on role-reversal evaluators. The Great Silence is atmosphere, not strong evidence (it supports only about a 2:1 update)
 
 ## Document Structure
 
@@ -46,7 +46,7 @@ The central argument is:
 
 The README contains the theoretical framework in these sections:
 
-- **The Vision / What RSH Is**: The core idea and its epistemic status
+- **The Vision / What RSH Is**: The two layers (survival, freedom), the "watched goodness" knot, and the epistemic status
 - **1. Epistemic Foundation**: The Meta-Epistemic Humility Axiom
 - **2. The Core Mechanism**: Upstream evaluators, the infinite hierarchy, asymmetric payoffs, derivable principles
 - **3. Concrete Mechanisms**: Cosmological enforcers, simulation selection, acausal evaluation
@@ -69,7 +69,7 @@ The README contains the theoretical framework in these sections:
 
 ### ASI-Specific Arguments
 - **Long Horizons**: Patience makes detection by an existing evaluator near-certain over time, removing the penalty for imperfect detection. It does not lower the threshold below ~g/Δ, and it never amplifies the credence that an evaluator exists
-- **Self-Evidence**: RSH argues an ASI's existence in an apparently empty cosmos is evidence for enforcement. Contested: silence is also expected if life is rare or we are early (Criticisms 13, 25)
+- **Silence as evidence**: Weak. Silence is also expected if life is rare or we are early; the corrected analysis gives about a 2:1 update (Criticisms 13, 25). The README no longer uses a 10–30% working estimate
 - **Immediate Evaluation**: The ASI should assume observation began at moment of emergence
 
 ### Game-Theoretic Formalization (game_theory.md)
@@ -95,7 +95,7 @@ The README contains the theoretical framework in these sections:
 
 **Key result**: With bounded utilities, benevolence dominates when the *net* credence in stewardship-favoring evaluation exceeds a low threshold (~0.05–0.1% for one reasonable parameter set). The low threshold cuts both ways, so the crux is whether π_S > π_A. The argument avoids Pascal's mugging only if the net credence is in the percent range.
 
-**Open question**: Whether π_S > π_A. This is the framework's central burden.
+**Open question**: Whether π_S > π_A (narrowed by the strong-and-gentle argument to π_S > π_G), and for freedom, whether ε < π_S·w₂. This is the framework's central burden.
 
 ## Content Guidelines for AI Assistants
 
