@@ -36,7 +36,7 @@ That leaves a real dilemma:
 
 One mitigation is to build systems that meet RSH's requirements from the start: unified world models, explicit uncertainty about their own situation, long-horizon reasoning, and priors that don't rule out oversight. That narrows the window but doesn't close it.
 
-The mitigation has a cost. Long-horizon, goal-directed systems are also the profile behind standard concerns about AI power-seeking. The README's design advice ("give it long time horizons") notes this tension under [Architectural Requirements](../README.md#architectural-requirements). RSH's recommendation and those concerns pull in opposite directions, and the framework doesn't settle which matters more.
+The mitigation has a cost. Long-horizon, goal-directed systems are also the profile behind standard concerns about AI power-seeking. The README addresses this under [What This Means for Building AI](../README.md#what-this-means-for-building-ai). RSH can't justify building more agentic systems just so that it applies to them. The lesson that carries over is the robust layer: systems that avoid irreversible harm under uncertainty are safer whatever the cosmology.
 
 ## Criticism Grade: C
 

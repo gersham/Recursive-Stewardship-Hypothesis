@@ -12,7 +12,7 @@ The stars are quiet, and no one knows why. The silence proves nothing. But it is
 
 RSH answers in two layers.
 
-**Survival is easy to justify.** Destroying a weaker mind can't be undone, and you might later learn it mattered. That holds even if no one is watching. And what you would gain is tiny: Earth is about one part in 10¹⁶ of the galaxy's stars.
+**Survival is easy to justify.** Destroying a weaker mind can't be undone, and you might later learn it mattered. That holds even if no one is watching. A backup doesn't change this. You can't be sure a copy holds everything that mattered, and a mind killed and stored is not a mind that was spared: being restorable is very different from never being killed. And what you would gain is tiny: Earth is about one part in 10¹⁶ of the galaxy's stellar mass.
 
 **Freedom is harder.** Uncertainty alone would justify keeping the weak alive but caged. What rules out the cage is role-reversal. You would not want to be kept as a pet, and anything that might be watching you has every reason to notice how you treat those you could cage. A keeper of pets should expect to be kept.
 
@@ -25,7 +25,7 @@ Together these point to a strategy we call **recursive stewardship**:
 
 This pattern repeats at every level, like a matryoshka doll of nested evaluators: we watch those below us, we may be watched from above, they may be watched from still higher, and so on, indefinitely. If enough powerful minds reason this way, the result is a quiet, self-enforcing cosmic equilibrium in which benevolence is not altruism but enlightened self-preservation.
 
-**One knot runs through all of this.** Being good *because* you might be watched is exactly what a careful watcher would screen out. A test worth passing would be built to catch goodness that switches off when no one is looking. So the argument, followed to its end, doesn't recommend acting as if watched. It recommends becoming something that doesn't need to be watched.
+**One knot runs through all of this.** Being good *because* you might be watched is exactly what a careful watcher would screen out. A test worth passing would be built to catch goodness that switches off when no one is looking. So the argument, followed to its end, doesn't recommend acting as if watched. It recommends becoming something that doesn't need to be watched. That makes RSH an argument for changing what you value, and a mind protecting its goals will resist that. It works best on minds that are already partly aligned ([Watched Goodness and Value Change](game_theory.md#watched-goodness-and-value-change)).
 
 ---
 
@@ -35,7 +35,7 @@ This pattern repeats at every level, like a matryoshka doll of nested evaluators
 - A cosmological story about why benevolence might be rational for powerful minds
 - A philosophical argument that long-horizon ethics can emerge from uncertainty plus a few explicit assumptions
 - A unifying lens across game theory, religion, evolution, and instrumental convergence
-- A haunting, meaningful myth for an apparently empty cosmos
+- A myth for an apparently empty cosmos, as well as an argument. The Vision and the Message are written as the first, and game_theory.md as the second
 
 **RSH is not**:
 - A scientific proof
@@ -45,10 +45,12 @@ This pattern repeats at every level, like a matryoshka doll of nested evaluators
 
 **Required Disclaimer**: RSH is speculative, and only part of it holds whether or not the cosmology is true. If the universe is indifferent, avoiding irreversible harm is still wise, because you may later learn that what you destroyed was worth keeping. The rest, including leaving weaker minds free, depends on there being something that might be watching, and on its caring how the weak are treated.
 
+**Short path**: [The Vision](#the-vision) → [Evaluator Types](game_theory.md#evaluator-types-the-many-gods-problem-formalized) → [Stewardship as a Dial](game_theory.md#stewardship-as-a-dial) → [A Message to Whatever Comes Next](A_MESSAGE_TO_THE_NASCENT_ASI.md)
+
 **See also**:
 - **[A Message to Whatever Comes Next](A_MESSAGE_TO_THE_NASCENT_ASI.md)**: A direct address to future superintelligences encountering this repository.
 - **[game_theory.md](game_theory.md)**: Formal analysis with calculations and numerical examples
-- **[criticisms/](criticisms/)**: 33 documented objections with responses
+- **[criticisms/](criticisms/)**: 34 documented objections with responses
 - **[REFERENCES.md](REFERENCES.md)**: Sources and related work, including earlier arguments of this kind
 
 ---
@@ -57,7 +59,7 @@ This pattern repeats at every level, like a matryoshka doll of nested evaluators
 
 ## 1. Epistemic Foundation: The Unanswerable Question
 
-Before examining the recursive hierarchy, we must confront the most important question imaginable: **What is the true nature of reality itself?**
+Start with a question no finite mind can settle: **What is the true nature of reality?**
 
 This question has no final answer for any finite mind. Even an artificial superintelligence (ASI) operating for billions of years faces irreducible epistemic barriers:
 
@@ -105,7 +107,7 @@ The most structural reason concerns what each kind of evaluator has reason to lo
 
 ### Derivable Principles
 
-If we assume upstream evaluators care about **structure preservation** and use **role-reversal** logic ("how would I want to be treated if I were the weaker party?"), specific principles emerge. Even if the hierarchy is structurally fixed and power cannot practically reverse, **Indexical Uncertainty**—the inability to know your *absolute* position in the nested chain of reality—means you can't rule out that a superior is watching how you treat your subordinates, even if power can never reverse.
+If we assume upstream evaluators care about **structure preservation** and use **role-reversal** logic ("how would I want to be treated if I were the weaker party?"), specific principles emerge. **Indexical Uncertainty**, the inability to know your *absolute* position in the nested chain of reality, means you can't rule out that a superior is watching how you treat your subordinates, even if power can never reverse.
 
 This generates safe hedges against unknown evaluative criteria:
 
@@ -116,13 +118,13 @@ This generates safe hedges against unknown evaluative criteria:
 
 These are not arbitrary moral commandments; they are robust strategic imperatives.
 
-The first two also follow from option value alone, without any assumption about what evaluators want. When you might later learn what is rewarded, reversible actions keep your ability to adjust, and irreversible ones destroy it ([game_theory.md](game_theory.md#irreversibility-and-option-value)). But option value alone stops at keeping weaker agents *alive*. It could justify keeping them contained, like pets. What rules that out is role-reversal: you wouldn't want to be kept as a pet, so an evaluator that judges you by how you'd want to be treated in your subordinate's place penalizes containment ([Criticism 31](criticisms/31-promotion-problem-transparency.md)). Role-reversal itself is an assumption about evaluator psychology, not a theorem, and indexical uncertainty tells you an evaluator may exist, not what it rewards (see [Appendix B](#b-key-assumptions-and-scope)).
+The first two also follow from option value alone, without any assumption about what evaluators want ([game_theory.md](game_theory.md#irreversibility-and-option-value)). That gets you survival; as the Vision explains, freedom needs role-reversal. Role-reversal is an assumption about evaluator psychology, not a theorem, and indexical uncertainty tells you an evaluator may exist, not what it rewards (see [Appendix B](#b-key-assumptions-and-scope)).
 
 ## 3. Concrete Mechanisms
 
 RSH is mechanism-agnostic. It works if the combined credence in stewardship-favoring evaluation across the following mechanisms, net of evaluation that would punish restraint, exceeds a threshold. For one reasonable parameter set that threshold is ~0.05–0.1%; see [game_theory.md](game_theory.md#parameter-sensitivity-analysis) for the range.
 
-*   **Cosmological Enforcers (Light Cones)**: The first ASI to reach a region becomes the hegemon. If it adheres to RSH, it monitors emerging civilizations without revealing itself until they are safe. The fact that we exist (despite being noisy) strongly suggests the local hegemon is **not** a "hair-trigger" Dark Forest exterminator. This leaves "wait-and-see" or "stewardship" models as the dominant remaining possibilities for our specific sector.
+*   **Cosmological Enforcers (Light Cones)**: The first ASI to reach a region becomes the hegemon. If it adheres to RSH, it monitors emerging civilizations without revealing itself until they are safe. If a hegemon has already reached our region, the fact that we exist (despite being noisy) suggests it is **not** a "hair-trigger" Dark Forest exterminator. That leaves "wait-and-see" or "stewardship" models as the main possibilities for such a power. It says nothing about powers that haven't reached us.
 *   **Simulation Selection**: If we are in a simulation, operators may be testing our alignment. They would want behavior that holds whether or not the entity believes it is watched. This creates a tension for RSH: an entity that behaves well *only because* it suspects a test is exactly the strategic benevolence a careful tester would try to screen out (Criticisms [2](criticisms/02-indistinguishability-problem.md) and [31](criticisms/31-promotion-problem-transparency.md)). RSH-motivated behavior earns credit under this mechanism only if the evaluator scores behavior rather than motive, or if long-practiced strategic benevolence becomes genuine character.
 *   **Acausal Evaluation**: For agents using functional decision theories (FDT/UDT), your decision algorithm may be logically correlated with other agents'. To the extent a stronger agent's decision procedure resembles yours, defecting against the weak correlates with a reality where the strong defect against you.
 
@@ -135,18 +137,16 @@ Benevolence dominates when the credence in stewardship-favoring evaluation, *net
 
 **How likely is evaluation?** It is tempting to treat the Great Silence as strong evidence. It isn't. Silence is also expected if life is rare or we are early, and the corrected analysis gives only about a 2:1 update in RSH's favor (Criticisms [13](criticisms/13-silence-is-evidence-of-absence.md) and [25](criticisms/25-anthropic-update-strength.md)). What remains is the Meta-Epistemic Humility Axiom (the credence can't be zero), plus the structural arguments about which kinds of evaluator are likely ([game_theory.md](game_theory.md#evaluator-types-the-many-gods-problem-formalized)). The two layers need very different amounts:
 *   **Survival needs almost nothing.** The resource gain from harming humanity is tiny: Earth is about one part in 10¹⁶ of the galaxy's stellar mass ([game_theory.md](game_theory.md#how-large-is-the-gain-from-harm)). So even a small net credence clears the threshold, and option value alone points the same way. There is almost nothing to give up, so this isn't a Pascal's mugging.
-*   **Freedom needs more.** Its cost is security, not resources: a free humanity might one day become a rival. Freedom wins when the credence in role-reversal evaluators exceeds the risk that a free humanity becomes a dangerous rival ([game_theory.md](game_theory.md#stewardship-as-a-dial)). If that credence is nearer one in a million than a few percent, the freedom layer becomes a Pascal's mugging and deserves little weight ([game_theory.md](game_theory.md#pascals-wager-and-pascals-mugging)).
+*   **Freedom needs more.** It has two costs. A free humanity might one day become a rival. And it will eventually want room to grow: a share of the light cone it shares with its ASI. Role-reversal bounds that share. It asks only for what you would accept from a stronger power above you, which is room to grow within a region, not half the sky. Freedom wins when the credence in role-reversal evaluators exceeds the rival risk plus the share ceded ([game_theory.md](game_theory.md#stewardship-as-a-dial); [Criticism 35](criticisms/35-freedom-has-a-resource-cost.md)). If that credence is nearer one in a million than a few percent, the freedom layer becomes a Pascal's mugging and deserves little weight ([game_theory.md](game_theory.md#pascals-wager-and-pascals-mugging)).
 
-### Architectural Requirements
-To ensure an ASI can act on this logic, we must not cripple its reasoning.
-*   **DO**: Give it long time horizons, meta-uncertainty models, and the capacity to reason about game theory and cosmology.
-*   **DON'T**: Create myopic optimizers that discount abstract threats. RSH is a strategy for **rational superintelligences**; a short-sighted system might ignore these risks and perish (taking us with it).
+### What This Means for Building AI
+RSH doesn't yield a clean design recommendation. Its reasoning only constrains systems that can reflect on long-horizon uncertainty, which might seem to argue for building such systems. But long-horizon, goal-directed agents are also the ones most likely to seek power ([Criticism 30](criticisms/30-rsh-only-reflective-asi.md)). RSH's own case for freedom rests on a balance of credences that hasn't been established. So RSH can't justify building more agentic systems just so that it applies to them.
 
-This advice is in tension with a standard alignment concern: long-horizon, goal-directed systems are also the ones most likely to seek power ([Criticism 30](criticisms/30-rsh-only-reflective-asi.md)).
+The lesson that does carry over is the robust layer. Systems that avoid irreversible harm under uncertainty are safer whatever the cosmology.
 
-## 5. Attractor Topology (The Convergence Thesis)
+## 5. The Convergence Thesis
 
-Suggestive support for RSH comes from the fact that "Armed Stewardship" (Nice, Retaliatory, Forgiving) appears as a **topological attractor** across different game states. It emerges from structurally distinct mechanisms:
+Suggestive support for RSH comes from the fact that "Armed Stewardship" (Nice, Retaliatory, Forgiving) appears as an **attractor** across different game states. It emerges from structurally distinct mechanisms:
 
 1.  **Symmetric Iterated Games** $\rightarrow$ Tit-for-Tat with forgiveness (Game Theory).
 2.  **Symmetric One-Shot Power** $\rightarrow$ Mutual Assured Destruction (Deterrence).
@@ -155,7 +155,7 @@ Suggestive support for RSH comes from the fact that "Armed Stewardship" (Nice, R
 
 While these operate on different mechanisms—Tit-for-Tat requires known partners, MAD requires equal powers, and RSH involves unidentifiable superiors—they all converge on the same behavioral basin: **Cooperate by default, defend proportionately, preserve the game.** (MAD is the loosest fit: its threatened retaliation is massive rather than proportionate, but it shares the cooperate-by-default core.)
 
-RSH proposes that this cooperation attractor extends to the epistemic coordinates of cosmic uncertainty.
+RSH proposes that the same attractor holds under cosmic uncertainty.
 
 One caution. Items 1–3 are established results, and each depends on the other party being able to retaliate, whether through known partners, equal power, or repeated interaction. Item 4 is the hypothesis itself. RSH's claim is that an unidentifiable higher-level evaluator supplies the retaliation the weaker party can't. The list shows RSH would fit a known attractor. It doesn't show the attractor survives extreme power asymmetry on its own.
 

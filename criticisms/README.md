@@ -69,10 +69,11 @@ RSH is not testable on human timescales the way a laboratory theory is. But it d
 | 32 | [Probability Mass / Reference Class Problem](32-probability-mass-gap.md) | **B+** | Open |
 | 33 | [Proportionate Enforcers](33-proportionate-enforcers.md) | C+ | Partly addressed |
 | 34 | [Decision Theory Does Not Imply Nice Things (Soares 2022)](34-decision-theory-no-nice-things.md) | **B** | Partly addressed |
+| 35 | [Freedom Has a Resource Cost](35-freedom-has-a-resource-cost.md) | **B-** | Partly addressed |
 
-**Total**: 33 criticisms (numbers 01–26 and 28–34; 27 is unused).
+**Total**: 34 criticisms (numbers 01–26 and 28–35; 27 is unused).
 
-**Distribution**: B tier: 8 · C tier: 24 · D tier: 1 · F: 0
+**Distribution**: B tier: 9 · C tier: 24 · D tier: 1 · F: 0
 
 ## Where the Open Questions Concentrate
 
@@ -86,20 +87,22 @@ Game theory tells an agent to hedge, not which way. In the formal model, benevol
 
 ### 2. How much evidence is there for evaluation at all? (13, 25; also 4, 10, 12)
 
-The Great Silence is weak evidence. Silence is also expected if life is rare or we are early, and the corrected analysis in #25 gives only about a 2:1 update. The README no longer leans on it. The two layers of the argument need different amounts of credence:
+The Great Silence is weak evidence. Silence is also expected if life is rare or we are early, and the corrected analysis in #25 gives only about a 2:1 update. The README doesn't lean on it. The two layers of the argument need different amounts of credence:
 - **Survival** needs almost nothing, because the resource gain from harm is tiny.
-- **Freedom** needs the credence in role-reversal evaluators to exceed the risk that a free subordinate becomes a dangerous rival. If that credence is near one in a million, the freedom layer takes the shape of Pascal's mugging ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).
+- **Freedom** needs the credence in role-reversal evaluators to exceed the rival risk plus the share of the light cone a free subordinate claims (#35). If that credence is near one in a million, the freedom layer takes the shape of Pascal's mugging ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).
 
-### 3. Strategic versus genuine benevolence (2, 31; also 5, 11)
+### 3. Survival, freedom, and motive (2, 31, 33, 35; also 5, 11)
 
-Behavioral benevolence may be enough to avoid punishment, but not to justify promotion. Some evaluators test for motive, such as simulators who want good behavior whether or not the entity thinks it is watched. Those evaluators can't easily certify an entity that is good *because* it thinks it might be watched. Harming the weak gains almost nothing in resources, so the real temptation is security (#33). From the dominant entity's side, option value can favor containment (a "glass ceiling") over grooming successors. RSH's answer is role-reversal: no one would choose to be kept as a pet, so an evaluator that judges you by how you'd want to be treated in your subordinate's place penalizes containment (#31). Option value secures the survival of weaker agents; role-reversal is what secures their freedom.
+- **Sparing the weak is cheap.** It gains almost nothing in resources, so even proportionate penalties deter it (#33). Survival means not killing; a stored copy is not a mind that was spared.
+- **Freeing them is not.** Leaving a weaker agent free costs a rival risk and a share of the shared light cone (#35). Option value alone would settle for a "glass ceiling". RSH's answer is role-reversal: no one would choose to be kept as a pet, and the deal you'd want from above is room to grow within a region (#31).
+- **Motive matters for promotion.** Some evaluators test whether goodness holds when the entity thinks no one is watching, and they can't certify goodness that exists *because* of watching (#2). Followed to its end, RSH recommends becoming a steward, not acting like one. A mind protecting its goals resists that ([game_theory.md](../game_theory.md#watched-goodness-and-value-change)).
 
 ## Strengths That Hold Up
 
 - **The Meta-Epistemic Humility Axiom** is hard to deny: no finite agent can justifiably assign zero probability to being embedded in a larger evaluative structure.
 - **The arithmetic is sound**: with bounded utilities and terminal penalties, thresholds are low. The open question is what they apply to, not whether they're low.
 - **Irreversibility aversion is robust**: it follows from uncertainty and learning alone. It secures the survival of weaker agents, though not their freedom.
-- **The resource gain from harm is negligible**: Earth is about one part in 10¹⁶ of the galaxy's stellar mass, so resource-motivated harm is deterred even by modest penalties. The real temptation is security.
+- **The resource gain from harm is negligible**: Earth is about one part in 10¹⁶ of the galaxy's stellar mass, so resource-motivated harm is deterred even by modest penalties. The real costs lie in freedom: security and room to grow.
 - **The decision-theoretic structure is theory-neutral** for causal mechanisms (Criticism 22).
 - **Many moderate criticisms have reasonable partial answers** (3, 8, 14, 15, 23).
 
@@ -110,13 +113,13 @@ For first-time readers, suggested order:
 1. **#21** (Circular Reasoning) and **#28** (Role-Reversal): the central question of where the *content* of benevolence comes from
 2. **#32, #34, #7, #17, #26**: the many-gods family, and how the evaluator-type balance decides it. #34 is the strongest external critique
 3. **#13, #25**: how much evidence there is for evaluation
-4. **#31, #2**: strategic versus genuine benevolence, and the promotion problem
+4. **#31, #35, #2**: survival versus freedom, the cost of freedom, and the motive problem
 5. Browse the rest as interested
 
 ## Contributing
 
 When adding new criticisms:
-- Use the next unused number (35-, 36-, etc.)
+- Use the next unused number (36-, 37-, etc.)
 - Follow the established format
 - Include a response section, a grade (strength of the criticism) and a status (how far the response resolves it)
 - Grade the criticism on its own strength. Don't downgrade it just because a response exists

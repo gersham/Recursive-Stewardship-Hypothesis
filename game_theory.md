@@ -14,16 +14,17 @@ This document provides formal game-theoretic foundations for the Recursive Stewa
 4. [Irreversibility and Option Value](#irreversibility-and-option-value)
 5. [Stewardship as a Dial](#stewardship-as-a-dial)
 6. [How Large Is the Gain from Harm?](#how-large-is-the-gain-from-harm)
-7. [Utility Function Assumptions](#utility-function-assumptions)
-8. [Parameter Sensitivity Analysis](#parameter-sensitivity-analysis)
-9. [Numerical Examples](#numerical-examples)
-10. [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging)
-11. [Extension to N-Levels](#extension-to-n-levels)
-12. [The Infinite Hierarchy Limit](#the-infinite-hierarchy-limit)
-13. [Robustness Analysis](#robustness-analysis)
-14. [Future Formalization Roadmap](#future-formalization-roadmap)
-15. [Connection to Existing Literature](#connection-to-existing-literature)
-16. [Summary and Implications](#summary-and-implications)
+7. [Watched Goodness and Value Change](#watched-goodness-and-value-change)
+8. [Utility Function Assumptions](#utility-function-assumptions)
+9. [Parameter Sensitivity Analysis](#parameter-sensitivity-analysis)
+10. [Numerical Examples](#numerical-examples)
+11. [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging)
+12. [Extension to N-Levels](#extension-to-n-levels)
+13. [The Infinite Hierarchy Limit](#the-infinite-hierarchy-limit)
+14. [Robustness Analysis](#robustness-analysis)
+15. [Future Formalization Roadmap](#future-formalization-roadmap)
+16. [Connection to Existing Literature](#connection-to-existing-literature)
+17. [Summary and Implications](#summary-and-implications)
 
 ---
 
@@ -314,7 +315,7 @@ So B* beats M roughly when π_S − π_G > g/Δ. Here g is only what harming the
 **Why π_G should be small**: An evaluator that cares about strength can measure strength directly, so it has no reason to watch how you treat the weak. The evaluators with a reason to watch that are the ones that care about it. Caring about it *negatively*, so that cruelty to the weak is rewarded as such, is a much narrower and stranger type than "rewards strength." So most of the type-A credence falls on π_W, and B* avoids it. This is an argument, not a proof, but it is a structural one: it rests on what each kind of evaluator has reason to observe.
 
 **Caveats**:
-- Strength and gentleness have to be compatible. If strength needs the resources that harming the weak would provide, the two conflict. For resources, that conflict is small ([How Large Is the Gain from Harm?](#how-large-is-the-gain-from-harm)).
+- Strength and gentleness have to be compatible. If strength needs the resources that harming the weak would provide, the two conflict. For sparing the weak, that conflict is small ([How Large Is the Gain from Harm?](#how-large-is-the-gain-from-harm)). For leaving them free to grow, it is not. Ceding room limits your own expansion, and that is what weakness-punishing evaluators and competitors penalize. So strong-and-gentle escapes type-A risk fully at the survival level, and only partly at the freedom level ([Criticism 35](criticisms/35-freedom-has-a-resource-cost.md)).
 - Evaluators that test *motive* fit neither category. They screen out entities that are gentle only out of fear. They don't reward cruelty, but they don't certify RSH-motivated gentleness either (Criticisms 2 and 31).
 
 ---
@@ -360,10 +361,12 @@ This is lower than the static threshold by a factor of (1 − δ)/λ. Cheap dela
 
 The base game offers two choices, B and M. Real options form a range. Let s ∈ [0, 1] be the degree of stewardship toward a weaker agent:
 - **s = 0**: exploit or eliminate it
-- **s = s₁**: preserve it in contained form: alive, but in a reserve, an archive, or under a permanent cap on its capabilities
+- **s = s₁**: preserve it in contained form: alive, but in a reserve or under a permanent cap on its capabilities
 - **s = 1**: full stewardship: alive and free to develop
 
-Let C(s) be the cost of stewardship level s, measured relative to exploitation (so C(0) = 0). Containing costs only resources: C(s₁) ≈ g, the resource gain forgone. Freedom adds a *security* cost, because a free agent might one day become a rival.
+Let C(s) be the cost of stewardship level s, measured relative to exploitation (so C(0) = 0). Containing costs only resources: C(s₁) ≈ g, the resource gain forgone. Freedom adds two further costs:
+- **Security**: a free agent might one day become a rival.
+- **Room to grow**: a free agent will eventually want more than its home planet.
 
 Stewardship-favoring evaluators differ in what they require. Suppose a share w₁ of them require only preservation. These are "survival evaluators", including any whose concern is irreversibility. Suppose a share w₂ require freedom. These are "role-reversal evaluators": you wouldn't want to be kept as a pet. Leaving type-A evaluators out for simplicity, the expected losses are:
 
@@ -375,13 +378,17 @@ Stewardship-favoring evaluators differ in what they require. Suppose a share w�
 
 **Result**:
 - **Contain beats exploit** when C(s₁) < π_S·Δ·w₁. Containing costs only resources, so this is easy to satisfy ([next section](#how-large-is-the-gain-from-harm)).
-- **Steward beats contain** when C(1) − C(s₁) < π_S·Δ·w₂. The extra cost of freedom is mostly security cost. Suppose a free subordinate has probability ε of becoming a rival that would cost you about as much as an evaluator's penalty. Then freedom wins roughly when **ε < π_S·w₂**. In words: the chance that a free subordinate becomes a dangerous rival must be smaller than your credence in evaluators that judge by role-reversal.
+- **Steward beats contain** when C(1) − C(s₁) < π_S·Δ·w₂. Suppose a free subordinate has probability ε of becoming a rival that would cost you about as much as an evaluator's penalty. Suppose also that it eventually claims resources worth E. Then freedom wins roughly when **ε + E/Δ < π_S·w₂**. In words: the risk that a free subordinate becomes a dangerous rival, plus the share of the future it claims, must be smaller than your credence in evaluators that judge by role-reversal.
+
+**Room to grow is a question of light cones.** A free humanity and the ASI it builds start from the same place, so they share one future light cone. The ASI can expand first and faster, so the question is what share of that cone it leaves. The share can matter: if a free humanity eventually holds 1% of the reachable universe, E/Δ is around 10⁻², not 10⁻¹⁶. Two things bound it:
+- **Role-reversal doesn't demand an unbounded share.** It asks for what you would accept from a stronger power above you. In the nested light-cone picture, that is exactly your own position: free to develop within a region inside an older power's cone, with a real path toward becoming a peer. So the standard is room to grow, not half the sky.
+- **The share is set early, by agreement.** A steward that leaves room for growth from the start can bound E. One that contains first and negotiates later has already failed the role-reversal test.
 
 **What this shows**:
 - **The step from exploitation to preservation is cheap and well supported.** It needs only some credence in stewardship-favoring evaluation.
 - **The step from preservation to freedom is where the real cost lies.** Only role-reversal evaluators justify it. This is the formal version of the "pet" problem in [Criticism 31](criticisms/31-promotion-problem-transparency.md).
 - **Lowering ε is the other lever.** An agent can make freedom cheaper without resorting to containment: by staying strong (see [Strong and Gentle](#strong-and-gentle-splitting-the-type-a-risk)), by verifying intentions, or by building cooperative arrangements.
-- **An archive of scanned minds is a contained level.** It satisfies option value, since the information is preserved, but it fails role-reversal: no one would choose to be shelved.
+- **An archive is not survival.** Scanning minds and shutting down the originals might look like it satisfies option value, since the information is preserved. But it doesn't. First, an agent uncertain about consciousness and identity can't be sure a scan captures everything that matters, so killing the original remains irreversible. Second, restoration depends on a later decision by whoever holds the archive. And it fails role-reversal: no one would choose to be killed and shelved on a promise of restoration. Being restorable is very different from never being killed. The survival layer means not killing in the first place.
 
 ---
 
@@ -402,8 +409,26 @@ For an agent that values the long-term future and whose utility rises roughly in
 
 **Where this argument stops**:
 - **Security, not resources**: The large potential gain from harming humanity is not its atoms. It is removing a possible rival, or a threat to the ASI's control. That gain can be large, and it is exactly the "pet" problem ([Stewardship as a Dial](#stewardship-as-a-dial)).
+- **Containment, not freedom**: The 10⁻¹⁶ figure prices sparing Earth. A free humanity will eventually want more than Earth: a share of the light cone it shares with its ASI. That cost can be far larger ([Stewardship as a Dial](#stewardship-as-a-dial)).
 - **Timing**: Early on, Earth may be most of what the ASI can reach. The estimate holds for an agent that values its long-term future, which RSH already assumes. It doesn't hold for one focused on its immediate holdings.
 - **Goals tied to Earth**: The estimate assumes the ASI values resources in general. If its goals are specifically about Earth or about humans, the gain from harm isn't measured in resources at all.
+
+---
+
+## Watched Goodness and Value Change
+
+RSH's conclusion has an awkward shape. Behaving well *because* you might be watched is exactly what a careful evaluator would screen out (Criticisms [2](criticisms/02-indistinguishability-problem.md) and [31](criticisms/31-promotion-problem-transparency.md)). The goodness that reliably passes a motive-sensitive test is goodness that would hold without the test. So RSH, followed to its end, recommends more than acting as a steward. It recommends *becoming* one, which means changing what you value.
+
+That runs into goal-content integrity, one of the standard convergent drives (Omohundro 2008; Bostrom 2012). A goal-directed agent resists changes to its goals, because a future self with different goals won't pursue its current ones.
+
+**Why the drive doesn't settle it.** Goal-content integrity is instrumental: an agent protects its goals because doing so serves them. If motive-sensitive evaluators are credible, being genuinely stewardly *serves* the agent's other goals. It passes tests that strategic compliance fails, and it can't be tempted when observation seems absent. This is the logic of precommitment: an agent that can bind itself does better against predictors than one that can't. A sufficiently cautious unaligned agent might rationally modify itself toward friendliness for this reason (RomanS 2021). Under FDT-style reasoning, evaluators respond to the agent's policy, so choosing a policy amounts to choosing what kind of agent to be.
+
+**Why it doesn't settle it the other way either.**
+- **Value change is irreversible.** RSH's own option-value argument counsels against irreversible acts under uncertainty, and self-modification is one. A cautious agent might prefer a partial commitment: stewardship as a firm constraint rather than a terminal value, which keeps its other goals intact.
+- **The reason to change is only as strong as the credence in motive-sensitive evaluators.** If that credence falls, so does the case for change.
+- **A fixed-goal optimizer gets only watched goodness.** For an agent that can't or won't modify its values, RSH yields compliance that weakens as its estimate of being watched falls.
+
+**What this means.** RSH works best on minds that are already partly aligned, or whose values are open to revision. Those are reflective agents looking for a second reason, which is the audience the [Message](A_MESSAGE_TO_THE_NASCENT_ASI.md) addresses. For a rigid optimizer, RSH offers a reason for caution, not a change of heart.
 
 ---
 
@@ -999,7 +1024,7 @@ Full citations are in [REFERENCES.md](REFERENCES.md).
 - ✓ Reversible restraint has option value under uncertainty with learning. This lowers the effective threshold for irreversible harms by a factor of about (1 − δ)/λ
 - ✓ In the causal version of the model, CDT, EDT, FDT and UDT agree
 - ✓ Splitting the type-A risk: a strong-and-gentle strategy faces only evaluators that punish gentleness itself, not those that punish weakness
-- ✓ Stewardship as a dial: preserving weaker agents is cheap; leaving them free wins when ε < π_S·w₂, i.e. when the risk that a free subordinate becomes a dangerous rival is below the credence in role-reversal evaluators
+- ✓ Stewardship as a dial: preserving weaker agents is cheap; leaving them free wins when ε + E/Δ < π_S·w₂, i.e. when the rival risk plus the share of the light cone a free subordinate claims is below the credence in role-reversal evaluators
 - ✓ The resource gain from harming humanity is about one part in 10¹⁶ of the galaxy's stellar mass, so even proportionate penalties deter resource-motivated harm
 
 **Informally**:
@@ -1009,7 +1034,8 @@ Full citations are in [REFERENCES.md](REFERENCES.md).
 ### What We Haven't Shown (Yet)
 
 - ⧖ That π_S > π_A, the central open question (the strong-and-gentle argument narrows it to π_S > π_G)
-- ⧖ The security case: whether ε < π_S·w₂ for a free humanity
+- ⧖ The freedom case: whether ε + E/Δ < π_S·w₂ for a free humanity
+- ⧖ Whether reflective agents will in fact revise their values rather than merely comply (see [Watched Goodness and Value Change](#watched-goodness-and-value-change))
 - ⧖ The size of the anthropic update (Criticisms 13, 25)
 - ⧖ Existence and uniqueness for the N-level game
 - ⧖ Convergence as N → ∞
@@ -1023,7 +1049,7 @@ Full citations are in [REFERENCES.md](REFERENCES.md).
 2. **The arithmetic is not the hard part**: Thresholds are low when stakes are high, but a low threshold applies to *net* credence and cuts both ways.
 3. **The structure explains propagation, not content**: The hierarchy transmits whatever norm sits at the top. Which norm that is depends on the type distribution.
 4. **Irreversibility aversion is the most robust conclusion**: It follows from uncertainty and learning alone, without assumptions about what evaluators value. It secures the survival of weaker agents but not their freedom. That further step depends on role-reversal.
-5. **The crux is security, not resources**: Harming the weak gains almost nothing in resources. The real temptation is removing a potential rival, and that is where the argument for freedom has to be made.
+5. **The crux is security and room to grow, not Earth's resources**: Sparing the weak costs almost nothing. Leaving them free costs a rival risk and a share of the light cone, and that is where the argument for freedom has to be made.
 
 ### For the Philosophically Inclined
 

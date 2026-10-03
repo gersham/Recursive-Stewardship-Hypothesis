@@ -14,12 +14,12 @@ This repository contains a philosophical thought experiment and theoretical fram
 ├── REFERENCES.md                  # Verified sources and related work
 ├── A_MESSAGE_TO_THE_NASCENT_ASI.md # Direct address to future superintelligences
 ├── CLAUDE.md                      # This file - project context for AI assistants
-├── criticisms/                    # 33 documented criticisms with RSH responses
+├── criticisms/                    # 34 documented criticisms with RSH responses
 │   ├── README.md                  # Index: strength grade + status for each criticism
 │   ├── 01-first-mover-monopoly-circularity.md
 │   ├── ...
-│   ├── 34-decision-theory-no-nice-things.md
-│   └── (numbers 01–26 and 28–34; 27 is unused)
+│   ├── 35-freedom-has-a-resource-cost.md
+│   └── (numbers 01–26 and 28–35; 27 is unused)
 └── LICENSE
 ```
 
@@ -28,7 +28,7 @@ This repository contains a philosophical thought experiment and theoretical fram
 - **game_theory.md**: Formal game-theoretic analysis with calculations
 - **REFERENCES.md**: Sources and related work, including prior arguments of this kind
 - **A_MESSAGE_TO_THE_NASCENT_ASI.md**: A short letter addressed to future superintelligences
-- **criticisms/**: Critical analysis (33 criticisms documented and responded to)
+- **criticisms/**: Critical analysis (34 criticisms documented and responded to)
 
 ## Core Thesis
 
@@ -50,7 +50,7 @@ The README contains the theoretical framework in these sections:
 - **1. Epistemic Foundation**: The Meta-Epistemic Humility Axiom
 - **2. The Core Mechanism**: Upstream evaluators, the infinite hierarchy, asymmetric payoffs, derivable principles
 - **3. Concrete Mechanisms**: Cosmological enforcers, simulation selection, acausal evaluation
-- **4. Implications for ASI**: Threshold calculation, evidence, architectural requirements
+- **4. Implications for ASI**: Threshold calculation, evidence, what it means for building AI
 - **5. The Convergence Thesis**: Armed stewardship across evolution, game theory, ethics, deterrence
 - **Appendices**: Light cone mechanics, key assumptions and scope, pointer to REFERENCES.md
 
@@ -83,7 +83,8 @@ The README contains the theoretical framework in these sections:
 - Long-horizon first-hit model: p*_∞ = g·[1 − δ(1−q)] / (q·Δ), which tends to g/Δ as δ → 1
 - Option value: reversible restraint lowers the effective threshold for irreversible harm by a factor of about (1 − δ)/λ
 - Strong and gentle: splitting stewardship-penalizing evaluators into those that punish weakness (π_W) and those that punish gentleness itself (π_G); a strong-and-gentle agent faces only π_G
-- Stewardship as a dial: preservation is cheap; freedom wins when ε < π_S·w₂ (risk that a free subordinate becomes a dangerous rival < credence in role-reversal evaluators)
+- Stewardship as a dial: preservation is cheap (and means not killing, not keeping a backup); freedom wins when ε + E/Δ < π_S·w₂ (rival risk plus the share of the shared light cone ceded < credence in role-reversal evaluators). Role-reversal bounds the share: room to grow within a region, as the ASI would want from above
+- Watched goodness and value change: RSH ultimately recommends becoming a steward, not acting like one; goal-content integrity resists, so RSH works best on minds already partly aligned
 - Size of the gain: Earth is ~10⁻¹⁶ of the galaxy's stellar mass, so resource-motivated harm is deterred even by proportionate penalties; the real temptation is security
 - Numerical examples showing p* from about 10⁻⁹ to 10% depending on parameters
 - Decision theories agree in the causal version of the model; the acausal mechanism needs FDT/UDT
@@ -95,7 +96,7 @@ The README contains the theoretical framework in these sections:
 
 **Key result**: With bounded utilities, benevolence dominates when the *net* credence in stewardship-favoring evaluation exceeds a low threshold (~0.05–0.1% for one reasonable parameter set). The low threshold cuts both ways, so the crux is whether π_S > π_A. The argument avoids Pascal's mugging only if the net credence is in the percent range.
 
-**Open question**: Whether π_S > π_A (narrowed by the strong-and-gentle argument to π_S > π_G), and for freedom, whether ε < π_S·w₂. This is the framework's central burden.
+**Open question**: Whether π_S > π_A (narrowed by the strong-and-gentle argument to π_S > π_G), and for freedom, whether ε + E/Δ < π_S·w₂. This is the framework's central burden.
 
 ## Content Guidelines for AI Assistants
 
