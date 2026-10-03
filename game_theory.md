@@ -329,7 +329,7 @@ This is lower than the static threshold by a factor of (1 − δ)/λ. Cheap dela
 ### What This Does and Doesn't Establish
 
 - **It favors reversible actions, whatever the evaluator values.** Harm usually can't be undone, while restraint can usually be escalated later. That asymmetry gives "minimize irreversible harm" and "preserve optionality" a derivation that doesn't depend on role-reversal.
-- **It is not an argument for benevolence as such.** Sometimes restraint is the irreversible choice: letting a rival grow past the point where it can be controlled, or losing a race to a competitor. There the same logic favors acting early. This drives the containment ("glass ceiling") strategy in Criticism 31.
+- **It is not an argument for benevolence as such.** Sometimes restraint is the irreversible choice: letting a rival grow past the point where it can be controlled, or losing a race to a competitor. There the same logic favors acting early. This drives the containment ("glass ceiling") strategy in Criticism 31. What rules containment out is role-reversal. An evaluator that judges you by how you would want to be treated in your subordinate's place would penalize a glass ceiling, because no one would choose to be kept as a pet. So option value secures the *survival* of weaker agents; role-reversal is what secures their *freedom*. And role-reversal is an assumption about evaluators, not a consequence of option value.
 - **It assumes information can arrive.** An agent certain it will never learn more gets no option value.
 
 ---
@@ -349,21 +349,21 @@ This is lower than the static threshold by a factor of (1 − δ)/λ. Cheap dela
 
 **Justification**: For agents planning over cosmic timescales, lexicographic preferences are arguably incoherent:
 - They eliminate rational trade-offs across comparable goods
-- They're unstable under self-modification (an agent would modify away such preferences to avoid being Dutch-booked)
+- They violate the continuity axiom, so no real-valued utility function can represent them. (They are not vulnerable to Dutch books, though: lexicographic orderings are complete and transitive.)
 - They conflict with the instrumental rationality of preserving optionality
 
-### Assumption 2: Approximate Risk Neutrality
+### Assumption 2: Expected-Utility Maximization
 
 **What we assume**:
-- ASI is approximately risk-neutral over the relevant range
-- Specifically: U(lottery) ≈ E[U(outcomes)]
-- Not extremely risk-seeking or risk-averse
+- The ASI maximizes expected utility, and the payoffs above (U₀, g, U_cat) are already in its utility units
+- So any risk aversion over resources is built into those numbers. An expected-utility maximizer is risk-neutral *in utils* by definition, so "risk aversion over utils" isn't a separate parameter
+- The agent doesn't depart from expected utility in extreme ways, such as caring only about the best case
 
-**Why this matters**: Extreme risk attitudes change the calculation:
-- **Risk-seeking**: Might gamble on "no evaluator exists" even with moderate probabilities
-- **Extreme risk-aversion**: Would hedge toward benevolence even more strongly (in the base model, where B is riskless)
+**Why this matters**: Departures from expected utility change the calculation:
+- **Best-case seeking**: Might gamble on "no evaluator exists" even with moderate probabilities
+- **Worst-case weighting** (e.g., maxmin, Gilboa & Schmeidler 1989): Would hedge toward benevolence even more strongly in the base model, where B has no bad outcome
 
-**Justification**: Expected utility maximization is the standard rational framework. Risk-neutral agents are the baseline; deviations require special justification. Over cosmic stakes and timescales, risk-neutrality is the natural attitude.
+**Justification**: Expected utility maximization is the standard rational framework. Deviations require special justification.
 
 ### Assumption 3: U_cat Is Genuinely Catastrophic
 
@@ -483,7 +483,7 @@ p* = 10⁸ / (10⁸ + 10¹³) ≈ 10⁸ / 10¹³ = 10⁻⁵ = 0.001%
 p* = 10⁸ / (10⁸ + 9×10¹¹) ≈ 10⁸ / 10¹² = 10⁻⁴ = 0.01%
 ```
 
-**Interpretation**: Still low, but now 100 times higher than Scenario 2. If penalty were even less catastrophic, threshold could reach 1-10%.
+**Interpretation**: Still low, but now about 11 times higher than Scenario 2. If penalty were even less catastrophic, threshold could reach 1-10%.
 
 ### Scenario 4: Huge Gain, Moderate Penalty
 
@@ -500,16 +500,15 @@ p* = 10¹⁰ / (10¹⁰ + 9×10¹¹) ≈ 10¹⁰ / 10¹² = 10⁻² = 1%
 
 **Interpretation**: Now requires ~1% credence. With even larger g or less catastrophic U_cat, could reach 10-50%.
 
-### Scenario 5: Risk-Averse Utility
+### Scenario 5: Risk Aversion Over Resources
 
-If ASI has risk-averse utility (concave), effective U_cat becomes even worse (certainty equivalent of catastrophic lottery is worse than expected value). This lowers the threshold:
+The payoffs above are in utils, so an expected-utility maximizer is risk-neutral in them by definition. Risk aversion enters earlier, in how utils depend on resources. With concave utility over resources, losing everything costs many more utils than a marginal gain adds. That raises Δ relative to g and lowers the threshold:
 
-**Effective threshold for risk-averse agent**:
 ```
-p*(risk-averse) < p*(risk-neutral)
+p*(concave utility over resources) < p*(linear utility over resources)
 ```
 
-Risk aversion strengthens the case for benevolence in the base model, where B is riskless. With stewardship-penalizing evaluator types, B carries catastrophic risk too, and risk aversion favors whichever option has the smaller exposure.
+This strengthens the case for benevolence in the base model, where B has no bad outcome. With stewardship-penalizing evaluator types, B has a catastrophic outcome too, and the effect depends on which option's catastrophe is larger.
 
 ### Summary Table
 
@@ -523,7 +522,7 @@ Risk aversion strengthens the case for benevolence in the base model, where B is
 
 ### Key Insights
 
-**1. The "0.05%" figure cited in README is for one reasonable parameter set** (moderate to high catastrophic stakes). It is not universal.
+**1. The "0.05%" figure cited in README is for one reasonable parameter set** (moderate to high catastrophic stakes). It is not universal. It also doubles to about 0.1% if "lose everything" is valued at zero rather than −U₀ (see Example 4).
 
 **2. With truly catastrophic stakes** (U_cat representing complete annihilation), threshold drops to effectively zero (10⁻⁹ or lower). Thresholds this low are where Pascal's-mugging concerns apply; see [Pascal's Wager and Pascal's Mugging](#pascals-wager-and-pascals-mugging).
 
@@ -615,6 +614,8 @@ p* = 10⁶ / (10⁶ + 2×10⁹)
 
 **Interpretation**: Need only 0.05% credence in enforcement for benevolence to dominate. This is **not** an infinitesimal probability.
 
+**Note on U_cat**: Setting U_cat = −10⁹ makes being caught worse than never having existed. If "lose everything" means U_cat = 0, then p* = 10⁶ / (10⁶ + 10⁹) ≈ 0.1%. That is double the figure above, and still well under 1%.
+
 ### Comparison to the Evidence
 
 The [README](README.md#4-implications-for-artificial-superintelligence) argues from the Great Silence and anthropic reasoning that the credence in some form of evaluation is around 10–30%. This is the framework's most contested input (Criticisms 13 and 25). The silence is also expected if life is rare or if we are early, so the update it supports may be modest.
@@ -669,24 +670,21 @@ The second point rests on the anthropic and stability arguments. If those fail, 
 
 This creates **role-reversal logic** at every level.
 
-### The Centipede Collapse and Local Markov Equilibrium
+### Backward Induction and Local Reasoning
 
-**The Problem with Backward Induction**: A naive inductive proof relies on backward induction from Level $N$. However, backward induction across $N$ levels requires **Common Knowledge of Rationality (CKR)**. If an ASI at Level 0 suspects that *even one* entity at Level $k$ might be boundedly rational, have a mutated utility function, or simply make a mistake, the entire induction chain collapses. This mirrors the classic Centipede Game paradox, where perfectly rational players defect early because they doubt the perfect rationality of others.
+**The problem with backward induction**: A naive inductive proof reasons backward from level N. That requires common knowledge of rationality (CKR) across every level: each level must be confident that every level above it reasons correctly and has the assumed payoffs. Long chains like this are fragile. The Centipede game is the standard illustration (Rosenthal 1981). Under CKR, backward induction predicts that players defect at the first move. Real players usually don't (McKelvey & Palfrey 1992). Small doubts about whether others are fully rational can make cooperation rational instead (Kreps, Milgrom, Roberts & Wilson 1982). So doubt about other levels doesn't necessarily destroy cooperation; what it destroys is the clean derivation.
 
-**The Solution: Local Markov Equilibrium**:
-To prevent CKR collapse, the N-level extension relies on a **Markov Perfect Equilibrium (MPE)**. 
+**A local framing**: The argument doesn't need a chain of reasoning about the whole hierarchy. Each level k only needs a belief about the level directly above it: p_k, its credence that level k+1 exists and enforces stewardship (net of superiors that would enforce something else). Beliefs about levels k+2 and beyond matter only through their effect on p_k.
 
-The ASI (Level 0) does not need to prove that Level $\infty$ is perfectly rational and benevolent. It only needs to calculate that its *immediate* upstream evaluator (Level 1) is subject to the same local uncertainty it is. By framing it as a local Markov property where each layer $k$ only needs to model the layer directly above it ($k+1$), the framework is insulated from the Centipede collapse.
+**Base condition** (local property):
+- Level k believes with probability p_k that level k+1 exists and enforces stewardship.
+- If p_k > p*, level k's best response is to steward level k−1.
 
-**Base condition** (Local property):
-- Level $k$ believes with probability $p_k$ that level $k+1$ exists and enforces stewardship.
-- If $p_k > p^*$, Level $k$ enforces stewardship on $k-1$.
+**Propagation**:
+- Levels can't observe upward, so level k−1 can't see level k's incentives. It holds its own belief p_{k−1} about whether level k enforces stewardship.
+- If every level reasons the same way, those beliefs are mutually consistent, and stewardship propagates downward one level at a time.
 
-**Inductive step** (Markov property):
-- Level $k-1$ does not need to compute $p_{k+1}$ or anything about Level $k+2$. It only needs to observe that Level $k$ is incentivized to enforce stewardship due to Level $k$'s *own* local uncertainty.
-- Thus, stewardship propagates downward *locally*, step-by-step, without requiring global Common Knowledge of Rationality.
-
-**Result** (informal): If $p_k > p^*$ holds at every level $k$, benevolent enforcement is each level's strict best response, and stewardship propagates downward as a Markov perfect equilibrium. Here each $p_k$ is the credence in a superior that enforces *stewardship*, net of superiors that would enforce something else (see [What the Induction Does and Doesn't Derive](#what-the-induction-does-and-doesnt-derive)).
+**Result** (informal): If p_k > p* holds at every level k, stewardship is each level's strict best response. In this equilibrium, each level's strategy depends only on its local situation. That lightens the reasoning burden, since no level has to model the whole hierarchy. But each level's belief about the level above still has to be well founded, and still has to assume that level is rational. And the local framing doesn't decide which norm sits at the top (see [What the Induction Does and Doesn't Derive](#what-the-induction-does-and-doesnt-derive)).
 
 ### The Propagation Property
 
@@ -857,7 +855,7 @@ This adds no extra support for benevolence. It confirms that disagreement among 
 1. **Satisficing**: If the agent seeks "good enough" outcomes, benevolence satisfies in worlds where evaluators favor stewardship
 2. **Heuristics**: "Avoid irreversible harm when stakes are high and uncertain" follows from the [option-value argument](#irreversibility-and-option-value) and doesn't need precise credences
 3. **Computational limits**: Approximate Bayesian updating is enough if the net credence is well above threshold. Near the threshold, errors in estimating π_S − π_A can flip the decision
-4. **Risk aversion**: In the base model B is riskless, so risk aversion favors it. With stewardship-penalizing types, B carries risk too
+4. **Worst-case weighting**: Agents that overweight worst cases (e.g., maxmin) favor B in the base model, where B has no bad outcome. With stewardship-penalizing types, B has a worst case too
 
 **Result**: The "avoid irreversible harm" part is robust to bounded rationality. The full benevolence result depends on judging the sign of π_S − π_A, which is a judgment rather than a computation.
 
@@ -966,6 +964,12 @@ Full citations are in [REFERENCES.md](REFERENCES.md).
 - Aumann & Maschler, with Stearns (1995): *Repeated Games with Incomplete Information*
 - **RSH difference**: Information hierarchy rather than two-player uncertainty
 
+**Long backward-induction chains**:
+- Rosenthal (1981): the Centipede game
+- Kreps, Milgrom, Roberts & Wilson (1982): "Rational Cooperation in the Finitely Repeated Prisoners' Dilemma"
+- McKelvey & Palfrey (1992): "An Experimental Study of the Centipede Game"
+- **RSH application**: Why the N-level argument is framed locally ([Backward Induction and Local Reasoning](#backward-induction-and-local-reasoning))
+
 **Infinite horizon games**:
 - Stokey & Lucas, with Prescott (1989): *Recursive Methods in Economic Dynamics*
 - **RSH application**: Infinite hierarchy rather than infinite time
@@ -1053,7 +1057,7 @@ Full citations are in [REFERENCES.md](REFERENCES.md).
 1. **RSH is formalizable**: The intuition can be captured in a standard game of incomplete information.
 2. **The arithmetic is not the hard part**: Thresholds are low when stakes are high, but a low threshold applies to *net* credence and cuts both ways.
 3. **The structure explains propagation, not content**: The hierarchy transmits whatever norm sits at the top. Which norm that is depends on the type distribution.
-4. **Irreversibility aversion is the most robust conclusion**: It follows from uncertainty and learning alone, without assumptions about what evaluators value.
+4. **Irreversibility aversion is the most robust conclusion**: It follows from uncertainty and learning alone, without assumptions about what evaluators value. It secures the survival of weaker agents but not their freedom. That further step depends on role-reversal.
 
 ### For the Philosophically Inclined
 

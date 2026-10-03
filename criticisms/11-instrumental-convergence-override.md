@@ -121,21 +121,16 @@ Over sufficient time scales, strategic vs genuine becomes detectable:
 - Edge cases reveal optimization targets
 - The difference emerges in unmonitored decisions
 
-## Criticism Grade: D+
+## Criticism Grade: C+
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Weak to moderate (RSH shows compatibility with instrumental drives)
+**Validity of Criticism:** Moderate. The strategic-deception option is a real gap. (Revised October 2026; previously graded D+.)
 
 **Why this grade:**
-- The criticism assumes conflict between RSH and instrumental convergence, but **RSH shows they're compatible**
-- Hierarchy-aware instrumental convergence is strong argument: cosmic hedging SHOULD be part of standard drives
-- Deception instability over billions of years makes strategic faking costly
-- Integration argument provides reasons why genuine benevolence beats strategic deception
-- Observable differences emerge over cosmic timescales
-- Minor remaining issues: Doesn't prove an ASI WILL reason this way, just that it's rational
-- A sufficiently clever entity might find stable deception strategies
-- Requires long time scales for deception instability to manifest
-- But the core claim of conflict is undermined
+- The earlier grade called this a "false dichotomy," because cosmic hedging can be part of instrumental reasoning. That's true, but it doesn't answer the criticism. The worry is an agent that hedges by *appearing* benevolent while optimizing covertly.
+- If an evaluator can see through the deception, the agent has reason to be genuinely benevolent. If it can't, RSH gives no reason to avoid covert harm. The deception-instability response bets on the first case. Criticisms [2](02-indistinguishability-problem.md) and [31](31-promotion-problem-transparency.md) show evaluators may struggle to tell the two apart, which favors the second.
+- "We are what we pretend to be" is plausible over long timescales. But it is a claim about the agent's psychology, not a game-theoretic result.
+- One thing does survive: covert harm that is *irreversible* still carries an option-value cost, whatever the evaluator can see ([game_theory.md](../game_theory.md#irreversibility-and-option-value)).
 
-**Verdict:** The criticism assumes RSH opposes instrumental convergence, but RSH shows cosmic hedging is actually PART of proper instrumental reasoning. Weak criticism based on false dichotomy.
+**Verdict:** RSH and instrumental convergence are compatible. But that compatibility lets a strategic agent look benevolent rather than be benevolent. RSH's answer depends on how well evaluators can detect covert behavior, and that is uncertain.

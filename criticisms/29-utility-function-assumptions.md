@@ -78,7 +78,7 @@ RSH claims: "Given plausible utility function assumptions, threshold is very low
 
 **Status**: Acknowledged
 
-**Update (October 2026)**: Every threshold above applies to the *net* credence in stewardship-favoring evaluation, π_S − π_A, not to P(evaluator exists) ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). That adds a fifth assumption to the list: the evaluator-type balance favors stewardship. It is the least secure of the five.
+**Update (October 2026)**: Every threshold above applies to the *net* credence in stewardship-favoring evaluation, π_S − π_A, not to P(evaluator exists) ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). That adds a further assumption to this list: the evaluator-type balance favors stewardship. game_theory.md lists it as Assumption 6, the least secure of its six. *(Grade reviewed October 2026; unchanged.)*
 
 **Status after Phase 2**: Explicitly addressed with comprehensive analysis. Framework makes assumptions clear and shows parameter sensitivity.
 

@@ -41,7 +41,13 @@ Most of this work concerns deterring a single AI, often through simulation threa
 *   Harsanyi, J. C. (1967–68). "Games with Incomplete Information Played by 'Bayesian' Players, I–III." *Management Science*, 14(3), 159–182; 14(5), 320–334; 14(7), 486–502. https://doi.org/10.1287/mnsc.14.3.159
 *   Trivers, R. L. (1971). "The Evolution of Reciprocal Altruism." *The Quarterly Review of Biology*, 46(1), 35–57. https://doi.org/10.1086/406755
 *   Axelrod, R. (1984). *The Evolution of Cooperation*. Basic Books.
+*   Rosenthal, R. W. (1981). "Games of Perfect Information, Predatory Pricing and the Chain-Store Paradox." *Journal of Economic Theory*, 25(1), 92–100. Introduces the Centipede game.
+*   Kreps, D. M., Milgrom, P., Roberts, J. & Wilson, R. (1982). "Rational Cooperation in the Finitely Repeated Prisoners' Dilemma." *Journal of Economic Theory*, 27(2), 245–252.
 *   Fudenberg, D. & Maskin, E. (1986). "The Folk Theorem in Repeated Games with Discounting or with Incomplete Information." *Econometrica*, 54(3), 533–554. https://doi.org/10.2307/1911307
+*   Stokey, N. L. & Lucas, R. E., Jr., with E. C. Prescott (1989). *Recursive Methods in Economic Dynamics*. Harvard University Press.
+*   Abreu, D., Pearce, D. & Stacchetti, E. (1990). "Toward a Theory of Discounted Repeated Games with Imperfect Monitoring." *Econometrica*, 58(5), 1041–1063. https://doi.org/10.2307/2938299
+*   McKelvey, R. D. & Palfrey, T. R. (1992). "An Experimental Study of the Centipede Game." *Econometrica*, 60(4), 803–836.
+*   Aumann, R. J. & Maschler, M. B., with R. E. Stearns (1995). *Repeated Games with Incomplete Information*. MIT Press.
 *   Alfano, M., Rusch, H. & Uhl, M. (2018). "Ethics, Morality, and Game Theory." *Games*, 9(2), 20. https://doi.org/10.3390/g9020020. The editorial for a special issue of the same name.
 *   Hankins, K. & Vanderschraaf, P. (2021). "Game Theory and Ethics." *Stanford Encyclopedia of Philosophy*. https://plato.stanford.edu/entries/game-ethics/
 

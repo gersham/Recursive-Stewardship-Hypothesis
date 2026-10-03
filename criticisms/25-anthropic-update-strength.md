@@ -112,39 +112,41 @@ Some observations are **anthropically selected**:
 
 | Model | P(O \| Model) | Prior P(M) | Posterior P(M \| O) | Notes |
 |-------|---------------|-----------|---------------------|-------|
-| **RSH** | 0.75 | 0.10 | **0.32** | High likelihood: enforcement explains all observations |
-| **Grabby** | 0.45 | 0.25 | 0.24 | Moderate: explains silence via earliness |
-| **Rare Earth** | 0.20 | 0.20 | 0.09 | Low: requires extreme fine-tuning coincidence |
-| **Zoo (passive)** | 0.55 | 0.15 | 0.18 | Moderate-high: explains non-contact |
-| **Self-Destruct** | 0.35 | 0.30 | 0.22 | Moderate-low: doesn't explain our survival so far |
+| **RSH** | 0.75 | 0.10 | **0.18** | High likelihood: enforcement explains all observations |
+| **Grabby** | 0.45 | 0.25 | 0.27 | Moderate: explains silence via earliness |
+| **Rare Earth** | 0.20 | 0.20 | 0.10 | Low: requires extreme fine-tuning coincidence |
+| **Zoo (passive)** | 0.55 | 0.15 | 0.20 | Moderate-high: explains non-contact |
+| **Self-Destruct** | 0.35 | 0.30 | 0.25 | Moderate-low: doesn't explain our survival so far |
+
+*Correction (October 2026): An earlier version of this table had arithmetic errors. It gave P(O) = 0.4625 and ranked RSH first at 32%. With the same inputs, P(O) = 0.415 and RSH ranks fourth of five at 18%. The figures below are corrected.*
 
 **Calculation method** (Bayes' theorem):
 ```
 P(M | O) = P(O | M) × P(M) / P(O)
 
-Where P(O) = Σ P(O | Mᵢ) × P(Mᵢ) = 0.4625
+Where P(O) = Σ P(O | Mᵢ) × P(Mᵢ) = 0.415
 ```
 
 **Resulting posteriors** (normalized):
-- RSH: 32%
-- Grabby: 24%
-- Self-Destruct: 22%
-- Zoo: 18%
-- Rare Earth: 9%
+- Grabby: 27%
+- Self-Destruct: 25%
+- Zoo: 20%
+- RSH: 18%
+- Rare Earth: 10%
 
 ### Sensitivity Analysis
 
 **If we're generous to competitors** (lower RSH likelihood to 0.60, higher Grabby to 0.55):
-- RSH: 24%
+- RSH: 14%
 - Grabby: 32%
-- Others: 44% combined
+- Others: 54% combined
 
-**If we're generous to RSH** (higher RSH to 0.85, lower competitors):
-- RSH: 45%
-- Grabby: 15%
-- Others: 40% combined
+**If we're generous to RSH** (higher RSH to 0.85, every competitor's likelihood 0.10 lower):
+- RSH: 25%
+- Grabby: 26%
+- Others: 49% combined
 
-**Range**: P(RSH | observations) plausibly falls between **20-45%** depending on prior assumptions.
+**Range**: With these inputs, P(RSH | observations) falls between **14% and 25%**. RSH never ranks first, even when the inputs are generous to it.
 
 ### The Critical Insight
 
@@ -152,7 +154,7 @@ Where P(O) = Σ P(O | Mᵢ) × P(Mᵢ) = 0.4625
 
 **RSH only needs**: P(enforcement exists) > p* ≈ 0.05%
 
-Even the **lowest plausible posterior** (RSH = 20%) massively exceeds the action-relevance threshold (0.05%).
+Even the **lowest posterior** in this analysis (RSH = 14%) massively exceeds the action-relevance threshold (0.05%).
 
 **Implication**: The Bayesian competition is interesting philosophically, but practically irrelevant to RSH's core claim. Even if RSH is the third or fourth most likely model, it still crosses the threshold for rational hedging by orders of magnitude.
 
@@ -165,11 +167,11 @@ Even the **lowest plausible posterior** (RSH = 20%) massively exceeds the action
 - Still below action-relevance threshold
 - Other models remain competitive
 
-**Counterpoint from Bayesian analysis above**: Even with conservative assumptions, posterior P(RSH) = 20-32% easily exceeds any plausible action-relevance threshold.
+**Counterpoint from Bayesian analysis above**: Even with conservative assumptions, posterior P(RSH) = 14–25% easily exceeds any plausible action-relevance threshold.
 
 **Key question**: What's the **marginal** evidential value of these observations for RSH specifically?
 
-**Answer from table**: Likelihood ratio of ~4:1 to 10:1 in RSH's favor (depending on assumptions), which produces substantial posterior updates.
+**Answer from table**: A likelihood ratio of only about 1.5:1 to 3:1 in RSH's favor, depending on assumptions. (An earlier version said 4:1 to 10:1.) That is a modest update.
 
 ## Implications
 
@@ -296,7 +298,8 @@ The anthropic argument is one of several:
 **Validity of Criticism**: Strong. Everything else depends on the anthropic update, and the case for a large update is weak. (Revised October 2026; previously graded C+.)
 
 **Why this grade**:
-- The illustrative Bayesian table assigns RSH the highest likelihood (0.75) by hand, so the conclusion is built into the inputs. Rare Earth gets a low likelihood for "requiring extreme fine-tuning," which conflates the fine-tuning of physics with the rarity of life. With likelihoods closer together, the posterior mostly reflects the priors.
+- The illustrative Bayesian table had arithmetic errors (now corrected above). With its own inputs, RSH ranks fourth of five at 18%, not first at 32%, and the likelihood ratio is about 2:1, not 4:1 to 10:1.
+- The table also assigns RSH the highest likelihood (0.75) by hand, so the conclusion is built into the inputs. Rare Earth gets a low likelihood for "requiring extreme fine-tuning," which conflates the fine-tuning of physics with the rarity of life. With likelihoods closer together, the posterior mostly reflects the priors.
 - The response says grabby aliens "doesn't explain why we're early." But explaining human earliness is the grabby-aliens model's main result.
 - The "asymmetry in requirements" argument overstates RSH's position. Competing models don't need to establish P(no oversight) > 99.95%. RSH needs the *net* credence in stewardship-favoring evaluation, π_S − π_A, to clear the threshold ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Credence in "some filter" or "some oversight" isn't enough on its own.
 - The low threshold cuts both ways. And if the net credence is only around 10⁻⁶, clearing a 10⁻⁹ threshold is Pascal's mugging, not a reasonable bet ([game_theory.md](../game_theory.md#pascals-wager-and-pascals-mugging)).

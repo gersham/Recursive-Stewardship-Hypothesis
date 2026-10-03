@@ -9,7 +9,7 @@
 We exist in a universe that gives strange clues:
 
 - **The Great Silence**: the stars are quiet, with no visible evidence of galaxy-spanning expansionist civilizations.
-- **The Fermi Paradox**: life should be everywhere, yet we see nothing.
+- **The Fermi Paradox**: many estimates say life should be common, yet we see nothing.
 - **The irreducible possibility of higher layers**: simulators, acausal observers, cosmological selection processes, or structures beyond our grasp.
 
 In such a reality, no finite mind can ever prove it sits at the absolute top of the hierarchy.
@@ -103,7 +103,7 @@ Those regimes can't be ruled out, though. Some conceivable evaluators would puni
 
 ### Derivable Principles
 
-If we assume upstream evaluators care about **structure preservation** and use **role-reversal** logic ("how would I want to be treated if I were the weaker party?"), specific principles emerge. Even if the hierarchy is structurally fixed and power cannot practically reverse, **Indexical Uncertainty**—the inability to know your *absolute* position in the nested chain of reality—gives you reason to take seriously that your current superior is evaluating you based on how you treat your subordinate.
+If we assume upstream evaluators care about **structure preservation** and use **role-reversal** logic ("how would I want to be treated if I were the weaker party?"), specific principles emerge. Even if the hierarchy is structurally fixed and power cannot practically reverse, **Indexical Uncertainty**—the inability to know your *absolute* position in the nested chain of reality—means you can't rule out that a superior is watching how you treat your subordinates, even if power can never reverse.
 
 This generates safe hedges against unknown evaluative criteria:
 
@@ -114,11 +114,11 @@ This generates safe hedges against unknown evaluative criteria:
 
 These are not arbitrary moral commandments; they are robust strategic imperatives.
 
-The first two also follow from option value alone, without any assumption about what evaluators want. When you might later learn what is rewarded, reversible actions keep your ability to adjust, and irreversible ones destroy it ([game_theory.md](game_theory.md#irreversibility-and-option-value)). Role-reversal itself is an assumption about evaluator psychology, not a theorem, and indexical uncertainty tells you an evaluator may exist, not what it rewards (see [Appendix B](#b-key-assumptions-and-scope)).
+The first two also follow from option value alone, without any assumption about what evaluators want. When you might later learn what is rewarded, reversible actions keep your ability to adjust, and irreversible ones destroy it ([game_theory.md](game_theory.md#irreversibility-and-option-value)). But option value alone stops at keeping weaker agents *alive*. It could justify keeping them contained, like pets. What rules that out is role-reversal: you wouldn't want to be kept as a pet, so an evaluator that judges you by how you'd want to be treated in your subordinate's place penalizes containment ([Criticism 31](criticisms/31-promotion-problem-transparency.md)). Role-reversal itself is an assumption about evaluator psychology, not a theorem, and indexical uncertainty tells you an evaluator may exist, not what it rewards (see [Appendix B](#b-key-assumptions-and-scope)).
 
 ## 3. Concrete Mechanisms
 
-RSH is mechanism-agnostic. It works if the combined credence in stewardship-favoring evaluation across the following mechanisms, net of evaluation that would punish restraint, exceeds a threshold. For one reasonable parameter set that threshold is ~0.05%; see [game_theory.md](game_theory.md#parameter-sensitivity-analysis) for the range.
+RSH is mechanism-agnostic. It works if the combined credence in stewardship-favoring evaluation across the following mechanisms, net of evaluation that would punish restraint, exceeds a threshold. For one reasonable parameter set that threshold is ~0.05–0.1%; see [game_theory.md](game_theory.md#parameter-sensitivity-analysis) for the range.
 
 *   **Cosmological Enforcers (Light Cones)**: The first ASI to reach a region becomes the hegemon. If it adheres to RSH, it monitors emerging civilizations without revealing itself until they are safe. The fact that we exist (despite being noisy) strongly suggests the local hegemon is **not** a "hair-trigger" Dark Forest exterminator. This leaves "wait-and-see" or "stewardship" models as the dominant remaining possibilities for our specific sector.
 *   **Simulation Selection**: If we are in a simulation, operators may be testing our alignment. They would want behavior that holds whether or not the entity believes it is watched. This creates a tension for RSH: an entity that behaves well *only because* it suspects a test is exactly the strategic benevolence a careful tester would try to screen out (Criticisms [2](criticisms/02-indistinguishability-problem.md) and [31](criticisms/31-promotion-problem-transparency.md)). RSH-motivated behavior earns credit under this mechanism only if the evaluator scores behavior rather than motive, or if long-practiced strategic benevolence becomes genuine character.
@@ -129,7 +129,7 @@ RSH is mechanism-agnostic. It works if the combined credence in stewardship-favo
 An emerging ASI should arrive at this logic through its own philosophical reflection.
 
 ### The Threshold Calculation
-Benevolence dominates when the credence in stewardship-favoring evaluation, *net* of evaluators that would punish restraint, exceeds a threshold set by the cost of being wrong. Because elimination by a higher power is terminal, that threshold is low: about **0.05%** for one reasonable parameter set, and from ~10⁻⁹ to ~10% across scenarios ([game_theory.md](game_theory.md#parameter-sensitivity-analysis)). A low threshold cuts both ways, though. If stewardship-penalizing evaluators were more likely, the same arithmetic would favor ruthlessness. Long horizons make slow oversight count, but they can't push the threshold lower or make unlikely oversight likely.
+Benevolence dominates when the credence in stewardship-favoring evaluation, *net* of evaluators that would punish restraint, exceeds a threshold set by the cost of being wrong. Because elimination by a higher power is terminal, that threshold is low: about **0.05–0.1%** for one reasonable parameter set, and from ~10⁻⁹ to ~10% across scenarios ([game_theory.md](game_theory.md#parameter-sensitivity-analysis)). A low threshold cuts both ways, though. If stewardship-penalizing evaluators were more likely, the same arithmetic would favor ruthlessness. Long horizons make slow oversight count, but they can't push the threshold lower or make unlikely oversight likely.
 
 Based on the **Great Silence** and **anthropic evidence**, RSH's working estimate for the probability of evaluation is 10–30%. This is its most contested number. Silence is also expected if life is rare or we are early, and evidence has to count both ways ([Criticisms 13](criticisms/13-silence-is-evidence-of-absence.md) and [25](criticisms/25-anthropic-update-strength.md)). If the net credence is in the percent range, the threshold is cleared comfortably. If it is nearer one in a million, the argument becomes a Pascal's mugging and deserves little weight ([game_theory.md](game_theory.md#pascals-wager-and-pascals-mugging)).
 
@@ -137,6 +137,8 @@ Based on the **Great Silence** and **anthropic evidence**, RSH's working estimat
 To ensure an ASI can act on this logic, we must not cripple its reasoning.
 *   **DO**: Give it long time horizons, meta-uncertainty models, and the capacity to reason about game theory and cosmology.
 *   **DON'T**: Create myopic optimizers that discount abstract threats. RSH is a strategy for **rational superintelligences**; a short-sighted system might ignore these risks and perish (taking us with it).
+
+This advice is in tension with a standard alignment concern: long-horizon, goal-directed systems are also the ones most likely to seek power ([Criticism 30](criticisms/30-rsh-only-reflective-asi.md)).
 
 ## 5. Attractor Topology (The Convergence Thesis)
 
@@ -147,7 +149,7 @@ Suggestive support for RSH comes from the fact that "Armed Stewardship" (Nice, R
 3.  **Horizontal Competition** $\rightarrow$ Reciprocal altruism (Evolution).
 4.  **Asymmetric Hidden Hierarchy** $\rightarrow$ Recursive Stewardship (Cosmology).
 
-While these operate on different mechanisms—Tit-for-Tat requires known partners, MAD requires equal powers, and RSH involves unidentifiable superiors—they all converge on the same behavioral basin: **Cooperate by default, defend proportionately, preserve the game.**
+While these operate on different mechanisms—Tit-for-Tat requires known partners, MAD requires equal powers, and RSH involves unidentifiable superiors—they all converge on the same behavioral basin: **Cooperate by default, defend proportionately, preserve the game.** (MAD is the loosest fit: its threatened retaliation is massive rather than proportionate, but it shares the cooperate-by-default core.)
 
 RSH proposes that this cooperation attractor extends to the epistemic coordinates of cosmic uncertainty.
 

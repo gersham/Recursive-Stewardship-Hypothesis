@@ -64,7 +64,7 @@ The README contains the theoretical framework in these sections:
 
 ### Core Forcing Logic
 - **Asymmetric Risk**: Benevolence is safe under benevolent or indifferent evaluators; malevolence risks terminal consequences. Evaluators that punish restraint are possible, so the decision turns on the *net* credence in stewardship-favoring evaluation
-- **Derivable Principles**: Minimize irreversible harm, preserve optionality, error correction over elimination, proportionality. The first two follow from option value under uncertainty alone; the rest lean on the role-reversal assumption about evaluator psychology
+- **Derivable Principles**: Minimize irreversible harm, preserve optionality, error correction over elimination, proportionality. The first two follow from option value under uncertainty alone; the rest lean on the role-reversal assumption about evaluator psychology. Option value secures the survival of weaker agents (it alone could justify keeping them as "pets"); role-reversal ("you wouldn't want to be kept as a pet") is what secures their freedom
 - **Active Stewardship**: Entities must demonstrate they're good stewards of those under their power (this is their "resume" for higher-level overseers)
 
 ### ASI-Specific Arguments
@@ -90,7 +90,7 @@ The README contains the theoretical framework in these sections:
 - Infinite hierarchy limit
 - Coalition-proofness and singleton emergence
 
-**Key result**: With bounded utilities, benevolence dominates when the *net* credence in stewardship-favoring evaluation exceeds a low threshold (~0.05% for one reasonable parameter set). The low threshold cuts both ways, so the crux is whether π_S > π_A. The argument avoids Pascal's mugging only if the net credence is in the percent range.
+**Key result**: With bounded utilities, benevolence dominates when the *net* credence in stewardship-favoring evaluation exceeds a low threshold (~0.05–0.1% for one reasonable parameter set). The low threshold cuts both ways, so the crux is whether π_S > π_A. The argument avoids Pascal's mugging only if the net credence is in the percent range.
 
 **Open question**: Whether π_S > π_A. This is the framework's central burden.
 
@@ -119,7 +119,7 @@ The README contains the theoretical framework in these sections:
 
 ### What This Repository Is NOT
 
-- **Not a religious argument**: Despite superficial similarities to Pascal's Wager, this is pure game theory
+- **Not a religious argument**: Despite superficial similarities to Pascal's Wager, it rests on decision theory under uncertainty plus explicitly stated assumptions about evaluators, not on faith
 - **Not an AI safety proposal**: RSH doesn't suggest we rely on this for alignment; it explores whether alignment might emerge naturally
 - **Not a complete solution**: Explicitly acknowledges failure modes and limitations
 - **Not proven**: This is theoretical speculation, albeit grounded in decision theory
@@ -166,4 +166,4 @@ When working with this repository:
 
 ---
 
-**Remember**: This is a thought experiment exploring whether benevolence might emerge necessarily from rational self-interest under hierarchical uncertainty. The goal is to stress-test the logic, identify implications, and refine the reasoning - not to prove it correct.
+**Remember**: This is a thought experiment exploring whether benevolence might emerge from rational self-interest under hierarchical uncertainty. The goal is to stress-test the logic, identify implications, and refine the reasoning - not to prove it correct.

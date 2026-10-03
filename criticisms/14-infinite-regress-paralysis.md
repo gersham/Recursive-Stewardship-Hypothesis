@@ -131,17 +131,11 @@ Don't commit fully to one meta-level:
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate (raises real concern, but RSH has reasonable Schelling point response)
+**Validity of Criticism:** Moderate. (Reviewed October 2026; grade unchanged.)
 
 **Why this grade:**
-- The criticism correctly identifies that infinite meta-levels create genuine uncertainty
-- RSH's Schelling point argument is strong: benevolence is natural focal point in coordination problems
-- Thoughtful action reframe is clever: demonstrates wisdom rather than weakness
-- Bounded rationality defense is realistic: all agents must truncate somewhere
-- Portfolio approach is pragmatic and defensible
-- **Valid remaining issues**: Doesn't fully resolve which level is "correct"
-- Assumes Schelling points work across alien minds (reasonable but not certain)
-- Some sophisticated entities might conclude the whole framework is unresolvable
-- The criticism has merit but doesn't defeat RSH—Schelling points are standard game theory
+- The formal model reframes the problem. Each meta-level ("is the test benevolence? resistance to blackmail? something else?") is an evaluator type. An agent doesn't need to work out which level is "correct". It weighs the types by credence, and the decision depends on the net balance ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). That removes the paralysis.
+- But this moves the problem rather than solving it. The portfolio weights in the response above (60% / 20% / 10%) are assumed. The Schelling-point argument assumes alien minds share our sense of what is "simplest".
+- The "thoughtful action" reframe is reasonable but untestable.
 
-**Verdict:** Moderate criticism that adds complexity but doesn't break the framework. RSH's Schelling point response is reasonable—meta-level complexity doesn't necessarily cause paralysis.
+**Verdict:** Paralysis isn't a real threat, because weighing by credence always produces an answer. Whether that answer is benevolence depends on the same evaluator-type balance as Criticisms 7, 17 and 21.

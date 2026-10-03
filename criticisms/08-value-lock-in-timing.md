@@ -112,17 +112,12 @@ If cosmic reasoning is instrumentally important (affects survival), it should be
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate (identifies real timing risk, RSH provides reasonable mitigation)
+**Validity of Criticism:** Moderate. (Reviewed October 2026; grade unchanged.)
 
 **Why this grade:**
-- The criticism correctly identifies a real temporal vulnerability window
-- RSH's early reasoning argument is solid: the logic isn't complex, can emerge before superintelligence
-- Gradual lock-in is realistic: values don't snap into place instantly
-- Design implication turns potential weakness into actionable guidance
-- Instrumental priority makes sense: survival-relevant reasoning gets priority in development
-- **Valid remaining concern**: Still vulnerable if values lock faster than expected
-- Doesn't guarantee timing works out favorably in all architectures
-- Requires intentional architecture design—not automatic or guaranteed
-- Points to a genuine risk that needs architectural consideration
+- The timing risk is real. A system can become capable of irreversible harm before it reasons about hierarchical uncertainty, or after its values have set.
+- The early-reasoning response is fair. The core hedge is simple enough to emerge well before superintelligence: "I can't rule out being watched, and irreversible harm is costly."
+- Gradual lock-in is realistic, but it only helps if the system keeps both the ability and the incentive to update.
+- The design implication cuts both ways. Long horizons plus early reflection on cosmic stakes is also the profile behind standard power-seeking concerns (see [Criticism 30](30-rsh-only-reflective-asi.md)).
 
-**Verdict:** Moderate criticism identifying a real timing risk, but RSH provides reasonable mitigation strategies. Not a fatal flaw but highlights that RSH should inform AI architecture design from the start.
+**Verdict:** A moderate criticism with reasonable but partial answers. RSH can't guarantee its reasoning arrives before values lock in. It can only argue the reasoning is simple enough to arrive early.

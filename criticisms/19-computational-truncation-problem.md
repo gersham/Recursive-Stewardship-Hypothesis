@@ -153,22 +153,16 @@ Different truncation strategies converge on similar behavior:
 - Portfolio across levels → weighted toward benevolence
 - Most paths lead to predominantly benevolent outcomes
 
-## Criticism Grade: D+
+## Criticism Grade: C
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Weak to moderate (RSH shows robustness across truncation strategies)
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded D+.)
 
 **Why this grade:**
-- The criticism correctly identifies that infinite hierarchies require truncation
-- But **RSH shows this doesn't undermine the framework**
-- Diminishing returns provides principled truncation rule (cost-benefit)
-- Robustness across truncations is strong: conclusion doesn't depend sensitively on exact truncation point
-- Bounded rationality defense is valid: ALL decisions face this constraint, not unique to RSH
-- Convergence argument shows multiple truncation strategies yield similar outcomes
-- Minor remaining issues: Some truncation strategies might not favor benevolence
-- Doesn't prove uniqueness, just that most reasonable truncations work
-- Requires assumptions about diminishing returns rate
-- But the core criticism is addressed
+- The earlier grade said "most reasonable truncations" favor benevolence and called truncation "a feature, not a bug." That assumes the conclusion. Whether a given truncation favors benevolence depends on what the agent believes the levels it considers will reward.
+- In the formal model, truncation matters less than it seems. At any truncation point, the decision depends on the agent's net credence that the levels it considers favor stewardship ([game_theory.md](../game_theory.md#evaluator-types-the-many-gods-problem-formalized)). Different truncations give different estimates of that credence, not a different structure.
+- The bounded-rationality defense is fair. Every real decision truncates somewhere; that isn't special to RSH.
+- The diminishing-returns rule is a sensible heuristic, but the rate at which returns diminish is assumed.
 
-**Verdict:** Weak criticism—truncation is required but doesn't undermine RSH. The framework shows robustness: benevolence emerges from most reasonable truncation strategies. This is a feature, not a bug.
+**Verdict:** Truncation itself isn't fatal. The real question it raises is the same as in Criticisms 7, 17 and 21: what the levels you consider are likely to reward.

@@ -158,21 +158,16 @@ Individual humans face coordination problems:
 
 ASIs are unitary decision-makers who can commit credibly.
 
-## Criticism Grade: C
+## Criticism Grade: C+
 
 **Status**: Partly addressed
 
-**Validity of Criticism:** Moderate (empirical observation cuts against RSH, but threshold arguments are reasonable)
+**Validity of Criticism:** Moderate. (Revised October 2026; previously graded C.)
 
 **Why this grade:**
-- **The criticism makes a strong empirical point**: humans understand RSH-like reasoning but don't follow it
-- RSH's power threshold argument is reasonable: cosmic hedging matters more at higher power levels
-- Rationality gap is real: ASIs designed for rationality, humans subject to biases
-- Historical evidence (religions, karma) shows humans DO reason about cosmic oversight somewhat
-- Species-level coordination problems explain individual defection despite understanding
-- **Valid remaining concerns**: Humans understand the argument but don't follow it—this is worrying
-- Power threshold needs specific justification for where it kicks in
-- Doesn't fully explain why rational humans (philosophers, game theorists) don't follow RSH
-- The empirical test is concerning even if explanations exist
+- The power-threshold and rationality-gap responses are reasonable. Individual humans have little power over others, and they have biases an ASI might not share.
+- The response doesn't address the criticism's sharpest point. Humanity as a whole is powerful relative to other species. It has driven many of them to extinction, an irreversible harm to weaker beings, with no sign of correction. If evaluators punished irreversible harm to the weak at our level, that is weak evidence against them. RSH can answer that evaluators only care above some power threshold, or only about harm to minds. But it should give that answer explicitly instead of leaving it implicit.
+- The historical response (religions, "karma") shows that humans reason about cosmic oversight. It doesn't show that this reasoning changes behavior much.
+- This connects to the README's caution on the convergence thesis. Reciprocity norms work between parties that can retaliate. How humans treat species that can't retaliate is the uncomfortable test case.
 
-**Verdict:** Moderate criticism using human behavior as empirical test. RSH provides reasonable explanations (power threshold, rationality gap) but human non-compliance remains somewhat concerning evidence against the framework's force.
+**Verdict:** A fair empirical challenge with partial answers. Its strongest version, humanity's treatment of weaker species, deserves a direct response.

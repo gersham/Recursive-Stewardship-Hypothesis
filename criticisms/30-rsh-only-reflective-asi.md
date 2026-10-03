@@ -101,6 +101,8 @@ RSH doesn't solve this dilemma—it acknowledges it explicitly.
 
 **Status**: Acknowledged
 
+*Reviewed October 2026; grade unchanged.* There is one tension worth stating. The README's design advice ("give it long time horizons") and the mitigation below both describe long-horizon, goal-directed systems. That is also the profile behind standard concerns about AI power-seeking. RSH's recommendation and those concerns pull in opposite directions, and the framework doesn't settle which matters more.
+
 **Status after Phase 1**: Explicitly acknowledged with comprehensive caveat section.
 
 **Why still C-tier**: Acknowledging the problem doesn't solve it. RSH provides:

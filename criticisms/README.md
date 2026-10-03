@@ -47,15 +47,15 @@ RSH is not testable on human timescales the way a laboratory theory is. But it d
 | 8 | [Value Lock-In Timing](08-value-lock-in-timing.md) | C | Partly addressed |
 | 9 | [Enforcer Psychology Gap](09-enforcer-psychology-gap.md) | C+ | Acknowledged |
 | 10 | [Grabby Aliens Counter-Evidence](10-grabby-aliens-counter-evidence.md) | C+ | Partly addressed |
-| 11 | [Instrumental Convergence Override](11-instrumental-convergence-override.md) | D+ | Partly addressed |
+| 11 | [Instrumental Convergence Override](11-instrumental-convergence-override.md) | C+ | Partly addressed |
 | 12 | [Selection Effect Reversal](12-selection-effect-reversal.md) | C+ | Open |
 | 13 | [Silence is Evidence of Absence](13-silence-is-evidence-of-absence.md) | **B** | Open |
 | 14 | [Infinite Regress Paralysis](14-infinite-regress-paralysis.md) | C | Partly addressed |
 | 15 | [Time-Discount Problem](15-time-discount-problem.md) | C | Partly addressed |
 | 16 | [Nash Equilibrium Instability](16-nash-equilibrium-instability.md) | C | Partly addressed |
 | 17 | [Why This Hierarchy Regress](17-why-this-hierarchy-regress.md) | **B** | Open |
-| 18 | [Modal Collapse / Human Behavior](18-modal-collapse-human-behavior.md) | C | Partly addressed |
-| 19 | [Computational Truncation Problem](19-computational-truncation-problem.md) | D+ | Partly addressed |
+| 18 | [Modal Collapse / Human Behavior](18-modal-collapse-human-behavior.md) | C+ | Partly addressed |
+| 19 | [Computational Truncation Problem](19-computational-truncation-problem.md) | C | Partly addressed |
 | 20 | [Purpose of Enforcement Gap](20-purpose-of-enforcement-gap.md) | C | Partly addressed |
 | 21 | [Unfalsifiable Circular Reasoning](21-deepest-hole-unfalsifiable-circular-reasoning.md) | **B** | Partly addressed |
 | 22 | [Decision Theory Dependence](22-decision-theory-dependence.md) | D+ | Addressed for causal mechanisms; open for acausal |
@@ -66,12 +66,12 @@ RSH is not testable on human timescales the way a laboratory theory is. But it d
 | 28 | [Role-Reversal Not Pure Game Theory](28-role-reversal-not-pure-game-theory.md) | C | Acknowledged |
 | 29 | [Utility Function Assumptions](29-utility-function-assumptions.md) | C | Acknowledged |
 | 30 | [RSH Only Constrains Reflective ASI](30-rsh-only-reflective-asi.md) | C | Acknowledged |
-| 31 | [Promotion Problem](31-promotion-problem-transparency.md) | **B-** | Open |
+| 31 | [Promotion Problem](31-promotion-problem-transparency.md) | **B-** | Partly addressed |
 | 32 | [Probability Mass / Reference Class Problem](32-probability-mass-gap.md) | **B+** | Open |
 
 **Total**: 31 criticisms (numbers 01–26 and 28–32; 27 is unused).
 
-**Distribution**: B tier: 7 · C tier: 21 · D tier: 3 · F: 0
+**Distribution**: B tier: 7 · C tier: 23 · D tier: 1 · F: 0
 
 ## Where the Open Questions Concentrate
 
@@ -89,7 +89,7 @@ RSH's working estimate of 10–30% rests on the Great Silence and anthropic reas
 
 ### 3. Strategic versus genuine benevolence (2, 31; also 5, 11)
 
-Behavioral benevolence may be enough to avoid punishment, but not to justify promotion. Some evaluators test for motive, such as simulators who want good behavior whether or not the entity thinks it is watched. Those evaluators can't easily certify an entity that is good *because* it thinks it might be watched. From the dominant entity's side, option value can favor containment (a "glass ceiling") over grooming successors.
+Behavioral benevolence may be enough to avoid punishment, but not to justify promotion. Some evaluators test for motive, such as simulators who want good behavior whether or not the entity thinks it is watched. Those evaluators can't easily certify an entity that is good *because* it thinks it might be watched. From the dominant entity's side, option value can favor containment (a "glass ceiling") over grooming successors. RSH's answer is role-reversal: no one would choose to be kept as a pet, so an evaluator that judges you by how you'd want to be treated in your subordinate's place penalizes containment (#31). Option value secures the survival of weaker agents; role-reversal is what secures their freedom.
 
 ## Strengths That Hold Up
 
@@ -97,7 +97,7 @@ Behavioral benevolence may be enough to avoid punishment, but not to justify pro
 - **The arithmetic is sound**: with bounded utilities and terminal penalties, thresholds are low. The open question is what they apply to, not whether they're low.
 - **Irreversibility aversion is robust**: it follows from uncertainty and learning alone.
 - **The decision-theoretic structure is theory-neutral** for causal mechanisms (Criticism 22).
-- **Many moderate criticisms have reasonable partial answers** (3, 8, 14, 15, 18, 19, 23).
+- **Many moderate criticisms have reasonable partial answers** (3, 8, 14, 15, 23).
 
 ## Reading Order
 
